@@ -1,9 +1,9 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { FaBookReader } from "react-icons/fa";
+import { MdOutlineTravelExplore } from "react-icons/md";
+import { MdOutlineExplore } from "react-icons/md";
+import { HiBuildingLibrary } from "react-icons/hi2";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { FaTools } from "react-icons/fa";
 
 export const navItems = [
   { label: "SPARQL Queries", href: "#" },
@@ -14,40 +14,40 @@ export const navItems = [
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    icon: <MdOutlineTravelExplore />,
+    text: "Explore the Semantic Web",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "SPARQL is the gateway to the Semantic Web. It lets you interact with structured knowledge published by institutions, researchers, and communities across the globe.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    icon: <MdOutlineExplore />,
+    text: "Navigate Ontologies and Linked Data",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "SPARQL gives you the power to query complex ontologies like Wikidata, Orphanet, and more. You can extract relationships, hierarchies, and rich metadata effortlessly.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    icon: <HiBuildingLibrary />,
+    text: "Used by Major Organizations",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Governments, universities, libraries, biotech companies, and open data initiatives all use SPARQL. It’s a trusted standard backed by the W3C.",
   },
   {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    icon: <HiOutlineLightBulb />    ,
+    text: "Make Sense of Complex Data",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "With SPARQL, you can ask meaningful questions across distributed datasets. It helps reveal connections hidden in traditional databases.",
   },
   {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
+    icon: <FaTools />,
+    text: "Build Interoperable Applications",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "SPARQL supports data integration across systems. It’s ideal for apps that consume, transform, and connect semantic data from diverse sources.",
   },
   {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    icon: <FaBookReader />    ,
+    text: "Learn Concepts That Last",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "SPARQL teaches you how to think semantically. You’ll learn about triples, classes, relationships, and how meaning is represented in data.",
   },
 ];
 

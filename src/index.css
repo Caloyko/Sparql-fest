@@ -6,3 +6,8 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+
+body {
+  @apply bg-stone-900 text-white;
+  font-family: "Poppins", sans-serif;
+}
