@@ -1,6 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { sparqlQueries } from '../data/queries';
 import React, { useEffect, useState } from 'react';
+import CodeBlock from '../components/ui/CodeBlock';
+import SPARQLMonaco from '../components/ui/SPARQLViewer';
+import QueryBasicData from '../components/QueryBasicData';
 
 const QueryDetail = () => {
   
@@ -18,32 +21,28 @@ const QueryDetail = () => {
     if (!detail) {
         return <div className="text-center py-10">Loading or not found...</div>;
       }
-      
+
     return (
-      <div>
-        <h2 className='text-3xl text-center'>Query Detail</h2>
-        <div className="grid grid-cols-2 gap-5 mt-5">
-          <div>
-            <img src={detail.image} alt="" className='w-full' />
-          </div>
-          <div className="flex flex-col gap-5">
-            <h1 className='text-4xl uppercase font-bold'>{detail.name}</h1>
-            <p className="font-bold text-3xl">
-              ${detail.level}
-            </p>
-            <div className="flex gap-5">
-              <div className="felx gap-2 justify-center items-center">
-                <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center">-</button>
-                <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center">1</span>
-                <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center">+</button>
-              </div>
-              <button className="bg-slate-900 text-white px-7 py-3 rounded-xl shadow-2">
-                Add to Cart
-              </button>
+        <div class="container mx-auto mt-8">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-8/12 px-4 mb-8 order-2 sm:order-1 md:order-1">
+                <h1 class="text-4xl font-bold mt-4 mb-2">{detail.name}</h1>
+                <h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
+                <p class="text-neutral-400 mb-4">{detail.context}</p>
+                <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
+                <p class="text-neutral-400 mb-4">{detail.description}</p>
+                <h2 class="text-xl font-bold mt-4 mb-2">Query</h2>
+                <CodeBlock/>
             </div>
-          </div>
+            <div class="w-full md:w-4/12 px-4 mb-8 order-1 sm:order-2 md:order-1">
+                <div class="px-4 py-6 rounded">
+                   <QueryBasicData data={detail}/>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+      
+
     )
 }
 
