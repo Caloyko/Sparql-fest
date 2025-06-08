@@ -15,7 +15,7 @@ const About = () => {
         >
           
         <div className="flex flex-wrap justify-center items-stretch">
-            <div className="relative p-2 w-full lg:w-1/2 h-full ">
+            <div className="relative p-2 w-full lg:w-1/2 flex items-center justify-center mb-24">
               <img
                 src={codeImg}
                 alt="Coding"
@@ -24,12 +24,12 @@ const About = () => {
               <img
                 src={codeImg}
                 alt="Coding"
-                className="absolute top-6 left-6   h-full rounded-lg border-2 border-orange-300"
+                className="absolute  top-6 left-6 rounded-lg border-2 border-red-300"
               />  
                <img
                 src={codeImg}
                 alt="Coding"
-                className="relative z-10 rounded-lg   h-full border-2 border-orange-300"
+                className="relative z-10 rounded-lg border-2 border-blue-300"
               />
             </div>
         <div className="pt-12 w-full lg:w-1/2">
