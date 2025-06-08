@@ -3,6 +3,7 @@ import { sparqlQueries } from '../data/queries';
 import React, { useEffect, useState } from 'react';
 import CodeBlock from '../components/ui/CodeBlock';
 import SPARQLMonaco from '../components/ui/SPARQLViewer';
+import QueryBasicData from '../components/QueryBasicData';
 
 const QueryDetail = () => {
   
@@ -34,13 +35,8 @@ const QueryDetail = () => {
                 <CodeBlock/>
             </div>
             <div class="w-full md:w-4/12 px-4 mb-8 order-1 sm:order-2 md:order-1">
-                <div class="bg-stone-600 px-4 py-6 rounded">
-                    <h3 class="text-lg font-bold mb-2 text-stone-900">Categories</h3>
-                    <ul class="list-disc list-inside">
-                        <li><a href="#" class="text-gray-900 hover:text-gray-900">Technology</a></li>
-                        <li><a href="#" class="text-gray-900 hover:text-gray-900">Travel</a></li>
-                        <li><a href="#" class="text-gray-900 hover:text-gray-900">Food</a></li>
-                    </ul>
+                <div class="px-4 py-6 rounded">
+                   <QueryBasicData data={detail}/>
                 </div>
             </div>
         </div>

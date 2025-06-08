@@ -1,0 +1,76 @@
+import React from 'react'
+
+const QueryBasicData = ({data}) => {
+    const { level, date, ontologies, sparqlConcepts } = data;
+    console.log(data)
+    console.log(ontologies)
+    console.log(date)
+    console.log(level)
+    console.log(sparqlConcepts)
+
+  return (
+    <div>
+    <ul
+        class="mt-8 mx-auto max-w-xs text-left font-medium text-lg leading-none">
+        <li>
+            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+                <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
+                Date
+            </p>
+            <p class="py-4 px-2 text-neutral-400 text-right">{date}</p>
+        </li>
+        <li>
+            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+                <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
+                Ontologies used
+            </p>
+            <div className="py-4 px-2 pb-6 text-right">
+                {ontologies.map((tag, index) => (
+                <span
+                    key={index}
+                    className="inline-block bg-stone-300 rounded-full px-3 py-1 text-sm font-semibold text-orange-950 mr-2 mb-2"
+                >
+                    {tag}
+                </span>
+                ))}
+            </div>
+        </li>
+        <li>
+            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+                <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
+                Level
+            </p>
+            <div className="py-4 px-2 pb-6 text-right">
+                <span
+                    className="inline-block bg-orange-800 rounded-full px-3 py-1 text-sm font-semibold text-orange-100 mr-2 mb-2"
+                >
+                    {level}
+                </span>
+            </div>
+        </li>
+        <li>
+            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+                <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
+                SPARQL Concepts
+            </p>
+            <div className="py-4 px-2 pb-6 text-right">
+                {sparqlConcepts.map((tag, index) => (
+                <span
+                    key={index}
+                    className="inline-block bg-orange-300 rounded-full px-3 py-1 text-sm font-semibold text-orange-950 mr-2 mb-2"
+                >
+                    {tag}
+                </span>
+                ))}
+            </div>
+        </li>
+
+    </ul>
+
+    </div>
+  )/*
+    return (
+        <div>OK</div>)*/
+}
+
+export default QueryBasicData
