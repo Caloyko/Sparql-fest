@@ -2,6 +2,7 @@ import React from 'react'
 import QueryCard from '../components/QueryCard'
 import { sparqlQueries } from '../data/queries'
 import Section from '../components/reusable/Section'
+import Card from '../components/ui/Card'
 
 const AllQueries = () => {
   return (
@@ -13,9 +14,9 @@ const AllQueries = () => {
             variant="dark"
             bg={true}
         >
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {sparqlQueries.map((product,key) => 
-          <QueryCard key={key}  data={product}/>)}
+          <Card key={key}  data={product}/>)}
       </div>
       </Section>
     </div>

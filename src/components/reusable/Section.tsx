@@ -18,7 +18,7 @@ const Section = ({ title, description, variant = "dark", id, bg = true, children
     <section
       id={id}
       className={clsx(
-        "py-16 pb-16 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans clip-path-custom",
+        "py-16 pb-16 px-[5vw] md:px-[7vw] lg:px-[10vw] font-sans clip-path-custom",
          bg && (isDark ? "bg-stone-900 text-white" : "bg-white text-black")
       )}
     >

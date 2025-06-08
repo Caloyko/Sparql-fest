@@ -3,6 +3,7 @@ import Section from './reusable/Section'
 import { sparqlQueries } from '../data/queries'
 import QueryCard from './QueryCard'
 import { Link } from 'react-router-dom'
+import Card from './ui/Card'
 
 const LastsQueries = () => {
   const latestQueries = [...sparqlQueries]
@@ -18,17 +19,15 @@ const LastsQueries = () => {
             description="Discover our most recently updated SPARQL queries."
             variant="dark"
         >
-         <div className="px-[10vw]">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             {latestQueries.map((query, key) => (
-              <QueryCard key={key} data={query}  withPrefix={true}/>
+              <Card key={key} data={query}  withPrefix={true}/>
             ))}
           </div>
           <div className="flex justify-end mt-10">
           <Link to="/sparql-queries" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'>
                  View all queries 
           </Link>
-        </div>
         </div>
       </Section>
     </>

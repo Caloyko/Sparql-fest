@@ -10,8 +10,8 @@ const Home = () => {
     <div>
       <HeroSection />
       <LastsQueries />
-      <WhySparql />
       <About />
+      <WhySparql />
       <Ontologies />
       <Contact />
     </div>
