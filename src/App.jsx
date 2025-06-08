@@ -8,19 +8,20 @@ import About from './components/About'
 import Ontologies from './components/Ontologies'
 import Metrics from './components/Metrics'
 import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import AllQueries from './pages/AllQueries'
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <HeroSection/>
-      <LastsQueries/>
-      <WhySparql/>
-      <About />
-      <Ontologies />
-      <Contact />
-      <Footer />
-    </>
+      <BrowserRouter>
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/sparql-queries" element={<AllQueries/>}/>
+            </Routes>
+            <Footer />
+      </BrowserRouter>
   )
 }
 

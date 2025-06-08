@@ -8,7 +8,7 @@ const Contact = () => {
             title="CONTACT US"
             description="A collection of my technical skills and expertise honed through various projects and experiences"
             variant="dark"
-            bg={false}
+            bg={true}
         />
     </>
   )

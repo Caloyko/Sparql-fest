@@ -1,10 +1,11 @@
 import React from 'react'
 import ParticlesComponent from './Particles'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
 
         return (
-            <div className="flex flex-col items-center mt-6 lg:mt-20">
+            <div className="flex flex-col items-center mt-32 my-12 lg:mt-42">
                 <div className="absolute inset-0 z-[-1]">
                     <ParticlesComponent id="particles" />
                 </div>
@@ -19,9 +20,9 @@ const HeroSection = () => {
                     SPARQL Fest centralises SPARQL queries shared by the community to make it easier to learn by example, make the most of everyone's contributions and develop your skills, one query at a time.
                 </p>
                 <div className="flex-justify-center my-10">
-            <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'>
+            <Link to="/sparql-queries" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'>
                  See all queries
-            </a>
+            </Link>
             <a href="#" className='py-3 px-4 mx-3 rounded-md border'>
                 More about us
             </a>

@@ -6,7 +6,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaTools } from "react-icons/fa";
 
 export const navItems = [
-  { label: "SPARQL Queries", href: "#" },
+  { label: "SPARQL Queries", href: "/sparql-queries" },
   { label: "ONTOLOGIES", href: "#" },
   { label: "Tutorials", href: "#" },
   { label: "Other Resources", href: "#" },
