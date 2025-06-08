@@ -7,7 +7,7 @@ const Ontologies = () => {
         <Section
             id="ontologies"
             title="ONTOLOGIES USED"
-            description="A collection of my technical skills and expertise honed through various projects and experiences"
+            description="Explore the SPARQL-based ontologies powering our queries."
             variant="light"
         />
     </>

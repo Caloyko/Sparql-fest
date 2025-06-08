@@ -6,7 +6,7 @@ const Contact = () => {
         <Section
             id="contact"
             title="CONTACT US"
-            description="A collection of my technical skills and expertise honed through various projects and experiences"
+            description="Get in touch with the SPARQL Fest team."
             variant="dark"
             bg={true}
         />

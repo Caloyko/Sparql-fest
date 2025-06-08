@@ -7,7 +7,7 @@ const WhySparql = () => {
     <Section
         id="why-sparql"
         title="WHY LEARN SPARQL"
-        description="A collection of my technical skills and expertise honed through various projects and experiences"
+        description="Unlock the power of querying linked data efficiently."
         variant="dark"
     >
     <div className="flex flex-wrap mt-10 lg:mt-20">

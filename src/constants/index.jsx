@@ -7,9 +7,9 @@ import { FaTools } from "react-icons/fa";
 
 export const navItems = [
   { label: "SPARQL Queries", href: "/sparql-queries" },
-  { label: "ONTOLOGIES", href: "#" },
-  { label: "Tutorials", href: "#" },
-  { label: "Other Resources", href: "#" },
+  { label: "ONTOLOGIES", href: "/ontologies" },
+  { label: "Tutorials", href: "/tutorials" },
+  { label: "Other Resources", href: "/other-resources" },
 ];
 
 export const features = [

@@ -15,13 +15,13 @@ const LastsQueries = () => {
         <Section
             id="queries"
             title="LAST QUERIES"
-            description="A collection of my technical skills and expertise honed through various projects and experiences"
+            description="Discover our most recently updated SPARQL queries."
             variant="dark"
         >
          <div className="px-[10vw]">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
             {latestQueries.map((query, key) => (
-              <QueryCard key={key} data={query} />
+              <QueryCard key={key} data={query}  withPrefix={true}/>
             ))}
           </div>
           <div className="flex justify-end mt-10">

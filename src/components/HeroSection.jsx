@@ -23,7 +23,7 @@ const HeroSection = () => {
             <Link to="/sparql-queries" className='bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md'>
                  See all queries
             </Link>
-            <a href="#" className='py-3 px-4 mx-3 rounded-md border'>
+            <a href="#about" className='py-3 px-4 mx-3 rounded-md border'>
                 More about us
             </a>
           </div>
