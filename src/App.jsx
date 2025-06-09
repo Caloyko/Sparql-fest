@@ -11,7 +11,7 @@ import OtherResources from './pages/OtherResources'
 
 const App = () => {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/sparql-fest">
           <Navbar />
             <Routes>
               <Route path="/" element={<Home/>}/>
