@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12
+                <div className="fixed right-0 z-20 bg-stone-900 w-full p-12
                 flex flex-col justify-center items-center lg:hidden">
                     <ul>
                         {navItems.map((item, index) => (
@@ -51,7 +51,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="flex">
-                        <a href="#" className='py-2 px-3 rounded-md bg-gradient-to-r
+                        <a href="/" className='py-2 px-3 rounded-md bg-gradient-to-r
                         from-orange-500 to-orange-800 '>
                             Contact us
                         </a>

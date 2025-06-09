@@ -8,13 +8,7 @@ const QueryBasicData = ({data}) => {
     <ul
         class="mt-8 mx-auto max-w-xs text-left font-medium text-lg leading-none">
             
-        <li>
-            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
-                <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
-                Date
-            </p>
-            <p class="py-4 px-2 text-neutral-400 text-right">{date}</p>
-        </li>
+        
         <li>
             <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
                 <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>

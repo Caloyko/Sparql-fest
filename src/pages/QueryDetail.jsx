@@ -50,11 +50,11 @@ const QueryDetail = () => {
         
         <div class="container mx-auto mt-8">
         <div class="flex flex-wrap justify-between">
-            <div class="w-full md:w-8/12 px-4 mb-8 order-2 sm:order-1 md:order-1">
+            <div class="w-full md:w-8/12 px-4">
             <Section
                 id={detail.slug}
                 title={detail.name}
-                description=""
+                description={detail.date}
                 variant="dark"
                 bg={false}
                 >
@@ -67,7 +67,7 @@ const QueryDetail = () => {
             </Section>
                
             </div>
-            <div class="w-full md:w-4/12 px-4 mb-8 order-1 sm:order-2 md:order-1">
+            <div class="w-full md:w-4/12 px-4 mb-8">
                 <div class="px-4 py-6 rounded">
                    <QueryBasicData data={detail}/>
                 </div>

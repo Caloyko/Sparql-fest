@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const HeroSection = () => {
 
         return (
-            <div className="flex flex-col items-center mt-32 my-12 lg:mt-42">
+            <div className="flex flex-col items-center mt-24 my-12 lg:mt-32">
                 <div className="absolute inset-0 z-[-1]">
                     <ParticlesComponent id="particles" />
                 </div>
