@@ -53,24 +53,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Learn SPARQL through real examples",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Practice SPARQL with authentic queries to grasp its practical use quickly",
   },
   {
-    title: "Review code without worry",
+    title: "Explore queries from various domains",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Discover diverse SPARQL queries covering healthcare, culture, and biodiversity.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Connect with people, data, and ideas",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Engage with a global community to exchange knowledge and build collaborations.",
   },
   {
-    title: "Share work in minutes",
+    title: "Discover what’s possible with the Semantic Web",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Unlock new potentials by integrating data and innovating with SPARQL.",
   },
 ];
 
@@ -107,26 +107,3 @@ export const pricingOptions = [
   },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
-];
-
-export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
-];
-
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
-];

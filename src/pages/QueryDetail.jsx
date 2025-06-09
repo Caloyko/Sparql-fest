@@ -5,9 +5,12 @@ import CodeBlock from '../components/ui/CodeBlock';
 import SPARQLMonaco from '../components/ui/SPARQLViewer';
 import QueryBasicData from '../components/QueryBasicData';
 import Section from '../components/reusable/Section';
+import { BsFillLightbulbFill } from 'react-icons/bs';
+import { TbBulb } from 'react-icons/tb';
 
 const QueryDetail = () => {
-  
+    const [hintIsOpen, setHintIsOpen] = useState(false);
+
     const {slug} = useParams();
     const [detail, setDetail] = useState([]);
     useEffect(() => {
@@ -59,11 +62,37 @@ const QueryDetail = () => {
                 bg={false}
                 >
                     <h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
-                    <p class="text-neutral-400 mb-4">{detail.context}</p>
+                    <p class="text-neutral-300 mb-6">{detail.context}</p>
                     <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
-                    <p class="text-neutral-400 mb-4">{detail.description}</p>
-                    <h2 class="text-xl font-bold mt-4 mb-2">Query</h2>
+                    <p class="text-neutral-300 mb-6">{detail.description}</p>
+                    <h2
+                        className="flex items-center cursor-pointer select-none text-xl font-semibold mb-3"
+                        onClick={() => setHintIsOpen(!hintIsOpen)}
+                    > 
+                    <TbBulb className="text-yellow-500 mr-2" size={24} />
+                    Hints 
+                    <button
+                        aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
+                        className="ml-auto text-sm text-stone-200 hover:text-orange-è00"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setHintIsOpen(!hintIsOpen);
+                        }}
+                        >
+                        {hintIsOpen ? "Hide" : "Show"}
+                </button>
+                </h2>
+                {hintIsOpen && (
+                    <ol className="ml-6 list-disc list-inside space-y-2 text-neutral-300">
+                    {(detail.inidces || []).map((hint, i) => (
+                        <li key={i}>{hint}</li>
+                    ))}
+                    </ol>
+                )}
+                    <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
                     <CodeBlock/>
+                    <h2 class="text-xl font-bold mt-10 mb-2">Results</h2>
+                    {detail?.rdfResultExample == "" &&  <p class="text-neutral-300 mb-6 flex justify-center"> No result available for this query </p>}
             </Section>
                
             </div>
@@ -71,6 +100,7 @@ const QueryDetail = () => {
                 <div class="px-4 py-6 rounded">
                    <QueryBasicData data={detail}/>
                 </div>
+                
             </div>
         </div>
     </div>
