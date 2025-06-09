@@ -20,7 +20,7 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "SPARQL queries", id: "sparql-queries" },
             { name: "Contact", id: "contact" },
-            { name: "Ontologies", id: "Onotlogies" },
+            { name: "Prefixes", id: "prefixes" },
           ].map((item, index) => (
             <button
               key={index}
