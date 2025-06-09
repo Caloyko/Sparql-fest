@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const QueryBasicData = ({data}) => {
     const { level, date, ontologies, sparqlConcepts } = data;
@@ -16,12 +17,13 @@ const QueryBasicData = ({data}) => {
             </p>
             <div className="py-4 px-2 pb-6 text-right">
                 {(ontologies || []).map((tag, index) => (
-                <span
+                <Link
                     key={index}
+                    to={`/sparql-prefixes/${tag}`}
                     className="inline-block bg-stone-300 rounded-full px-3 py-1 text-sm font-semibold text-orange-950 mr-2 mb-2"
                 >
                     {tag}
-                </span>
+                </Link>
                 ))}
             </div>
         </li>

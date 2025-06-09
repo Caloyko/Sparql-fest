@@ -2,10 +2,8 @@ import { useParams } from 'react-router-dom'
 import { sparqlQueries } from '../data/queries';
 import React, { useEffect, useState } from 'react';
 import CodeBlock from '../components/ui/CodeBlock';
-import SPARQLMonaco from '../components/ui/SPARQLViewer';
 import QueryBasicData from '../components/QueryBasicData';
 import Section from '../components/reusable/Section';
-import { BsFillLightbulbFill } from 'react-icons/bs';
 import { TbBulb } from 'react-icons/tb';
 
 const QueryDetail = () => {

@@ -4,7 +4,7 @@ import ordoImg from "../assets/images/prefixes/ordo.png"
 
 export const sparqlPrefixes = [
     {
-      prefix: "rdf",
+      prefix: "RDF",
       name: "RDF Schema",
       namespace: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       description: "RDF provides a data model for representing information about resources in the web.",
@@ -16,7 +16,7 @@ export const sparqlPrefixes = [
       usedIn: ["Linked Data", "OWL", "SPARQL Basics"]
     },
     {
-      prefix: "owl",
+      prefix: "OWL",
       name: "OWL Ontology",
       namespace: "http://www.w3.org/2002/07/owl#",
       description: "The Web Ontology Language (OWL) is used to define complex vocabularies and relationships.",
@@ -28,7 +28,7 @@ export const sparqlPrefixes = [
       usedIn: ["BioPortal", "Ontology Mapping"]
     },
     {
-      prefix: "ordo",
+      prefix: "ORDO",
       name: "Orphanet Rare Disease Ontology",
       namespace: "http://www.orpha.net/ORDO/",
       description: "ORDO is a structured vocabulary for rare diseases derived from Orphanet data.",
