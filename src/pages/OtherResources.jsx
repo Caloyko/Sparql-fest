@@ -1,8 +1,9 @@
 import React from 'react'
+import InProgress from '../components/reusable/InProgress'
 
 const OtherResources = () => {
   return (
-    <div>OtherResources</div>
+    <InProgress/>
   )
 }
 

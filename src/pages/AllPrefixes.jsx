@@ -1,10 +1,11 @@
 import React from 'react'
 import InProgress from '../components/reusable/InProgress'
 
-const Tutorials = () => {
+
+const AllPrefixes = () => {
   return (
     <InProgress/>
   )
 }
 
-export default Tutorials
+export default AllPrefixes

@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import AllQueries from './pages/AllQueries'
 import QueryDetail from './pages/QueryDetail'
-import AllOntologies from './pages/AllOntologies'
+import AllPrefixes from './pages/AllPrefixes'
 import Tutorials from './pages/Tutorials'
 import OtherResources from './pages/OtherResources'
 
@@ -17,7 +17,7 @@ const App = () => {
               <Route path="/" element={<Home/>}/>
               <Route path="/sparql-queries" element={<AllQueries/>}/>
               <Route path="sparql-queries/:slug" element={<QueryDetail/>} />
-              <Route path="/ontologies" element={<AllOntologies/>}/>
+              <Route path="/prefixes" element={<AllPrefixes/>}/>
               <Route path="/tutorials" element={<Tutorials/>}/>
               <Route path="/other-resources" element={<OtherResources/>}/>
             </Routes>

@@ -3,7 +3,7 @@ import HeroSection from '../components/HeroSection'
 import LastsQueries from '../components/LastsQueries'
 import WhySparql from '../components/WhySparql'
 import About from '../components/About'
-import Ontologies from '../components/Ontologies'
+import PrefixesSparql from '../components/PrefixesSparql'
 import Contact from '../components/Contact'
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <LastsQueries />
       <About />
       <WhySparql />
-      <Ontologies />
+      <PrefixesSparql />
       <Contact />
     </div>
   )

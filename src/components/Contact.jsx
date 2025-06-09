@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from './reusable/Section'
+
 const Contact = () => {
   return (
     <>

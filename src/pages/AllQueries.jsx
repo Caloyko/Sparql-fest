@@ -1,5 +1,4 @@
 import React from 'react'
-import QueryCard from '../components/QueryCard'
 import { sparqlQueries } from '../data/queries'
 import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
