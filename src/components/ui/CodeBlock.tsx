@@ -1,12 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Editor } from '@monaco-editor/react';
-const CodeBlock = () => {
+const CodeBlock = ({dataQuery}) => {
+  console.log(dataQuery)
   const [copied, setCopied] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const editorRef = useRef<any>(null);
   const [height, setHeight] = useState(100);
 
-  const handleEditorDidMount = (editor: any, monaco: any) => {
+  const handleEditorDidMount = (editor: any) => {
     editorRef.current = editor;
     updateHeight();
     editor.onDidChangeModelContent(updateHeight);
@@ -19,17 +20,13 @@ const CodeBlock = () => {
     const newHeight = lineCount * (lineHeight * 20) + 20; // 20 for padding
     setHeight(newHeight);
   };
-  const [query, setQuery] = useState(`PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-    SELECT ?person ?name ?email WHERE {
-      ?person a foaf:Person .
-      ?person foaf:name ?name .
-      OPTIONAL { ?person foaf:mbox ?email }
-    } LIMIT 100`);
+  const [query, setQuery] = useState("");
     const handleCopy = () => {
       navigator.clipboard.writeText(query);
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
     };
+  console.log(query)
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
@@ -66,7 +63,7 @@ const CodeBlock = () => {
 <Editor
         height={height}
         defaultLanguage="sparql"
-        defaultValue={query}
+        defaultValue={dataQuery}
         onMount={handleEditorDidMount}
         onChange={(value) => setQuery(value ?? '')}
         options={{

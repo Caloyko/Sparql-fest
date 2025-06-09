@@ -88,7 +88,7 @@ const QueryDetail = () => {
                     </ol>
                 )}
                     <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
-                    <CodeBlock/>
+                    <CodeBlock dataQuery={detail.query}/>
                     <h2 class="text-xl font-bold mt-10 mb-2">Results</h2>
                     {detail?.rdfResultExample == "" &&  <p class="text-neutral-300 mb-6 flex justify-center"> No result available for this query </p>}
             </Section>

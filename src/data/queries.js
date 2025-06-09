@@ -12,8 +12,7 @@ export const sparqlQueries = [
       description: "Obtain all external identifiers (via oboInOwl:hasDbXref) associated with Lyme disease in ORDO.",
       context: "This query seeks to retrieve all external databases linked to the ORDO entry for Lyme disease. This makes it possible to explore the connectivity of this entity to other repositories.",
       inidces: ["Charger ORDO","Utilisez ordo:Orphanet_91546 comme point d'entrée.","Recherchez les prédicats oboInOwl:hasDbXref.", ],
-      query: `
-        PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+      query: `PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX ordo:     <http://www.orpha.net/ORDO/>
 
 SELECT ?object
