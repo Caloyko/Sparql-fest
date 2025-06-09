@@ -12,7 +12,7 @@ import PrefixeDetail from './pages/PrefixeDetail'
 
 const App = () => {
   return (
-      <BrowserRouter basename="/sparql-fest">
+      <BrowserRouter basename="/Sparql-fest">
           <Navbar />
             <Routes>
               <Route path="/" element={<Home/>}/>
