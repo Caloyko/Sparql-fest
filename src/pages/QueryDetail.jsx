@@ -34,19 +34,8 @@ const QueryDetail = () => {
             className="relative w-full h-64 bg-center bg-cover overflow-hidden flex pl-6"
             style={{ backgroundImage: `url(${headerImage})` }}
                     aria-label={`Header image for ${detail.name}`}>
-                        <p class='px-4 py-6 text-xl font-bold text-neutral-300 text-opacity-80'>  <pre>
-                {`PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-    SELECT ?person ?name ?email WHERE {
-    ?person a foaf:Person .
-    ?person foaf:name ?name .
-    OPTIONAL { ?person foaf:mbox ?email }
-    } LIMIT 100
-        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-    SELECT ?person ?name ?email WHERE {
-    ?person a foaf:Person .
-    ?person foaf:name ?name .
-    OPTIONAL { ?person foaf:mbox ?email }
-    } LIMIT 100`}</pre></p>
+                        <p class='px-4 py-6 text-xl font-bold text-neutral-300/30 text-opacity-80'>  <pre>
+                {detail.query}</pre></p>
         </div>
         
         <div class="container mx-auto mt-8">

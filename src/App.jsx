@@ -8,7 +8,7 @@ import QueryDetail from './pages/QueryDetail'
 import AllPrefixes from './pages/AllPrefixes'
 import Tutorials from './pages/Tutorials'
 import OtherResources from './pages/OtherResources'
-import PrefixeDetail from './pages/PrefixeDetail'
+import PrefixDetail from './pages/PrefixDetail'
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
               <Route path="/sparql-queries" element={<AllQueries/>}/>
               <Route path="sparql-queries/:slug" element={<QueryDetail/>} />
               <Route path="/sparql-prefixes" element={<AllPrefixes/>}/>
-              <Route path="sparql-prefixes/:slug" element={<PrefixeDetail/>} />
+              <Route path="sparql-prefixes/:slug" element={<PrefixDetail/>} />
               <Route path="/tutorials" element={<Tutorials/>}/>
               <Route path="/other-resources" element={<OtherResources/>}/>
             </Routes>
