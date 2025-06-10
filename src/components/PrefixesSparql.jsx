@@ -31,7 +31,7 @@ const PrefixesSparql = () => {
         </p>
 
         <Link
-          to="/prefixes"
+          to="/sparql-prefixes"
           className="inline-block mt-2 px-5 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-orange-800  text-white font-medium hover:shadow-xl"
         >
           Explore all prefixes that we use →

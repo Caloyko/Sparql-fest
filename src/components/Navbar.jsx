@@ -30,9 +30,9 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <div className="hidden lg:flex justify-center items-center">
-                    <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
+                    <Link to="/#contact" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
                         Contact us
-                    </a>
+                    </Link>
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">
                     <button onClick={toggleNavbar}>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
             </div>
             {mobileDrawerOpen && (
-                <div className="fixed right-0 z-20 bg-stone-900 w-full p-12
+                <div className="fixed right-0 z-20 bg-stone-900/95 w-full p-12
                 flex flex-col justify-center items-center lg:hidden">
                     <ul>
                         {navItems.map((item, index) => (
@@ -50,11 +50,11 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className="flex">
-                        <a href="/" className='py-2 px-3 rounded-md bg-gradient-to-r
+                    <div className="flex mt-4">
+                        <Link to="/#contact" className='py-2 px-3 rounded-md bg-gradient-to-r
                         from-orange-500 to-orange-800 '>
                             Contact us
-                        </a>
+                        </Link>
                     </div>
                 </div>
             )}
