@@ -1,8 +1,5 @@
-import img1 from "../../assets/images/network-bg-1.jpg"
-import img2 from "../../assets/images/network-bg-2.avif"
-import img3 from "../../assets/images/network-bg-3.jpg"
 
-export const amcQueries = [
+const amcBasicQueries = [
     {
       name: "Lyme Disease ORDO Mappings",
       slug: "ordo-lyme-mappings",
@@ -304,3 +301,8 @@ SELECT ?object WHERE {
     },
   ];
   
+
+  export const amcQueries = amcBasicQueries.map(query => ({
+    ...query,
+    source: "AMC"
+  }));
