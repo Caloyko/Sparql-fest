@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './reusable/Section'
-import { sparqlQueries } from '../data/queries'
+import { sparqlQueries } from '../data/all-queries'
 import { Link } from 'react-router-dom'
 import Card from './ui/Card'
 
