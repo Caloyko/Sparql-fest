@@ -14,7 +14,7 @@ import { UniProt } from "./sib-swiss/UniProt";
 
 
 function mergeAndFormatSwissQueries() {
-  const merged = [...Bgee, ...Cellosaurus, ...dbgi,...GlyConnect, ...HAMAP, ...neXtProt, ...OMA, OrthoDB, ...Rhea, ...SwissLipids, ...UniProt];
+  const merged = [...Bgee, ...Cellosaurus, ...dbgi,...GlyConnect, ...HAMAP, ...neXtProt, ...OMA, ...OrthoDB, ...Rhea, ...SwissLipids, ...UniProt];
 
   return merged.map((query, index) => {
     const levelNumber = query.level?.match(/\d+/)?.[0] || "0";

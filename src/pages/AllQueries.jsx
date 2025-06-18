@@ -1,9 +1,11 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { sparqlQueries } from '../data/all-queries'
 import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
 
 const AllQueries = () => {
+  const [visibleCount, setVisibleCount] = useState(20);
+
   const [search, setSearch] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
   const [selectedSource, setSelectedSource] = useState('');
@@ -15,6 +17,10 @@ const AllQueries = () => {
   const allConcepts = [...new Set(sparqlQueries.flatMap(q => q.sparqlConcepts))];
   const allOntologies = [...new Set(sparqlQueries.flatMap(q => q.ontologies))];
 
+
+  useEffect(() => {
+    setVisibleCount(20);
+  }, [search, selectedLevel, selectedSource, selectedConcepts, selectedOntologies]);
 
   const filteredQueries = useMemo(() => {
     return sparqlQueries.filter(query => {
@@ -34,6 +40,7 @@ const AllQueries = () => {
       return matchesSearch && matchesLevel && matchesSource && matchesConcepts && matchesOntologies;
     });
   }, [search, selectedLevel, selectedSource, selectedConcepts, selectedOntologies]);
+
 
   return (
     <div>
@@ -74,9 +81,20 @@ const AllQueries = () => {
           
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {filteredQueries.map((product,key) => 
-          <Card key={key}  data={product}/>)}
+      {filteredQueries.slice(0, visibleCount).map((product, key) => (
+        <Card key={key} data={product} />
+      ))}
       </div>
+      {visibleCount < filteredQueries.length && (
+       <div className="mt-6 text-center">
+          <button
+            onClick={() => setVisibleCount(prev => prev + 20)}
+            className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+          >
+            Load More
+          </button>
+        </div>
+      )}
       </Section>
     </div>
   )
