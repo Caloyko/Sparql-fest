@@ -25,15 +25,19 @@ const QueryDetail = () => {
       }
     
       const headerImage = detail.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
+      const isFull = detail.source === "https://sib-swiss.github.io/sparql-examples/"
+
 
 
     return (
         <>
 
         <div
-            className="relative w-full h-64 bg-center bg-cover overflow-hidden flex pl-6"
-            style={{ backgroundImage: `url(${headerImage})` }}
-                    aria-label={`Header image for ${detail.name}`}>
+        className={`relative w-full h-64 ${
+            !isFull ? 'bg-cover' : 'bg-contain bg-no-repeat'
+        } bg-center bg-white overflow-hidden flex pl-6`}
+        style={{ backgroundImage: `url(${headerImage})` }}
+        >
                         <p class='px-4 py-6 text-xl font-bold text-neutral-300/30 text-opacity-80'>  <pre>
                 {detail.query}</pre></p>
         </div>
