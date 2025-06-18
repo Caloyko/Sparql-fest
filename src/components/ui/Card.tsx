@@ -5,7 +5,7 @@ type CardProps = {
   data: {
     name: string;
     image: string;
-    level: string;
+    category: string;
     date: string;
     ontologies: string[];
     slug: string;
@@ -14,9 +14,8 @@ type CardProps = {
 };
 
 export default function Card({ data, withPrefix = false }: CardProps) {
-  const { name, image, level, date, ontologies, slug } = data;
+  const { name, image, category, date, ontologies, slug } = data;
   const link = withPrefix ? `/sparql-queries/${slug}` : slug;
-  console.log(link)
 
   return (
 <div className="rounded-xl overflow-hidden shadow-md shadow-stone-950 ring-1 ring-white/10 flex flex-col hover:shadow-lg hover:shadow-orange-900/50 transition-shadow bg-neutral-800 ">
@@ -26,7 +25,7 @@ export default function Card({ data, withPrefix = false }: CardProps) {
           <div className="hover:bg-transparent transition duration-300 absolute inset-0 bg-gray-900 opacity-25"></div>
         </Link>
         <div className="font-bold shadow-xl text-s absolute top-0 right-0  bg-orange-700 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-orange-600 transition duration-500 ease-in-out rounded-xl">
-          {level}
+          {category}
         </div>
       </div>
 

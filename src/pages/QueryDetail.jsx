@@ -5,6 +5,7 @@ import CodeBlock from '../components/ui/CodeBlock';
 import QueryBasicData from '../components/QueryBasicData';
 import Section from '../components/reusable/Section';
 import { TbBulb } from 'react-icons/tb';
+import { allSources } from '../data/all-sources';
 
 const QueryDetail = () => {
     const [hintIsOpen, setHintIsOpen] = useState(false);
@@ -25,15 +26,18 @@ const QueryDetail = () => {
       }
     
       const headerImage = detail.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
-
+      const isFull = detail.source === "SIB"
+      const sourceInfo = allSources.find(src => src.id === detail.source)
 
     return (
         <>
 
         <div
-            className="relative w-full h-64 bg-center bg-cover overflow-hidden flex pl-6"
-            style={{ backgroundImage: `url(${headerImage})` }}
-                    aria-label={`Header image for ${detail.name}`}>
+        className={`relative w-full h-64 ${
+            !isFull ? 'bg-cover' : 'bg-contain bg-no-repeat'
+        } bg-center bg-white overflow-hidden flex pl-6`}
+        style={{ backgroundImage: `url(${headerImage})` }}
+        >
                         <p class='px-4 py-6 text-xl font-bold text-neutral-300/30 text-opacity-80'>  <pre>
                 {detail.query}</pre></p>
         </div>
@@ -48,8 +52,26 @@ const QueryDetail = () => {
                 variant="dark"
                 bg={false}
                 >
-                    <h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
-                    <p class="text-neutral-300 mb-6">{detail.context}</p>
+                    {(detail.source || detail.context) && (
+                        <>
+                            <h2 className="text-xl font-bold mt-4 mb-2">Context</h2>
+
+                            {detail.context ? (
+                            <p className="text-neutral-300 mb-6">{detail.context}</p>
+                            ) : sourceInfo ? (
+                            <div className="text-neutral-300 mb-6">
+                                This query was created by <strong>{sourceInfo.name}</strong>. You can find more information at:{" "}
+                                <a href={sourceInfo.url} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                                {sourceInfo.url}
+                                </a>
+                            </div>
+                            ) : (
+                            <div className="text-neutral-300 mb-6">No context available.</div>
+                            )}
+                        </>
+                        )}
+
+
                     <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
                     <p class="text-neutral-300 mb-6">{detail.description}</p>
                     <h2

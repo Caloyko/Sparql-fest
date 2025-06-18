@@ -24,7 +24,7 @@ WHERE {
         "PREFIX",
         "SELECT",
       ],
-      level: "level 0",
+      category: "level 0",
       rdfResultExample: ``
     },
     {
@@ -51,7 +51,7 @@ WHERE {
         "PREFIX",
         "SELECT",
       ],
-      level: "level 0",
+      category: "level 0",
       rdfResultExample: ``,
     },
     {
@@ -106,7 +106,7 @@ ORDER BY DESC(?nbD)
         "BIND",
         "ORDER BY"
       ],
-      level: "level 1",
+      category: "level 1",
       rdfResultExample: ``,
     },
     {
@@ -157,7 +157,7 @@ ORDER BY ?o
         "FILTER",
         "ORDER BY"
       ],
-      level: "level 1",
+      category: "level 1",
       rdfResultExample: ``,
     },
     {
@@ -196,7 +196,7 @@ WHERE {
         "rdf:rest*/rdf:first",
         "COUNT()"
       ],
-      level: "level 2",
+      category: "level 2",
       rdfResultExample: ``,
     },
     {
@@ -234,7 +234,7 @@ ORDER BY DESC(?mappings)
         "ORDER BY DESC",
         "COUNT()"
       ],
-      level: "level 2",
+      category: "level 2",
       rdfResultExample: ``,
     },
     {
@@ -267,7 +267,7 @@ ORDER BY DESC(?linkedDiseases)
         "ORDER BY DESC",
         "COUNT(DISTINCT ...)"
       ],
-      level: "level 2",
+      category: "level 2",
       rdfResultExample: ``,
     },
     {
@@ -296,7 +296,7 @@ SELECT ?object WHERE {
         "GROUP BY",
         "ORDER BY DESC",
       ],
-      level: "level 0",
+      category: "level 0",
       rdfResultExample: ``,
     },
   ];

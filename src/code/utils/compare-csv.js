@@ -11,8 +11,7 @@ function readCsv(filePath) {
 }
 
 function compareCsv(file1, file2) {
-    console.log(file1)
-    console.log(file2)
+
 
   const data1 = readCsv(file1);
   const data2 = readCsv(file2);
