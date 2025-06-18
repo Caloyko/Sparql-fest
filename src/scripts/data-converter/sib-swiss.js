@@ -33,7 +33,7 @@ function printFolderStructure(currentPath,  indent = '',dir="", collected = {}) 
         }
 
       } catch (err) {
-        console.log(indent + '  ⚠️ Erreur de lecture :', err.message);
+        console.log(indent + '  ⚠️ Error :', err.message);
       }
     }
   }
@@ -42,7 +42,7 @@ function printFolderStructure(currentPath,  indent = '',dir="", collected = {}) 
 }
 
 
-console.log(`🧭 Scanning from: ${basePath}`);
+console.log(`Scanning from: ${basePath}`);
 const collected = printFolderStructure(basePath);
 generateFiles(collected)
 
@@ -51,7 +51,7 @@ function generateFiles(collected) {
 
   for (const [folder, data] of Object.entries(collected)) {
     const outputFile = path.join(outputPath, `${folder}.js`);
-    console.log(`📦 Generate files for : ${folder}`);
+    console.log(`Generate files for : ${folder}`);
     const fileContent = `export const ${folder} = ${JSON.stringify(data, null, 2)};`;
   
     fs.writeFileSync(outputFile, fileContent, 'utf-8');
@@ -111,7 +111,7 @@ function parseQueryFile(content, folderName, fileName, date) {
     context: null,
     inidces: [],
     query,
-    ontologies: [folderName, ...prefixes],
+    ontologies: prefixes,
     sparqlConcepts,
     category: `sib-swiss ${folderName}`
   };

@@ -10,7 +10,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?protein \n    ?plasmidOrOrganelle\n    ?label\nWHERE {\n    ?protein a up:Protein ;\n      up:encodedIn ?plasmidOrOrganelle .\n    OPTIONAL {\n        ?plasmidOrOrganelle rdfs:label ?label .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -36,7 +35,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?entry ?sequence ?isCanonical\nWHERE {\n  # We don't want to look into the UniParc graph which will \n  # confuse matters\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n      # we need the UniProt entries that are human\n      ?entry a up:Protein ;\n        up:organism taxon:9606 ;\n      # and we select the computationally mapped sequences\n        up:potentialSequence ?sequence .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -62,7 +60,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?primaryAccession\n  ?protein\nWHERE {\n  ?protein a up:Protein .\n  BIND(substr(str(?protein), strlen(str(uniprotkb:))+1) AS ?primaryAccession)\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -88,7 +85,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n    ?proteomeData\n    ?replicon\n    ?proteome  \nWHERE {\n  # reviewed entries (UniProtKB/Swiss-Prot)\n  ?protein up:reviewed true . \n  # restricted to Human taxid\n  ?uniprot up:organism taxon:9606 . \n  ?uniprot up:proteome ?proteomeData .\n  BIND( strbefore( str(?proteomeData), \"#\" ) as ?proteome )\n  BIND( strafter( str(?proteomeData), \"#\" ) as ?replicon )\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -114,7 +110,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein\n  ?fullName\nWHERE {\n  ?protein a up:Protein ;\n           up:recommendedName ?recommendedName .\n  ?recommendedName up:fullName ?fullName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -138,7 +133,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein \n  ?fullName\nWHERE {\n  ?protein a up:Protein ;\n           up:recommendedName ?recommendedName .\n  ?recommendedName up:shortName ?fullName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -162,7 +156,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?reviewed\nWHERE {\n  ?protein a up:Protein . \n  ?protein up:reviewed ?reviewed . \n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -186,7 +179,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?entry ?sequence ?isCanonical\nWHERE {\n  # We don't want to look into the UniParc graph which will \n  # confuse matters\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n      # we need the UniProt entries that are human\n      ?entry a up:Protein ;\n\tup:organism taxon:9606 ;\n      \tup:sequence ?sequence .\n      # If the sequence is a \"Simple_Sequence\" it is likely to be the \n      # cannonical sequence\n      OPTIONAL {\n       \t?sequence a up:Simple_Sequence .\n        BIND(true AS ?likelyIsCanonical)\n      }\n      # unless we are dealing with an external isoform\n      # see https://www.uniprot.org/help/canonical_and_isoforms\n      OPTIONAL {\n       \tFILTER(?likelyIsCanonical)\n        ?sequence a up:External_Sequence .\n        BIND(true AS ?isComplicated)\n      }\n      # If it is an external isoform it's id would not match the \n      # entry primary accession\n      BIND(IF(?isComplicated, STRENDS(STR(?entry), STRBEFORE(SUBSTR(STR(?sequence), 34),'-')),?likelyIsCanonical) AS ?isCanonical)\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -221,7 +213,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?protein ?interproMemberDatabaseXref ?matchStart ?matchEnd\nWHERE{\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n    VALUES ?protein {<http://purl.uniprot.org/uniprot/P05067>} .\n    ?protein rdfs:seeAlso ?sa .\n  }\n  GRAPH <http://sparql.uniprot.org/uniparc> {\n    ?uniparc up:sequenceFor ?protein ;\n      rdfs:seeAlso ?interproMemberDatabaseXref .\n    ?interproDatabaseXref up:signatureSequenceMatch ?sam .\n    ?sam faldo:begin ?sab ;\n      faldo:end ?sae .\n    ?sab faldo:position ?matchStart ;\n      faldo:reference ?uniparc .\n    ?sae  faldo:position ?matchEnd ;\n      faldo:reference ?uniparc .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -247,7 +238,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX genex: <http://purl.org/genex#>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX uberon: <http://purl.obolibrary.org/obo/uo#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?rhea\n  ?protein\n  ?anat\nWHERE\n{\n  GRAPH <https://sparql.rhea-db.org/rhea> {\n    ?rhea rh:isTransport true .\n  }\n  ?protein up:annotation ?ann .\n  ?protein up:organism taxon:9606 .\n  ?ann up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?rhea .\n  BIND(uberon:0002107 AS ?anat)\n  SERVICE <https://www.bgee.org/sparql/> {\n    ?seq genex:isExpressedIn ?anat .\n    ?seq lscr:xrefUniprot ?protein .\n    ?seq orth:organism ?organism .\n    ?organism obo:RO_0002162 taxon:9606 .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -276,7 +266,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?annotation ?begin ?text\nWHERE\n{\n        ?protein a up:Protein ;\n            up:organism taxon:9606 ; \n            up:annotation ?annotation .\n        ?annotation a up:Natural_Variant_Annotation ;\n            rdfs:comment ?text ;\n            up:substitution ?substitution ;\n            up:range/faldo:begin\n                [ faldo:position ?begin ;\n                  faldo:reference ?sequence ] .\n        ?sequence rdf:value ?value .\n        BIND (substr(?value, ?begin, 1) as ?original) .\n        FILTER(?original = 'Y' && ?substitution = 'F') .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -302,7 +291,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?protein \n    ?plasmidOrOrganelle\n    ?label\nWHERE {\n    ?protein a up:Protein ;\n      up:encodedIn ?plasmidOrOrganelle .\n    OPTIONAL {\n        ?plasmidOrOrganelle rdfs:label ?label .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -327,7 +315,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX faldo: <http://biohackathon.org/resource/faldo#>\n\nSELECT (CONCAT('>', ?chainSeqId, '\\\\n', (SUBSTR(?iupacAA, ?begin, (?end-?begin+1))))  AS ?chainFasta)\nWHERE {\n  BIND(\"PRO_0000268053\" AS ?chainSeqId) \n  BIND(IRI(CONCAT(\"http://purl.uniprot.org/annotation/\", ?chainSeqId)) AS ?annId)\n  ?annId up:range ?range .\n  ?range faldo:begin [ faldo:reference ?reference ; faldo:position ?begin ] ;\n     faldo:end [ faldo:position ?end ] .\n  ?reference rdf:value ?iupacAA .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -356,7 +343,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX faldo: <http://biohackathon.org/resource/faldo#>\n\nSELECT  \n  (COUNT(DISTINCT ?protein) AS ?humanTransportEnzymes)\nWHERE {\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n    ?protein up:organism taxon:9606 ;\n             up:annotation ?a .\n    ?a a up:Catalytic_Activity_Annotation ;\n      up:catalyticActivity ?ca .\n    ?ca up:catalyzedReaction ?rhea .\n  }\n  GRAPH <https://sparql.rhea-db.org/rhea>{\n  \t?rhea rh:isTransport true .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -384,7 +370,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n# select all pairs (sprot,rhea) where rhea involves a lipid\nPREFIX rh:<http://rdf.rhea-db.org/>\nPREFIX CHEBI:<http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX up:<http://purl.uniprot.org/core/>\nPREFIX uniprotkb:<http://purl.uniprot.org/uniprot/>\n\nSELECT \n  (COUNT(*) as ?cnt) \nWHERE \n{\n  {\n    SELECT ?protein ?rhea \n    WHERE {\n      SERVICE <https://sparql.rhea-db.org/sparql> {\n        SELECT \n          distinct \n           ?rhea \n        WHERE {\n          ?rhea rdfs:subClassOf rh:Reaction .\n          ?rhea rh:status rh:Approved .\n          ?rhea rh:side ?reactionSide .\n          ?reactionSide rh:contains ?participant .\n          ?participant rh:compound ?compound .\n          ?compound rh:chebi ?chebi .\n          ?chebi rdfs:subClassOf+ CHEBI:18059 .\n        }\n      }\n    }\n  }\n  ?protein a up:Protein .\n  ?protein up:reviewed true .\n  ?protein up:annotation ?a .\n  ?a a up:Catalytic_Activity_Annotation .\n  ?a up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?rhea .\n}",
     "ontologies": [
-      "UniProt",
       "DCTERMS",
       "EX",
       "RDF",
@@ -414,7 +399,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up:<http://purl.uniprot.org/core/>\nPREFIX ec:<http://purl.uniprot.org/enzyme/>\nPREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT \n  (count(distinct ?protein) as ?proteinCount)\nWHERE\n{\n  ?protein up:reviewed true .\n  OPTIONAL{?protein up:enzyme ?ecNumber}\n  OPTIONAL{?protein up:domain/up:enzyme ?ecNumber}\n  OPTIONAL{?protein up:component/up:enzyme ?ecNumber}\n  FILTER (BOUND(?ecNumber))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA"
@@ -440,7 +424,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up:<http://purl.uniprot.org/core/>\nPREFIX ec:<http://purl.uniprot.org/enzyme/>\nPREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT \n  (count(distinct ?ecProt) as ?ecNumberInProteinCount)\n  (count(distinct ?ecDomain) as ?ecNumberInDomainCount)\n  (count(distinct ?ecComponent) as ?ecNumberInComponentCount)\nWHERE\n{\n  ?protein up:reviewed true .\n  OPTIONAL {?protein up:enzyme ?ecProt . } .\n  OPTIONAL {?protein up:domain/up:enzyme ?ecDomain . } .\n  OPTIONAL {?protein up:component/up:enzyme ?ecComponent . } .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA"
@@ -464,7 +447,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX lscr: <http://purl.org/lscr#>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT DISTINCT ?PROTEIN_1 ?PROTEIN_2 ?UNIPROT_XREF_1 ?UNIPROT_XREF_2 WHERE {\n\t?taxon_1 up:commonName 'Mouse' .\n\t?taxon_2 up:commonName 'Rabbit' .\n\tSERVICE <https://sparql.omabrowser.org/sparql/> {\n\t\t?cluster a orth:OrthologsCluster .\n\t\t?cluster orth:hasHomologousMember ?node1 .\n\t\t?cluster orth:hasHomologousMember ?node2 .\n\t\t?node2 orth:hasHomologousMember* ?PROTEIN_2 .\n\t\t?node1 orth:hasHomologousMember* ?PROTEIN_1 .\n\t\t?PROTEIN_1 a orth:Protein .\n\t\t?PROTEIN_1 orth:organism/obo:RO_0002162 ?taxon_1 ;\n\t\t\trdfs:label 'HBB-Y' ;\n\t\t\tlscr:xrefUniprot ?UNIPROT_XREF_1 .\n\t\t?PROTEIN_2 a orth:Protein .\n\t\t?PROTEIN_2 orth:organism/obo:RO_0002162 ?taxon_2 .\n\t\t?PROTEIN_2 lscr:xrefUniprot ?UNIPROT_XREF_2 .\n\t\tFILTER ( ?node1 != ?node2 )\n\t}\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -492,7 +474,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX sio: <http://semanticscience.org/resource/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX genex: <http://purl.org/genex#>\nSELECT DISTINCT ?protein ?orthologous_protein ?gene ?annotation_text WHERE {\n  {\n  \tSELECT ?protein ?annotation_text WHERE {\n      ?protein a up:Protein ;\n          up:organism taxon:9606 ;\n          up:annotation ?annotation .\n      ?annotation rdfs:comment ?annotation_text .\n      ?annotation a up:Disease_Annotation .\n      FILTER CONTAINS (?annotation_text, \"glioblastoma\")\n    }\n  }\n  SERVICE <https://sparql.omabrowser.org/sparql/> {\n    SELECT ?orthologous_protein ?protein ?gene WHERE {\n    ?protein_OMA a orth:Protein .\n    ?orthologous_protein a orth:Protein .\n    ?cluster a orth:OrthologsCluster .\n    ?cluster orth:hasHomologousMember ?node1 .\n    ?cluster\n    orth:hasHomologousMember ?node2 .\n    ?node2 orth:hasHomologousMember* ?protein_OMA .\n    ?node1 orth:hasHomologousMember* ?orthologous_protein .\n    ?orthologous_protein orth:organism/obo:RO_0002162 taxon:10116 . # rattus norvegicus\n    ?orthologous_protein sio:SIO_010079 ?gene .\n    ?protein_OMA lscr:xrefUniprot ?protein .\n    FILTER(?node1 != ?node2)\n\t\t}\n\t}\n  SERVICE <https://www.bgee.org/sparql/> {\n    ?gene genex:isExpressedIn ?a .\n    ?a rdfs:label \"brain\" .\n    ?gene orth:organism ?s . \n    ?s obo:RO_0002162 taxon:10116.\n\t}\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -520,7 +501,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up:<http://purl.uniprot.org/core/>\nPREFIX taxon:<http://purl.uniprot.org/taxonomy/>\nPREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\nPREFIX orth:<http://purl.org/net/orth#>\nPREFIX dcterms:<http://purl.org/dc/terms/>\nPREFIX obo:<http://purl.obolibrary.org/obo/>\nPREFIX lscr:<http://purl.org/lscr#>\nPREFIX genex:<http://purl.org/genex#>\nPREFIX sio: <http://semanticscience.org/resource/>\nSELECT ?gene ?orthologous_protein2 WHERE {\n  {\n    SELECT ?protein1 WHERE {\n      ?protein1 a up:Protein;\n        up:organism/up:scientificName 'Homo sapiens' ;\n        up:annotation ?annotation .\n      ?annotation rdfs:comment ?annotation_text.\n      ?annotation a up:Disease_Annotation .\n      FILTER CONTAINS (?annotation_text, \"cancer\")\n    }\n  }\n  SERVICE <https://sparql.omabrowser.org/sparql/> {\n    SELECT ?orthologous_protein2 ?protein1 ?gene WHERE {\n      ?protein_OMA a orth:Protein .\n      ?orthologous_protein2 a orth:Protein .\n      ?cluster a orth:OrthologsCluster .\n      ?cluster orth:hasHomologousMember ?node1 .\n      ?cluster orth:hasHomologousMember ?node2 .\n      ?node2 orth:hasHomologousMember* ?protein_OMA .\n      ?node1 orth:hasHomologousMember* ?orthologous_protein2 \n      .?orthologous_protein2 orth:organism/obo:RO_0002162/up:scientificName 'Rattus norvegicus' .\n      ?orthologous_protein2 sio:SIO_010079 ?gene .\n      ?protein_OMA lscr:xrefUniprot ?protein1 .\n      FILTER(?node1 != ?node2)\n    }\n  }\n  SERVICE <https://www.bgee.org/sparql/> {\n    ?gene genex:isExpressedIn ?anatEntity .\n    ?anatEntity rdfs:label 'brain' .\n    ?gene orth:organism ?org . \n    ?org obo:RO_0002162 taxon:10116 .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -547,7 +527,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up:<http://purl.uniprot.org/core/>\nSELECT \n  (COUNT(DISTINCT ?enzyme) AS ?distinctEnzymesInUniRef50Seed)\nWHERE {\n  GRAPH <http://sparql.uniprot.org/uniprot>{\n  \t?protein ( up:enzyme | up:domain/up:enzyme | up:component/up:enzyme ) ?enzyme .\n  }\n  GRAPH <http://sparql.uniprot.org/uniref>{\n    ?protein up:seedFor ?cluster .\n    ?cluster up:identity 0.5 .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -575,7 +554,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?begin ?end\nWHERE \n{\n\t?protein a up:Protein .\n\t?protein up:annotation ?annotation .\n\t?annotation a up:Transmembrane_Annotation .\n\t?annotation up:range ?range .\n\t?range faldo:begin/faldo:position ?begin .\n\t?range faldo:end/faldo:position ?end\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -599,7 +577,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up:<http://purl.uniprot.org/core/>\nPREFIX taxon:<http://purl.uniprot.org/taxonomy/>\n\nSELECT ?taxon ?reference_proteome\nWHERE\n{\n  VALUES (?taxid) {\n    (623) # Shigella flexneri\n    (633) # Yersinia pseudotuberculosis\n  } \n  # Convert the digit to a correct IRI\n  BIND(IRI(CONCAT(STR(taxon:), ?taxid)) AS ?taxon)\n  ?taxon up:scientificName ?taxonName .\n  OPTIONAL {\n    ?reference_proteome a up:Reference_Proteome .\n    ?reference_proteome up:organism ?taxon .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -630,7 +607,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n\t?protein\n\t?disease\nWHERE {\n\t?protein a up:Protein ;\n    \tup:annotation ?annotation .\n\t?annotation a up:Disease_Annotation ;\n    \tup:disease ?disease .\n\t?disease a up:Disease .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "EX120",
       "RDFS",
@@ -656,7 +632,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\n\nSELECT\n  ?protein\n  ?chebi\nWHERE {\n  GRAPH <https://sparql.rhea-db.org/rhea> {\n    ?rhea rh:isTransport true .\n    ?rhea rh:side/rh:contains/rh:compound ?compound .\n    ?compound (rh:chebi|(rh:reactivePart/rh:chebi)|rh:underlyingChebi) ?chebi .\n  }\n  # CHEBI:18059 is the class for all Lipids\n  ?chebi rdfs:subClassOf* CHEBI:18059 .\n \n  \n  # Select human reviewed entries from Swiss-Prot\n  ?protein up:reviewed true ; \n    up:organism taxon:9606 .\n   # Link protein to catalytic activity, then to Rhea reaction\n  ?protein up:annotation?annotation .\n  ?annotation up:catalyticActivity?catalytic_activity_obj .\n  ?catalytic_activity up:catalyzedReaction?rhea .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "EX120",
       "RDFS",
@@ -685,7 +660,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT ?protein\nWHERE\n{\n\t?protein a up:Protein . \n\t?protein up:created '2010-11-30'^^xsd:date\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -709,7 +683,6 @@ export const UniProt = [
     "inidces": [],
     "query": null,
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -729,7 +702,6 @@ export const UniProt = [
     "inidces": [],
     "query": null,
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -749,7 +721,6 @@ export const UniProt = [
     "inidces": [],
     "query": null,
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -770,7 +741,6 @@ export const UniProt = [
     "inidces": [],
     "query": null,
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -792,7 +762,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT (AVG(?linksToPdbPerEntry) AS ?avgLinksToPdbPerEntry)\nWHERE\n{\n\tSELECT ?protein (COUNT(DISTINCT ?db) AS ?linksToPdbPerEntry)\n\tWHERE\n\t{\n\t\t?protein a up:Protein .\n\t\t?protein rdfs:seeAlso ?db .\n\t\t?db up:database <http://purl.uniprot.org/database/PDB> .\n\t}\n\tGROUP BY ?protein ORDER BY DESC(?linksToPdbPerEntry)\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -826,7 +795,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX ec: <http://purl.uniprot.org/enzyme/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?ecClass (COUNT(?protein) as ?size)\nWHERE\n{\n    VALUES (?ecClass) {(ec:1.-.-.-) (ec:2.-.-.-) (ec:3.-.-.-) (ec:4.-.-.-) (ec:5.-.-.-) (ec:6.-.-.-) (ec:7.-.-.-)} .\n    ?protein ( up:enzyme | up:domain/up:enzyme | up:component/up:enzyme ) ?enzyme .\n    # Enzyme subclasses are materialized, do not use rdfs:subClassOf+\n    ?enzyme rdfs:subClassOf ?ecClass .\n}\nGROUP BY ?ecClass ORDER BY ?ecClass",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -855,7 +823,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?accession\n    ?annotation_acc \n    ?pubmed\nWHERE\n{\n        ?protein a up:Protein ;\n            up:annotation ?annotation .\n        ?annotation a up:Natural_Variant_Annotation .\n        ?linkToEvidence rdf:object ?annotation ;\n                        up:attribution ?attribution .\n        ?attribution up:source ?source .\n        ?source a up:Journal_Citation .\n  BIND(SUBSTR(STR(?protein),33) AS ?accession)\n  BIND(IF(CONTAINS(STR(?annotation), \"#SIP\"), SUBSTR(STR(?annotation),33), SUBSTR(STR(?annotation),36))AS?annotation_acc)\n  BIND(SUBSTR(STR(?source),35) AS ?pubmed)\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -886,7 +853,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?taxon\nFROM <http://sparql.uniprot.org/taxonomy>\nWHERE\n{\n    ?taxon a up:Taxon .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -912,7 +878,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?source \n    (COUNT(?attribution) AS ?attribitions)\nWHERE\n{\n        ?protein a up:Protein ;\n            up:organism taxon:9606 ;\n            up:annotation ?annotation .\n        ?linkToEvidence rdf:object ?annotation ;\n                        up:attribution ?attribution .\n        ?attribution up:source ?source .\n        ?source a up:Journal_Citation .\n} GROUP BY ?source ORDER BY DESC(COUNT(?attribution))",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -942,7 +907,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT \n    ?protein \n    ?disease \n    ?location_inside_cell \n    ?cellcmpt\nWHERE\n{\n    ?protein up:annotation ?diseaseAnnotation , ?subcellAnnotation .\n    ?diseaseAnnotation up:disease/skos:prefLabel ?disease .\n    ?subcellAnnotation up:locatedIn/up:cellularComponent ?cellcmpt .\n    ?cellcmpt skos:prefLabel ?location_inside_cell .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -966,7 +930,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX GO:<http://purl.obolibrary.org/obo/GO_>\n\nSELECT \n    (CONCAT(SUBSTR(STR(?protein), 33)) AS ?uniprot)\n    (GROUP_CONCAT(?celtype; separator=\";\") AS ?celtypes)\n    (GROUP_CONCAT(?biotype; separator=\";\") AS ?biotypes)\n    (GROUP_CONCAT(?moltype; separator=\";\") AS ?moltypes)\nWHERE\n{\n    VALUES (?ac) {(\"Q6GZX4\") (\"Q96375\")}\n    BIND (IRI(CONCAT(\"http://purl.uniprot.org/uniprot/\",?ac)) AS ?protein)\n    ?protein a up:Protein .\n    ?protein up:classifiedWith ?goTerm .\n    #Determine if the type is biological_process\n    OPTIONAL {\n        ?goTerm rdfs:subClassOf GO:0008150 .\n        ?goTerm rdfs:label ?biotype .\n    }\n    #Determine if the type is cellular_component\n    OPTIONAL {\n        ?goTerm rdfs:subClassOf GO:0005575 .\n        ?goTerm rdfs:label ?celtype .\n    }\n    #Determine if the type is molecular_function\n    OPTIONAL {\n        ?goTerm rdfs:subClassOf GO:0003674 .\n        ?goTerm rdfs:label ?moltype .\n    }\n    #Filter out the uniprot keywords\n    FILTER(bound(?biotype) || bound(?celtype) || bound(?moltype))\n} GROUP BY ?protein",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1004,7 +967,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX GO: <http://purl.obolibrary.org/obo/GO_>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n    (COUNT(DISTINCT(?protein)) AS ?pc)\nWHERE\n{   \n    ?protein rdf:type up:Protein ;\n        up:reviewed true  ;\n        up:organism taxon:9606 ;\n        up:classifiedWith|(up:classifiedWith/rdfs:subClassOf) GO:0016301 .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1033,7 +995,6 @@ export const UniProt = [
     "inidces": [],
     "query": "SELECT ?version\nFROM <https://sparql.uniprot.org/.well-known/void>\nWHERE\n{\n    [] <http://purl.org/pav/version> ?version\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1057,7 +1018,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?anyKindOfName\nWHERE\n{\n\t\t?protein a up:Protein .\n\t\t?protein (up:recommendedName|up:alternativeName) ?structuredName .\n\t\t?structuredName ?anyKindOfName  \"HLA class I histocompatibility antigen, B alpha chain\" .\n\t\t?anyKindOfName rdfs:subPropertyOf up:structuredNameType .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1082,7 +1042,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?anyKindOfName\nWHERE\n{\n\t\t?protein a up:Protein .\n\t\t?protein (up:recommendedName|up:alternativeName)|((up:domain|up:component)/(up:recommendedName|up:alternativeName)) ?structuredName .\n\t\t?structuredName ?anyKindOfName  \"HLA class I histocompatibility antigen, B-73 alpha chain\" .\n\t\t?anyKindOfName rdfs:subPropertyOf up:structuredNameType .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1107,7 +1066,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?anyKindOfName \n  ?names \n  ?partType\nWHERE\n{\n  BIND(<http://purl.uniprot.org/uniprot/P05067> AS ?protein)\n  ?protein a up:Protein .\n  {\n    ?protein (up:recommendedName|up:alternativeName) ?structuredName .\n  }\n    UNION\n  {\n    VALUES(?partType){(up:domain) (up:component)}\n    ?protein ?partType ?part .\n    ?part (up:recommendedName|up:alternativeName) ?structuredName .\n  }\n  ?structuredName ?anyKindOfName  ?names .\n  ?anyKindOfName rdfs:subPropertyOf up:structuredNameType .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1135,7 +1093,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?protein\n  ?proteome \nWHERE\n{\n  ?protein a up:Protein ;\n           up:reviewed true ;\n           up:proteome ?proteome .\n  VALUES (?proteome) {(<http://purl.uniprot.org/proteomes/UP000000625#Chromosome>)}\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1161,7 +1118,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?englishLabelStr\nWHERE {\n    SERVICE <https://data.allie.dbcls.jp/sparql>{\n        ?x rdfs:label \"アミロイド前駆体タンパク質\"@ja ;\n            rdfs:label ?englishLabel .\n        FILTER(lang(?englishLabel) = \"en\")\n    }\n    BIND (STR(?englishLabel) AS ?englishLabelStr)\n    ?protein a up:Protein .\n    {\n        ?protein (up:recommendedName|up:alternativeName) ?structuredName .\n    }\n    UNION\n    {\n        VALUES(?partType){(up:domain) (up:component)}\n            ?protein ?partType ?part .\n        ?part (up:recommendedName|up:alternativeName) ?structuredName .\n    }\n    ?structuredName ?anyKindOfName  ?englishLabelStr .\n    ?anyKindOfName rdfs:subPropertyOf up:structuredNameType .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1193,7 +1149,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?taxon ?name\nWHERE\n{\n    ?taxon a up:Taxon .\n    ?taxon up:scientificName ?name .\n    # Taxon subclasses are materialized, do not use rdfs:subClassOf+\n    ?taxon rdfs:subClassOf taxon:2 .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1218,7 +1173,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein \n  (GROUP_CONCAT(?locusName; separator=',') AS ?locusNames)\nWHERE \n{ \n  ?protein a up:Protein ;\n    up:organism taxon:360910 ;\n    up:encodedBy ?gene .\n  ?gene up:locusName ?locusName .\n} \nGROUP BY ?protein \nHAVING (COUNT(?locusName) > 1)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1249,7 +1203,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?sequence ?entries\nWHERE\n{\n    SELECT \n        ?sequence \n        (COUNT(?entry) AS ?entries)\n    WHERE\n    {\n        GRAPH <http://sparql.uniprot.org/uniparc> {\n            ?sequence up:sequenceFor ?entry .\n        }\n    } GROUP BY ?sequence\n} ORDER BY DESC(?entries)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1280,7 +1233,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?protein \n    (GROUP_CONCAT(?comment; separator=\", \") AS ?comments)\nWHERE\n{\n    ?protein a up:Protein ;\n            up:annotation ?annotation . \n    ?annotation rdf:type up:Topological_Domain_Annotation ;\n            rdfs:comment ?comment .\n} \nGROUP BY ?protein \nHAVING (COUNT(?annotation) > 1)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1311,7 +1263,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?annotation ?comment\nWHERE {\n    ?annotation a up:Natural_Variant_Annotation ;\n        rdfs:comment ?comment . \n} \nORDER BY DESC(STRLEN(?comment))",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1339,7 +1290,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?comment1 \n    ?comment2 \n    (COUNT(?comment1) AS ?count1)\nWHERE\n{\n    ?protein a up:Protein ;\n               up:annotation ?annotation1 , \n                             ?annotation2 . \n    ?annotation1 rdf:type up:Topological_Domain_Annotation ;\n        rdfs:comment ?rawComment1 .\n    ?annotation2 rdf:type up:Topological_Domain_Annotation ;\n        rdfs:comment ?rawComment2 . \n    BIND(IF(contains(?rawComment1, ';'), \n            STRBEFORE(?rawComment1,';'), \n            ?rawComment1) AS ?comment1)\n    BIND(IF(contains(?rawComment2, ';'), \n            STRBEFORE(?rawComment2,';'), \n            ?rawComment2) AS ?comment2)\n    FILTER(?annotation1 != ?annotation2)\n} \nGROUP BY ?comment1 ?comment2 \nORDER BY DESC(COUNT(?comment1))",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1373,7 +1323,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?similar ?identity\nFROM <http://sparql.uniprot.org/uniref>\nFROM <http://sparql.uniprot.org/uniprot>\nWHERE\n{\n    BIND (uniprotkb:P05607 AS ?protein)\n    ?cluster up:member ?member ;\n             up:member/up:sequenceFor ?protein;\n             up:identity ?identity .\n    ?member up:sequenceFor ?similar .\n    FILTER(!sameTerm(?similar, ?protein))\n} \nORDER BY DESC(?identity)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1404,7 +1353,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX orthodb: <http://purl.orthodb.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?orthoGroup\n  ?scientificName\n  ?functionComment\n  ?prefferedGeneName\n  ((STRLEN(?value) - ?medianLength) as ?deviationFromMedianLength)\nWHERE\n{\n  uniprotkb:P05067 a up:Protein ;\n        up:organism/up:scientificName ?scientificName ;\n        rdfs:seeAlso ?orthoGroup ;\n        up:encodedBy/skos:prefLabel ?prefferedGeneName ;\n          up:sequence/rdf:value ?value .\n  OPTIONAL {\n    ?protein up:annotation ?functionAnnotation .\n    ?functionAnnotation a up:Function_Annotation ;\n      rdfs:comment ?functionComment .\n  }\n  SERVICE <https://sparql.orthodb.org/sparql>{\n    ?orthoGroup orthodb:ogMedianProteinLength ?medianLength .\n    ?orthoGroup orthodb:hasMember ?xref .\n    ?xref orthodb:xref/orthodb:xrefResource uniprotkb:P05067 .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1432,7 +1380,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?protein \n  ?comment\n  ?begin\n  ?end \nWHERE\n{\n  ?protein a up:Protein ;\n    up:organism taxon:9606 ; \n    up:sequence ?sequence ;\n    up:annotation ?annotation .\n  ?annotation a up:Modified_Residue_Annotation ;\n    rdfs:comment ?comment ;\n    up:range ?range .\n  ?range \n    faldo:begin [ faldo:position ?begin ; faldo:reference ?sequence ] ;\n    faldo:end [ faldo:position ?end ; faldo:reference ?sequence ] .\n  ?sequence rdf:value ?aaSequence .\n  FILTER (SUBSTR(?aaSequence, ?begin -2 , 4) = \"VSTQ\")     \n  FILTER (CONTAINS(?comment, \"Phosphothreonine\"))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1460,7 +1407,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX p: <http://www.wikidata.org/prop/>\nPREFIX pq: <http://www.wikidata.org/prop/qualifier/>\nPREFIX ps: <http://www.wikidata.org/prop/statement/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\n\nSELECT \n\t?protein \n\t?begin\n\t?end\n\t?chromosome\n\t?assembly\nWHERE {\n    {\n        BIND(uniprotkb:P05067 AS ?proteinIRI)\n        BIND (SUBSTR(STR(?proteinIRI), STRLEN(STR(uniprotkb:))+1) AS ?protein)\n    }\n    SERVICE <https://query.wikidata.org/sparql> {\n        ?wp wdt:P352 ?protein ;\n            wdt:P702 ?wg . \n        ?wg p:P644   ?wgss .\n        ?wgss ps:P644        ?begin ;\n          pq:P1057/wdt:P1813 ?chromosome ;\n          pq:P659/rdfs:label ?assembly .\n        ?wg p:P645 ?wgse .\n        ?wgse ps:P645        ?end ;\n          pq:P1057/wdt:P1813 ?chromosome ;\n          pq:P659/rdfs:label ?assembly .\n        FILTER(lang(?assembly) = \"en\")\n  } \n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1491,7 +1437,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT  \n  ?protein\n  ?rhea \nWHERE {\n  # ECO 269 is experimental evidence\n  BIND (<http://purl.obolibrary.org/obo/ECO_0000269> as ?evidence)\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n    ?protein up:reviewed true ;\n      up:annotation ?a ;\n      up:attribution ?attribution  .\n\n    ?a a up:Catalytic_Activity_Annotation ;\n      up:catalyticActivity ?ca .\n    ?ca up:catalyzedReaction ?rhea .\n  \n    [] rdf:subject ?a ;\n      rdf:predicate up:catalyticActivity ;\n      rdf:object ?ca ;\n      up:attribution ?attribution .\n\n    ?attribution up:evidence ?evidence .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1518,7 +1463,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?organism ?isoform ?sequence\nWHERE\n{\n    ?protein a up:Protein .\n    ?protein up:organism ?organism .\n    # Taxon subclasses are materialized, do not use rdfs:subClassOf+\n    ?organism rdfs:subClassOf taxon:83333 .\n    ?protein up:sequence ?isoform .\n    ?isoform rdf:value ?sequence .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1542,7 +1486,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT DISTINCT ?protein ?chemblEntry\nWHERE {\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n    ?rhea rdfs:subClassOf rh:Reaction ;\n      rh:side/rh:contains/rh:compound/rh:chebi/rdfs:subClassOf+ CHEBI:26739 .\n  }\n  ?ca up:catalyzedReaction ?rhea .\n  ?protein up:annotation/up:catalyticActivity ?ca ;\n    up:organism taxon:9606 ;\n    rdfs:seeAlso ?chemblEntry .\n  ?chemblEntry up:database <http://purl.uniprot.org/database/ChEMBL> .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1570,7 +1513,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT DISTINCT \n  ?protein\nWHERE {\n  ?protein a up:Protein ;\n    up:sequence ?sequence .\n  MINUS { ?sequence up:fragment [] }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1596,7 +1538,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX patent: <http://data.epo.org/linked-data/def/patent/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?citation ?patent ?application ?applicationNo\nWHERE\n{\n  ?citation a up:Patent_Citation ;\n    skos:exactMatch ?patent .\n  FILTER(CONTAINS(STR(?patent), 'EP'))\n  BIND(SUBSTR(STR(?patent), 35) AS ?applicationNo)\n  SERVICE <https://data.epo.org/linked-data/query>{\n    ?application patent:publicationNumber ?applicationNo\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1628,7 +1569,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX patent: <http://data.epo.org/linked-data/def/patent/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?grantDate ?patent ?application ?applicationNo\nWHERE\n{\n    ?citation a up:Patent_Citation ;\n  skos:exactMatch ?patent .\n  BIND(SUBSTR(STR(?patent), 35) AS ?applicationNo)\n  BIND(SUBSTR(STR(?patent), 33, 2) AS ?countryCode)\n  SERVICE <https://data.epo.org/linked-data/query>{\n    ?publication patent:publicationNumber ?applicationNo ;\n      patent:application ?application .\n    ?application patent:grantDate ?grantDate .\n  }\n  BIND((year(now()) - 20) AS ?thisYearMinusTwenty)\n  BIND(year(?grantDate) AS ?grantYear)\n  FILTER(?grantYear < ?thisYearMinusTwenty)\n} ORDER BY ?grantYear",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1660,7 +1600,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?interpro\n\t?rhea\nFROM <http://sparql.uniprot.org/uniprot>\nWHERE \n{\n  ?protein up:reviewed true .\n  ?protein up:annotation ?annotation .\n  ?annotation up:catalyticActivity ?rhea .\n  ?protein rdfs:seeAlso ?interpro .\n  ?interpro up:database <http://purl.uniprot.org/database/InterPro> .\n} ORDER BY ?rhea",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1687,7 +1626,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX chebihash: <http://purl.obolibrary.org/obo/chebi#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX wdt: <http://www.wikidata.org/prop/direct/>\n\nSELECT DISTINCT ?protein ?proteinFullName ?wikiChemical ?wikiChemicalLabel ?medicalConditionTreatedLabel\nWHERE {\n  # ChEBI: retrieve members of the ChEBI class ChEBI:15889 (sterol)\n  # Rhea: retrieve the reactions involving these ChEBI as participants\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n    ?reaction rdfs:subClassOf rh:Reaction ;\n      rh:status rh:Approved ;\n      rh:side ?reactionSide .\n    ?reactionSide\n      rh:contains ?participant .\n    ?participant rh:compound ?compound\n    {\n      ?compound rh:chebi ?chebi .\n      ?chebi (rdfs:subClassOf)+ CHEBI:15889\n    } UNION {\n      ?compound rh:chebi ?chebi .\n      ?chebi2 rdfs:subClassOf ?chebiRestriction .\n      ?chebiRestriction\n\t\ta owl:Restriction ;\n\t\towl:onProperty chebihash:has_major_microspecies_at_pH_7_3 ;\n\t\towl:someValuesFrom ?chebi .\n      ?chebi2 (rdfs:subClassOf)+ CHEBI:15889\n    }\n  }\n  # UniProt: retrieve the human (taxid:9606) enzymes catalyzing these Rhea reactions\n  ?ca up:catalyzedReaction  ?reaction .\n  ?a up:catalyticActivity  ?ca .\n  ?proteinIRI  up:annotation ?a ;\n    up:organism taxon:9606 ;\n    up:recommendedName ?proteinRecName .\n  ?proteinRecName up:fullName ?proteinFullName .\n  # Find drugs in wikidata that interact with the UniProt Proteins\n  BIND (SUBSTR(STR(?proteinIRI), STRLEN(STR(uniprotkb:))+1) AS ?protein)\n  SERVICE <https://query.wikidata.org/sparql> {\n    ?wp wdt:P352  ?protein .\n    ?wikiChemical wdt:P129 ?wp . # Physically interacts with\n    ?wikiChemical rdfs:label ?wikiChemicalLabel .\n    ?wikiChemical wdt:P2175 ?wmc . # Medical conndition treated\n    ?wmc rdfs:label ?medicalConditionTreatedLabel .\n    FILTER(lang(?medicalConditionTreatedLabel) = 'en')\n    FILTER(lang(?wikiChemicalLabel) = 'en')\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1722,7 +1660,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX eunisSpecies: <http://eunis.eea.europa.eu/rdf/species-schema.rdf#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?taxon\n    ?ncbiTaxid\n    ?eunisTaxon\n    ?eunisName \n    ?image\nWHERE\n{\n    GRAPH <http://sparql.uniprot.org/taxonomy>\n    {\n        ?taxon a up:Taxon .\n        # Taxon subclasses are materialized, do not use rdfs:subClassOf+\n        ?taxon rdfs:subClassOf taxon:8835 .\n        BIND(strafter(str(?taxon), 'onomy/') AS ?ncbiTaxid)\n    }\n    SERVICE <https://semantic.eea.europa.eu/sparql>\n    {\n        ?eunisTaxon a eunisSpecies:SpeciesSynonym ;\n           eunisSpecies:binomialName ?eunisName ;\n           eunisSpecies:sameSpeciesNCBI ?ncbiTaxid ;\n           <http://xmlns.com/foaf/0.1/depiction> ?image .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1750,7 +1687,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT ?protein ?from ?interestingRegion\nWHERE\n{\n  ?protein up:annotation ?annotation .\n  ?annotation a up:Transmembrane_Annotation .\n  # Get the coordinates of the Transmembrane\n  ?annotation up:range ?range .\n  ?range faldo:begin ?beginI .\n  ?beginI faldo:position ?begin .\n  ?beginI faldo:reference ?sequence .\n  # The aas will have the specific IUPAC aminoacids\n  ?sequence rdf:value ?aas .\n  # We calculate the start by substracting 10\n  BIND(?begin - 10 AS ?tenBeforeBegin)\n  # Can't start before the sequence starts or we might miss some results\n  BIND(IF(?tenBeforeBegin < 1, 0, ?tenBeforeBegin) AS ?from)\n  # Substring the IUPAC aminoacids\n  BIND(SUBSTR(?aas, ?from, 15) AS ?interestingRegion)\n  # The interestingRegion needds to contain an Alanine\n  FILTER(CONTAINS(?interestingRegion, 'A'))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1781,7 +1717,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n        DISTINCT\n            ?protein ?glycosite ?glycostructure ?glycoimage\nWHERE{\n  ?protein up:annotation ?annotation .\n  ?protein up:organism taxon:9606 .\n  ?annotation a up:Catalytic_Activity_Annotation .\n  ?protein up:sequence ?isoform .\n   \n  SERVICE <https://glyconnect.expasy.org/sparql> {\n    ?glycosite faldo:reference ?isoform .\n    ?glycosite faldo:position ?position .\n    ?specificglycosite faldo:location ?glycosite .\n    ?glycoprotein glycan:glycosylated_at ?specificglycosite .\n    ?glycostructure glycan:glycosylates_at ?specificglycosite .\n    ?glycostructure foaf:depiction ?glycoimage .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1807,7 +1742,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT DISTINCT ?protein ?ensemblGene ?reaction ?anatomicEntityLabel ?anatomicEntity\nWHERE {\n  # federated query to Rhea enadpoint\n  {\n    SELECT DISTINCT ?reaction WHERE {\n      SERVICE <https://sparql.rhea-db.org/sparql> {\n        ?reaction rdfs:subClassOf rh:Reaction ;\n          rh:equation ?reactionEquation ;\n          rh:side ?reactionSide .\n        ?reactionSide rh:contains ?participant .\n        ?participant rh:compound ?compound .\n        # compound constraint (CHEBI:16113 == cholesterol)\n        ?compound rh:chebi CHEBI:16113 .\n      }\n    }\n  }\n  # taxonomy constraint (taxon:9606 == Homo sapiens)\n  ?protein up:organism taxon:9606 ;\n    up:annotation ?a ;\n    rdfs:seeAlso / up:transcribedFrom ?ensemblGene .\n  ?a a up:Catalytic_Activity_Annotation ;\n    up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?reaction .\n  # federated query to Bgee (expression data)\n  BIND(IRI(REPLACE(STR(?ensemblGene), \"\\\\\\\\.[0-9]+$\", \"\")) AS ?ensemblGeneNoVersion)\n  SERVICE <https://www.bgee.org/sparql/> {\n    ?gene lscr:xrefEnsemblGene ?ensemblGeneNoVersion ;\n      genex:isExpressedIn ?anatomicEntity .\n    ?anatomicEntity rdfs:label ?anatomicEntityLabel .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1840,7 +1774,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein\nWHERE\n{\n    ?protein a up:Protein .\n    ?protein up:mnemonic 'A4_HUMAN'\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -1865,7 +1798,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX genex: <http://purl.org/genex#>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n    ?chebi\n    ?reaction\n    ?protein ?ensemblGene\n    ?anatomicEntityLabel\n    ?anatomicEntity\nWHERE {\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n    ?reaction rdfs:subClassOf rh:Reaction .\n    ?reaction rh:equation ?reactionEquation .\n    ?reaction rh:side ?reactionSide .\n    ?reactionSide rh:contains ?participant .\n    ?participant rh:compound ?compound .\n    ?compound rh:chebi ?chebi .\n    ?chebi rdfs:subClassOf* CHEBI:52639\n}\n  ?protein up:organism taxon:9606 .\n  ?protein up:annotation ?a .\n  ?a a up:Catalytic_Activity_Annotation .\n  ?a up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?reaction .\n  ?protein rdfs:seeAlso / up:transcribedFrom ?ensemblGene .\n\n  SERVICE  <https://www.bgee.org/sparql/> {\n    ?gene genex:isExpressedIn ?anatomicEntity .\n    ?gene lscr:xrefEnsemblGene ?ensemblGene .\n    ?anatomicEntity rdfs:label ?anatomicEntityLabel .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1893,7 +1825,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT \n    DISTINCT\n        ?uniprot\n        ?uniprotID\n        ?recname\n        ?gene\n        ?chebi\n        ?uniprotName\nWHERE {\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n     VALUES (?chebi) { (CHEBI:32395) }\n     ?rhea rh:side/rh:contains/rh:compound ?compound .\n     ?compound rh:chebi ?chebi .\n     ?chebi up:name ?uniprotName .\n  }\n  ?uniprot up:annotation/up:catalyticActivity/up:catalyzedReaction ?rhea .\n  ?uniprot up:mnemonic ?uniprotID .\n  ?uniprot up:recommendedName/up:fullName ?recname .\n  OPTIONAL {?uniprot up:encodedBy/skos:prefLabel ?gene .}\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1923,7 +1854,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX cco: <http://rdf.ebi.ac.uk/terms/chembl#>\nPREFIX chebihash: <http://purl.obolibrary.org/obo/chebi#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n        DISTINCT\n            ?protein\n            ?proteinFullName\n            ?activityType\n            ?standardActivityValue\n            ?standardActivityUnit\n            ?chemblMolecule\n            ?chemlbMoleculePrefLabel\nWHERE\n  {\n  # ChEBI: retrieve members of the ChEBI class ChEBI:15889 (sterol)\n  # Rhea: retrieve the reactions involving these ChEBI as participants\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n    ?reaction rdfs:subClassOf  rh:Reaction ;\n\t      rh:status        rh:Approved ;\n\t      rh:side          ?reactionSide .\n    ?reactionSide\n\t      rh:contains      ?participant .\n    ?participant rh:compound  ?compound\n    {\n      ?compound  rh:chebi  ?chebi .\n      ?chebi (rdfs:subClassOf)+ CHEBI:15889\n    } UNION {\n      ?compound  rh:chebi           ?chebi .\n      ?chebi2   rdfs:subClassOf     ?chebiRestriction .\n      ?chebiRestriction\n\t\ta           owl:Restriction ;\n\t\towl:onProperty      chebihash:has_major_microspecies_at_pH_7_3 ;\n\t\towl:someValuesFrom  ?chebi .\n      ?chebi2 (rdfs:subClassOf)+ CHEBI:15889\n    }\n  }\n  # UniProt: retrieve the human (taxid:9606) enzymes catalyzing these Rhea reactions\n  ?ca       up:catalyzedReaction  ?reaction .\n  ?a        up:catalyticActivity  ?ca .\n  ?protein  up:annotation         ?a ;\n\t    up:organism           taxon:9606 ;\n\t    up:recommendedName    ?proteinRecName .\n  ?proteinRecName\n\t    up:fullName           ?proteinFullName .\n  # Find drugs in wikidata that interact with the UniProt Proteins\n  # ChEMBL: retrieve the corresponding targets and with drugs in clinical phase 4\n  # Via https://idsm.elixir-czech.cz/sparql/\n  SERVICE <https://idsm.elixir-czech.cz/sparql/endpoint/idsm> {\n    ?activity a cco:Activity ;\n      cco:hasMolecule ?chemblMolecule ;\n      cco:hasAssay ?assay ;\n      cco:standardType ?activityType ;\n      cco:standardValue ?standardActivityValue ;\n      cco:standardUnits ?standardActivityUnit .\n    ?chemblMolecule cco:highestDevelopmentPhase ?highestDevelopmentPhase ;\n      rdfs:label ?chemblMoleculeLabel ;\n      skos:prefLabel ?chemlbMoleculePrefLabel .\n    FILTER (?highestDevelopmentPhase > 3)\n    ?assay cco:hasTarget ?target .\n    ?target cco:hasTargetComponent/cco:targetCmptXref ?protein .\n    ?protein a cco:UniprotRef .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1953,7 +1883,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX lscr: <http://purl.org/lscr#>\nPREFIX orth: <http://purl.org/net/orth#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n    ?chebi\n    ?reaction\n    ?humanProtein\n    ?mouseProtein\n    ?cluster \nWHERE {\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n    ?reaction rdfs:subClassOf rh:Reaction .\n    ?reaction rh:side/rh:contains/rh:compound ?compound .\n    ?compound rh:chebi ?chebi .\n    ?chebi rdfs:subClassOf* CHEBI:15889\n  }\n\n  ?humanProtein up:organism taxon:9606 .\n  ?humanProtein up:annotation ?a .\n  ?a a up:Catalytic_Activity_Annotation .\n  ?a up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?reaction .\n\n  SERVICE  <https://sparql.omabrowser.org/sparql> {\n    ?cluster a orth:ParalogsCluster .\n    ?cluster orth:hasHomologousMember ?node1 , ?node2 .\n    ?node1 orth:hasHomologousMember* ?orthoProtein1 .\n    ?node2 orth:hasHomologousMember* ?orthoProtein2 .\n    ?orthoProtein1 lscr:xrefUniprot ?mouseProtein .\n    ?orthoProtein2 lscr:xrefUniprot ?humanProtein .\n    # inTaxon mouse\n    ?orthoProtein1 orth:organism/<http://purl.obolibrary.org/obo/RO_0002162> taxon:10090 . \n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -1981,7 +1910,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sachem: <http://bioinfo.uochb.cas.cz/rdf/v1.0/sachem#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nSELECT \n  ?protein\n  ?mnemonic\n  ?proteinName\n  ?ligandSimilarityScore\n  ?ligand\nWHERE {\n  SERVICE <https://idsm.elixir-czech.cz/sparql/endpoint/chebi> {\n    ?ssc sachem:compound ?ligand; \n      sachem:score ?ligandSimilarityScore ;\n      sachem:similaritySearch ?sss .\n        # Smiles of Heme\n    ?sss    sachem:query \"CC1=C(CCC([O-])=O)C2=[N+]3C1=Cc1c(C)c(C=C)c4C=C5C(C)=C(C=C)C6=[N+]5[Fe-]3(n14)n1c(=C6)c(C)c(CCC([O-])=O)c1=C2\";\n      sachem:cutoff \"8e-1\"^^xsd:double ;\n      sachem:aromaticityMode sachem:aromaticityDetect ;\n      sachem:similarityRadius 1 ;\n      sachem:tautomerMode sachem:ignoreTautomers .\n  }\n  ?protein up:mnemonic ?mnemonic ;\n    up:recommendedName/up:fullName ?proteinName ;\n    up:annotation ?annotation .\n  ?annotation a up:Binding_Site_Annotation ;\n      up:ligand/rdfs:subClassOf ?ligand .\n}\nORDER BY DESC(?ligandSimilarityScore)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2010,7 +1938,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX obo: <http://purl.obolibrary.org/obo/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?ligand\n  ?ligandName \n  (COUNT(DISTINCT ?protein) as ?entries)\nWHERE {\n   ?protein up:annotation ?annotation .\n   \n   VALUES ?evs { obo:ECO_0000269 obo:ECO_0007744 } .\n   VALUES ?chebids { CHEBI:25213 CHEBI:25214 } .\n   ?st rdf:subject ?protein ; \n       rdf:predicate up:annotation ; \n       rdf:object ?annotation ;\n       up:attribution/up:evidence ?evs .\n\n   ?annotation up:ligand/rdfs:subClassOf ?ligand .\n   ?ligand rdfs:subClassOf+ ?chebids ;\n     rdfs:label ?ligandName .\n}\nGROUP BY ?ligand ?ligandName\nORDER BY DESC(?entries)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2043,7 +1970,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?ligandName \n  ?ligandNote\n  ?chebi\nWHERE {\n   ?protein up:annotation ?annotation .\n   ?annotation a up:Binding_Site_Annotation . \n   ?annotation up:ligand ?ligand .\n   ?ligand rdfs:comment ?ligandNote ;\n     rdfs:subClassOf ?chebi ;\n     rdfs:label ?ligandName .\n   FILTER(REGEX(?ligandNote, \"allosteric\", \"i\"))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2069,7 +1995,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?pdbId ?chain ?pdbChain ?uniprot\nWHERE\n{\n  # A space separated list of pairs of PDB identifiers and the chain code.\n  VALUES(?pdbId ?pdbChain) { ('6VXC' 'A') ('1BG3' 'B') }\n\n  # Make an IRI out of the pdbId\n  BIND(iri(concat('http://rdf.wwpdb.org/pdb/', ?pdbId)) AS ?pdb)\n\n  # Map to UniProt entries\n  ?uniprot rdfs:seeAlso ?pdb .\n  ?pdb up:database <http://purl.uniprot.org/database/PDB> ;\n       up:chainSequenceMapping ?chainSm .\n  ?chainSm up:chain ?chainsPlusRange .\n\n  # Extract the list of chains from the text representation.\n  BIND(STRBEFORE(?chainsPlusRange, '=') AS ?chain)\n\n  # Filter those that match.\n  FILTER(CONTAINS(?chain, ?pdbChain))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2101,7 +2026,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?uniprot\n  ?hgnc\n  ?hgncSymbol\nWHERE\n{\n  # A space separated list of UniProt primary accessions.\n  VALUES (?acc) {('P05067') ('P00750')}\n  BIND(iri(concat(str(uniprotkb:), ?acc)) AS ?uniprot)\n  ?uniprot rdfs:seeAlso ?hgnc .\n  ?hgnc up:database <http://purl.uniprot.org/database/HGNC> ;\n       rdfs:comment ?hgncSymbol .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2129,7 +2053,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nPREFIX proteome:<http://purl.uniprot.org/proteomes/>\nSELECT\n  (COUNT(DISTINCT ?sequence) AS ?allIsoforms)\nWHERE\n{\n  ?protein up:reviewed true .\n  ?protein up:organism taxon:9606 .\n  ?protein up:sequence ?sequence .\n  ?protein up:proteome/^skos:narrower proteome:UP000005640 .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2156,7 +2079,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?db\nWHERE\n{\n    ?protein a up:Protein .\n    ?protein rdfs:seeAlso ?db .\n    ?db up:database <http://purl.uniprot.org/database/PDB>\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2181,7 +2103,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX sachem: <http://bioinfo.uochb.cas.cz/rdf/v1.0/sachem#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n    ?protein\n    ?disease\n    ?rhea\n    ?chebi\n    ?omim\nWHERE {\n    # Find complete ChEBIs with a Cholestane skeleton, via the Czech Elixir node IDSM Sachem chemical substructure search.\n    SERVICE <https://idsm.elixir-czech.cz/sparql/endpoint/chebi> {\n      ?chebi sachem:substructureSearch [\n        sachem:query\n\"[C@]12(CCC3CCCC[C@]3(C)[C@@]1([H])CC[C@]1(C)[C@@]([H])([C@@](C)([H])CCCC(C)C)CC[C@@]21[H])[H]\"\n].\n   }\n   # Use the fact that UniProt catalytic activities are annotated using Rhea \n   # Mapping the found ChEBIs to Rhea reactions\n   SERVICE <https://sparql.rhea-db.org/sparql>{\n     ?rhea rh:side/rh:contains/rh:compound/rdfs:subClassOf ?chebi .\n   }\n   # Match the found Rhea reactions with human UniProtKB proteins\n   ?protein up:annotation/up:catalyticActivity/up:catalyzedReaction ?rhea .\n   ?protein up:organism taxon:9606 .\n   # Find only those human entries that have an annotated related disease, and optionaly map these to OMIM\n   ?protein up:annotation/up:disease ?disease .\n   OPTIONAL {\n     ?disease rdfs:seeAlso ?omim .\n     ?omim up:database <http://purl.uniprot.org/database/MIM>\n   }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2214,7 +2135,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT # Disinct because there might be more than one transcript for a gene leading to duplicates\n    ?ensemblGene\n    ?protein \n    ?rhea\nWHERE {\n  ?protein up:reviewed true ;\n           up:organism taxon:9606 .\n  ?protein up:annotation ?caa ;\n           rdfs:seeAlso ?ensemblTranscript .\n  ?ensemblTranscript up:database <http://purl.uniprot.org/database/Ensembl> .\n\t?caa up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?rhea .\n  ?ensemblTranscript up:transcribedFrom ?ensemblGene \n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2239,7 +2159,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n?disease ?diseaseLabel\nWHERE {\n ?protein up:enzyme|up:annotation/up:catalyticActivity/up:enzymeClass ?enzyme ;\n                   up:annotation ?diseaseAnnotation .\n ?diseaseAnnotation a up:Disease_Annotation ;\n                    up:disease ?disease .\n ?disease skos:prefLabel ?diseaseLabel .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2263,7 +2182,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n    ?disease\nWHERE {\n  ?protein a up:Protein ;\n  up:organism taxon:9606 ;\n  up:annotation ?disease_annotation ,\n                ?subcellularLocation .\n  {\n    ?protein up:enzyme [] .\n  } UNION {\n    ?protein up:annotation/a up:Catalytic_Activity_Annotation .\n  }\n  ?disease_annotation a up:Disease_Annotation ;\n    up:disease ?disease .\n  ?subcellularLocation a up:Subcellular_Location_Annotation ;\n    up:locatedIn ?location .\n  ?location up:cellularComponent ?component .\n  ?component up:partOf* <http://purl.uniprot.org/locations/173> .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2289,7 +2207,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  DISTINCT\n   ?disease\nWHERE {\n  ?protein a up:Protein ;\n    up:organism taxon:9606 ;\n    up:annotation ?disease_annotation, ?active_site_annotation, ?natural_variant_annotation .\n  {\n    ?protein up:enzyme [] .\n  } UNION {\n  ?protein up:annotation/a up:Catalytic_Activity_Annotation .\n  }\n  ?disease_annotation a up:Disease_Annotation ;\n  up:disease ?disease .\n  ?active_site_annotation a up:Active_Site_Annotation ;\n  up:range ?active_site_range .\n  ?active_site_range faldo:begin ?active_site_begin .\n  ?active_site_begin faldo:position ?active_site_position ;\n                     faldo:reference ?sequence .\n  ?natural_variant_annotation a up:Natural_Variant_Annotation ;\n  up:range ?natural_variant_range ;\n  skos:related ?disease .\n  ?natural_variant_range faldo:begin ?natural_variant_begin ;\n                         faldo:end ?natural_variant_end .\n  ?natural_variant_begin faldo:position ?natural_variant_begin_position .\n  ?natural_variant_end faldo:position ?natural_variant_end_position ;\n                       faldo:reference ?sequence .\n\n  FILTER(?natural_variant_begin_position >= ?active_site_position && ?active_site_position <= ?natural_variant_end_position)\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2316,7 +2233,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX keywords: <http://purl.uniprot.org/keywords/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?taxon\n  (SAMPLE(?name) AS ?anName)\n  (COUNT(DISTINCT ?protein) AS ?entriesPerExtinctTaxon)\nWHERE\n{\n  GRAPH<http://sparql.uniprot.org/taxonomy>{\n    ?taxon a up:Taxon ;\n           up:scientificName ?name .\n  }\n  ?protein up:organism ?taxon ;\n           up:classifiedWith keywords:952 .\n} GROUP BY ?taxon ORDER BY ?taxon",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2348,7 +2264,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n(COUNT(DISTINCT ?rhea) AS ?distinctRheaTransportInUniProt)\nWHERE\n{\n  GRAPH <https://sparql.rhea-db.org/rhea> {\n    ?rhea rh:isTransport true .\n  }\n  ?protein up:annotation ?ann .\n  ?ann up:catalyticActivity ?ca .\n  ?ca up:catalyzedReaction ?rhea .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2377,7 +2292,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX chebislash: <http://purl.obolibrary.org/obo/chebi/>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n?uniprot ?mnemonic ?rhea ?chebi ?smiles ?inchiKey\nWHERE\n{\n  ?uniprot up:annotation/up:catalyticActivity/up:catalyzedReaction ?rhea ;\n        up:organism taxon:9606 ;\n        up:mnemonic ?mnemonic .\n  SERVICE <https://sparql.rhea-db.org/sparql> {\n\t?rhea rh:side/rh:contains/rh:compound ?compound .\n    ?compound (rh:chebi|(rh:reactivePart/rh:chebi)|rh:underlyingChebi) ?chebi .\n   }\n   ?chebi chebislash:smiles ?smiles ;\n          chebislash:inchikey ?inchiKey .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2402,7 +2316,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\nWHERE {\n  ?protein up:organism taxon:7227 ;\n    a up:Protein ;\n    up:reviewed true ;\n    rdfs:seeAlso ?transcript .\n  {\n    ?protein up:annotation/a up:Catalytic_Activity_Annotation ;\n  } UNION {\n    ?protein up:enzyme ?enzyme .\n  }\n  ?transcript  a up:Transcript_Resource .\n} GROUP BY ?protein HAVING(COUNT(?transcript) >= 2)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2431,7 +2344,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\nWHERE {\n  ?protein up:organism taxon:7227 ;\n    a up:Protein ;\n    up:reviewed true ;\n    rdfs:seeAlso ?transcript .\n  ?transcript  a up:Transcript_Resource .\n} GROUP BY ?protein HAVING(COUNT(?transcript) >= 2)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2459,7 +2371,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX keywords: <http://purl.uniprot.org/keywords/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT DISTINCT ?link\nWHERE\n{\n    ?protein a up:Protein .\n    ?protein up:classifiedWith keywords:5 .\n    ?protein rdfs:seeAlso ?link .\n    ?link up:database ?db .\n    ?db up:category '3D structure databases'\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2485,7 +2396,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX sachem: <http://bioinfo.uochb.cas.cz/rdf/v1.0/sachem#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?rhea\n  ?chebi\nWHERE {\n  # Use the smiles of dopamine CHEBI:18243\n  SERVICE <https://idsm.elixir-czech.cz/sparql/endpoint/chebi>{\n    ?chebi sachem:similarCompoundSearch [\n      sachem:query \"NCCc1ccc(O)c(O)c1\" ] .\n  }\n  GRAPH<https://sparql.rhea-db.org/rhea>{\n    ?rhea rh:side/rh:contains/rh:compound ?compound .\n    ?compound (rh:chebi|(rh:reactivePart/rh:chebi)|rh:underlyingChebi) ?chebi .\n  }\n  ?protein up:reviewed true ;\n    up:annotation ?caa .\n  ?caa up:catalyticActivity/up:catalyzedReaction ?rhea .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2513,7 +2423,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX CHEBI: <http://purl.obolibrary.org/obo/CHEBI_>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX sachem: <http://bioinfo.uochb.cas.cz/rdf/v1.0/sachem#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?rhea\n  ?chebi\n  ?disease\nWHERE {\n  # Use the smiles of dopamine CHEBI:18243\n  SERVICE <https://idsm.elixir-czech.cz/sparql/endpoint/chebi>{\n    ?chebi sachem:similarCompoundSearch [\n      sachem:query \"NCCc1ccc(O)c(O)c1\" ] .\n  }\n  GRAPH<https://sparql.rhea-db.org/rhea>{\n    ?rhea rh:side/rh:contains/rh:compound ?compound .\n    ?compound (rh:chebi|(rh:reactivePart/rh:chebi)|rh:underlyingChebi) ?chebi .\n  }\n  ?protein up:reviewed true ;\n    up:annotation ?caa, ?natural_variant_annotation, ?disease_annotation .\n  ?caa up:catalyticActivity/up:catalyzedReaction ?rhea .\n  ?natural_variant_annotation a up:Natural_Variant_Annotation ;\n    skos:related ?disease .\n  ?disease_annotation a up:Disease_Annotation ;\n     up:disease ?disease .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2541,7 +2450,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\n  ?db\nWHERE\n{\n  ?protein a up:Protein .\n  ?protein rdfs:seeAlso ?db .\n  ?db up:database <http://purl.uniprot.org/database/PDB> .\n  {\n    ?protein up:enzyme ?enzyme .\n  } UNION {\n    ?protein up:annotation/rdf:type up:Catalytic_Activity_Annotation .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2568,7 +2476,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\nSELECT\n  DISTINCT ?enzyme\nWHERE {\n  ?protein a up:Protein .\n  {\n    ?protein up:enzyme ?enzyme .\n  } UNION {\n    ?protein up:annotation ?caa .\n    ?caa a up:Catalytic_Activity_Annotation .\n    ?caa up:catalyticActivity ?ca .\n    ?ca up:enzymeClass ?enzyme\n  } UNION {\n    ?protein up:component/up:enzyme ?enzyme .\n  } UNION {\n    ?protein up:domain/up:enzyme ?enzyme .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2595,7 +2502,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\nWHERE {\n ?protein up:enzyme|up:annotation/up:catalyticActivity/up:enzymeClass ?enzymeClass ;\n                   up:annotation ?transMembraneAnnotation .\n ?enzymeClass rdfs:subClassOf <http://purl.uniprot.org/enzyme/3.-.-.-> .\n ?transMembraneAnnotation a up:Transmembrane_Annotation .\n} GROUP BY ?protein HAVING (COUNT(DISTINCT ?transMembraneAnnotation) >= 2)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2624,7 +2530,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\nWHERE {\n  ?protein a up:Protein ;\n    up:annotation ?transmembrane_annotation ;\n    rdfs:seeAlso ?wwPDB .\n  {\n    ?protein up:enzyme ?enzyme .\n  } UNION {\n    ?protein up:annotation/a up:Catalytic_Activity_Annotation .\n  }\n  ?wwPDB up:database <http://purl.uniprot.org/database/PDB> ;\n    up:method up:X-Ray_Crystallography .\n  ?transmembrane_annotation a up:Transmembrane_Annotation .\n} GROUP BY ?protein HAVING(COUNT(DISTINCT ?transmembrane_annotation ) >= 2)",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2655,7 +2560,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein ?mutagenesisBeginPosition ?activeSiteBeginPosition ?mutagenesisRangeEndPosition ?mutagenesisComment\nWHERE {\n  ?protein up:annotation ?activeSiteAnnotation ,\n      ?mutagenesisAnnotation .\n  ?mutagenesisAnnotation a up:Mutagenesis_Annotation ;\n     up:range ?mutagenesisRange ;\n\t rdfs:comment ?mutagenesisComment .\n  ?activeSiteAnnotation a up:Active_Site_Annotation ;\n    up:range ?activeSiteRange .\n  ?activeSiteRange faldo:begin ?activeSiteBegin .\n  ?activeSiteBegin faldo:position ?activeSiteBeginPosition ;\n    faldo:reference ?sequence .\n  ?mutagenesisRange faldo:begin ?mutagenesisRangeBegin ;\n    faldo:end ?mutagenesisRangeEnd .\n  ?mutagenesisRangeBegin faldo:position ?mutagenesisBeginPosition ;\n    faldo:reference ?sequence .\n  ?mutagenesisRangeEnd faldo:position ?mutagenesisRangeEndPosition .\n  FILTER(?mutagenesisBeginPosition <= ?activeSiteBeginPosition && ?activeSiteBeginPosition <= ?mutagenesisRangeEndPosition)\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2680,7 +2584,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein\nWHERE {\n  ?protein up:annotation ?activeSiteAnnotation .\n  ?activeSiteAnnotation a up:Active_Site_Annotation ;\n    up:range ?range .\n  ?range faldo:begin ?begin .\n  ?begin faldo:position ?beginPosition ;\n    faldo:reference ?sequence .\n  ?sequence rdf:value ?sequenceVal .\n  FILTER(SUBSTR(?sequenceVal, ?beginPosition, 1) = 'Y')\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2706,7 +2609,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?uniprot ?disease ?diseaseComment ?mim\nWHERE\n{\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n    ?uniprot a up:Protein ;\n       up:annotation ?diseaseAnnotation .\n    ?diseaseAnnotation up:disease ?disease .\n  }\n  GRAPH <http://sparql.uniprot.org/diseases> {\n    ?disease a up:Disease ;\n             rdfs:comment ?diseaseComment .\n    OPTIONAL {\n      ?disease rdfs:seeAlso ?mim .\n       ?mim up:database <http://purl.uniprot.org/database/MIM> .\n    }\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2733,7 +2635,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?uniprot ?mnemonic \nWHERE\n{\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n        ?uniprot a up:Protein ;\n            up:mnemonic ?mnemonic .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2758,7 +2659,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?name\nWHERE\n{\n        ?protein a up:Protein .\n        ?protein up:reviewed true .\n        ?protein up:recommendedName ?recommended .\n        ?recommended up:fullName ?name .\n        ?protein up:encodedBy ?gene .\n        ?gene skos:prefLabel ?text .\n        FILTER CONTAINS(?text, 'DNA')\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2785,7 +2685,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?uniprot ?obsoleteMnemonic \nWHERE\n{\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n        ?uniprot a up:Protein ;\n            up:oldMnemonic ?obsoleteMnemonic .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -2810,7 +2709,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX ECO: <http://purl.obolibrary.org/obo/ECO_>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX rh: <http://rdf.rhea-db.org/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?rhea \n  ?catalyzedReaction \n  ?source\nWHERE {\n  {  \n    SELECT \n      DISTINCT \n        ?rhea\n      WHERE {\n        GRAPh<https://sparql.rhea-db.org/rhea> {\n          ?rhea rdfs:subClassOf rh:Reaction .\n          ?rhea rh:side/rh:contains/rh:compound ?compound2 . \n          ?uc rdfs:subClassOf rh:Compound .\n        }\n        ?compound2 rdfs:subClassOf ?uc . \n    \tBIND(IF(?uc = rh:SmallMolecule, 0, 1) AS ?c)  \n     } GROUP BY ?rhea  HAVING (SUM(?c) = 0)\n  }\n  ?catalyzedReaction up:catalyzedReaction ?rhea .\n  ?reif rdf:object ?catalyzedReaction ;\n        up:attribution ?attr .\n  ?attr up:evidence ECO:0000269 ;\n        up:source ?source .\n  ?source a up:Citation .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2845,7 +2743,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?rhea \n  ?EC \nWHERE {\n  ?CatalyticActivity  up:catalyzedReaction   ?rhea ;\n    up:enzymeClass         ?EC .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2871,7 +2768,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?rhea \n  ?EC \nWHERE {\n  ?CatalyticActivity up:catalyzedReaction ?rhea .\n  MINUS {\n    ?CatalyticActivity up:enzymeClass ?EC .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2898,7 +2794,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?species \n  ?genus \nWHERE {\n  BIND(taxon:9605 AS ?genus)\n  ?species a up:Taxon ;\n           up:rank up:Species ;\n           rdfs:subClassOf ?genus .\n  ?genus a up:Taxon ;\n         up:rank up:Genus .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2925,7 +2820,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?virus \n  ?host \nWHERE {\n    ?virus up:host ?host .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2950,7 +2844,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?taxon \n  ?scientificName\n  ?rank\nWHERE {\n  ?taxon a up:Taxon ;\n         up:scientificName ?scientificName .\n  OPTIONAL {\n    ?taxon up:rank ?rank\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -2976,7 +2869,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT\n    DISTINCT\n         ?taxid\n         ?scientificName\n         ?domain\n         ?domainName\nWHERE {\n  ?uniprot a up:Protein .\n  # reviewed entries\n  ?uniprot up:reviewed true .\n  ?uniprot up:organism ?taxid . \n  ?taxid up:scientificName ?scientificName .\n    \n  VALUES ?domain { taxon:2 # bacteria\n                   taxon:2157 # archaea\n                   taxon:2759 # eukaryota\n                   taxon:10239 #viruses\n                 } .\n  ?taxid rdfs:subClassOf ?domain .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDF",
       "RDFS",
@@ -3003,7 +2895,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?uniparc\n  ?uniprot\nWHERE {\n  GRAPH <http://sparql.uniprot.org/uniparc>{\n    BIND(<http://purl.uniprot.org/uniparc/UPI000002DB1C> AS ?uniparc) \n    ?uniparc up:sequenceFor ?uniprot .\n  }\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n    ?uniprot a up:Protein .\n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3030,7 +2921,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n  ?predicate \n  ?object \nWHERE { \n  <http://purl.uniprot.org/uniparc/UPI000012A0AD> ?predicate ?object\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3054,7 +2944,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?name ?text\nWHERE\n{\n        ?protein a up:Protein . \n        ?protein up:organism taxon:9606 .\n        ?protein up:encodedBy ?gene . \n        ?gene skos:prefLabel ?name .\n        ?protein up:annotation ?annotation .\n        ?annotation a up:Disease_Annotation .\n        ?annotation rdfs:comment ?text\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3078,7 +2967,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n ?disease ?protein\nWHERE {\n  SERVICE<https://id.nlm.nih.gov/mesh/sparql> {\n    GRAPH <http://id.nlm.nih.gov/mesh> {\n      # Mesh M0013493 represents the concept 'Metabolic Diseases'\n\t  ?mesh <http://id.nlm.nih.gov/mesh/vocab#broaderDescriptor>* ?broader .\n      ?broader <http://id.nlm.nih.gov/mesh/vocab#preferredConcept> <http://id.nlm.nih.gov/mesh/M0013493> .\n    }\n  }\n  GRAPH <http://sparql.uniprot.org/diseases>{\n    ?disease a up:Disease ;\n    \trdfs:seeAlso ?mesh .\n    ?mesh up:database <http://purl.uniprot.org/database/MeSH> .\n  }\n  GRAPH <http://sparql.uniprot.org/uniprot> {\n     ?protein up:annotation/up:disease ?disease . \n  }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3104,7 +2992,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein \n  ?fullName\nWHERE {\n  ?protein a up:Protein ;\n           up:alternativeName ?recommendedName .\n  ?recommendedName up:fullName ?fullName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3128,7 +3015,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?protein \n    ?otherIdentifier\nWHERE {\n    BIND(uniprotkb:P00750 AS ?protein)\n    ?protein a up:Protein .\n    SERVICE <https://bioregistry.io/sparql> {\n        ?protein owl:sameAs ?otherIdentifier .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3155,7 +3041,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?protein \n  ?created\n  ?modified\n  ?version\nWHERE {\n  ?protein a up:Protein ;\n           up:created ?created ;\n           up:modified ?modified ;\n           up:version ?version .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3179,7 +3064,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein\n  ?gene \nWHERE {\n  ?protein a up:Protein ;\n           up:encodedBy ?gene .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3203,7 +3087,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein\n  ?gene ?altGeneName\nWHERE {\n  ?protein a up:Protein ;\n           up:encodedBy ?gene .\n  ?gene skos:altLabel ?altGeneName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3227,7 +3110,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein\n  ?gene \nWHERE {\n  ?protein a up:Protein ;\n           up:encodedBy ?gene .\n  ?gene skos:prefLabel ?recommendedGeneName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3251,7 +3133,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT\n  ?gene \n  ?orfName\nWHERE {\n  ?protein a up:Protein ;\n           up:encodedBy ?gene .\n  ?gene up:orfName ?orfName .\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3275,7 +3156,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX up: <http://purl.uniprot.org/core/>\nPREFIX taxon:<http://purl.uniprot.org/taxon/>\nSELECT \n  ?geneid \n  ?organism \n  (GROUP_CONCAT(?protein; separator=', ') AS ?entries)\nWHERE\n{\n  VALUES ?organism {taxon:9606 taxon:10090}\n  ?geneid up:database <http://purl.uniprot.org/database/GeneID> .\n  ?protein rdfs:seeAlso ?geneid ; \n           up:organism ?organism\n} GROUP BY ?geneid ?organism HAVING (COUNT(?protein) > 1) ORDER BY ?organism ?geneid",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3307,7 +3187,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX uniprotkb: <http://purl.uniprot.org/uniprot/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT \n    ?protein \n    ?otherIdentifier\nWHERE {\n    VALUES (?protein) {(uniprotkb:P00750) (uniprotkb:P05067)}\n    ?protein a up:Protein .\n    SERVICE <https://sparql.api.identifiers.org/sparql> {\n        ?protein owl:sameAs ?otherIdentifier .\n    }\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -3333,7 +3212,6 @@ export const UniProt = [
     "inidces": [],
     "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX taxon: <http://purl.uniprot.org/taxonomy/>\nPREFIX up: <http://purl.uniprot.org/core/>\n\nSELECT ?protein ?text\nWHERE\n{ \n        ?protein a up:Protein .\n        ?protein up:organism taxon:9606 . \n        ?protein up:annotation ?annotation .\n        ?annotation a up:Natural_Variant_Annotation . \n        ?annotation rdfs:comment ?text .\n        FILTER (CONTAINS(?text, 'loss of function'))\n}",
     "ontologies": [
-      "UniProt",
       "EX",
       "RDFS",
       "SCHEMA",

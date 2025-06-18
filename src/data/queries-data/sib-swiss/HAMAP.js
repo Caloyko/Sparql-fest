@@ -10,7 +10,6 @@ export const HAMAP = [
     "inidces": [],
     "query": "PREFIX sh: <http://www.w3.org/ns/shacl#>\n\nSELECT ?rule\nWHERE\n{\n    ?rule sh:construct ?query  .\n}",
     "ontologies": [
-      "HAMAP",
       "EX",
       "RDF",
       "RDFS",
@@ -35,7 +34,6 @@ export const HAMAP = [
     "inidces": [],
     "query": null,
     "ontologies": [
-      "HAMAP",
       "EX",
       "RDF",
       "RDFS",
@@ -57,7 +55,6 @@ export const HAMAP = [
     "inidces": [],
     "query": "PREFIX sh: <http://www.w3.org/ns/shacl#>\n\n\nSELECT ?rule ?query\nWHERE\n{\n    ?rule sh:construct ?query  .\n    FILTER (CONTAINS(?query, 'Catalytic_Activity_Annotation'))\n}",
     "ontologies": [
-      "HAMAP",
       "EX",
       "RDF",
       "RDFS",
@@ -84,7 +81,6 @@ export const HAMAP = [
     "inidces": [],
     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX sp: <http://spinrdf.org/sp#>\nPREFIX up: <http://purl.uniprot.org/core/>\n\n\nSELECT ?rule ?enzymeClass\nWHERE\n{\n ?rule a sp:Construct ;\n     sp:templates/rdf:rest*/rdf:first ?annotationsToAdd .\n ?annotationsToAdd sp:predicate up:enzymeClass ;\n                   sp:object ?enzymeClass .\n}",
     "ontologies": [
-      "HAMAP",
       "EX",
       "RDFS",
       "SCHEMA",

@@ -9,9 +9,7 @@ export const GlyConnect = [
     "context": null,
     "inidces": [],
     "query": null,
-    "ontologies": [
-      "GlyConnect"
-    ],
+    "ontologies": [],
     "sparqlConcepts": [],
     "category": "sib-swiss GlyConnect"
   },
@@ -26,7 +24,6 @@ export const GlyConnect = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\n\nSELECT distinct ?glycoprotein ?isoform\nwhere {\n?glycosite faldo:reference ?isoform .\n?specificglycosite faldo:location ?glycosite .\n?glycoprotein glycan:glycosylated_at ?specificglycosite .\n}",
     "ontologies": [
-      "GlyConnect",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -49,7 +46,6 @@ export const GlyConnect = [
     "inidces": [],
     "query": "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\n\nSELECT distinct ?structure ?image \nwhere {\n?structure glycan:glycosylates_at ?specificglycosite .\n?structure foaf:depiction ?image  \n  }",
     "ontologies": [
-      "GlyConnect",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -72,7 +68,6 @@ export const GlyConnect = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\n\nSELECT distinct ?glycoprotein ?isoform ?position ?structure ?image  ?citation ?pmid\nwhere {\n?glycosite faldo:reference ?isoform .\n?glycosite faldo:position ?position .\n?specificglycosite faldo:location ?glycosite .\n?glycoprotein glycan:glycosylated_at ?specificglycosite .\n?structure glycan:glycosylates_at ?specificglycosite .\n?structure foaf:depiction ?image .\n?refconjugate glycan:has_protein_part ?glycoprotein .\n?refconjugate glycan:published_in ?citation . \n?citation foaf:primaryTopicOf ?pmid .\n}",
     "ontologies": [
-      "GlyConnect",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -95,7 +90,6 @@ export const GlyConnect = [
     "inidces": [],
     "query": "PREFIX faldo: <http://biohackathon.org/resource/faldo#>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sio: <http://semanticscience.org/resource/>\n\nSELECT distinct ?glycoprotein ?isoform ?position ?structure ?disease ?diseasename\nwhere {\n?glycosite faldo:reference ?isoform .\n?glycosite faldo:position ?position .\n?specificglycosite faldo:location ?glycosite .\n?glycoprotein glycan:glycosylated_at ?specificglycosite .\n?structure glycan:glycosylates_at ?specificglycosite .\n?refconjugate glycan:has_protein_part ?glycoprotein .\n?refconjugate glycan:has_association ?refconjugatedisease .\n?refconjugatedisease sio:SIO_000628 ?disease .\n?disease rdfs:label ?diseasename .\nFILTER regex(?diseasename, \"^cancer\", \"i\") .\n}",
     "ontologies": [
-      "GlyConnect",
       "EX",
       "RDFS",
       "SCHEMA",
@@ -119,7 +113,6 @@ export const GlyConnect = [
     "inidces": [],
     "query": "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX glycan: <http://purl.jp/bio/12/glyco/glycan#>\n\nSELECT distinct ?citation ?pmid\nwhere {\n?refconjugate glycan:published_in ?citation. \n?citation foaf:primaryTopicOf ?pmid .  \n}",
     "ontologies": [
-      "GlyConnect",
       "EX",
       "RDFS",
       "SCHEMA",
