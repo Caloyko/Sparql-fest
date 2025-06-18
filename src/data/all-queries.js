@@ -34,7 +34,7 @@ function mergeAndFormatQueries(amcQueries, swissQueries) {
     const tmp = {
       ...query,
       id: index + 1,
-      image: imgLevel[levelNumber]
+      image: query.image || imgLevel[levelNumber]
     };
     console.log(tmp)
     return tmp
