@@ -16,9 +16,9 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -39,9 +39,9 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -62,12 +62,13 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "INS",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "URI",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -88,11 +89,12 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "OMA_LINK",
       "WHERE",
-      "OMA"
+      "FILTER",
+      "GRAPH",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss OMA"
   },
@@ -113,12 +115,12 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "OMA_LINK",
       "WHERE",
-      "OMA",
-      "FILTER"
+      "FILTER",
+      "GRAPH",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss OMA"
   },
@@ -139,9 +141,10 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -162,10 +165,10 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -186,11 +189,10 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "APOCI",
-      "FILTER"
+      "FILTER",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -211,16 +213,11 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "MOUSE_PROTEIN",
-      "RABIT_PROTEIN",
-      "MOUSE_UNIPROT_XREF",
-      "RABIT_UNIPROT_XREF",
       "WHERE",
-      "HBB",
-      "FILTER"
+      "FILTER",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -241,17 +238,11 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "PROTEIN_HBB",
-      "IS_PARALOGOUS_TO_PROTEIN",
-      "PARALOG_GENE_LABEL",
-      "HBB_UNIPROT_XREF",
-      "PARALOG_UNIPROT_XREF",
       "WHERE",
-      "HBB",
-      "FILTER"
+      "FILTER",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -272,11 +263,13 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "PROTEIN",
-      "IS_PARALOGOUS_TO_PROTEIN"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss OMA"
   },
@@ -297,14 +290,11 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "MOUSE_PROTEIN",
-      "RABIT_PROTEIN",
-      "HOG",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -325,14 +315,11 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "HOG",
-      "MEMBER",
-      "GENE_LABEL",
       "WHERE",
-      "OPTIONAL"
+      "OPTIONAL",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   },
@@ -353,15 +340,13 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
-      "OPTIONAL",
       "FILTER",
-      "NOT",
+      "OPTIONAL",
+      "SERVICE",
       "EXISTS",
-      "OMA"
+      "NOT EXISTS"
     ],
     "category": "sib-swiss OMA"
   },
@@ -382,15 +367,11 @@ export const OMA = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "PROTEIN",
-      "IS_PARALOGOUS_TO_PROTEIN",
-      "UNIPROT_XREF",
-      "PARALOG_UNIPROT_XREF",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OMA"
   }

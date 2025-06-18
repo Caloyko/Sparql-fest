@@ -16,9 +16,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "ALL",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -40,12 +42,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "FILTER",
       "BIND",
-      "EC",
-      "FILTER"
+      "ALL",
+      "STR",
+      "REGEX"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -68,16 +71,19 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CAS",
-      "UNION"
+      "UNION",
+      "VALUES",
+      "DISTINCT",
+      "FROM",
+      "ALL",
+      "STR",
+      "REGEX",
+      "NOW",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -100,15 +106,15 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC",
-      "LIMIT"
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -131,13 +137,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -160,9 +163,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -185,11 +188,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -212,14 +213,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
+      "ORDER BY",
       "HAVING",
-      "ORDER",
-      "DESC"
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -242,12 +241,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "NOT",
-      "EXISTS"
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -270,14 +269,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "NOT",
+      "ORDER BY",
       "EXISTS",
-      "ORDER",
-      "BY"
+      "NOT EXISTS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -297,13 +294,13 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
       "VALUES",
-      "GROUP",
-      "BY"
+      "SERVICE",
+      "GROUP BY",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -325,16 +322,16 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "STR",
-      "AS",
-      "COUNT",
       "WHERE",
-      "SERVICE",
+      "FILTER",
       "VALUES",
-      "GROUP",
-      "BY"
+      "SERVICE",
+      "GROUP BY",
+      "ALL",
+      "STR",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -357,13 +354,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "OPTIONAL",
       "BIND",
-      "AS",
-      "SERVICE",
-      "OPTIONAL"
+      "SERVICE"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -386,13 +381,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "OPTIONAL",
       "BIND",
-      "AS",
-      "SERVICE",
-      "OPTIONAL"
+      "SERVICE"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -416,10 +409,10 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -442,10 +435,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -468,10 +462,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "UNION",
       "SERVICE",
-      "UNION"
+      "WITH",
+      "IF"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -491,11 +487,15 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "UNION",
       "SERVICE",
-      "UNION"
+      "FROM",
+      "WITH",
+      "ALL",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -518,13 +518,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
+      "UNION",
       "SERVICE",
-      "UNION"
+      "WITH",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -547,15 +547,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "SERVICE",
       "UNION",
-      "GROUP",
-      "BY"
+      "SERVICE",
+      "GROUP BY",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -578,13 +576,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
-      "NOT",
-      "EXISTS"
+      "OPTIONAL",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -607,15 +605,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
-      "NOT",
+      "OPTIONAL",
+      "ORDER BY",
       "EXISTS",
-      "ORDER",
-      "BY"
+      "NOT EXISTS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -637,13 +633,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SPARQL",
       "SELECT",
       "WHERE",
       "SERVICE",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "USING",
+      "ALL",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -663,9 +659,9 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -685,12 +681,14 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "NOT",
-      "EXISTS"
+      "DISTINCT",
+      "REGEX",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -712,13 +710,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SPARQL",
       "SELECT",
       "WHERE",
-      "SERVICE",
+      "GRAPH",
       "VALUES",
-      "GRAPH"
+      "SERVICE",
+      "USING",
+      "ALL"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -741,11 +739,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
-      "OPTIONAL"
+      "OPTIONAL",
+      "SERVICE"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -768,12 +765,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -795,12 +793,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "VALUES"
+      "VALUES",
+      "DISTINCT",
+      "ALL",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -822,13 +820,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "ALL",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -850,12 +848,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "VALUES"
+      "VALUES",
+      "ALL",
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -877,12 +875,16 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "VALUES",
+      "DISTINCT",
+      "FROM",
+      "ADD",
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -904,12 +906,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "SERVICE",
-      "CC",
-      "CCCC"
+      "STR",
+      "SUBSTR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -930,10 +932,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -955,13 +957,14 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "PMID",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "WITH",
+      "ALL",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -983,14 +986,15 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
       "FILTER",
       "BIND",
+      "SERVICE",
+      "ALL",
       "STR",
-      "AS"
+      "LANG",
+      "NOW"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1012,9 +1016,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1036,11 +1040,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1062,11 +1064,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1088,11 +1088,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY",
+      "ORDER BY",
       "LIMIT"
     ],
     "category": "sib-swiss Rhea"
@@ -1115,11 +1113,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY",
+      "ORDER BY",
       "LIMIT",
       "OFFSET"
     ],
@@ -1143,9 +1139,9 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1167,12 +1163,13 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
-      "BOUND"
+      "OPTIONAL",
+      "DISTINCT",
+      "BOUND",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1194,15 +1191,13 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
-      "BOUND",
-      "ORDER",
-      "BY"
+      "OPTIONAL",
+      "ORDER BY",
+      "DISTINCT",
+      "BOUND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1224,13 +1219,10 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1252,11 +1244,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "RHEA",
       "SELECT",
       "WHERE",
-      "VALUES"
+      "VALUES",
+      "IF"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1278,11 +1269,10 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS"
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1302,17 +1292,13 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "AVG",
-      "AS",
       "WHERE",
-      "COUNT",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "COUNT",
+      "AVG"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1335,11 +1321,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1362,11 +1347,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1389,12 +1373,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS",
-      "OPTIONAL"
+      "OPTIONAL",
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1417,12 +1399,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS",
-      "OPTIONAL"
+      "OPTIONAL",
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1445,10 +1425,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "STR",
+      "REGEX",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1471,14 +1454,14 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "FILTER",
-      "METACYC",
-      "UNION"
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1501,11 +1484,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1527,13 +1508,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "RHEA",
       "SELECT",
       "WHERE",
-      "VALUES",
+      "UNION",
       "BIND",
-      "UNION"
+      "VALUES",
+      "DISTINCT",
+      "ALL"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1556,11 +1537,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1583,16 +1562,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1612,17 +1587,13 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "AVG",
-      "AS",
       "WHERE",
-      "COUNT",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "COUNT",
+      "AVG"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1645,11 +1616,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1672,11 +1641,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1699,11 +1666,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1726,11 +1691,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "AS",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1753,9 +1717,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1778,13 +1743,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1807,12 +1770,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1834,11 +1796,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "KEGG",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "ALL",
+      "STR",
+      "REGEX"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1861,13 +1824,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1890,9 +1852,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1915,11 +1878,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "ALL"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1942,11 +1904,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1969,11 +1929,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -1996,13 +1954,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "ALL"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2022,11 +1978,10 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2049,11 +2004,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2076,11 +2030,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2103,11 +2056,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "GENERIC"
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2129,14 +2081,15 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "METACYC",
+      "UNION",
       "BIND",
-      "UNION"
+      "DISTINCT",
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2159,12 +2112,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2187,11 +2139,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "ALL",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2214,12 +2166,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2242,11 +2193,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2269,13 +2219,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2298,12 +2245,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2326,14 +2274,14 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2356,14 +2304,14 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "OPTIONAL",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2386,13 +2334,14 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
+      "ORDER BY",
       "HAVING",
-      "ORDER"
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2415,13 +2364,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2442,13 +2387,15 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
+      "UNION",
       "BIND",
-      "UNION"
+      "DISTINCT",
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2471,13 +2418,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2500,12 +2444,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "AS",
-      "WHERE"
+      "WHERE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2528,13 +2469,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2557,13 +2495,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2586,13 +2521,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2615,13 +2547,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2644,11 +2573,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2671,13 +2600,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2700,11 +2627,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2727,11 +2654,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2753,13 +2679,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "GO_"
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2782,11 +2707,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2809,13 +2734,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2838,11 +2761,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2865,13 +2788,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2894,11 +2815,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2921,13 +2842,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2950,13 +2869,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -2979,13 +2896,13 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3008,11 +2925,9 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3035,13 +2950,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3063,11 +2975,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "EC",
       "SELECT",
       "WHERE",
-      "BIND"
+      "BIND",
+      "ALL",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3090,11 +3003,10 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3117,11 +3029,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3144,14 +3056,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3174,14 +3083,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "OPTIONAL",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3205,16 +3112,15 @@ export const Rhea = [
       "SPEX"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "OPTIONAL",
       "SERVICE",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3237,14 +3143,11 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
+      "FILTER",
       "BIND",
-      "AS",
-      "FILTER"
+      "NOW"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3267,11 +3170,12 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
+      "SELECT",
+      "WHERE",
       "BIND",
-      "AS"
+      "VALUES",
+      "FROM",
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3291,13 +3195,10 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS"
+      "STR"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3317,11 +3218,9 @@ export const Rhea = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss Rhea"
   },
@@ -3344,12 +3243,15 @@ export const Rhea = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "VALUES",
+      "DISTINCT",
+      "FROM",
+      "STR",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss Rhea"
   }

@@ -17,7 +17,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "OPTIONAL"
@@ -42,10 +41,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GRAPH"
+      "GRAPH",
+      "ALL"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -66,11 +65,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS"
+      "STR",
+      "STRLEN",
+      "SUBSTR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -91,11 +91,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "BIND"
+      "BIND",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -116,7 +116,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -139,7 +138,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -162,7 +160,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -186,19 +183,17 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GRAPH",
-      "OPTIONAL",
-      "BIND",
-      "AS",
       "FILTER",
-      "IF",
-      "STRENDS",
+      "OPTIONAL",
+      "GRAPH",
+      "BIND",
+      "WITH",
       "STR",
-      "STRBEFORE",
-      "SUBSTR"
+      "IF",
+      "SUBSTR",
+      "STRENDS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -219,7 +214,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH",
@@ -245,13 +239,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH",
       "BIND",
-      "AS",
-      "SERVICE"
+      "SERVICE",
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -272,11 +265,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "FILTER",
       "BIND",
-      "FILTER"
+      "STR",
+      "SUBSTR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -297,7 +291,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "OPTIONAL"
@@ -321,14 +314,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "CONCAT",
-      "SUBSTR",
-      "AS",
       "WHERE",
       "BIND",
-      "IRI"
+      "STR",
+      "IRI",
+      "CONCAT",
+      "SUBSTR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -349,13 +341,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "GRAPH"
+      "GRAPH",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -378,13 +369,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "COUNT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "ALL",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -404,12 +395,13 @@ export const UniProt = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
-      "BOUND"
+      "OPTIONAL",
+      "DISTINCT",
+      "BOUND",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -429,10 +421,11 @@ export const UniProt = [
       "SCHEMA"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL"
+      "OPTIONAL",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -453,13 +446,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "SERVICE",
-      "HBB",
-      "FILTER"
+      "DISTINCT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -480,13 +471,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -507,12 +497,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "SERVICE"
+      "SERVICE",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -533,13 +523,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "GRAPH"
+      "GRAPH",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -560,7 +548,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -583,16 +570,15 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "VALUES",
-      "IRI",
+      "OPTIONAL",
       "BIND",
-      "CONCAT",
+      "VALUES",
       "STR",
-      "AS",
-      "OPTIONAL"
+      "IRI",
+      "IF",
+      "CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -615,7 +601,6 @@ export const UniProt = [
       "UP"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -640,12 +625,13 @@ export const UniProt = [
       "UP"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
-      "GRAPH"
+      "GRAPH",
+      "FROM",
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -666,89 +652,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "CREATE"
     ],
-    "category": "sib-swiss UniProt"
-  },
-  {
-    "name": "UniProt - 13 entries added on date",
-    "slug": "UniProt_13_entries_added_on_date",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": "Was any UniProtKB entry integrated on the 9th of January 2013",
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "EX",
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss UniProt"
-  },
-  {
-    "name": "UniProt - 14 make your own triples",
-    "slug": "UniProt_14_make_your_own_triples",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": "Construct new triples of the type 'HumanProtein' from all human UniProtKB entries",
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "EX",
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss UniProt"
-  },
-  {
-    "name": "UniProt - 15 describe an EMBL cds",
-    "slug": "UniProt_15_describe_an_EMBL_cds",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": "Select all triples that relate to the EMBL CDS entry AA089367.1: ",
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "EX",
-      "RDFS",
-      "SCHEMA",
-      "SH",
-      "SPEX"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss UniProt"
-  },
-  {
-    "name": "UniProt - 16 triples about species human in taxonomy graph",
-    "slug": "UniProt_16_triples_about_species_human_in_taxonomy_graph",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": "Select all triples that relate to the taxon that describes <i>Homo sapiens</i> in the named graph for <a href=\\",
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "EX",
-      "RDF",
-      "RDFS",
-      "SCHEMA",
-      "SH",
-      "SPEX"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss UniProt"
   },
   {
@@ -769,18 +676,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "AVG",
-      "AS",
       "WHERE",
-      "COUNT",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "PDB",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "COUNT",
+      "AVG"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -801,14 +703,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
       "WHERE",
       "VALUES",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -829,16 +729,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "SUBSTR",
       "STR",
-      "AS",
       "IF",
-      "CONTAINS",
-      "SIP"
+      "SUBSTR",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -860,10 +757,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FROM",
-      "WHERE"
+      "WHERE",
+      "FROM"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -884,15 +780,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "AS",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -913,7 +805,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -936,23 +827,22 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "OPTIONAL",
+      "BIND",
+      "VALUES",
+      "GROUP BY",
+      "WITH",
+      "STR",
+      "BOUND",
+      "IRI",
+      "IF",
       "CONCAT",
       "SUBSTR",
-      "STR",
-      "AS",
-      "GROUP_CONCAT",
-      "WHERE",
-      "VALUES",
-      "BIND",
-      "IRI",
-      "OPTIONAL",
-      "FILTER",
-      "GROUP",
-      "BY"
+      "MIN",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -973,14 +863,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
-      "COUNT",
+      "WHERE",
       "DISTINCT",
-      "AS",
-      "WHERE"
+      "WITH",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1002,8 +890,9 @@ export const UniProt = [
     ],
     "sparqlConcepts": [
       "SELECT",
+      "WHERE",
       "FROM",
-      "WHERE"
+      "NOW"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1024,10 +913,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "HLA"
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1048,10 +936,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "HLA"
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1072,13 +959,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS",
       "UNION",
-      "VALUES"
+      "BIND",
+      "VALUES",
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1100,7 +986,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "VALUES"
@@ -1125,16 +1010,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
       "FILTER",
-      "BIND",
-      "STR",
-      "AS",
       "UNION",
-      "VALUES"
+      "BIND",
+      "VALUES",
+      "SERVICE",
+      "ALL",
+      "STR",
+      "LANG"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1156,9 +1041,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1180,15 +1065,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "GROUP_CONCAT",
-      "AS",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
-      "COUNT"
+      "CONCAT",
+      "COUNT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1209,16 +1092,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "COUNT",
-      "AS",
       "GRAPH",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1240,15 +1119,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "GROUP_CONCAT",
-      "AS",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
-      "COUNT"
+      "CONCAT",
+      "COUNT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1269,12 +1146,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY",
-      "DESC",
+      "ORDER BY",
+      "STR",
       "STRLEN"
     ],
     "category": "sib-swiss UniProt"
@@ -1296,19 +1171,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "AS",
       "WHERE",
-      "BIND",
-      "IF",
-      "STRBEFORE",
       "FILTER",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "BIND",
+      "GROUP BY",
+      "ORDER BY",
+      "STR",
+      "IF",
+      "CONTAINS",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1329,16 +1201,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FROM",
       "WHERE",
-      "BIND",
-      "AS",
       "FILTER",
-      "ORDER",
-      "BY",
-      "DESC"
+      "BIND",
+      "ORDER BY",
+      "FROM",
+      "SAMETERM"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1360,12 +1229,14 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "STRLEN",
       "WHERE",
       "OPTIONAL",
-      "SERVICE"
+      "SERVICE",
+      "FROM",
+      "STR",
+      "IF",
+      "STRLEN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1386,12 +1257,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
+      "STR",
+      "IF",
       "SUBSTR",
-      "VSTQ",
       "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
@@ -1413,16 +1284,17 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "FILTER",
       "BIND",
-      "AS",
-      "SUBSTR",
-      "STR",
-      "STRLEN",
       "SERVICE",
-      "FILTER"
+      "STR",
+      "LANG",
+      "IRI",
+      "IF",
+      "STRLEN",
+      "SUBSTR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1443,12 +1315,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ECO",
-      "BIND",
-      "GRAPH"
+      "GRAPH",
+      "BIND"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1469,7 +1339,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -1492,13 +1361,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1519,11 +1386,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "MINUS"
+      "MINUS",
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1544,17 +1411,14 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "STR",
-      "EP",
       "BIND",
+      "SERVICE",
+      "STR",
       "SUBSTR",
-      "AS",
-      "SERVICE"
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1575,17 +1439,19 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "SUBSTR",
-      "STR",
-      "AS",
-      "SERVICE",
       "FILTER",
-      "ORDER",
-      "BY"
+      "BIND",
+      "MINUS",
+      "SERVICE",
+      "ORDER BY",
+      "STR",
+      "NOW",
+      "SUBSTR",
+      "YEAR",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1606,12 +1472,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FROM",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "FROM"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1632,20 +1496,23 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
+      "FILTER",
       "UNION",
       "BIND",
-      "SUBSTR",
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "ALL",
       "STR",
+      "LANG",
+      "IRI",
       "STRLEN",
-      "AS",
-      "FILTER"
+      "SUBSTR",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1666,13 +1533,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH",
       "BIND",
-      "AS",
-      "SERVICE"
+      "SERVICE",
+      "STR"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1693,16 +1559,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "IUPAC",
+      "FILTER",
       "BIND",
-      "AS",
+      "FROM",
+      "STR",
       "IF",
       "SUBSTR",
-      "FILTER",
-      "CONTAINS"
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1723,11 +1589,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1748,18 +1615,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
       "BIND",
-      "IRI",
-      "REPLACE",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
       "STR",
-      "AS"
+      "IRI",
+      "CONTAINS",
+      "REPLACE"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1781,7 +1646,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -1804,13 +1668,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1831,15 +1694,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
+      "OPTIONAL",
       "VALUES",
-      "OPTIONAL"
+      "SERVICE",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1860,15 +1721,17 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
+      "FILTER",
       "UNION",
-      "FILTER"
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1889,13 +1752,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1916,14 +1777,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "BIND",
       "SERVICE",
-      "CCC",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1944,18 +1802,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
       "WHERE",
       "VALUES",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -1976,10 +1829,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
+      "BIND",
+      "ALL",
       "REGEX"
     ],
     "category": "sib-swiss UniProt"
@@ -2001,16 +1855,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "PDB",
-      "VALUES",
-      "IRI",
-      "BIND",
-      "AS",
-      "STRBEFORE",
       "FILTER",
+      "BIND",
+      "VALUES",
+      "FROM",
+      "STR",
+      "IRI",
+      "IF",
+      "CONCAT",
       "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
@@ -2032,13 +1886,13 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "VALUES",
       "BIND",
-      "AS",
-      "HGNC"
+      "VALUES",
+      "STR",
+      "IRI",
+      "CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2059,12 +1913,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
+      "WHERE",
       "DISTINCT",
-      "AS",
-      "WHERE"
+      "ALL",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2085,10 +1938,8 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE",
-      "PDB"
+      "WHERE"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2110,17 +1961,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "IDSM",
-      "SERVICE",
-      "CC",
-      "CCCC",
-      "OMIM",
       "OPTIONAL",
-      "MIM"
+      "SERVICE",
+      "DISTINCT",
+      "WITH",
+      "USING",
+      "STR",
+      "SUBSTR",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2141,10 +1991,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "FROM"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2165,7 +2015,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -2188,11 +2037,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "DISTINCT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2213,12 +2061,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "UNION",
-      "FILTER"
+      "DISTINCT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2239,17 +2086,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SAMPLE",
-      "AS",
-      "COUNT",
-      "DISTINCT",
       "WHERE",
       "GRAPH",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "WITH",
+      "IF",
+      "COUNT",
+      "SAMPLE"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2271,13 +2117,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "GRAPH"
+      "GRAPH",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2298,10 +2143,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2322,12 +2167,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "UNION",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
       "COUNT"
     ],
@@ -2350,11 +2193,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
       "COUNT"
     ],
@@ -2378,10 +2219,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "WITH",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2402,13 +2245,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
+      "GRAPH",
       "SERVICE",
-      "GRAPH"
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2429,13 +2271,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
+      "GRAPH",
       "SERVICE",
-      "GRAPH"
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2457,10 +2298,8 @@ export const UniProt = [
       "RDF"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "PDB",
       "UNION"
     ],
     "category": "sib-swiss UniProt"
@@ -2483,11 +2322,10 @@ export const UniProt = [
       "RDF"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "DISTINCT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2508,14 +2346,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
-      "COUNT",
-      "DISTINCT"
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2536,16 +2372,15 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "UNION",
-      "PDB",
-      "GROUP",
-      "BY",
+      "GRAPH",
+      "GROUP BY",
       "HAVING",
-      "COUNT",
-      "DISTINCT"
+      "DISTINCT",
+      "ALL",
+      "COUNT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2566,7 +2401,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER"
@@ -2590,10 +2424,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
+      "STR",
       "SUBSTR"
     ],
     "category": "sib-swiss UniProt"
@@ -2615,12 +2449,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "GRAPH",
       "OPTIONAL",
-      "MIM"
+      "GRAPH"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2641,7 +2473,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH"
@@ -2665,12 +2496,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "DNA"
+      "CONTAINS"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2691,7 +2520,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH"
@@ -2716,18 +2544,16 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "ECO",
-      "ECO_",
       "SELECT",
       "WHERE",
-      "DISTINCT",
+      "GRAPH",
       "BIND",
-      "IF",
-      "AS",
-      "GROUP",
-      "BY",
+      "GROUP BY",
       "HAVING",
+      "DISTINCT",
+      "ALL",
+      "IF",
+      "CONTAINS",
       "SUM"
     ],
     "category": "sib-swiss UniProt"
@@ -2750,9 +2576,7 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "EC",
       "WHERE"
     ],
     "category": "sib-swiss UniProt"
@@ -2775,11 +2599,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "EC",
       "WHERE",
-      "MINUS"
+      "MINUS",
+      "MIN"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2801,11 +2624,9 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2827,7 +2648,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -2851,10 +2671,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL"
+      "OPTIONAL",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2876,11 +2696,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES"
+      "VALUES",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2901,12 +2721,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "GRAPH",
-      "BIND",
-      "AS"
+      "BIND"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2927,7 +2745,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -2950,7 +2767,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -2973,11 +2789,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SERVICE",
-      "GRAPH"
+      "GRAPH",
+      "SERVICE"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -2998,7 +2813,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -3021,12 +2835,12 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "BIND",
-      "AS",
-      "SERVICE"
+      "SERVICE",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -3047,9 +2861,10 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "CREATE",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -3070,7 +2885,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -3093,7 +2907,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -3116,7 +2929,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -3139,7 +2951,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -3162,17 +2973,15 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "GROUP_CONCAT",
-      "AS",
       "WHERE",
       "VALUES",
-      "GROUP",
-      "BY",
+      "GROUP BY",
+      "ORDER BY",
       "HAVING",
+      "CONCAT",
       "COUNT",
-      "ORDER"
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -3193,11 +3002,11 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "VALUES",
-      "SERVICE"
+      "SERVICE",
+      "IF"
     ],
     "category": "sib-swiss UniProt"
   },
@@ -3218,7 +3027,6 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",

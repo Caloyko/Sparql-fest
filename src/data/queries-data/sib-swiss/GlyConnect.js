@@ -1,19 +1,5 @@
 export const GlyConnect = [
   {
-    "name": "GlyConnect - ",
-    "slug": "GlyConnect_",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
-    "category": "sib-swiss GlyConnect"
-  },
-  {
     "name": "GlyConnect - 1",
     "slug": "GlyConnect_1",
     "date": "18-06-2025",
@@ -30,8 +16,10 @@ export const GlyConnect = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SELECT"
+      "SELECT",
+      "WHERE",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss GlyConnect"
   },
@@ -52,8 +40,11 @@ export const GlyConnect = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SELECT"
+      "SELECT",
+      "WHERE",
+      "DISTINCT",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss GlyConnect"
   },
@@ -74,8 +65,11 @@ export const GlyConnect = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SELECT"
+      "SELECT",
+      "WHERE",
+      "DISTINCT",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss GlyConnect"
   },
@@ -96,9 +90,13 @@ export const GlyConnect = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FILTER"
+      "WHERE",
+      "FILTER",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "IF"
     ],
     "category": "sib-swiss GlyConnect"
   },
@@ -119,8 +117,9 @@ export const GlyConnect = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SELECT"
+      "SELECT",
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss GlyConnect"
   }

@@ -17,12 +17,10 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FROM",
       "WHERE",
-      "CHEM",
-      "OPTIONAL"
+      "OPTIONAL",
+      "FROM"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -43,19 +41,14 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GEM",
-      "NB",
       "SELECT",
-      "FROM",
       "WHERE",
       "FILTER",
-      "IN",
       "BIND",
-      "IF",
-      "AS",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "FROM",
+      "ALL",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -76,16 +69,16 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "GROUP_CONCAT",
-      "OR",
-      "AS",
-      "FROM",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "FROM",
+      "WITH",
+      "ADD",
+      "BOUND",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -106,18 +99,16 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "PAT_ECOLI",
-      "EC",
       "SELECT",
-      "MNXR",
-      "GROUP_CONCAT",
-      "AS",
-      "FROM",
       "WHERE",
       "OPTIONAL",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "FROM",
+      "WITH",
+      "ALL",
+      "CONCAT",
+      "MIN",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -139,16 +130,13 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "MNXR",
-      "GROUP_CONCAT",
-      "AS",
-      "FROM",
       "WHERE",
       "OPTIONAL",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "FROM",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -169,11 +157,11 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "FROM",
       "WHERE",
-      "CHEM"
+      "FROM",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -194,12 +182,10 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "KEGG",
       "SELECT",
-      "FROM",
       "WHERE",
-      "CHEM"
+      "FROM",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -220,12 +206,10 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "KEGG",
       "SELECT",
-      "FROM",
       "WHERE",
-      "REAC"
+      "FROM",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -246,12 +230,10 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "KEGG",
       "SELECT",
-      "FROM",
       "WHERE",
-      "REAC"
+      "FROM",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -272,17 +254,14 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "KEGG",
-      "NB",
       "SELECT",
-      "FROM",
       "WHERE",
       "FILTER",
-      "IN",
       "BIND",
+      "FROM",
+      "STR",
       "IF",
-      "AS"
+      "SUBSTR"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -303,16 +282,12 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "NB",
       "SELECT",
-      "FROM",
       "WHERE",
       "FILTER",
-      "IN",
       "BIND",
-      "IF",
-      "AS"
+      "FROM",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -333,17 +308,12 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "ATP",
-      "NB",
       "SELECT",
-      "FROM",
       "WHERE",
       "FILTER",
-      "IN",
       "BIND",
-      "IF",
-      "AS"
+      "FROM",
+      "IF"
     ],
     "category": "sib-swiss MetaNetX"
   },
@@ -364,46 +334,16 @@ export const MetaNetX = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "DISTINCT",
-      "AS",
-      "FROM",
       "WHERE",
-      "MNET",
       "OPTIONAL",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "ALL",
+      "COUNT"
     ],
-    "category": "sib-swiss MetaNetX"
-  },
-  {
-    "name": "MetaNetX - README",
-    "slug": "MetaNetX_README",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
-    "category": "sib-swiss MetaNetX"
-  },
-  {
-    "name": "MetaNetX - prefixes",
-    "slug": "MetaNetX_prefixes",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
     "category": "sib-swiss MetaNetX"
   }
 ];

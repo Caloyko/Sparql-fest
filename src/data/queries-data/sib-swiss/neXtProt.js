@@ -15,13 +15,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "KW"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "USING",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -41,12 +44,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -66,10 +72,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "WITH",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -89,13 +98,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "TS",
-      "IHC",
-      "ECO"
+      "FILTER",
+      "DISTINCT",
+      "ALL",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -115,13 +126,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "KW"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "WITH",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -141,11 +154,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -165,10 +180,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -188,10 +203,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -211,11 +226,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GO"
+      "FILTER",
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -235,11 +255,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -259,12 +281,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "TS",
-      "KW"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -284,11 +304,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -308,11 +327,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "FILTER",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -332,11 +354,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "WITH",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -356,13 +381,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO",
-      "PDZ",
-      "TS"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -382,12 +404,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "BIND",
+      "VALUES",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "EXISTS",
+      "NOT EXISTS",
+      "SUBSTR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -407,13 +435,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "TS"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -433,13 +462,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "KW"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -459,11 +489,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -483,11 +515,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "TS"
+      "STR",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -507,12 +542,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -532,10 +569,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "MOVE",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -555,12 +596,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GO",
-      "KW"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -580,11 +623,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -604,11 +648,19 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "UNION",
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "WITH",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -628,13 +680,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "GOLD"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "MOVE",
+      "ALL",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -654,10 +710,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "VALUES",
       "DISTINCT",
-      "WHERE"
+      "FROM",
+      "ALL",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -677,11 +736,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -701,11 +765,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GPI"
+      "FILTER",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -725,8 +789,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE"
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -746,10 +815,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -769,11 +840,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -793,11 +866,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PTM"
+      "FILTER",
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -817,11 +896,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "FILTER",
+      "DISTINCT",
+      "WITH",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -841,12 +921,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -866,13 +949,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW",
-      "NAD",
-      "NADP"
+      "FILTER",
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -892,14 +973,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW",
-      "RNA",
-      "DO",
-      "RRM"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -919,10 +1000,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -942,10 +1022,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -965,10 +1045,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "REGEX",
+      "IF"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -988,10 +1070,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1011,12 +1092,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "BIND",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1036,11 +1120,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1060,11 +1147,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "HSA"
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1084,10 +1170,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1107,10 +1194,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1130,11 +1218,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "CLDN"
+      "FILTER",
+      "DISTINCT",
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1154,11 +1242,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1178,11 +1268,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "UNION"
+      "UNION",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1202,11 +1292,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "NMR"
+      "FILTER",
+      "DISTINCT",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1226,10 +1316,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "REGEX",
+      "SUBSTR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1249,10 +1343,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1272,11 +1369,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1296,10 +1395,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1319,13 +1418,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "GFP"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1345,12 +1445,20 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "MAX",
-      "MIN"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN",
+      "MAX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1370,11 +1478,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PTM"
+      "FILTER",
+      "DISTINCT",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1394,11 +1503,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DE"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "SUBSTR",
+      "MAX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1418,10 +1531,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1441,10 +1554,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1464,16 +1576,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "RRM",
-      "RNA",
-      "DO",
-      "GO",
-      "IEA",
-      "ISS"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "VALUES",
+      "DISTINCT",
+      "WITH",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1493,10 +1606,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "REGEX",
+      "IF"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1516,10 +1632,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1539,13 +1658,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "PTM"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1565,10 +1686,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "REGEX",
+      "IF"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1588,10 +1711,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1611,12 +1733,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PTM",
-      "SYK"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "REGEX",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1636,12 +1760,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1661,11 +1787,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "CCDS"
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1685,10 +1809,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1708,10 +1834,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1731,10 +1859,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "VALUES",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1754,12 +1885,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1779,11 +1912,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "TS"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1803,12 +1938,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1828,11 +1965,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1852,10 +1988,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "STRLEN",
+      "SUBSTR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1875,13 +2015,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "KW"
+      "FILTER",
+      "UNION",
+      "VALUES",
+      "DISTINCT",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1901,11 +2044,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "FILTER",
+      "DISTINCT",
+      "WITH",
+      "USING",
+      "STR",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1925,9 +2074,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
+      "SELECT",
       "WHERE",
-      "TS"
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1947,9 +2100,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1969,10 +2127,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "ALL",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -1992,10 +2152,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2015,11 +2176,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "MGI"
+      "FILTER",
+      "DISTINCT",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2039,10 +2202,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2062,34 +2226,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW",
       "FILTER",
-      "NOT",
+      "UNION",
+      "DISTINCT",
+      "STR",
       "EXISTS",
-      "MGI"
+      "NOT EXISTS",
+      "MIN"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00091",
-    "slug": "neXtProt_NXQ_00091",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -2108,12 +2254,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "FF",
-      "QYE"
+      "FILTER",
+      "DISTINCT",
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2133,31 +2278,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "FF",
-      "QYE"
+      "FILTER",
+      "DISTINCT",
+      "REGEX"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00095",
-    "slug": "neXtProt_NXQ_00095",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -2176,11 +2302,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PTM"
+      "DISTINCT",
+      "STR",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2200,32 +2327,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "GOLD"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00100",
-    "slug": "neXtProt_NXQ_00100",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -2244,10 +2355,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2267,10 +2380,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2290,12 +2403,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SMR",
-      "PDB"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2315,11 +2428,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2339,11 +2454,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "HGNC"
+      "FILTER",
+      "DISTINCT",
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2363,11 +2478,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2387,10 +2505,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
       "DISTINCT",
-      "WHERE"
+      "IF"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2410,10 +2530,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2433,8 +2558,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE"
+      "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "GROUP BY",
+      "REGEX",
+      "EXISTS",
+      "COUNT",
+      "SUM"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2454,10 +2586,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2477,10 +2608,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2500,10 +2630,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "UNION",
       "DISTINCT",
-      "WHERE"
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2523,10 +2655,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2546,7 +2677,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX"
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2566,10 +2704,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2589,15 +2728,22 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
+      "DESCRIBE",
       "WHERE",
-      "KR",
-      "DEFIKLRY",
-      "AA",
-      "AELEEVTLDGKPLQALR",
-      "AELEEVTLDGKPLQALRVTDLKAALEQR"
+      "FILTER",
+      "BIND",
+      "ORDER BY",
+      "DISTINCT",
+      "ADD",
+      "STR",
+      "REGEX",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "STRLEN",
+      "SUBSTR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2617,11 +2763,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SUMO"
+      "FILTER",
+      "DISTINCT",
+      "CONTAINS",
+      "SUM"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2641,11 +2788,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "IFN"
+      "FILTER",
+      "DISTINCT",
+      "REGEX",
+      "IF"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2665,12 +2813,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2690,10 +2840,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "LIMIT",
       "DISTINCT",
-      "WHERE"
+      "WITH",
+      "STR",
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2713,11 +2867,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PDB"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2737,11 +2892,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GO"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2761,10 +2918,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2784,13 +2943,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "ST",
-      "ILV",
-      "PDZ"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "IF",
+      "STRLEN",
+      "SUBSTR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2810,12 +2973,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD",
-      "DO"
+      "GROUP BY",
+      "HAVING",
+      "DISTINCT",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2835,13 +2999,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
       "FILTER",
-      "KW"
+      "SERVICE",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "NOW",
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2861,15 +3028,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
+      "OPTIONAL",
       "UNION",
-      "KW",
       "SERVICE",
-      "GOLD",
-      "PDB"
+      "ORDER BY",
+      "DISTINCT",
+      "WITH",
+      "IF",
+      "CONTAINS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2889,8 +3059,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE"
+      "SELECT",
+      "WHERE",
+      "BIND",
+      "GROUP BY",
+      "HAVING",
+      "SUM"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2910,12 +3084,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PTM",
-      "QHP"
+      "FILTER",
+      "BIND",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "SUBSTR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2935,10 +3112,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "REGEX"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2958,10 +3136,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "EXISTS",
+      "NOT EXISTS",
+      "ABS",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -2981,10 +3166,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "VALUES",
       "DISTINCT",
-      "GOLD"
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3004,9 +3190,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "BIND",
+      "VALUES",
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3026,9 +3215,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "CONCAT",
+      "COUNT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3048,10 +3242,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3071,10 +3267,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3094,11 +3291,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PE"
+      "VALUES",
+      "DISTINCT",
+      "FROM"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3118,11 +3315,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "STR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3142,10 +3341,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "UNION",
+      "BIND",
+      "ORDER BY",
+      "LIMIT",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "SUBSTR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3165,10 +3369,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "WHERE"
+      "SAMPLE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3188,13 +3394,20 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "EC",
-      "TS",
-      "UNION"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "WITH",
+      "ALL",
+      "STR",
+      "REGEX",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "STRSTARTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3214,11 +3427,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "UNION"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3238,12 +3455,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PXDNL",
-      "STRDT"
+      "BIND",
+      "VALUES",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3263,11 +3480,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "MT"
+      "DISTINCT",
+      "STR",
+      "RAND"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3287,13 +3504,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "RNA",
-      "GOLD",
-      "IHC"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3313,14 +3527,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "RNA",
-      "TS",
-      "GOLD",
-      "IHC"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3340,8 +3550,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "PMID"
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT",
+      "DISTINCT",
+      "FROM",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3361,10 +3578,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
       "DISTINCT",
-      "WHERE"
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3384,10 +3602,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "ORDER BY",
+      "LIMIT",
       "DISTINCT",
-      "WHERE"
+      "ALL",
+      "STR",
+      "STRLEN",
+      "REPLACE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3407,10 +3632,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "VALUES",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "URI",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3430,10 +3660,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "ORDER BY",
       "DISTINCT",
-      "WHERE"
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3453,10 +3686,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3476,10 +3709,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "CONCAT",
+      "SUBSTR",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3499,11 +3738,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "PE"
+      "FILTER",
+      "VALUES",
+      "DISTINCT",
+      "FROM"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3523,10 +3763,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "GROUP BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3546,11 +3789,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "DISTINCT",
+      "COUNT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3570,14 +3816,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "SEPARATOR",
       "WHERE",
-      "GOLD",
-      "GROUP",
-      "BY"
+      "FILTER",
+      "GROUP BY",
+      "DISTINCT",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3597,8 +3845,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE"
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3618,11 +3870,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3642,10 +3893,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "ORDER BY",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3665,11 +3916,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "FILTER",
+      "ORDER BY",
+      "DISTINCT",
+      "MOVE",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3689,10 +3943,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "ORDER BY",
       "DISTINCT",
-      "WHERE"
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3712,10 +3967,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3735,10 +3989,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3758,11 +4011,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3782,10 +4034,9 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3805,13 +4056,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "ALL",
+      "STR",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3831,10 +4083,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "FILTER",
+      "ORDER BY",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3854,29 +4107,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "GROUP BY",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "IF",
+      "CONCAT",
+      "SAMPLE"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00249",
-    "slug": "neXtProt_NXQ_00249",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -3895,9 +4135,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "ORDER BY",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3917,28 +4158,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "WHERE"
+      "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "GROUP BY",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "SAMPLE"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00252",
-    "slug": "neXtProt_NXQ_00252",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH",
-      "SPEX"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -3957,13 +4187,24 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SEPARATOR",
+      "SELECT",
       "WHERE",
+      "FILTER",
+      "UNION",
+      "BIND",
+      "VALUES",
       "SERVICE",
-      "SL",
-      "GO",
-      "GOLD"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "CONTAINS",
+      "MIN",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -3983,11 +4224,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "CONCAT",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4007,9 +4255,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "WHERE",
+      "FILTER",
+      "ORDER BY",
+      "DISTINCT",
+      "ALL"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4029,28 +4280,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "WHERE",
+      "FILTER",
+      "ORDER BY",
+      "DISTINCT",
+      "COUNT"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00257",
-    "slug": "neXtProt_NXQ_00257",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -4069,16 +4305,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "EVS",
-      "SO_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
       "BIND",
+      "SERVICE",
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "WITH",
+      "STR",
       "IRI",
-      "AS"
+      "REPLACE",
+      "SAMPLE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4098,15 +4336,17 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "EVS",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
+      "FILTER",
       "BIND",
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
       "IRI",
-      "AS"
+      "CONTAINS",
+      "REPLACE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4126,17 +4366,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "EVS",
-      "SO_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
-      "DO",
+      "FILTER",
       "BIND",
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "WITH",
+      "STR",
       "IRI",
-      "AS"
+      "CONTAINS",
+      "REPLACE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4156,29 +4397,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "ORDER BY",
+      "DISTINCT"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00264",
-    "slug": "neXtProt_NXQ_00264",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -4197,10 +4420,19 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "OPTIONAL",
+      "UNION",
+      "BIND",
+      "VALUES",
+      "ORDER BY",
       "DISTINCT",
-      "CONCAT"
+      "STR",
+      "IF",
+      "CONCAT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4220,19 +4452,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SEPARATOR",
       "WHERE",
+      "FILTER",
       "SERVICE",
-      "CC",
-      "ACTIVITY",
-      "ASSAY",
-      "TARGET",
-      "COMPONENT",
-      "UNIPROT",
-      "GROUP",
-      "BY"
+      "GROUP BY",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "CONCAT",
+      "SUBSTR",
+      "CONTAINS",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4252,36 +4483,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SEPARATOR",
       "WHERE",
+      "FILTER",
       "SERVICE",
-      "CC",
-      "ACTIVITY",
-      "ASSAY",
-      "TARGET",
-      "COMPONENT",
-      "UNIPROT"
+      "GROUP BY",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "CONCAT",
+      "CONTAINS",
+      "GROUP_CONCAT"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00268",
-    "slug": "neXtProt_NXQ_00268",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -4300,11 +4513,19 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "ALL",
+      "STR",
+      "REGEX",
+      "CONCAT",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4324,12 +4545,22 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "AS",
-      "SEPARATOR",
+      "SELECT",
       "WHERE",
+      "FILTER",
+      "UNION",
+      "BIND",
       "SERVICE",
-      "GOLD"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "CONTAINS",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4349,9 +4580,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "WHERE",
+      "FILTER",
+      "OPTIONAL",
+      "UNION",
+      "VALUES",
+      "ORDER BY",
+      "DISTINCT",
+      "ALL",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4371,12 +4611,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "SERVICE"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "SERVICE",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "REGEX",
+      "CONCAT",
+      "CONTAINS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4396,17 +4642,18 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "EVS",
-      "SO_",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SERVICE",
-      "HBB",
+      "FILTER",
+      "UNION",
       "BIND",
+      "SERVICE",
+      "DISTINCT",
+      "WITH",
+      "STR",
       "IRI",
-      "AS"
+      "CONTAINS",
+      "REPLACE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4426,12 +4673,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "AS",
       "WHERE",
-      "GOLD"
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4451,11 +4700,13 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "ORDER BY",
       "DISTINCT",
-      "AS",
-      "WHERE"
+      "STR",
+      "EXISTS"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4475,11 +4726,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT",
+      "HAVING",
+      "DISTINCT",
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4499,12 +4754,19 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD",
-      "KRT"
+      "FILTER",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "DISTINCT",
+      "MOVE",
+      "STR",
+      "SUBSTR",
+      "CONTAINS",
+      "COUNT",
+      "SAMPLE"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4524,11 +4786,15 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DO"
+      "FILTER",
+      "UNION",
+      "BIND",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4548,50 +4814,20 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "SL",
-      "GO",
-      "GOLD"
+      "FILTER",
+      "VALUES",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
+      "DISTINCT",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "COUNT",
+      "MIN"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00284",
-    "slug": "neXtProt_NXQ_00284",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00285",
-    "slug": "neXtProt_NXQ_00285",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -4610,10 +4846,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "FILTER",
+      "BIND",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING",
       "DISTINCT",
-      "WHERE"
+      "STR",
+      "COUNT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4633,10 +4875,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GRAPH",
       "DISTINCT",
-      "WHERE"
+      "ALL",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4656,13 +4900,11 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "GO_BP",
-      "GO_MF",
       "WHERE",
-      "UNION"
+      "UNION",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4682,11 +4924,12 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KEGG_PTW"
+      "FILTER",
+      "ORDER BY",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4706,66 +4949,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
-      "DISTINCT"
+      "WHERE",
+      "BIND",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "IF"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00291",
-    "slug": "neXtProt_NXQ_00291",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00292",
-    "slug": "neXtProt_NXQ_00292",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 00293",
-    "slug": "neXtProt_NXQ_00293",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   },
   {
@@ -4784,12 +4975,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "DI",
-      "NCI"
+      "FILTER",
+      "UNION",
+      "ORDER BY",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4809,13 +5004,16 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "PMID",
       "WHERE",
-      "DI",
-      "NCI"
+      "FILTER",
+      "UNION",
+      "DISTINCT",
+      "FROM",
+      "STR",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4835,11 +5033,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "GOLD"
+      "ORDER BY",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4859,10 +5056,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SEPARATOR",
+      "SELECT",
       "WHERE",
-      "PDB"
+      "FILTER",
+      "GROUP BY",
+      "DISTINCT",
+      "STR",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4882,10 +5083,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "ORDER BY",
+      "DISTINCT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4905,11 +5106,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
+      "GROUP BY",
       "DISTINCT",
-      "SEPARATOR",
-      "WHERE"
+      "ALL",
+      "STR",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4929,10 +5133,19 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SEPARATOR",
-      "TS",
-      "SERVICE"
+      "SELECT",
+      "WHERE",
+      "FILTER",
+      "SERVICE",
+      "GROUP BY",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS",
+      "CONCAT",
+      "MIN",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4952,11 +5165,10 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "DISTINCT",
+      "MIN"
     ],
     "category": "sib-swiss neXtProt"
   },
@@ -4976,10242 +5188,14 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "KW"
+      "FILTER",
+      "DISTINCT",
+      "EXISTS",
+      "NOT EXISTS",
+      "MIN"
     ],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09000",
-    "slug": "neXtProt_NXQ_09000",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09001",
-    "slug": "neXtProt_NXQ_09001",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09002",
-    "slug": "neXtProt_NXQ_09002",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09003",
-    "slug": "neXtProt_NXQ_09003",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09004",
-    "slug": "neXtProt_NXQ_09004",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09005",
-    "slug": "neXtProt_NXQ_09005",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09006",
-    "slug": "neXtProt_NXQ_09006",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09007",
-    "slug": "neXtProt_NXQ_09007",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09008",
-    "slug": "neXtProt_NXQ_09008",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09009",
-    "slug": "neXtProt_NXQ_09009",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09010",
-    "slug": "neXtProt_NXQ_09010",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09011",
-    "slug": "neXtProt_NXQ_09011",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09012",
-    "slug": "neXtProt_NXQ_09012",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09013",
-    "slug": "neXtProt_NXQ_09013",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09014",
-    "slug": "neXtProt_NXQ_09014",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09015",
-    "slug": "neXtProt_NXQ_09015",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09016",
-    "slug": "neXtProt_NXQ_09016",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09017",
-    "slug": "neXtProt_NXQ_09017",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09018",
-    "slug": "neXtProt_NXQ_09018",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09019",
-    "slug": "neXtProt_NXQ_09019",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09020",
-    "slug": "neXtProt_NXQ_09020",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09021",
-    "slug": "neXtProt_NXQ_09021",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09022",
-    "slug": "neXtProt_NXQ_09022",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09023",
-    "slug": "neXtProt_NXQ_09023",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09024",
-    "slug": "neXtProt_NXQ_09024",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09025",
-    "slug": "neXtProt_NXQ_09025",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09026",
-    "slug": "neXtProt_NXQ_09026",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09027",
-    "slug": "neXtProt_NXQ_09027",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09028",
-    "slug": "neXtProt_NXQ_09028",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09029",
-    "slug": "neXtProt_NXQ_09029",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09030",
-    "slug": "neXtProt_NXQ_09030",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09031",
-    "slug": "neXtProt_NXQ_09031",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09032",
-    "slug": "neXtProt_NXQ_09032",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09033",
-    "slug": "neXtProt_NXQ_09033",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09034",
-    "slug": "neXtProt_NXQ_09034",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09035",
-    "slug": "neXtProt_NXQ_09035",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09036",
-    "slug": "neXtProt_NXQ_09036",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09037",
-    "slug": "neXtProt_NXQ_09037",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09038",
-    "slug": "neXtProt_NXQ_09038",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09039",
-    "slug": "neXtProt_NXQ_09039",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09040",
-    "slug": "neXtProt_NXQ_09040",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09041",
-    "slug": "neXtProt_NXQ_09041",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09042",
-    "slug": "neXtProt_NXQ_09042",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09043",
-    "slug": "neXtProt_NXQ_09043",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09044",
-    "slug": "neXtProt_NXQ_09044",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09045",
-    "slug": "neXtProt_NXQ_09045",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09046",
-    "slug": "neXtProt_NXQ_09046",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09047",
-    "slug": "neXtProt_NXQ_09047",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09048",
-    "slug": "neXtProt_NXQ_09048",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09049",
-    "slug": "neXtProt_NXQ_09049",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09050",
-    "slug": "neXtProt_NXQ_09050",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09051",
-    "slug": "neXtProt_NXQ_09051",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09052",
-    "slug": "neXtProt_NXQ_09052",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09053",
-    "slug": "neXtProt_NXQ_09053",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09054",
-    "slug": "neXtProt_NXQ_09054",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09055",
-    "slug": "neXtProt_NXQ_09055",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09056",
-    "slug": "neXtProt_NXQ_09056",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09057",
-    "slug": "neXtProt_NXQ_09057",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09058",
-    "slug": "neXtProt_NXQ_09058",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09059",
-    "slug": "neXtProt_NXQ_09059",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09060",
-    "slug": "neXtProt_NXQ_09060",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09061",
-    "slug": "neXtProt_NXQ_09061",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09062",
-    "slug": "neXtProt_NXQ_09062",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09063",
-    "slug": "neXtProt_NXQ_09063",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09064",
-    "slug": "neXtProt_NXQ_09064",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09065",
-    "slug": "neXtProt_NXQ_09065",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09066",
-    "slug": "neXtProt_NXQ_09066",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09067",
-    "slug": "neXtProt_NXQ_09067",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09068",
-    "slug": "neXtProt_NXQ_09068",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09069",
-    "slug": "neXtProt_NXQ_09069",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09070",
-    "slug": "neXtProt_NXQ_09070",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09071",
-    "slug": "neXtProt_NXQ_09071",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09072",
-    "slug": "neXtProt_NXQ_09072",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09073",
-    "slug": "neXtProt_NXQ_09073",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09074",
-    "slug": "neXtProt_NXQ_09074",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09075",
-    "slug": "neXtProt_NXQ_09075",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09076",
-    "slug": "neXtProt_NXQ_09076",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09077",
-    "slug": "neXtProt_NXQ_09077",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09078",
-    "slug": "neXtProt_NXQ_09078",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09079",
-    "slug": "neXtProt_NXQ_09079",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09080",
-    "slug": "neXtProt_NXQ_09080",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09081",
-    "slug": "neXtProt_NXQ_09081",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09082",
-    "slug": "neXtProt_NXQ_09082",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09083",
-    "slug": "neXtProt_NXQ_09083",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09084",
-    "slug": "neXtProt_NXQ_09084",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09085",
-    "slug": "neXtProt_NXQ_09085",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09086",
-    "slug": "neXtProt_NXQ_09086",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09087",
-    "slug": "neXtProt_NXQ_09087",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09088",
-    "slug": "neXtProt_NXQ_09088",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09089",
-    "slug": "neXtProt_NXQ_09089",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09090",
-    "slug": "neXtProt_NXQ_09090",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09091",
-    "slug": "neXtProt_NXQ_09091",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09092",
-    "slug": "neXtProt_NXQ_09092",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09093",
-    "slug": "neXtProt_NXQ_09093",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09094",
-    "slug": "neXtProt_NXQ_09094",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09095",
-    "slug": "neXtProt_NXQ_09095",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09096",
-    "slug": "neXtProt_NXQ_09096",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09097",
-    "slug": "neXtProt_NXQ_09097",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09098",
-    "slug": "neXtProt_NXQ_09098",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09099",
-    "slug": "neXtProt_NXQ_09099",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09100",
-    "slug": "neXtProt_NXQ_09100",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09101",
-    "slug": "neXtProt_NXQ_09101",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09102",
-    "slug": "neXtProt_NXQ_09102",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09103",
-    "slug": "neXtProt_NXQ_09103",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09104",
-    "slug": "neXtProt_NXQ_09104",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09105",
-    "slug": "neXtProt_NXQ_09105",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09106",
-    "slug": "neXtProt_NXQ_09106",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09107",
-    "slug": "neXtProt_NXQ_09107",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09108",
-    "slug": "neXtProt_NXQ_09108",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09109",
-    "slug": "neXtProt_NXQ_09109",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09110",
-    "slug": "neXtProt_NXQ_09110",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09111",
-    "slug": "neXtProt_NXQ_09111",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09112",
-    "slug": "neXtProt_NXQ_09112",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09113",
-    "slug": "neXtProt_NXQ_09113",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09114",
-    "slug": "neXtProt_NXQ_09114",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09115",
-    "slug": "neXtProt_NXQ_09115",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09117",
-    "slug": "neXtProt_NXQ_09117",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09119",
-    "slug": "neXtProt_NXQ_09119",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09120",
-    "slug": "neXtProt_NXQ_09120",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09121",
-    "slug": "neXtProt_NXQ_09121",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09122",
-    "slug": "neXtProt_NXQ_09122",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09123",
-    "slug": "neXtProt_NXQ_09123",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09124",
-    "slug": "neXtProt_NXQ_09124",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09125",
-    "slug": "neXtProt_NXQ_09125",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09126",
-    "slug": "neXtProt_NXQ_09126",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09127",
-    "slug": "neXtProt_NXQ_09127",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09128",
-    "slug": "neXtProt_NXQ_09128",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09129",
-    "slug": "neXtProt_NXQ_09129",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09130",
-    "slug": "neXtProt_NXQ_09130",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09131",
-    "slug": "neXtProt_NXQ_09131",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09132",
-    "slug": "neXtProt_NXQ_09132",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09133",
-    "slug": "neXtProt_NXQ_09133",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09134",
-    "slug": "neXtProt_NXQ_09134",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09135",
-    "slug": "neXtProt_NXQ_09135",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09136",
-    "slug": "neXtProt_NXQ_09136",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09137",
-    "slug": "neXtProt_NXQ_09137",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09138",
-    "slug": "neXtProt_NXQ_09138",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09139",
-    "slug": "neXtProt_NXQ_09139",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09140",
-    "slug": "neXtProt_NXQ_09140",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09141",
-    "slug": "neXtProt_NXQ_09141",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09142",
-    "slug": "neXtProt_NXQ_09142",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09143",
-    "slug": "neXtProt_NXQ_09143",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09144",
-    "slug": "neXtProt_NXQ_09144",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09145",
-    "slug": "neXtProt_NXQ_09145",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09146",
-    "slug": "neXtProt_NXQ_09146",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09147",
-    "slug": "neXtProt_NXQ_09147",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09148",
-    "slug": "neXtProt_NXQ_09148",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09149",
-    "slug": "neXtProt_NXQ_09149",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09150",
-    "slug": "neXtProt_NXQ_09150",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09151",
-    "slug": "neXtProt_NXQ_09151",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09152",
-    "slug": "neXtProt_NXQ_09152",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09153",
-    "slug": "neXtProt_NXQ_09153",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09154",
-    "slug": "neXtProt_NXQ_09154",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09155",
-    "slug": "neXtProt_NXQ_09155",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09156",
-    "slug": "neXtProt_NXQ_09156",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09157",
-    "slug": "neXtProt_NXQ_09157",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09158",
-    "slug": "neXtProt_NXQ_09158",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09159",
-    "slug": "neXtProt_NXQ_09159",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09160",
-    "slug": "neXtProt_NXQ_09160",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09161",
-    "slug": "neXtProt_NXQ_09161",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09162",
-    "slug": "neXtProt_NXQ_09162",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09163",
-    "slug": "neXtProt_NXQ_09163",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09164",
-    "slug": "neXtProt_NXQ_09164",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09165",
-    "slug": "neXtProt_NXQ_09165",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09166",
-    "slug": "neXtProt_NXQ_09166",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09167",
-    "slug": "neXtProt_NXQ_09167",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09168",
-    "slug": "neXtProt_NXQ_09168",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09169",
-    "slug": "neXtProt_NXQ_09169",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09170",
-    "slug": "neXtProt_NXQ_09170",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09171",
-    "slug": "neXtProt_NXQ_09171",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09172",
-    "slug": "neXtProt_NXQ_09172",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09173",
-    "slug": "neXtProt_NXQ_09173",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09174",
-    "slug": "neXtProt_NXQ_09174",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09175",
-    "slug": "neXtProt_NXQ_09175",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09176",
-    "slug": "neXtProt_NXQ_09176",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09177",
-    "slug": "neXtProt_NXQ_09177",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09178",
-    "slug": "neXtProt_NXQ_09178",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09179",
-    "slug": "neXtProt_NXQ_09179",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09180",
-    "slug": "neXtProt_NXQ_09180",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09181",
-    "slug": "neXtProt_NXQ_09181",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09182",
-    "slug": "neXtProt_NXQ_09182",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09183",
-    "slug": "neXtProt_NXQ_09183",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09184",
-    "slug": "neXtProt_NXQ_09184",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09185",
-    "slug": "neXtProt_NXQ_09185",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09186",
-    "slug": "neXtProt_NXQ_09186",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09187",
-    "slug": "neXtProt_NXQ_09187",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09188",
-    "slug": "neXtProt_NXQ_09188",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09189",
-    "slug": "neXtProt_NXQ_09189",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09190",
-    "slug": "neXtProt_NXQ_09190",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09191",
-    "slug": "neXtProt_NXQ_09191",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09192",
-    "slug": "neXtProt_NXQ_09192",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09193",
-    "slug": "neXtProt_NXQ_09193",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09194",
-    "slug": "neXtProt_NXQ_09194",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09195",
-    "slug": "neXtProt_NXQ_09195",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09196",
-    "slug": "neXtProt_NXQ_09196",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09197",
-    "slug": "neXtProt_NXQ_09197",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09198",
-    "slug": "neXtProt_NXQ_09198",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09199",
-    "slug": "neXtProt_NXQ_09199",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09200",
-    "slug": "neXtProt_NXQ_09200",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09201",
-    "slug": "neXtProt_NXQ_09201",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09202",
-    "slug": "neXtProt_NXQ_09202",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09203",
-    "slug": "neXtProt_NXQ_09203",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09204",
-    "slug": "neXtProt_NXQ_09204",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09205",
-    "slug": "neXtProt_NXQ_09205",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09206",
-    "slug": "neXtProt_NXQ_09206",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09207",
-    "slug": "neXtProt_NXQ_09207",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09208",
-    "slug": "neXtProt_NXQ_09208",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09209",
-    "slug": "neXtProt_NXQ_09209",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09210",
-    "slug": "neXtProt_NXQ_09210",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09211",
-    "slug": "neXtProt_NXQ_09211",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09212",
-    "slug": "neXtProt_NXQ_09212",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09213",
-    "slug": "neXtProt_NXQ_09213",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09214",
-    "slug": "neXtProt_NXQ_09214",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09215",
-    "slug": "neXtProt_NXQ_09215",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09216",
-    "slug": "neXtProt_NXQ_09216",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09217",
-    "slug": "neXtProt_NXQ_09217",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09218",
-    "slug": "neXtProt_NXQ_09218",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09219",
-    "slug": "neXtProt_NXQ_09219",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09220",
-    "slug": "neXtProt_NXQ_09220",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09221",
-    "slug": "neXtProt_NXQ_09221",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09222",
-    "slug": "neXtProt_NXQ_09222",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09223",
-    "slug": "neXtProt_NXQ_09223",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09224",
-    "slug": "neXtProt_NXQ_09224",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09225",
-    "slug": "neXtProt_NXQ_09225",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09226",
-    "slug": "neXtProt_NXQ_09226",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09227",
-    "slug": "neXtProt_NXQ_09227",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09228",
-    "slug": "neXtProt_NXQ_09228",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09229",
-    "slug": "neXtProt_NXQ_09229",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09230",
-    "slug": "neXtProt_NXQ_09230",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09231",
-    "slug": "neXtProt_NXQ_09231",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09232",
-    "slug": "neXtProt_NXQ_09232",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09233",
-    "slug": "neXtProt_NXQ_09233",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09234",
-    "slug": "neXtProt_NXQ_09234",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09235",
-    "slug": "neXtProt_NXQ_09235",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09236",
-    "slug": "neXtProt_NXQ_09236",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09237",
-    "slug": "neXtProt_NXQ_09237",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09238",
-    "slug": "neXtProt_NXQ_09238",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09239",
-    "slug": "neXtProt_NXQ_09239",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09240",
-    "slug": "neXtProt_NXQ_09240",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09241",
-    "slug": "neXtProt_NXQ_09241",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09242",
-    "slug": "neXtProt_NXQ_09242",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09243",
-    "slug": "neXtProt_NXQ_09243",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09244",
-    "slug": "neXtProt_NXQ_09244",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09245",
-    "slug": "neXtProt_NXQ_09245",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09246",
-    "slug": "neXtProt_NXQ_09246",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09247",
-    "slug": "neXtProt_NXQ_09247",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09248",
-    "slug": "neXtProt_NXQ_09248",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09249",
-    "slug": "neXtProt_NXQ_09249",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09250",
-    "slug": "neXtProt_NXQ_09250",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09251",
-    "slug": "neXtProt_NXQ_09251",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09252",
-    "slug": "neXtProt_NXQ_09252",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09253",
-    "slug": "neXtProt_NXQ_09253",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09254",
-    "slug": "neXtProt_NXQ_09254",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09255",
-    "slug": "neXtProt_NXQ_09255",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09256",
-    "slug": "neXtProt_NXQ_09256",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09257",
-    "slug": "neXtProt_NXQ_09257",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09258",
-    "slug": "neXtProt_NXQ_09258",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09259",
-    "slug": "neXtProt_NXQ_09259",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09260",
-    "slug": "neXtProt_NXQ_09260",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09261",
-    "slug": "neXtProt_NXQ_09261",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09262",
-    "slug": "neXtProt_NXQ_09262",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09263",
-    "slug": "neXtProt_NXQ_09263",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09264",
-    "slug": "neXtProt_NXQ_09264",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09265",
-    "slug": "neXtProt_NXQ_09265",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09266",
-    "slug": "neXtProt_NXQ_09266",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09267",
-    "slug": "neXtProt_NXQ_09267",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09268",
-    "slug": "neXtProt_NXQ_09268",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09269",
-    "slug": "neXtProt_NXQ_09269",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09270",
-    "slug": "neXtProt_NXQ_09270",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09271",
-    "slug": "neXtProt_NXQ_09271",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09272",
-    "slug": "neXtProt_NXQ_09272",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09273",
-    "slug": "neXtProt_NXQ_09273",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09274",
-    "slug": "neXtProt_NXQ_09274",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09275",
-    "slug": "neXtProt_NXQ_09275",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09276",
-    "slug": "neXtProt_NXQ_09276",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09277",
-    "slug": "neXtProt_NXQ_09277",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09278",
-    "slug": "neXtProt_NXQ_09278",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09279",
-    "slug": "neXtProt_NXQ_09279",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09280",
-    "slug": "neXtProt_NXQ_09280",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09281",
-    "slug": "neXtProt_NXQ_09281",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09282",
-    "slug": "neXtProt_NXQ_09282",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09283",
-    "slug": "neXtProt_NXQ_09283",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09284",
-    "slug": "neXtProt_NXQ_09284",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09285",
-    "slug": "neXtProt_NXQ_09285",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09286",
-    "slug": "neXtProt_NXQ_09286",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09287",
-    "slug": "neXtProt_NXQ_09287",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09288",
-    "slug": "neXtProt_NXQ_09288",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09289",
-    "slug": "neXtProt_NXQ_09289",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09290",
-    "slug": "neXtProt_NXQ_09290",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09291",
-    "slug": "neXtProt_NXQ_09291",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09292",
-    "slug": "neXtProt_NXQ_09292",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09293",
-    "slug": "neXtProt_NXQ_09293",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09294",
-    "slug": "neXtProt_NXQ_09294",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09295",
-    "slug": "neXtProt_NXQ_09295",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09296",
-    "slug": "neXtProt_NXQ_09296",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09297",
-    "slug": "neXtProt_NXQ_09297",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09298",
-    "slug": "neXtProt_NXQ_09298",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09299",
-    "slug": "neXtProt_NXQ_09299",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09300",
-    "slug": "neXtProt_NXQ_09300",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09301",
-    "slug": "neXtProt_NXQ_09301",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09302",
-    "slug": "neXtProt_NXQ_09302",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09303",
-    "slug": "neXtProt_NXQ_09303",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09304",
-    "slug": "neXtProt_NXQ_09304",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09305",
-    "slug": "neXtProt_NXQ_09305",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09306",
-    "slug": "neXtProt_NXQ_09306",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09307",
-    "slug": "neXtProt_NXQ_09307",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09308",
-    "slug": "neXtProt_NXQ_09308",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09309",
-    "slug": "neXtProt_NXQ_09309",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09310",
-    "slug": "neXtProt_NXQ_09310",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09311",
-    "slug": "neXtProt_NXQ_09311",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09312",
-    "slug": "neXtProt_NXQ_09312",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09313",
-    "slug": "neXtProt_NXQ_09313",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09314",
-    "slug": "neXtProt_NXQ_09314",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09315",
-    "slug": "neXtProt_NXQ_09315",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09316",
-    "slug": "neXtProt_NXQ_09316",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09317",
-    "slug": "neXtProt_NXQ_09317",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09318",
-    "slug": "neXtProt_NXQ_09318",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09319",
-    "slug": "neXtProt_NXQ_09319",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09320",
-    "slug": "neXtProt_NXQ_09320",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09321",
-    "slug": "neXtProt_NXQ_09321",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09322",
-    "slug": "neXtProt_NXQ_09322",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09323",
-    "slug": "neXtProt_NXQ_09323",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09324",
-    "slug": "neXtProt_NXQ_09324",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09325",
-    "slug": "neXtProt_NXQ_09325",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09326",
-    "slug": "neXtProt_NXQ_09326",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09327",
-    "slug": "neXtProt_NXQ_09327",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09328",
-    "slug": "neXtProt_NXQ_09328",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09329",
-    "slug": "neXtProt_NXQ_09329",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09330",
-    "slug": "neXtProt_NXQ_09330",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09331",
-    "slug": "neXtProt_NXQ_09331",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09332",
-    "slug": "neXtProt_NXQ_09332",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09333",
-    "slug": "neXtProt_NXQ_09333",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09334",
-    "slug": "neXtProt_NXQ_09334",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09335",
-    "slug": "neXtProt_NXQ_09335",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09336",
-    "slug": "neXtProt_NXQ_09336",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09337",
-    "slug": "neXtProt_NXQ_09337",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09338",
-    "slug": "neXtProt_NXQ_09338",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09339",
-    "slug": "neXtProt_NXQ_09339",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09340",
-    "slug": "neXtProt_NXQ_09340",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09341",
-    "slug": "neXtProt_NXQ_09341",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09342",
-    "slug": "neXtProt_NXQ_09342",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09343",
-    "slug": "neXtProt_NXQ_09343",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09344",
-    "slug": "neXtProt_NXQ_09344",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09345",
-    "slug": "neXtProt_NXQ_09345",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09346",
-    "slug": "neXtProt_NXQ_09346",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09347",
-    "slug": "neXtProt_NXQ_09347",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09348",
-    "slug": "neXtProt_NXQ_09348",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09349",
-    "slug": "neXtProt_NXQ_09349",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09350",
-    "slug": "neXtProt_NXQ_09350",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09351",
-    "slug": "neXtProt_NXQ_09351",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09352",
-    "slug": "neXtProt_NXQ_09352",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09353",
-    "slug": "neXtProt_NXQ_09353",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09354",
-    "slug": "neXtProt_NXQ_09354",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09355",
-    "slug": "neXtProt_NXQ_09355",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09356",
-    "slug": "neXtProt_NXQ_09356",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09357",
-    "slug": "neXtProt_NXQ_09357",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09358",
-    "slug": "neXtProt_NXQ_09358",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09359",
-    "slug": "neXtProt_NXQ_09359",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09360",
-    "slug": "neXtProt_NXQ_09360",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09361",
-    "slug": "neXtProt_NXQ_09361",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09362",
-    "slug": "neXtProt_NXQ_09362",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09363",
-    "slug": "neXtProt_NXQ_09363",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09364",
-    "slug": "neXtProt_NXQ_09364",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09365",
-    "slug": "neXtProt_NXQ_09365",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09366",
-    "slug": "neXtProt_NXQ_09366",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09367",
-    "slug": "neXtProt_NXQ_09367",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09368",
-    "slug": "neXtProt_NXQ_09368",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09369",
-    "slug": "neXtProt_NXQ_09369",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09370",
-    "slug": "neXtProt_NXQ_09370",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09371",
-    "slug": "neXtProt_NXQ_09371",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09372",
-    "slug": "neXtProt_NXQ_09372",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09373",
-    "slug": "neXtProt_NXQ_09373",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09374",
-    "slug": "neXtProt_NXQ_09374",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09375",
-    "slug": "neXtProt_NXQ_09375",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09376",
-    "slug": "neXtProt_NXQ_09376",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09377",
-    "slug": "neXtProt_NXQ_09377",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09378",
-    "slug": "neXtProt_NXQ_09378",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09379",
-    "slug": "neXtProt_NXQ_09379",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09380",
-    "slug": "neXtProt_NXQ_09380",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09381",
-    "slug": "neXtProt_NXQ_09381",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09382",
-    "slug": "neXtProt_NXQ_09382",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09383",
-    "slug": "neXtProt_NXQ_09383",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09384",
-    "slug": "neXtProt_NXQ_09384",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09385",
-    "slug": "neXtProt_NXQ_09385",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09386",
-    "slug": "neXtProt_NXQ_09386",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09387",
-    "slug": "neXtProt_NXQ_09387",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09388",
-    "slug": "neXtProt_NXQ_09388",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09389",
-    "slug": "neXtProt_NXQ_09389",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09390",
-    "slug": "neXtProt_NXQ_09390",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09391",
-    "slug": "neXtProt_NXQ_09391",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09392",
-    "slug": "neXtProt_NXQ_09392",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09393",
-    "slug": "neXtProt_NXQ_09393",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09394",
-    "slug": "neXtProt_NXQ_09394",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09395",
-    "slug": "neXtProt_NXQ_09395",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09396",
-    "slug": "neXtProt_NXQ_09396",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09397",
-    "slug": "neXtProt_NXQ_09397",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09398",
-    "slug": "neXtProt_NXQ_09398",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09399",
-    "slug": "neXtProt_NXQ_09399",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09400",
-    "slug": "neXtProt_NXQ_09400",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09401",
-    "slug": "neXtProt_NXQ_09401",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09402",
-    "slug": "neXtProt_NXQ_09402",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09404",
-    "slug": "neXtProt_NXQ_09404",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09405",
-    "slug": "neXtProt_NXQ_09405",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09406",
-    "slug": "neXtProt_NXQ_09406",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09407",
-    "slug": "neXtProt_NXQ_09407",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09408",
-    "slug": "neXtProt_NXQ_09408",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09409",
-    "slug": "neXtProt_NXQ_09409",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09410",
-    "slug": "neXtProt_NXQ_09410",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09411",
-    "slug": "neXtProt_NXQ_09411",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09412",
-    "slug": "neXtProt_NXQ_09412",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09413",
-    "slug": "neXtProt_NXQ_09413",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09414",
-    "slug": "neXtProt_NXQ_09414",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09415",
-    "slug": "neXtProt_NXQ_09415",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09416",
-    "slug": "neXtProt_NXQ_09416",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09417",
-    "slug": "neXtProt_NXQ_09417",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09418",
-    "slug": "neXtProt_NXQ_09418",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09419",
-    "slug": "neXtProt_NXQ_09419",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09420",
-    "slug": "neXtProt_NXQ_09420",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09421",
-    "slug": "neXtProt_NXQ_09421",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09422",
-    "slug": "neXtProt_NXQ_09422",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09423",
-    "slug": "neXtProt_NXQ_09423",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09424",
-    "slug": "neXtProt_NXQ_09424",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09425",
-    "slug": "neXtProt_NXQ_09425",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09426",
-    "slug": "neXtProt_NXQ_09426",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09427",
-    "slug": "neXtProt_NXQ_09427",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09428",
-    "slug": "neXtProt_NXQ_09428",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09429",
-    "slug": "neXtProt_NXQ_09429",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09430",
-    "slug": "neXtProt_NXQ_09430",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09431",
-    "slug": "neXtProt_NXQ_09431",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09432",
-    "slug": "neXtProt_NXQ_09432",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09433",
-    "slug": "neXtProt_NXQ_09433",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09434",
-    "slug": "neXtProt_NXQ_09434",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09435",
-    "slug": "neXtProt_NXQ_09435",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09436",
-    "slug": "neXtProt_NXQ_09436",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09437",
-    "slug": "neXtProt_NXQ_09437",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09438",
-    "slug": "neXtProt_NXQ_09438",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09439",
-    "slug": "neXtProt_NXQ_09439",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09444",
-    "slug": "neXtProt_NXQ_09444",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09445",
-    "slug": "neXtProt_NXQ_09445",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09446",
-    "slug": "neXtProt_NXQ_09446",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09447",
-    "slug": "neXtProt_NXQ_09447",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09448",
-    "slug": "neXtProt_NXQ_09448",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09449",
-    "slug": "neXtProt_NXQ_09449",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09450",
-    "slug": "neXtProt_NXQ_09450",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09451",
-    "slug": "neXtProt_NXQ_09451",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09452",
-    "slug": "neXtProt_NXQ_09452",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09453",
-    "slug": "neXtProt_NXQ_09453",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09454",
-    "slug": "neXtProt_NXQ_09454",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09455",
-    "slug": "neXtProt_NXQ_09455",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09456",
-    "slug": "neXtProt_NXQ_09456",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09457",
-    "slug": "neXtProt_NXQ_09457",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09458",
-    "slug": "neXtProt_NXQ_09458",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09459",
-    "slug": "neXtProt_NXQ_09459",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09460",
-    "slug": "neXtProt_NXQ_09460",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09461",
-    "slug": "neXtProt_NXQ_09461",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09462",
-    "slug": "neXtProt_NXQ_09462",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09463",
-    "slug": "neXtProt_NXQ_09463",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09464",
-    "slug": "neXtProt_NXQ_09464",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09465",
-    "slug": "neXtProt_NXQ_09465",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09466",
-    "slug": "neXtProt_NXQ_09466",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09467",
-    "slug": "neXtProt_NXQ_09467",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09468",
-    "slug": "neXtProt_NXQ_09468",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09469",
-    "slug": "neXtProt_NXQ_09469",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09601",
-    "slug": "neXtProt_NXQ_09601",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09602",
-    "slug": "neXtProt_NXQ_09602",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09603",
-    "slug": "neXtProt_NXQ_09603",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09604",
-    "slug": "neXtProt_NXQ_09604",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09605",
-    "slug": "neXtProt_NXQ_09605",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09606",
-    "slug": "neXtProt_NXQ_09606",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09607",
-    "slug": "neXtProt_NXQ_09607",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09608",
-    "slug": "neXtProt_NXQ_09608",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09609",
-    "slug": "neXtProt_NXQ_09609",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09610",
-    "slug": "neXtProt_NXQ_09610",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09611",
-    "slug": "neXtProt_NXQ_09611",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09612",
-    "slug": "neXtProt_NXQ_09612",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09613",
-    "slug": "neXtProt_NXQ_09613",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09614",
-    "slug": "neXtProt_NXQ_09614",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09615",
-    "slug": "neXtProt_NXQ_09615",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09616",
-    "slug": "neXtProt_NXQ_09616",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09617",
-    "slug": "neXtProt_NXQ_09617",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09619",
-    "slug": "neXtProt_NXQ_09619",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09620",
-    "slug": "neXtProt_NXQ_09620",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09621",
-    "slug": "neXtProt_NXQ_09621",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09622",
-    "slug": "neXtProt_NXQ_09622",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09623",
-    "slug": "neXtProt_NXQ_09623",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09624",
-    "slug": "neXtProt_NXQ_09624",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09625",
-    "slug": "neXtProt_NXQ_09625",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09626",
-    "slug": "neXtProt_NXQ_09626",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09627",
-    "slug": "neXtProt_NXQ_09627",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09628",
-    "slug": "neXtProt_NXQ_09628",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09629",
-    "slug": "neXtProt_NXQ_09629",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09630",
-    "slug": "neXtProt_NXQ_09630",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09631",
-    "slug": "neXtProt_NXQ_09631",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09632",
-    "slug": "neXtProt_NXQ_09632",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09633",
-    "slug": "neXtProt_NXQ_09633",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09634",
-    "slug": "neXtProt_NXQ_09634",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09635",
-    "slug": "neXtProt_NXQ_09635",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09636",
-    "slug": "neXtProt_NXQ_09636",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09637",
-    "slug": "neXtProt_NXQ_09637",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09638",
-    "slug": "neXtProt_NXQ_09638",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09639",
-    "slug": "neXtProt_NXQ_09639",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09640",
-    "slug": "neXtProt_NXQ_09640",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09641",
-    "slug": "neXtProt_NXQ_09641",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09642",
-    "slug": "neXtProt_NXQ_09642",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09643",
-    "slug": "neXtProt_NXQ_09643",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09644",
-    "slug": "neXtProt_NXQ_09644",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09645",
-    "slug": "neXtProt_NXQ_09645",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09646",
-    "slug": "neXtProt_NXQ_09646",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09647",
-    "slug": "neXtProt_NXQ_09647",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09648",
-    "slug": "neXtProt_NXQ_09648",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09649",
-    "slug": "neXtProt_NXQ_09649",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09650",
-    "slug": "neXtProt_NXQ_09650",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09651",
-    "slug": "neXtProt_NXQ_09651",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09652",
-    "slug": "neXtProt_NXQ_09652",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09653",
-    "slug": "neXtProt_NXQ_09653",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09654",
-    "slug": "neXtProt_NXQ_09654",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09655",
-    "slug": "neXtProt_NXQ_09655",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09656",
-    "slug": "neXtProt_NXQ_09656",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09657",
-    "slug": "neXtProt_NXQ_09657",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09658",
-    "slug": "neXtProt_NXQ_09658",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09659",
-    "slug": "neXtProt_NXQ_09659",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09660",
-    "slug": "neXtProt_NXQ_09660",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09661",
-    "slug": "neXtProt_NXQ_09661",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09662",
-    "slug": "neXtProt_NXQ_09662",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09663",
-    "slug": "neXtProt_NXQ_09663",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09664",
-    "slug": "neXtProt_NXQ_09664",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09665",
-    "slug": "neXtProt_NXQ_09665",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09666",
-    "slug": "neXtProt_NXQ_09666",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09667",
-    "slug": "neXtProt_NXQ_09667",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09668",
-    "slug": "neXtProt_NXQ_09668",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09669",
-    "slug": "neXtProt_NXQ_09669",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09670",
-    "slug": "neXtProt_NXQ_09670",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09671",
-    "slug": "neXtProt_NXQ_09671",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09672",
-    "slug": "neXtProt_NXQ_09672",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09673",
-    "slug": "neXtProt_NXQ_09673",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09674",
-    "slug": "neXtProt_NXQ_09674",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09675",
-    "slug": "neXtProt_NXQ_09675",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09676",
-    "slug": "neXtProt_NXQ_09676",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09677",
-    "slug": "neXtProt_NXQ_09677",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09678",
-    "slug": "neXtProt_NXQ_09678",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09679",
-    "slug": "neXtProt_NXQ_09679",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09680",
-    "slug": "neXtProt_NXQ_09680",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09681",
-    "slug": "neXtProt_NXQ_09681",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09682",
-    "slug": "neXtProt_NXQ_09682",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09683",
-    "slug": "neXtProt_NXQ_09683",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09684",
-    "slug": "neXtProt_NXQ_09684",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09685",
-    "slug": "neXtProt_NXQ_09685",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09686",
-    "slug": "neXtProt_NXQ_09686",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09687",
-    "slug": "neXtProt_NXQ_09687",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09688",
-    "slug": "neXtProt_NXQ_09688",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09689",
-    "slug": "neXtProt_NXQ_09689",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09690",
-    "slug": "neXtProt_NXQ_09690",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09691",
-    "slug": "neXtProt_NXQ_09691",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09692",
-    "slug": "neXtProt_NXQ_09692",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09693",
-    "slug": "neXtProt_NXQ_09693",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09694",
-    "slug": "neXtProt_NXQ_09694",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09695",
-    "slug": "neXtProt_NXQ_09695",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09696",
-    "slug": "neXtProt_NXQ_09696",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09697",
-    "slug": "neXtProt_NXQ_09697",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09698",
-    "slug": "neXtProt_NXQ_09698",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09699",
-    "slug": "neXtProt_NXQ_09699",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09700",
-    "slug": "neXtProt_NXQ_09700",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09701",
-    "slug": "neXtProt_NXQ_09701",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ 09702",
-    "slug": "neXtProt_NXQ_09702",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ DEREF 003",
-    "slug": "neXtProt_NXQ_DEREF_003",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - NXQ DEREF 004",
-    "slug": "neXtProt_NXQ_DEREF_004",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "RDFS",
-      "SCHEMA",
-      "SH"
-    ],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - convertNextProt",
-    "slug": "neXtProt_convertNextProt",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - convertNextProt2",
-    "slug": "neXtProt_convertNextProt2",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
-    "category": "sib-swiss neXtProt"
-  },
-  {
-    "name": "neXtProt - prefixes",
-    "slug": "neXtProt_prefixes",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
     "category": "sib-swiss neXtProt"
   }
 ];

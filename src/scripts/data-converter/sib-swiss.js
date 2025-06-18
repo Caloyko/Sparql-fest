@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-
+import { sparqlConceptsList } from '../../data/sparql-concept.js';
 
 const globalPrefixes = new Map();
 
@@ -97,9 +97,10 @@ function parseQueryFile(content, folderName, fileName, date) {
   }
 
   // Concepts
-  const sparqlConcepts = query
-    ? Array.from(new Set(Array.from(query.matchAll(/\b([A-Z_]{2,})\b/g)).map(m => m[1])))
-    : [];
+  const upperQuery = query.toUpperCase();
+  const sparqlConcepts = sparqlConceptsList.filter(concept =>
+    upperQuery.includes(concept)
+  );
 
   return {
     name,
