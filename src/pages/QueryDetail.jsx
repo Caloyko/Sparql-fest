@@ -52,8 +52,20 @@ const QueryDetail = () => {
                 variant="dark"
                 bg={false}
                 >
-                    <h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
-                    <p class="text-neutral-300 mb-6">{detail.context}</p>
+                    {(detail.source || detail.context) ? (<><h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
+                    <p className="text-neutral-300 mb-6">
+                    {detail.context ? (
+                        detail.context
+                    ) : (
+                        <>
+                        This query was created by <strong>{detail.source}</strong>. You can find more information at:{" "}
+                        <a href={detail.source} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                            {detail.source}
+                        </a>
+                        </>
+                    )}
+                    </p></>) : undefined}
+
                     <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
                     <p class="text-neutral-300 mb-6">{detail.description}</p>
                     <h2
