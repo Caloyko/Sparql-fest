@@ -17,9 +17,6 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE"
     ],
@@ -43,13 +40,12 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "HMDB",
       "FILTER",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR",
+      "REGEX"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -70,13 +66,11 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "HMDB",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -97,11 +91,9 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -122,14 +114,10 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -151,13 +139,13 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "VALUES",
       "FILTER",
-      "ORDER",
-      "BY"
+      "VALUES",
+      "ORDER BY",
+      "STR",
+      "REGEX"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -179,16 +167,13 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
-      "VALUES",
       "BIND",
+      "VALUES",
       "IRI",
-      "CONCAT",
-      "AS"
+      "IF",
+      "CONCAT"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -210,15 +195,13 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
       "SERVICE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -239,15 +222,12 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -268,9 +248,9 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -292,11 +272,9 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -317,15 +295,11 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "STR"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -346,9 +320,9 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -369,14 +343,10 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "CHEBI",
-      "CHEBI_",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
-      "VALUES"
+      "VALUES",
+      "FROM"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -398,15 +368,14 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
-      "VALUES",
       "FILTER",
-      "ORDER",
-      "BY"
+      "VALUES",
+      "ORDER BY",
+      "WITH",
+      "STR",
+      "SAMETERM"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -428,15 +397,14 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
-      "VALUES",
       "FILTER",
-      "ORDER",
-      "BY"
+      "VALUES",
+      "ORDER BY",
+      "WITH",
+      "STR",
+      "SAMETERM"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -458,15 +426,14 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
-      "VALUES",
       "FILTER",
-      "ORDER",
-      "BY"
+      "VALUES",
+      "ORDER BY",
+      "WITH",
+      "STR",
+      "SAMETERM"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -488,14 +455,10 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -517,15 +480,13 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
       "SERVICE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -547,15 +508,13 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
       "SERVICE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -577,13 +536,11 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "SWISSLIPID",
-      "SLM_",
       "SELECT",
       "WHERE",
       "VALUES",
-      "SERVICE"
+      "SERVICE",
+      "CONTAINS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -605,14 +562,12 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "LIPID",
-      "MAPS",
       "FILTER",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR",
+      "STRSTARTS"
     ],
     "category": "sib-swiss SwissLipids"
   },
@@ -634,12 +589,10 @@ export const SwissLipids = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "VALUES",
-      "ORDER",
-      "BY"
+      "ORDER BY"
     ],
     "category": "sib-swiss SwissLipids"
   }

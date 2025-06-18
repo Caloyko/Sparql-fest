@@ -17,31 +17,11 @@ export const HAMAP = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "CONSTRUCT",
+      "WHERE",
+      "STR"
     ],
-    "category": "sib-swiss HAMAP"
-  },
-  {
-    "name": "HAMAP - 2",
-    "slug": "HAMAP_2",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": "Show the triples about <a href=\\",
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [
-      "EX",
-      "RDF",
-      "RDFS",
-      "SCHEMA",
-      "SH",
-      "SPEX"
-    ],
-    "sparqlConcepts": [],
     "category": "sib-swiss HAMAP"
   },
   {
@@ -62,10 +42,11 @@ export const HAMAP = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "CONSTRUCT",
       "WHERE",
       "FILTER",
+      "STR",
       "CONTAINS"
     ],
     "category": "sib-swiss HAMAP"
@@ -87,9 +68,11 @@ export const HAMAP = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "CONSTRUCT",
+      "WHERE",
+      "ADD",
+      "STR"
     ],
     "category": "sib-swiss HAMAP"
   }

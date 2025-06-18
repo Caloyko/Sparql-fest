@@ -17,10 +17,13 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "STR",
+      "IF",
+      "LCASE",
+      "STRSTARTS"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -42,12 +45,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "COPY",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -69,12 +72,13 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY"
+      "BIND",
+      "ORDER BY",
+      "LIMIT",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -96,13 +100,10 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -124,13 +125,13 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SEPARATOR",
       "WHERE",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "CONCAT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -152,10 +153,10 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -177,7 +178,6 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -201,11 +201,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "COUNT",
+      "MIN",
+      "MAX",
+      "AVG"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -227,7 +228,6 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "SERVICE"
@@ -252,14 +252,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
       "WHERE",
       "SERVICE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -281,15 +279,18 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SEPARATOR",
       "WHERE",
-      "SERVICE",
       "VALUES",
-      "GROUP",
-      "BY",
-      "ORDER"
+      "SERVICE",
+      "GROUP BY",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "IF",
+      "CONCAT",
+      "COUNT",
+      "GROUP_CONCAT"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -311,11 +312,10 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -337,12 +337,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
-      "GO",
-      "GO_",
       "SELECT",
       "WHERE",
-      "SERVICE"
+      "SERVICE",
+      "COPY",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -364,11 +364,13 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "DISTINCT",
+      "IF",
+      "EXISTS",
+      "NOT EXISTS"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -390,9 +392,9 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -414,11 +416,13 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "FILTER",
       "OPTIONAL",
-      "FILTER"
+      "COPY",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -440,9 +444,9 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "WHERE"
+      "WHERE",
+      "IF"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -464,16 +468,14 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
       "OPTIONAL",
-      "MAG",
-      "MYH",
-      "POLH",
-      "ORDER",
-      "BY"
+      "ORDER BY",
+      "STR",
+      "IF",
+      "STRSTARTS"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -495,10 +497,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "FILTER"
+      "FILTER",
+      "IF",
+      "LCASE",
+      "CONTAINS"
     ],
     "category": "sib-swiss OrthoDB"
   },
@@ -520,27 +524,12 @@ export const OrthoDB = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
       "UCASE",
-      "MAPK"
+      "CONTAINS"
     ],
-    "category": "sib-swiss OrthoDB"
-  },
-  {
-    "name": "OrthoDB - prefixes",
-    "slug": "OrthoDB_prefixes",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
     "category": "sib-swiss OrthoDB"
   }
 ];

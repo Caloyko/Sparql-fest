@@ -16,13 +16,16 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "OPTIONAL",
       "SERVICE",
-      "LIMIT"
+      "LIMIT",
+      "DISTINCT",
+      "WITH",
+      "STR",
+      "IRI",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -43,12 +46,13 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "SERVICE",
-      "CC"
+      "DISTINCT",
+      "STR",
+      "SUBSTR",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -69,13 +73,18 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "VALUES",
-      "RT",
-      "FILTER"
+      "DISTINCT",
+      "WITH",
+      "ADD",
+      "STR",
+      "REGEX",
+      "IRI",
+      "MIN",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -96,13 +105,16 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "VALUES",
-      "RT",
-      "FILTER"
+      "DISTINCT",
+      "WITH",
+      "STR",
+      "IRI",
+      "MIN",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -123,13 +135,15 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "COUNT",
-      "AS",
       "WHERE",
       "FILTER",
-      "ISDB"
+      "WITH",
+      "STR",
+      "REGEX",
+      "IRI",
+      "IF",
+      "COUNT"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -150,19 +164,19 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "SAMPLE",
-      "AS",
-      "COUNT",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC",
-      "LIMIT",
+      "OPTIONAL",
       "SERVICE",
-      "OPTIONAL"
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IF",
+      "COUNT",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -183,14 +197,17 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
       "UNION",
+      "SERVICE",
       "LIMIT",
-      "SERVICE"
+      "DISTINCT",
+      "WITH",
+      "STR",
+      "IRI",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -211,17 +228,15 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SAMPLE",
-      "AS",
-      "COUNT",
       "WHERE",
       "FILTER",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "GROUP BY",
+      "ORDER BY",
+      "STR",
+      "REGEX",
+      "COUNT",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -242,19 +257,16 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
+      "FILTER",
       "OPTIONAL",
       "SERVICE",
-      "COUNT",
+      "GROUP BY",
+      "ORDER BY",
       "DISTINCT",
-      "AS",
-      "FILTER",
-      "GROUP",
-      "BY",
-      "ORDER",
-      "DESC"
+      "COUNT",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -275,13 +287,14 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
+      "UNION",
       "SERVICE",
-      "IUCN",
-      "UNION"
+      "DISTINCT",
+      "WITH",
+      "IF"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -302,13 +315,16 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "OPTIONAL",
+      "VALUES",
       "SERVICE",
-      "IUCN"
+      "DISTINCT",
+      "FROM",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -329,16 +345,20 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "STR",
-      "SERVICE",
-      "IUCN",
       "UNION",
-      "LIMIT"
+      "VALUES",
+      "SERVICE",
+      "LIMIT",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -359,16 +379,20 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "REGEX",
-      "STR",
-      "DITERPENOIDS",
       "UNION",
-      "SERVICE"
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "REGEX",
+      "IRI",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -389,15 +413,19 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES",
-      "UNION",
-      "SERVICE",
       "FILTER",
-      "OPTIONAL"
+      "OPTIONAL",
+      "UNION",
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -418,16 +446,20 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES",
-      "UNION",
-      "SERVICE",
       "FILTER",
       "OPTIONAL",
-      "LIMIT"
+      "UNION",
+      "VALUES",
+      "SERVICE",
+      "LIMIT",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -448,16 +480,20 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES",
-      "WD",
+      "FILTER",
+      "OPTIONAL",
       "UNION",
+      "VALUES",
       "SERVICE",
-      "IUCN",
-      "OPTIONAL"
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -478,18 +514,18 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "WD",
       "FILTER",
-      "VALUES",
-      "ID",
-      "STR",
-      "IN",
       "OPTIONAL",
-      "SERVICE"
+      "GRAPH",
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "WITH",
+      "ALL",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -510,17 +546,21 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES",
-      "OPTIONAL",
       "FILTER",
-      "STR",
-      "IN",
+      "OPTIONAL",
+      "GRAPH",
+      "VALUES",
       "SERVICE",
-      "LIMIT"
+      "LIMIT",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "ALL",
+      "STR",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -541,13 +581,19 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "VALUES",
+      "FILTER",
       "UNION",
-      "SERVICE"
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -568,14 +614,19 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "VALUES",
       "UNION",
-      "SERVICE"
+      "VALUES",
+      "SERVICE",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "STR",
+      "IRI",
+      "IF",
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -596,24 +647,24 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "OPTIONAL",
       "BIND",
-      "IF",
-      "REGEX",
-      "STR",
-      "SLA",
-      "AS",
-      "LES",
-      "FILTER",
-      "GROUP",
-      "BY",
+      "VALUES",
+      "GROUP BY",
+      "ORDER BY",
       "HAVING",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "ALL",
+      "STR",
+      "REGEX",
+      "IF",
       "COUNT",
-      "ORDER"
+      "SAMPLE"
     ],
     "category": "sib-swiss dbgi"
   },
@@ -634,40 +685,27 @@ export const dbgi = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "BIND",
-      "IF",
-      "REGEX",
-      "STR",
-      "SLA",
-      "AS",
-      "LES",
       "FILTER",
       "UNION",
+      "BIND",
+      "VALUES",
       "SERVICE",
-      "GROUP",
-      "BY",
+      "GROUP BY",
+      "ORDER BY",
       "HAVING",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "ALL",
+      "STR",
+      "REGEX",
+      "IRI",
+      "IF",
       "COUNT",
-      "ORDER"
+      "SAMPLE"
     ],
-    "category": "sib-swiss dbgi"
-  },
-  {
-    "name": "dbgi - prefixes",
-    "slug": "dbgi_prefixes",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
     "category": "sib-swiss dbgi"
   }
 ];

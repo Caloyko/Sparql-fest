@@ -16,7 +16,6 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE"
     ],
@@ -39,10 +38,10 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "OPTIONAL"
+      "OPTIONAL",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -63,10 +62,9 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -87,11 +85,11 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
+      "DISTINCT",
+      "IF",
       "LCASE"
     ],
     "category": "sib-swiss Bgee"
@@ -113,9 +111,10 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT"
+      "DISTINCT",
+      "STR",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -136,13 +135,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "LCASE"
+      "DISTINCT",
+      "LCASE",
+      "CONTAINS"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -163,13 +161,13 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "LCASE"
+      "DISTINCT",
+      "STR",
+      "LCASE",
+      "CONTAINS"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -190,16 +188,14 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
       "LCASE",
-      "ORDER",
-      "BY",
-      "DESC"
+      "CONTAINS"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -220,14 +216,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "DISTINCT",
+      "STR"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -248,14 +242,11 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "DISTINCT"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -276,10 +267,9 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -300,14 +290,14 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "ORDER",
-      "BY",
-      "DESC"
+      "ORDER BY",
+      "DISTINCT",
+      "STR",
+      "IRI",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -328,10 +318,9 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
-      "WHERE"
+      "WHERE",
+      "DISTINCT"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -352,12 +341,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
+      "FILTER",
       "OPTIONAL",
-      "FILTER"
+      "DISTINCT",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -378,10 +367,11 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "IF",
+      "ABS"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -402,12 +392,11 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
-      "LIMIT",
+      "FILTER",
       "SERVICE",
-      "FILTER"
+      "LIMIT"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -428,13 +417,15 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "FILTER",
-      "UCASE",
       "SERVICE",
-      "LIMIT"
+      "LIMIT",
+      "DISTINCT",
+      "FROM",
+      "WITH",
+      "IF",
+      "UCASE"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -455,11 +446,9 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "SERVICE",
-      "INS",
-      "FILTER"
+      "FILTER",
+      "SERVICE"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -480,13 +469,14 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "LIMIT",
+      "FILTER",
       "SERVICE",
-      "FILTER"
+      "LIMIT",
+      "DISTINCT",
+      "URI",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -507,13 +497,14 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "LIMIT",
+      "FILTER",
       "SERVICE",
-      "FILTER"
+      "LIMIT",
+      "DISTINCT",
+      "URI",
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -534,10 +525,10 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
       "WHERE",
       "FILTER",
+      "IF",
       "UCASE"
     ],
     "category": "sib-swiss Bgee"
@@ -559,12 +550,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
-      "OPTIONAL",
       "FILTER",
+      "OPTIONAL",
+      "DISTINCT",
+      "IF",
       "LCASE"
     ],
     "category": "sib-swiss Bgee"
@@ -586,10 +577,10 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "FILTER",
+      "DISTINCT",
+      "LCASE",
       "CONTAINS"
     ],
     "category": "sib-swiss Bgee"
@@ -611,10 +602,9 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "FILTER",
+      "DISTINCT",
       "LCASE",
       "CONTAINS"
     ],
@@ -637,13 +627,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
       "WHERE",
       "FILTER",
-      "CONTAINS",
-      "LCASE"
+      "DISTINCT",
+      "LCASE",
+      "CONTAINS"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -664,10 +653,10 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
+      "WHERE",
       "DISTINCT",
-      "WHERE"
+      "IF"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -688,11 +677,11 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
+      "SERVICE",
       "LIMIT",
-      "SERVICE"
+      "DISTINCT",
+      "FROM"
     ],
     "category": "sib-swiss Bgee"
   },
@@ -713,26 +702,12 @@ export const Bgee = [
       "SH"
     ],
     "sparqlConcepts": [
-      "PREFIX",
       "SELECT",
-      "DISTINCT",
+      "SERVICE",
       "LIMIT",
-      "SERVICE"
+      "DISTINCT",
+      "FROM"
     ],
-    "category": "sib-swiss Bgee"
-  },
-  {
-    "name": "Bgee - prefixes",
-    "slug": "Bgee_prefixes",
-    "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
-    "description": null,
-    "context": null,
-    "inidces": [],
-    "query": null,
-    "ontologies": [],
-    "sparqlConcepts": [],
     "category": "sib-swiss Bgee"
   }
 ];
