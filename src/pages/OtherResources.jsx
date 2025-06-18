@@ -1,9 +1,20 @@
 import React from 'react'
-import InProgress from '../components/reusable/InProgress'
+import Section from '../components/reusable/Section'
+import { allSources } from '../data/all-sources'
+import TableList from '../components/reusable/TableList'
 
 const OtherResources = () => {
   return (
-    <InProgress/>
+    <Section
+            id="resources"
+            title="Other resources"
+            description="List of all the resources we use or which may be interesting for learning sparql."
+            variant="dark"
+      >
+      <div className="flex-center">
+          <TableList data={allSources} />
+      </div>
+    </Section>
   )
 }
 

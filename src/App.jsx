@@ -9,6 +9,7 @@ import AllPrefixes from './pages/AllPrefixes'
 import Tutorials from './pages/Tutorials'
 import OtherResources from './pages/OtherResources'
 import PrefixDetail from './pages/PrefixDetail'
+import ResourceDetail from './pages/ResourceDetail'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="sparql-prefixes/:slug" element={<PrefixDetail/>} />
               <Route path="/tutorials" element={<Tutorials/>}/>
               <Route path="/other-resources" element={<OtherResources/>}/>
+              <Route path="/other-resources/:slug" element={<ResourceDetail/>}/>
             </Routes>
             <Footer />
       </BrowserRouter>
