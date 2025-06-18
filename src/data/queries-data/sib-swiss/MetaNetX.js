@@ -25,7 +25,7 @@ export const MetaNetX = [
       "CHEM",
       "OPTIONAL"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 10",
@@ -59,7 +59,7 @@ export const MetaNetX = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 11",
@@ -90,7 +90,7 @@ export const MetaNetX = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 12",
@@ -123,7 +123,7 @@ export const MetaNetX = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 13",
@@ -155,7 +155,7 @@ export const MetaNetX = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 2",
@@ -181,7 +181,7 @@ export const MetaNetX = [
       "WHERE",
       "CHEM"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 3",
@@ -208,7 +208,7 @@ export const MetaNetX = [
       "WHERE",
       "CHEM"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 4",
@@ -235,7 +235,7 @@ export const MetaNetX = [
       "WHERE",
       "REAC"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 5",
@@ -262,7 +262,7 @@ export const MetaNetX = [
       "WHERE",
       "REAC"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 6",
@@ -294,7 +294,7 @@ export const MetaNetX = [
       "IF",
       "AS"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 7",
@@ -325,7 +325,7 @@ export const MetaNetX = [
       "IF",
       "AS"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 8",
@@ -357,7 +357,7 @@ export const MetaNetX = [
       "IF",
       "AS"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 9",
@@ -389,7 +389,7 @@ export const MetaNetX = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - README",
@@ -405,7 +405,7 @@ export const MetaNetX = [
       "MetaNetX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - prefixes",
@@ -421,6 +421,6 @@ export const MetaNetX = [
       "MetaNetX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss MetaNetX"
+    "category": "sib-swiss MetaNetX"
   }
 ];

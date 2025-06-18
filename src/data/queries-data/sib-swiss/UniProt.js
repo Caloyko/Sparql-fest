@@ -23,7 +23,7 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 101 uniprot potential isoforms",
@@ -49,7 +49,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 102 uniprot primary accession",
@@ -75,7 +75,7 @@ export const UniProt = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 103 uniprot proteome location of gene",
@@ -101,7 +101,7 @@ export const UniProt = [
       "WHERE",
       "BIND"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 104 uniprot recomended protein full name",
@@ -125,7 +125,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 105 uniprot recomended protein short name",
@@ -149,7 +149,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 106 uniprot reviewed or not",
@@ -173,7 +173,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 107 uniprot sequences and mark which is cannonical for human",
@@ -208,7 +208,7 @@ export const UniProt = [
       "STRBEFORE",
       "SUBSTR"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 108 uniprot signature match start end",
@@ -234,7 +234,7 @@ export const UniProt = [
       "GRAPH",
       "VALUES"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 109 uniprot transporter in liver",
@@ -263,7 +263,7 @@ export const UniProt = [
       "AS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 10 human variant leading to transposition of tyrosine to phenylalanine",
@@ -289,7 +289,7 @@ export const UniProt = [
       "BIND",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 110 uniprot unamed plasmids",
@@ -314,7 +314,7 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 111 uniprot make chain sequence fasta",
@@ -343,7 +343,7 @@ export const UniProt = [
       "BIND",
       "IRI"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 112 count human transporters",
@@ -371,7 +371,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 113 UniProtKB Swiss-Prot entries annotated with CC-CA Rhea involving lipids",
@@ -401,7 +401,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 114 Number of EC numbers described at protein domain and component levels",
@@ -427,7 +427,7 @@ export const UniProt = [
       "FILTER",
       "BOUND"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 115 Number of complete EC numbers described at protein level at domain levels at component level",
@@ -451,7 +451,7 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 116 biosodafrontend rabit mouse orthologs",
@@ -479,7 +479,7 @@ export const UniProt = [
       "HBB",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 117 biosodafrontend glioblastoma orthologs rat",
@@ -507,7 +507,7 @@ export const UniProt = [
       "CONTAINS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 118 biosodafrontend rat brain human cancer",
@@ -534,7 +534,7 @@ export const UniProt = [
       "CONTAINS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 119 uniref distinct ec in seed",
@@ -562,7 +562,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 11 entries with transmem on cannonical sequence",
@@ -586,7 +586,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 120 for taxon find reference proteomes",
@@ -617,7 +617,7 @@ export const UniProt = [
       "AS",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 121 proteins and diseases linked",
@@ -643,7 +643,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 122 enzymes transporting lipids in reviewed human",
@@ -672,7 +672,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 12 entries integrated on date",
@@ -696,7 +696,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 13 entries added on date",
@@ -716,7 +716,7 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 14 make your own triples",
@@ -736,7 +736,7 @@ export const UniProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 15 describe an EMBL cds",
@@ -757,7 +757,7 @@ export const UniProt = [
       "SPEX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 16 triples about species human in taxonomy graph",
@@ -779,7 +779,7 @@ export const UniProt = [
       "SPEX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 17 average count to PDB",
@@ -813,7 +813,7 @@ export const UniProt = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 18 top level ec classification group by count",
@@ -842,7 +842,7 @@ export const UniProt = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 19 natural variants associated with pubmed id",
@@ -873,7 +873,7 @@ export const UniProt = [
       "CONTAINS",
       "SIP"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 1 select all taxa used in uniprot",
@@ -899,7 +899,7 @@ export const UniProt = [
       "FROM",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 20 how often citation used in evidence tag",
@@ -929,7 +929,7 @@ export const UniProt = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 21 where are genetic disease related proteins in a cell",
@@ -953,7 +953,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 22 go term labels per go category for multiple proteins",
@@ -991,7 +991,7 @@ export const UniProt = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 23 human proteins related to kinase activity",
@@ -1020,7 +1020,7 @@ export const UniProt = [
       "AS",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 24 uniprot release in endpoint",
@@ -1044,7 +1044,7 @@ export const UniProt = [
       "FROM",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 25 protein name of any kind with value",
@@ -1069,7 +1069,7 @@ export const UniProt = [
       "WHERE",
       "HLA"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 26 component HLA class I histocompatibility domain",
@@ -1094,7 +1094,7 @@ export const UniProt = [
       "WHERE",
       "HLA"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 27 all names of protein",
@@ -1122,7 +1122,7 @@ export const UniProt = [
       "UNION",
       "VALUES"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 28 all entries encoded on chromosome of proteome",
@@ -1148,7 +1148,7 @@ export const UniProt = [
       "WHERE",
       "VALUES"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 29 search uniprot in japanese with allie",
@@ -1180,7 +1180,7 @@ export const UniProt = [
       "UNION",
       "VALUES"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 2 bacteria taxa and their scientific name",
@@ -1205,7 +1205,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 30 merged loci",
@@ -1236,7 +1236,7 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 31 uniparc record with most subentries",
@@ -1267,7 +1267,7 @@ export const UniProt = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 32 uniprot with more than x topodom",
@@ -1298,7 +1298,7 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 33 longest variant comment",
@@ -1326,7 +1326,7 @@ export const UniProt = [
       "DESC",
       "STRLEN"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 34 cooccurence count of topodom",
@@ -1360,7 +1360,7 @@ export const UniProt = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 35 similar proteins via uniref clusters",
@@ -1391,7 +1391,7 @@ export const UniProt = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 36 orthologous proteins via orthodb",
@@ -1419,7 +1419,7 @@ export const UniProt = [
       "OPTIONAL",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 37 Epitope VSTQ where T is a phosporylated threonine",
@@ -1447,7 +1447,7 @@ export const UniProt = [
       "VSTQ",
       "CONTAINS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 38 find gene region in wikidata for known entry",
@@ -1478,7 +1478,7 @@ export const UniProt = [
       "SERVICE",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 39 experimental catalytic activities in swissprot",
@@ -1505,7 +1505,7 @@ export const UniProt = [
       "BIND",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 3 entry sequences organism",
@@ -1529,7 +1529,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 40 human enzymes that metabolize sphingolipids",
@@ -1557,7 +1557,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 41 fragmented sequences",
@@ -1583,7 +1583,7 @@ export const UniProt = [
       "WHERE",
       "MINUS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 42 connect patents to epo",
@@ -1615,7 +1615,7 @@ export const UniProt = [
       "AS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 43 patents used in uniprot granted twenty years in the past",
@@ -1647,7 +1647,7 @@ export const UniProt = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 44 rhea interpro union in uniprot",
@@ -1674,7 +1674,7 @@ export const UniProt = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 45 drugs targeting human sterol metabolism enzymes",
@@ -1709,7 +1709,7 @@ export const UniProt = [
       "AS",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 46 duck pictures via eepa and taxonomy",
@@ -1737,7 +1737,7 @@ export const UniProt = [
       "AS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 47 protein with transmembrane region with close by alanine",
@@ -1768,7 +1768,7 @@ export const UniProt = [
       "FILTER",
       "CONTAINS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 48 glycosylation sites and glycans",
@@ -1794,7 +1794,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 49 tissues where genes metabolizing cholestrol are expressed",
@@ -1827,7 +1827,7 @@ export const UniProt = [
       "STR",
       "AS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 4 uniprot mnemonic id",
@@ -1852,7 +1852,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 50 tissues where genes sphingosines are expressed",
@@ -1880,7 +1880,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 51 all proteins linked to arachidonate",
@@ -1910,7 +1910,7 @@ export const UniProt = [
       "VALUES",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 52 drugs targeting sterol metabolism",
@@ -1940,7 +1940,7 @@ export const UniProt = [
       "UNION",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 53 mouse homologs of sterol enzymes via omabrowser",
@@ -1968,7 +1968,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 54 binding sites for ligands similar to heme sachem",
@@ -1997,7 +1997,7 @@ export const UniProt = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 55 metal or sulphur cluster binding sites experimental",
@@ -2030,7 +2030,7 @@ export const UniProt = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 56 enzymes that have a known allosteric effect",
@@ -2056,7 +2056,7 @@ export const UniProt = [
       "FILTER",
       "REGEX"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 57 map pdb identifiers plus chains to uniprot",
@@ -2088,7 +2088,7 @@ export const UniProt = [
       "FILTER",
       "CONTAINS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 58 uniprot to HGNC and symbols",
@@ -2116,7 +2116,7 @@ export const UniProt = [
       "AS",
       "HGNC"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 59 all isoforms for a given proteome",
@@ -2143,7 +2143,7 @@ export const UniProt = [
       "AS",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 5 mapping to PDB",
@@ -2168,7 +2168,7 @@ export const UniProt = [
       "WHERE",
       "PDB"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 60 enzymes working on substrate with Cholestene backbone",
@@ -2201,7 +2201,7 @@ export const UniProt = [
       "OPTIONAL",
       "MIM"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 61 Gene Protein Reaction sets",
@@ -2226,7 +2226,7 @@ export const UniProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 62 diseases involving enzymes",
@@ -2250,7 +2250,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 63 diseases involving enzymes located in mitochondrion",
@@ -2276,7 +2276,7 @@ export const UniProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 64 diseases related to mutation in active site",
@@ -2303,7 +2303,7 @@ export const UniProt = [
       "UNION",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 65 distinct extinct organisms in uniprotkb",
@@ -2335,7 +2335,7 @@ export const UniProt = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 66 distinct rhea transport in reviewed uniprot",
@@ -2364,7 +2364,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 67 draft human metabolome",
@@ -2389,7 +2389,7 @@ export const UniProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 68 drosophila enzymes derived from at least two mRNAs",
@@ -2418,7 +2418,7 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 69 drosophila proteins derived from at least two mRNAs",
@@ -2446,7 +2446,7 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 6 cross ref in category 3D",
@@ -2472,7 +2472,7 @@ export const UniProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 70 enzymes interacting with molecules similar to dopamine",
@@ -2500,7 +2500,7 @@ export const UniProt = [
       "SERVICE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 71 enzymes interacting with molecules similar to dopamine with variants related to disease",
@@ -2528,7 +2528,7 @@ export const UniProt = [
       "SERVICE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 72 enzymes mapping to PDB",
@@ -2555,7 +2555,7 @@ export const UniProt = [
       "PDB",
       "UNION"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 73 enzymes related to protein",
@@ -2582,7 +2582,7 @@ export const UniProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 74 enzymes with at least two transmembrane domains",
@@ -2611,7 +2611,7 @@ export const UniProt = [
       "COUNT",
       "DISTINCT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 75 enzymes with at least two transmembrane domains PDB xray",
@@ -2642,7 +2642,7 @@ export const UniProt = [
       "COUNT",
       "DISTINCT"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 76 enzymes with mutagenesis affecting active site",
@@ -2667,7 +2667,7 @@ export const UniProt = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 77 enzymes with tyrosine as active site",
@@ -2693,7 +2693,7 @@ export const UniProt = [
       "FILTER",
       "SUBSTR"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 78 genetic disease related proteins",
@@ -2720,7 +2720,7 @@ export const UniProt = [
       "OPTIONAL",
       "MIM"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 79 mnemonic also known as id",
@@ -2745,7 +2745,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 7 swissprot with rec protein name if pref gene name contains word DNA",
@@ -2772,7 +2772,7 @@ export const UniProt = [
       "CONTAINS",
       "DNA"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 80 obsolete mnemonic also known as id",
@@ -2797,7 +2797,7 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 81 rhea reactions annotated as experimental and only small molecules",
@@ -2832,7 +2832,7 @@ export const UniProt = [
       "HAVING",
       "SUM"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 82 rhea reactions associated with ec in uniprotkb",
@@ -2858,7 +2858,7 @@ export const UniProt = [
       "EC",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 83 rhea reactions not associated with ec in uniprotkb",
@@ -2885,7 +2885,7 @@ export const UniProt = [
       "WHERE",
       "MINUS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 84 taxonomy hierarchy",
@@ -2912,7 +2912,7 @@ export const UniProt = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 85 taxonomy host",
@@ -2937,7 +2937,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 86 taxonomy rank and scientific name",
@@ -2963,7 +2963,7 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 87 taxonomy with at least one swissprot",
@@ -2990,7 +2990,7 @@ export const UniProt = [
       "WHERE",
       "VALUES"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 88 uniparc linked to active uniprot",
@@ -3017,7 +3017,7 @@ export const UniProt = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 89 uniparc triples directly associated",
@@ -3041,7 +3041,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 8 prefered gene name of human disease related proteins",
@@ -3065,7 +3065,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 90 uniprot affected by metabolic diseases using MeSH",
@@ -3091,7 +3091,7 @@ export const UniProt = [
       "SERVICE",
       "GRAPH"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 91 uniprot alternative protein full name",
@@ -3115,7 +3115,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 92 uniprot bioregistry iri translation",
@@ -3142,7 +3142,7 @@ export const UniProt = [
       "AS",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 93 uniprot created modified updated",
@@ -3166,7 +3166,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 94 uniprot encoding gene",
@@ -3190,7 +3190,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 95 uniprot encoding gene alternative names",
@@ -3214,7 +3214,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 96 uniprot encoding gene name",
@@ -3238,7 +3238,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 97 uniprot encoding gene org name",
@@ -3262,7 +3262,7 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 98 uniprot entries with more than two geneid crossrefences",
@@ -3294,7 +3294,7 @@ export const UniProt = [
       "COUNT",
       "ORDER"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 99 uniprot identifiers org translation",
@@ -3320,7 +3320,7 @@ export const UniProt = [
       "VALUES",
       "SERVICE"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   },
   {
     "name": "UniProt - 9 human variant loss of function",
@@ -3346,6 +3346,6 @@ export const UniProt = [
       "FILTER",
       "CONTAINS"
     ],
-    "level": "sib-swiss UniProt"
+    "category": "sib-swiss UniProt"
   }
 ];

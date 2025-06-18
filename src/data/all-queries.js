@@ -17,7 +17,7 @@ type Query = {
   query: string;
   ontologies: string;
   sparqlConcepts: [];
-  level: string;
+  category: string;
   rdfResultExample: string;
   source?: string;
 };

@@ -22,7 +22,7 @@ export const HAMAP = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss HAMAP"
+    "category": "sib-swiss HAMAP"
   },
   {
     "name": "HAMAP - 2",
@@ -44,7 +44,7 @@ export const HAMAP = [
       "SPEX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss HAMAP"
+    "category": "sib-swiss HAMAP"
   },
   {
     "name": "HAMAP - 3",
@@ -71,7 +71,7 @@ export const HAMAP = [
       "FILTER",
       "CONTAINS"
     ],
-    "level": "sib-swiss HAMAP"
+    "category": "sib-swiss HAMAP"
   },
   {
     "name": "HAMAP - 4",
@@ -95,6 +95,6 @@ export const HAMAP = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss HAMAP"
+    "category": "sib-swiss HAMAP"
   }
 ];

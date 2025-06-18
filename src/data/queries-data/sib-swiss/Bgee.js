@@ -21,7 +21,7 @@ export const Bgee = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 002",
@@ -46,7 +46,7 @@ export const Bgee = [
       "WHERE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 003",
@@ -71,7 +71,7 @@ export const Bgee = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 004",
@@ -98,7 +98,7 @@ export const Bgee = [
       "FILTER",
       "LCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 005",
@@ -122,7 +122,7 @@ export const Bgee = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 006",
@@ -150,7 +150,7 @@ export const Bgee = [
       "CONTAINS",
       "LCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 007",
@@ -178,7 +178,7 @@ export const Bgee = [
       "CONTAINS",
       "LCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 008",
@@ -209,7 +209,7 @@ export const Bgee = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 009",
@@ -238,7 +238,7 @@ export const Bgee = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 010",
@@ -267,7 +267,7 @@ export const Bgee = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 011",
@@ -292,7 +292,7 @@ export const Bgee = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 012",
@@ -321,7 +321,7 @@ export const Bgee = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 013",
@@ -346,7 +346,7 @@ export const Bgee = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 014",
@@ -373,7 +373,7 @@ export const Bgee = [
       "OPTIONAL",
       "FILTER"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 015",
@@ -398,7 +398,7 @@ export const Bgee = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 016",
@@ -425,7 +425,7 @@ export const Bgee = [
       "SERVICE",
       "FILTER"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 017",
@@ -453,7 +453,7 @@ export const Bgee = [
       "SERVICE",
       "LIMIT"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 018",
@@ -479,7 +479,7 @@ export const Bgee = [
       "INS",
       "FILTER"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 019",
@@ -507,7 +507,7 @@ export const Bgee = [
       "SERVICE",
       "FILTER"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 020",
@@ -535,7 +535,7 @@ export const Bgee = [
       "SERVICE",
       "FILTER"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 021",
@@ -561,7 +561,7 @@ export const Bgee = [
       "FILTER",
       "UCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 022",
@@ -589,7 +589,7 @@ export const Bgee = [
       "FILTER",
       "LCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 023",
@@ -615,7 +615,7 @@ export const Bgee = [
       "FILTER",
       "CONTAINS"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 024",
@@ -642,7 +642,7 @@ export const Bgee = [
       "LCASE",
       "CONTAINS"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 025",
@@ -670,7 +670,7 @@ export const Bgee = [
       "CONTAINS",
       "LCASE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 026",
@@ -695,7 +695,7 @@ export const Bgee = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 027-biosodafrontend",
@@ -721,7 +721,7 @@ export const Bgee = [
       "LIMIT",
       "SERVICE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - 028-biosodafrontend",
@@ -747,7 +747,7 @@ export const Bgee = [
       "LIMIT",
       "SERVICE"
     ],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   },
   {
     "name": "Bgee - prefixes",
@@ -763,6 +763,6 @@ export const Bgee = [
       "Bgee"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss Bgee"
+    "category": "sib-swiss Bgee"
   }
 ];

@@ -23,7 +23,7 @@ export const OrthoDB = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 10",
@@ -51,7 +51,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 11",
@@ -79,7 +79,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 12",
@@ -108,7 +108,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 13",
@@ -137,7 +137,7 @@ export const OrthoDB = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 14",
@@ -163,7 +163,7 @@ export const OrthoDB = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 15",
@@ -188,7 +188,7 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 16",
@@ -215,7 +215,7 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 17",
@@ -241,7 +241,7 @@ export const OrthoDB = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 18",
@@ -271,7 +271,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 19",
@@ -302,7 +302,7 @@ export const OrthoDB = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 2",
@@ -329,7 +329,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 20",
@@ -357,7 +357,7 @@ export const OrthoDB = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 3",
@@ -384,7 +384,7 @@ export const OrthoDB = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 4",
@@ -409,7 +409,7 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 5",
@@ -436,7 +436,7 @@ export const OrthoDB = [
       "OPTIONAL",
       "FILTER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 6",
@@ -461,7 +461,7 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 7",
@@ -493,7 +493,7 @@ export const OrthoDB = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 8",
@@ -519,7 +519,7 @@ export const OrthoDB = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 9",
@@ -547,7 +547,7 @@ export const OrthoDB = [
       "UCASE",
       "MAPK"
     ],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - prefixes",
@@ -563,6 +563,6 @@ export const OrthoDB = [
       "OrthoDB"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss OrthoDB"
+    "category": "sib-swiss OrthoDB"
   }
 ];

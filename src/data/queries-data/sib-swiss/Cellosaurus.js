@@ -44,7 +44,7 @@ export const Cellosaurus = [
       "BAO",
       "BAO_"
     ],
-    "level": "sib-swiss Cellosaurus"
+    "category": "sib-swiss Cellosaurus"
   },
   {
     "name": "Cellosaurus - 102 cl cnt by category",
@@ -91,6 +91,6 @@ export const Cellosaurus = [
       "BAO",
       "BAO_"
     ],
-    "level": "sib-swiss Cellosaurus"
+    "category": "sib-swiss Cellosaurus"
   }
 ];

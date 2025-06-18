@@ -25,7 +25,7 @@ export const dbgi = [
       "SERVICE",
       "LIMIT"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 002",
@@ -52,7 +52,7 @@ export const dbgi = [
       "SERVICE",
       "CC"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 003",
@@ -80,7 +80,7 @@ export const dbgi = [
       "RT",
       "FILTER"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 004",
@@ -108,7 +108,7 @@ export const dbgi = [
       "RT",
       "FILTER"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 005",
@@ -136,7 +136,7 @@ export const dbgi = [
       "FILTER",
       "ISDB"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 006",
@@ -170,7 +170,7 @@ export const dbgi = [
       "SERVICE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 007",
@@ -199,7 +199,7 @@ export const dbgi = [
       "LIMIT",
       "SERVICE"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 008",
@@ -231,7 +231,7 @@ export const dbgi = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 009",
@@ -265,7 +265,7 @@ export const dbgi = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 011",
@@ -293,7 +293,7 @@ export const dbgi = [
       "IUCN",
       "UNION"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 012",
@@ -321,7 +321,7 @@ export const dbgi = [
       "SERVICE",
       "IUCN"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 013",
@@ -352,7 +352,7 @@ export const dbgi = [
       "UNION",
       "LIMIT"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 014",
@@ -383,7 +383,7 @@ export const dbgi = [
       "UNION",
       "SERVICE"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 015",
@@ -413,7 +413,7 @@ export const dbgi = [
       "FILTER",
       "OPTIONAL"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 016",
@@ -444,7 +444,7 @@ export const dbgi = [
       "OPTIONAL",
       "LIMIT"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 017",
@@ -475,7 +475,7 @@ export const dbgi = [
       "IUCN",
       "OPTIONAL"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 018",
@@ -508,7 +508,7 @@ export const dbgi = [
       "OPTIONAL",
       "SERVICE"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 019",
@@ -540,7 +540,7 @@ export const dbgi = [
       "SERVICE",
       "LIMIT"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 020",
@@ -568,7 +568,7 @@ export const dbgi = [
       "UNION",
       "SERVICE"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 021",
@@ -597,7 +597,7 @@ export const dbgi = [
       "UNION",
       "SERVICE"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 022",
@@ -636,7 +636,7 @@ export const dbgi = [
       "COUNT",
       "ORDER"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 023",
@@ -676,7 +676,7 @@ export const dbgi = [
       "COUNT",
       "ORDER"
     ],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - prefixes",
@@ -692,6 +692,6 @@ export const dbgi = [
       "dbgi"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss dbgi"
+    "category": "sib-swiss dbgi"
   }
 ];

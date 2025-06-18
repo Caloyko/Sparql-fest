@@ -24,7 +24,7 @@ export const neXtProt = [
       "GO",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00002",
@@ -50,7 +50,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00003",
@@ -74,7 +74,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00004",
@@ -101,7 +101,7 @@ export const neXtProt = [
       "IHC",
       "ECO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00005",
@@ -128,7 +128,7 @@ export const neXtProt = [
       "GO",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00006",
@@ -153,7 +153,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00007",
@@ -177,7 +177,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00008",
@@ -201,7 +201,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00009",
@@ -226,7 +226,7 @@ export const neXtProt = [
       "WHERE",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00010",
@@ -251,7 +251,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00011",
@@ -277,7 +277,7 @@ export const neXtProt = [
       "TS",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00012",
@@ -302,7 +302,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00013",
@@ -327,7 +327,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00014",
@@ -352,7 +352,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00015",
@@ -379,7 +379,7 @@ export const neXtProt = [
       "PDZ",
       "TS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00016",
@@ -405,7 +405,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00017",
@@ -432,7 +432,7 @@ export const neXtProt = [
       "GO",
       "TS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00018",
@@ -459,7 +459,7 @@ export const neXtProt = [
       "GO",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00019",
@@ -484,7 +484,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00020",
@@ -509,7 +509,7 @@ export const neXtProt = [
       "DISTINCT",
       "TS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00021",
@@ -535,7 +535,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00022",
@@ -559,7 +559,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00023",
@@ -585,7 +585,7 @@ export const neXtProt = [
       "GO",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00024",
@@ -610,7 +610,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00025",
@@ -635,7 +635,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00026",
@@ -662,7 +662,7 @@ export const neXtProt = [
       "GO",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00027",
@@ -686,7 +686,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00028",
@@ -711,7 +711,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00029",
@@ -736,7 +736,7 @@ export const neXtProt = [
       "WHERE",
       "GPI"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00030",
@@ -758,7 +758,7 @@ export const neXtProt = [
       "PREFIX",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00031",
@@ -782,7 +782,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00032",
@@ -807,7 +807,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00033",
@@ -832,7 +832,7 @@ export const neXtProt = [
       "WHERE",
       "PTM"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00034",
@@ -857,7 +857,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00035",
@@ -883,7 +883,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00036",
@@ -910,7 +910,7 @@ export const neXtProt = [
       "NAD",
       "NADP"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00037",
@@ -938,7 +938,7 @@ export const neXtProt = [
       "DO",
       "RRM"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00038",
@@ -962,7 +962,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00039",
@@ -986,7 +986,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00040",
@@ -1010,7 +1010,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00041",
@@ -1034,7 +1034,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00042",
@@ -1060,7 +1060,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00043",
@@ -1085,7 +1085,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00044",
@@ -1110,7 +1110,7 @@ export const neXtProt = [
       "WHERE",
       "HSA"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00045",
@@ -1134,7 +1134,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00046",
@@ -1158,7 +1158,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00047",
@@ -1183,7 +1183,7 @@ export const neXtProt = [
       "WHERE",
       "CLDN"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00048",
@@ -1208,7 +1208,7 @@ export const neXtProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00049",
@@ -1233,7 +1233,7 @@ export const neXtProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00051",
@@ -1258,7 +1258,7 @@ export const neXtProt = [
       "WHERE",
       "NMR"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00052",
@@ -1282,7 +1282,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00053",
@@ -1306,7 +1306,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00054",
@@ -1331,7 +1331,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00055",
@@ -1355,7 +1355,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00057",
@@ -1382,7 +1382,7 @@ export const neXtProt = [
       "GO",
       "GFP"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00058",
@@ -1408,7 +1408,7 @@ export const neXtProt = [
       "MAX",
       "MIN"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00059",
@@ -1433,7 +1433,7 @@ export const neXtProt = [
       "WHERE",
       "PTM"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00060",
@@ -1458,7 +1458,7 @@ export const neXtProt = [
       "WHERE",
       "DE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00061",
@@ -1482,7 +1482,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00062",
@@ -1506,7 +1506,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00063",
@@ -1536,7 +1536,7 @@ export const neXtProt = [
       "IEA",
       "ISS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00064",
@@ -1560,7 +1560,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00065",
@@ -1584,7 +1584,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00066",
@@ -1611,7 +1611,7 @@ export const neXtProt = [
       "GO",
       "PTM"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00067",
@@ -1635,7 +1635,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00068",
@@ -1659,7 +1659,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00069",
@@ -1685,7 +1685,7 @@ export const neXtProt = [
       "PTM",
       "SYK"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00070",
@@ -1711,7 +1711,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00072",
@@ -1736,7 +1736,7 @@ export const neXtProt = [
       "WHERE",
       "CCDS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00073",
@@ -1760,7 +1760,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00074",
@@ -1784,7 +1784,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00075",
@@ -1808,7 +1808,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00076",
@@ -1834,7 +1834,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00077",
@@ -1859,7 +1859,7 @@ export const neXtProt = [
       "WHERE",
       "TS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00078",
@@ -1885,7 +1885,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00079",
@@ -1910,7 +1910,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00080",
@@ -1934,7 +1934,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00081",
@@ -1961,7 +1961,7 @@ export const neXtProt = [
       "GO",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00082",
@@ -1986,7 +1986,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00083",
@@ -2009,7 +2009,7 @@ export const neXtProt = [
       "WHERE",
       "TS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00084",
@@ -2032,7 +2032,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00085",
@@ -2056,7 +2056,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00086",
@@ -2080,7 +2080,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00087",
@@ -2105,7 +2105,7 @@ export const neXtProt = [
       "WHERE",
       "MGI"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00089",
@@ -2129,7 +2129,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00090",
@@ -2158,7 +2158,7 @@ export const neXtProt = [
       "EXISTS",
       "MGI"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00091",
@@ -2177,7 +2177,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00092",
@@ -2203,7 +2203,7 @@ export const neXtProt = [
       "FF",
       "QYE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00093",
@@ -2229,7 +2229,7 @@ export const neXtProt = [
       "FF",
       "QYE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00095",
@@ -2248,7 +2248,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00097",
@@ -2273,7 +2273,7 @@ export const neXtProt = [
       "WHERE",
       "PTM"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00099",
@@ -2300,7 +2300,7 @@ export const neXtProt = [
       "GO",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00100",
@@ -2319,7 +2319,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00103",
@@ -2343,7 +2343,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00104",
@@ -2367,7 +2367,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00105",
@@ -2393,7 +2393,7 @@ export const neXtProt = [
       "SMR",
       "PDB"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00106",
@@ -2418,7 +2418,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00107",
@@ -2443,7 +2443,7 @@ export const neXtProt = [
       "WHERE",
       "HGNC"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00108",
@@ -2468,7 +2468,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00109",
@@ -2492,7 +2492,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00111",
@@ -2516,7 +2516,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00112",
@@ -2538,7 +2538,7 @@ export const neXtProt = [
       "PREFIX",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00113",
@@ -2562,7 +2562,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00117",
@@ -2586,7 +2586,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00118",
@@ -2610,7 +2610,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00119",
@@ -2634,7 +2634,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00124",
@@ -2655,7 +2655,7 @@ export const neXtProt = [
     "sparqlConcepts": [
       "PREFIX"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00125",
@@ -2679,7 +2679,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00126",
@@ -2708,7 +2708,7 @@ export const neXtProt = [
       "AELEEVTLDGKPLQALR",
       "AELEEVTLDGKPLQALRVTDLKAALEQR"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00127",
@@ -2733,7 +2733,7 @@ export const neXtProt = [
       "WHERE",
       "SUMO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00128",
@@ -2758,7 +2758,7 @@ export const neXtProt = [
       "WHERE",
       "IFN"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00130",
@@ -2784,7 +2784,7 @@ export const neXtProt = [
       "SL",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00131",
@@ -2808,7 +2808,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00132",
@@ -2833,7 +2833,7 @@ export const neXtProt = [
       "WHERE",
       "PDB"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00135",
@@ -2858,7 +2858,7 @@ export const neXtProt = [
       "WHERE",
       "GO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00136",
@@ -2882,7 +2882,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00137",
@@ -2909,7 +2909,7 @@ export const neXtProt = [
       "ILV",
       "PDZ"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00138",
@@ -2935,7 +2935,7 @@ export const neXtProt = [
       "GOLD",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00139",
@@ -2962,7 +2962,7 @@ export const neXtProt = [
       "FILTER",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00140",
@@ -2991,7 +2991,7 @@ export const neXtProt = [
       "GOLD",
       "PDB"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00143",
@@ -3013,7 +3013,7 @@ export const neXtProt = [
       "PREFIX",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00144",
@@ -3039,7 +3039,7 @@ export const neXtProt = [
       "PTM",
       "QHP"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00145",
@@ -3063,7 +3063,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00146",
@@ -3087,7 +3087,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00147",
@@ -3111,7 +3111,7 @@ export const neXtProt = [
       "DISTINCT",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00148",
@@ -3134,7 +3134,7 @@ export const neXtProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00149",
@@ -3157,7 +3157,7 @@ export const neXtProt = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00202",
@@ -3181,7 +3181,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00203",
@@ -3205,7 +3205,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00204",
@@ -3230,7 +3230,7 @@ export const neXtProt = [
       "WHERE",
       "PE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00208",
@@ -3255,7 +3255,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00209",
@@ -3279,7 +3279,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00216",
@@ -3303,7 +3303,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00217",
@@ -3330,7 +3330,7 @@ export const neXtProt = [
       "TS",
       "UNION"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00218",
@@ -3355,7 +3355,7 @@ export const neXtProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00219",
@@ -3381,7 +3381,7 @@ export const neXtProt = [
       "PXDNL",
       "STRDT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00220",
@@ -3406,7 +3406,7 @@ export const neXtProt = [
       "WHERE",
       "MT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00221",
@@ -3433,7 +3433,7 @@ export const neXtProt = [
       "GOLD",
       "IHC"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00222",
@@ -3461,7 +3461,7 @@ export const neXtProt = [
       "GOLD",
       "IHC"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00223",
@@ -3483,7 +3483,7 @@ export const neXtProt = [
       "PREFIX",
       "PMID"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00224",
@@ -3507,7 +3507,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00225",
@@ -3531,7 +3531,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00226",
@@ -3555,7 +3555,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00230",
@@ -3579,7 +3579,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00231",
@@ -3603,7 +3603,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00232",
@@ -3627,7 +3627,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00233",
@@ -3652,7 +3652,7 @@ export const neXtProt = [
       "WHERE",
       "PE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00234",
@@ -3676,7 +3676,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00235",
@@ -3701,7 +3701,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00236",
@@ -3729,7 +3729,7 @@ export const neXtProt = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00237",
@@ -3751,7 +3751,7 @@ export const neXtProt = [
       "PREFIX",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00238",
@@ -3776,7 +3776,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00239",
@@ -3800,7 +3800,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00240",
@@ -3825,7 +3825,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00241",
@@ -3849,7 +3849,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00242",
@@ -3873,7 +3873,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00243",
@@ -3897,7 +3897,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00244",
@@ -3922,7 +3922,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00245",
@@ -3946,7 +3946,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00246",
@@ -3973,7 +3973,7 @@ export const neXtProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00247",
@@ -3997,7 +3997,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00248",
@@ -4021,7 +4021,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00249",
@@ -4040,7 +4040,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00250",
@@ -4063,7 +4063,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00251",
@@ -4085,7 +4085,7 @@ export const neXtProt = [
       "PREFIX",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00252",
@@ -4105,7 +4105,7 @@ export const neXtProt = [
       "SPEX"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00253",
@@ -4132,7 +4132,7 @@ export const neXtProt = [
       "GO",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00254",
@@ -4157,7 +4157,7 @@ export const neXtProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00255",
@@ -4180,7 +4180,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00256",
@@ -4203,7 +4203,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00257",
@@ -4222,7 +4222,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00258",
@@ -4252,7 +4252,7 @@ export const neXtProt = [
       "IRI",
       "AS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00259",
@@ -4281,7 +4281,7 @@ export const neXtProt = [
       "IRI",
       "AS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00260",
@@ -4312,7 +4312,7 @@ export const neXtProt = [
       "IRI",
       "AS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00261",
@@ -4336,7 +4336,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00264",
@@ -4355,7 +4355,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00265",
@@ -4379,7 +4379,7 @@ export const neXtProt = [
       "DISTINCT",
       "CONCAT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00266",
@@ -4412,7 +4412,7 @@ export const neXtProt = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00267",
@@ -4443,7 +4443,7 @@ export const neXtProt = [
       "COMPONENT",
       "UNIPROT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00268",
@@ -4462,7 +4462,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00269",
@@ -4487,7 +4487,7 @@ export const neXtProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00270",
@@ -4513,7 +4513,7 @@ export const neXtProt = [
       "SERVICE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00271",
@@ -4536,7 +4536,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00272",
@@ -4562,7 +4562,7 @@ export const neXtProt = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00276",
@@ -4593,7 +4593,7 @@ export const neXtProt = [
       "IRI",
       "AS"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00278",
@@ -4619,7 +4619,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00279",
@@ -4644,7 +4644,7 @@ export const neXtProt = [
       "AS",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00280",
@@ -4669,7 +4669,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00281",
@@ -4695,7 +4695,7 @@ export const neXtProt = [
       "GOLD",
       "KRT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00282",
@@ -4720,7 +4720,7 @@ export const neXtProt = [
       "WHERE",
       "DO"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00283",
@@ -4747,7 +4747,7 @@ export const neXtProt = [
       "GO",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00284",
@@ -4766,7 +4766,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00285",
@@ -4785,7 +4785,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00286",
@@ -4809,7 +4809,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00287",
@@ -4833,7 +4833,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00288",
@@ -4860,7 +4860,7 @@ export const neXtProt = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00289",
@@ -4885,7 +4885,7 @@ export const neXtProt = [
       "WHERE",
       "KEGG_PTW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00290",
@@ -4910,7 +4910,7 @@ export const neXtProt = [
       "SELECT",
       "DISTINCT"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00291",
@@ -4929,7 +4929,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00292",
@@ -4948,7 +4948,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00293",
@@ -4967,7 +4967,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00294",
@@ -4993,7 +4993,7 @@ export const neXtProt = [
       "DI",
       "NCI"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00295",
@@ -5020,7 +5020,7 @@ export const neXtProt = [
       "DI",
       "NCI"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00296",
@@ -5045,7 +5045,7 @@ export const neXtProt = [
       "WHERE",
       "GOLD"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00297",
@@ -5069,7 +5069,7 @@ export const neXtProt = [
       "WHERE",
       "PDB"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00298",
@@ -5093,7 +5093,7 @@ export const neXtProt = [
       "DISTINCT",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00299",
@@ -5118,7 +5118,7 @@ export const neXtProt = [
       "SEPARATOR",
       "WHERE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00300",
@@ -5142,7 +5142,7 @@ export const neXtProt = [
       "TS",
       "SERVICE"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00301",
@@ -5167,7 +5167,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 00302",
@@ -5192,7 +5192,7 @@ export const neXtProt = [
       "WHERE",
       "KW"
     ],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09000",
@@ -5211,7 +5211,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09001",
@@ -5230,7 +5230,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09002",
@@ -5249,7 +5249,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09003",
@@ -5268,7 +5268,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09004",
@@ -5287,7 +5287,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09005",
@@ -5306,7 +5306,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09006",
@@ -5325,7 +5325,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09007",
@@ -5344,7 +5344,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09008",
@@ -5363,7 +5363,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09009",
@@ -5382,7 +5382,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09010",
@@ -5401,7 +5401,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09011",
@@ -5420,7 +5420,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09012",
@@ -5439,7 +5439,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09013",
@@ -5458,7 +5458,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09014",
@@ -5477,7 +5477,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09015",
@@ -5496,7 +5496,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09016",
@@ -5515,7 +5515,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09017",
@@ -5534,7 +5534,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09018",
@@ -5553,7 +5553,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09019",
@@ -5572,7 +5572,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09020",
@@ -5591,7 +5591,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09021",
@@ -5610,7 +5610,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09022",
@@ -5629,7 +5629,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09023",
@@ -5648,7 +5648,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09024",
@@ -5667,7 +5667,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09025",
@@ -5686,7 +5686,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09026",
@@ -5705,7 +5705,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09027",
@@ -5724,7 +5724,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09028",
@@ -5743,7 +5743,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09029",
@@ -5762,7 +5762,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09030",
@@ -5781,7 +5781,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09031",
@@ -5800,7 +5800,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09032",
@@ -5819,7 +5819,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09033",
@@ -5838,7 +5838,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09034",
@@ -5857,7 +5857,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09035",
@@ -5876,7 +5876,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09036",
@@ -5895,7 +5895,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09037",
@@ -5914,7 +5914,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09038",
@@ -5933,7 +5933,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09039",
@@ -5952,7 +5952,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09040",
@@ -5971,7 +5971,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09041",
@@ -5990,7 +5990,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09042",
@@ -6009,7 +6009,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09043",
@@ -6028,7 +6028,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09044",
@@ -6047,7 +6047,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09045",
@@ -6066,7 +6066,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09046",
@@ -6085,7 +6085,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09047",
@@ -6104,7 +6104,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09048",
@@ -6123,7 +6123,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09049",
@@ -6142,7 +6142,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09050",
@@ -6161,7 +6161,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09051",
@@ -6180,7 +6180,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09052",
@@ -6199,7 +6199,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09053",
@@ -6218,7 +6218,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09054",
@@ -6237,7 +6237,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09055",
@@ -6256,7 +6256,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09056",
@@ -6275,7 +6275,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09057",
@@ -6294,7 +6294,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09058",
@@ -6313,7 +6313,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09059",
@@ -6332,7 +6332,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09060",
@@ -6351,7 +6351,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09061",
@@ -6370,7 +6370,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09062",
@@ -6389,7 +6389,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09063",
@@ -6408,7 +6408,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09064",
@@ -6427,7 +6427,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09065",
@@ -6446,7 +6446,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09066",
@@ -6465,7 +6465,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09067",
@@ -6484,7 +6484,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09068",
@@ -6503,7 +6503,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09069",
@@ -6522,7 +6522,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09070",
@@ -6541,7 +6541,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09071",
@@ -6560,7 +6560,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09072",
@@ -6579,7 +6579,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09073",
@@ -6598,7 +6598,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09074",
@@ -6617,7 +6617,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09075",
@@ -6636,7 +6636,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09076",
@@ -6655,7 +6655,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09077",
@@ -6674,7 +6674,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09078",
@@ -6693,7 +6693,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09079",
@@ -6712,7 +6712,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09080",
@@ -6731,7 +6731,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09081",
@@ -6750,7 +6750,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09082",
@@ -6769,7 +6769,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09083",
@@ -6788,7 +6788,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09084",
@@ -6807,7 +6807,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09085",
@@ -6826,7 +6826,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09086",
@@ -6845,7 +6845,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09087",
@@ -6864,7 +6864,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09088",
@@ -6883,7 +6883,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09089",
@@ -6902,7 +6902,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09090",
@@ -6921,7 +6921,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09091",
@@ -6940,7 +6940,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09092",
@@ -6959,7 +6959,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09093",
@@ -6978,7 +6978,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09094",
@@ -6997,7 +6997,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09095",
@@ -7016,7 +7016,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09096",
@@ -7035,7 +7035,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09097",
@@ -7054,7 +7054,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09098",
@@ -7073,7 +7073,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09099",
@@ -7092,7 +7092,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09100",
@@ -7111,7 +7111,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09101",
@@ -7130,7 +7130,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09102",
@@ -7149,7 +7149,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09103",
@@ -7168,7 +7168,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09104",
@@ -7187,7 +7187,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09105",
@@ -7206,7 +7206,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09106",
@@ -7225,7 +7225,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09107",
@@ -7244,7 +7244,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09108",
@@ -7263,7 +7263,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09109",
@@ -7282,7 +7282,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09110",
@@ -7301,7 +7301,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09111",
@@ -7320,7 +7320,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09112",
@@ -7339,7 +7339,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09113",
@@ -7358,7 +7358,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09114",
@@ -7377,7 +7377,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09115",
@@ -7396,7 +7396,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09117",
@@ -7415,7 +7415,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09119",
@@ -7434,7 +7434,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09120",
@@ -7453,7 +7453,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09121",
@@ -7472,7 +7472,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09122",
@@ -7491,7 +7491,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09123",
@@ -7510,7 +7510,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09124",
@@ -7529,7 +7529,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09125",
@@ -7548,7 +7548,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09126",
@@ -7567,7 +7567,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09127",
@@ -7586,7 +7586,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09128",
@@ -7605,7 +7605,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09129",
@@ -7624,7 +7624,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09130",
@@ -7643,7 +7643,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09131",
@@ -7662,7 +7662,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09132",
@@ -7681,7 +7681,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09133",
@@ -7700,7 +7700,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09134",
@@ -7719,7 +7719,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09135",
@@ -7738,7 +7738,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09136",
@@ -7757,7 +7757,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09137",
@@ -7776,7 +7776,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09138",
@@ -7795,7 +7795,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09139",
@@ -7814,7 +7814,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09140",
@@ -7833,7 +7833,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09141",
@@ -7852,7 +7852,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09142",
@@ -7871,7 +7871,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09143",
@@ -7890,7 +7890,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09144",
@@ -7909,7 +7909,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09145",
@@ -7928,7 +7928,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09146",
@@ -7947,7 +7947,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09147",
@@ -7966,7 +7966,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09148",
@@ -7985,7 +7985,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09149",
@@ -8004,7 +8004,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09150",
@@ -8023,7 +8023,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09151",
@@ -8042,7 +8042,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09152",
@@ -8061,7 +8061,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09153",
@@ -8080,7 +8080,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09154",
@@ -8099,7 +8099,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09155",
@@ -8118,7 +8118,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09156",
@@ -8137,7 +8137,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09157",
@@ -8156,7 +8156,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09158",
@@ -8175,7 +8175,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09159",
@@ -8194,7 +8194,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09160",
@@ -8213,7 +8213,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09161",
@@ -8232,7 +8232,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09162",
@@ -8251,7 +8251,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09163",
@@ -8270,7 +8270,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09164",
@@ -8289,7 +8289,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09165",
@@ -8308,7 +8308,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09166",
@@ -8327,7 +8327,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09167",
@@ -8346,7 +8346,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09168",
@@ -8365,7 +8365,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09169",
@@ -8384,7 +8384,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09170",
@@ -8403,7 +8403,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09171",
@@ -8422,7 +8422,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09172",
@@ -8441,7 +8441,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09173",
@@ -8460,7 +8460,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09174",
@@ -8479,7 +8479,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09175",
@@ -8498,7 +8498,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09176",
@@ -8517,7 +8517,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09177",
@@ -8536,7 +8536,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09178",
@@ -8555,7 +8555,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09179",
@@ -8574,7 +8574,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09180",
@@ -8593,7 +8593,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09181",
@@ -8612,7 +8612,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09182",
@@ -8631,7 +8631,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09183",
@@ -8650,7 +8650,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09184",
@@ -8669,7 +8669,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09185",
@@ -8688,7 +8688,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09186",
@@ -8707,7 +8707,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09187",
@@ -8726,7 +8726,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09188",
@@ -8745,7 +8745,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09189",
@@ -8764,7 +8764,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09190",
@@ -8783,7 +8783,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09191",
@@ -8802,7 +8802,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09192",
@@ -8821,7 +8821,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09193",
@@ -8840,7 +8840,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09194",
@@ -8859,7 +8859,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09195",
@@ -8878,7 +8878,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09196",
@@ -8897,7 +8897,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09197",
@@ -8916,7 +8916,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09198",
@@ -8935,7 +8935,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09199",
@@ -8954,7 +8954,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09200",
@@ -8973,7 +8973,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09201",
@@ -8992,7 +8992,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09202",
@@ -9011,7 +9011,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09203",
@@ -9030,7 +9030,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09204",
@@ -9049,7 +9049,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09205",
@@ -9068,7 +9068,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09206",
@@ -9087,7 +9087,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09207",
@@ -9106,7 +9106,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09208",
@@ -9125,7 +9125,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09209",
@@ -9144,7 +9144,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09210",
@@ -9163,7 +9163,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09211",
@@ -9182,7 +9182,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09212",
@@ -9201,7 +9201,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09213",
@@ -9220,7 +9220,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09214",
@@ -9239,7 +9239,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09215",
@@ -9258,7 +9258,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09216",
@@ -9277,7 +9277,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09217",
@@ -9296,7 +9296,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09218",
@@ -9315,7 +9315,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09219",
@@ -9334,7 +9334,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09220",
@@ -9353,7 +9353,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09221",
@@ -9372,7 +9372,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09222",
@@ -9391,7 +9391,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09223",
@@ -9410,7 +9410,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09224",
@@ -9429,7 +9429,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09225",
@@ -9448,7 +9448,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09226",
@@ -9467,7 +9467,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09227",
@@ -9486,7 +9486,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09228",
@@ -9505,7 +9505,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09229",
@@ -9524,7 +9524,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09230",
@@ -9543,7 +9543,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09231",
@@ -9562,7 +9562,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09232",
@@ -9581,7 +9581,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09233",
@@ -9600,7 +9600,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09234",
@@ -9619,7 +9619,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09235",
@@ -9638,7 +9638,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09236",
@@ -9657,7 +9657,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09237",
@@ -9676,7 +9676,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09238",
@@ -9695,7 +9695,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09239",
@@ -9714,7 +9714,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09240",
@@ -9733,7 +9733,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09241",
@@ -9752,7 +9752,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09242",
@@ -9771,7 +9771,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09243",
@@ -9790,7 +9790,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09244",
@@ -9809,7 +9809,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09245",
@@ -9828,7 +9828,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09246",
@@ -9847,7 +9847,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09247",
@@ -9866,7 +9866,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09248",
@@ -9885,7 +9885,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09249",
@@ -9904,7 +9904,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09250",
@@ -9923,7 +9923,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09251",
@@ -9942,7 +9942,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09252",
@@ -9961,7 +9961,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09253",
@@ -9980,7 +9980,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09254",
@@ -9999,7 +9999,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09255",
@@ -10018,7 +10018,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09256",
@@ -10037,7 +10037,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09257",
@@ -10056,7 +10056,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09258",
@@ -10075,7 +10075,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09259",
@@ -10094,7 +10094,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09260",
@@ -10113,7 +10113,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09261",
@@ -10132,7 +10132,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09262",
@@ -10151,7 +10151,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09263",
@@ -10170,7 +10170,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09264",
@@ -10189,7 +10189,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09265",
@@ -10208,7 +10208,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09266",
@@ -10227,7 +10227,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09267",
@@ -10246,7 +10246,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09268",
@@ -10265,7 +10265,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09269",
@@ -10284,7 +10284,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09270",
@@ -10303,7 +10303,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09271",
@@ -10322,7 +10322,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09272",
@@ -10341,7 +10341,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09273",
@@ -10360,7 +10360,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09274",
@@ -10379,7 +10379,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09275",
@@ -10398,7 +10398,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09276",
@@ -10417,7 +10417,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09277",
@@ -10436,7 +10436,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09278",
@@ -10455,7 +10455,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09279",
@@ -10474,7 +10474,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09280",
@@ -10493,7 +10493,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09281",
@@ -10512,7 +10512,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09282",
@@ -10531,7 +10531,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09283",
@@ -10550,7 +10550,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09284",
@@ -10569,7 +10569,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09285",
@@ -10588,7 +10588,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09286",
@@ -10607,7 +10607,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09287",
@@ -10626,7 +10626,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09288",
@@ -10645,7 +10645,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09289",
@@ -10664,7 +10664,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09290",
@@ -10683,7 +10683,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09291",
@@ -10702,7 +10702,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09292",
@@ -10721,7 +10721,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09293",
@@ -10740,7 +10740,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09294",
@@ -10759,7 +10759,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09295",
@@ -10778,7 +10778,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09296",
@@ -10797,7 +10797,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09297",
@@ -10816,7 +10816,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09298",
@@ -10835,7 +10835,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09299",
@@ -10854,7 +10854,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09300",
@@ -10873,7 +10873,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09301",
@@ -10892,7 +10892,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09302",
@@ -10911,7 +10911,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09303",
@@ -10930,7 +10930,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09304",
@@ -10949,7 +10949,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09305",
@@ -10968,7 +10968,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09306",
@@ -10987,7 +10987,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09307",
@@ -11006,7 +11006,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09308",
@@ -11025,7 +11025,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09309",
@@ -11044,7 +11044,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09310",
@@ -11063,7 +11063,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09311",
@@ -11082,7 +11082,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09312",
@@ -11101,7 +11101,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09313",
@@ -11120,7 +11120,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09314",
@@ -11139,7 +11139,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09315",
@@ -11158,7 +11158,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09316",
@@ -11177,7 +11177,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09317",
@@ -11196,7 +11196,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09318",
@@ -11215,7 +11215,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09319",
@@ -11234,7 +11234,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09320",
@@ -11253,7 +11253,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09321",
@@ -11272,7 +11272,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09322",
@@ -11291,7 +11291,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09323",
@@ -11310,7 +11310,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09324",
@@ -11329,7 +11329,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09325",
@@ -11348,7 +11348,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09326",
@@ -11367,7 +11367,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09327",
@@ -11386,7 +11386,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09328",
@@ -11405,7 +11405,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09329",
@@ -11424,7 +11424,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09330",
@@ -11443,7 +11443,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09331",
@@ -11462,7 +11462,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09332",
@@ -11481,7 +11481,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09333",
@@ -11500,7 +11500,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09334",
@@ -11519,7 +11519,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09335",
@@ -11538,7 +11538,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09336",
@@ -11557,7 +11557,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09337",
@@ -11576,7 +11576,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09338",
@@ -11595,7 +11595,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09339",
@@ -11614,7 +11614,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09340",
@@ -11633,7 +11633,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09341",
@@ -11652,7 +11652,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09342",
@@ -11671,7 +11671,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09343",
@@ -11690,7 +11690,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09344",
@@ -11709,7 +11709,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09345",
@@ -11728,7 +11728,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09346",
@@ -11747,7 +11747,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09347",
@@ -11766,7 +11766,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09348",
@@ -11785,7 +11785,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09349",
@@ -11804,7 +11804,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09350",
@@ -11823,7 +11823,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09351",
@@ -11842,7 +11842,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09352",
@@ -11861,7 +11861,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09353",
@@ -11880,7 +11880,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09354",
@@ -11899,7 +11899,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09355",
@@ -11918,7 +11918,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09356",
@@ -11937,7 +11937,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09357",
@@ -11956,7 +11956,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09358",
@@ -11975,7 +11975,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09359",
@@ -11994,7 +11994,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09360",
@@ -12013,7 +12013,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09361",
@@ -12032,7 +12032,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09362",
@@ -12051,7 +12051,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09363",
@@ -12070,7 +12070,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09364",
@@ -12089,7 +12089,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09365",
@@ -12108,7 +12108,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09366",
@@ -12127,7 +12127,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09367",
@@ -12146,7 +12146,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09368",
@@ -12165,7 +12165,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09369",
@@ -12184,7 +12184,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09370",
@@ -12203,7 +12203,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09371",
@@ -12222,7 +12222,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09372",
@@ -12241,7 +12241,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09373",
@@ -12260,7 +12260,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09374",
@@ -12279,7 +12279,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09375",
@@ -12298,7 +12298,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09376",
@@ -12317,7 +12317,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09377",
@@ -12336,7 +12336,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09378",
@@ -12355,7 +12355,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09379",
@@ -12374,7 +12374,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09380",
@@ -12393,7 +12393,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09381",
@@ -12412,7 +12412,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09382",
@@ -12431,7 +12431,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09383",
@@ -12450,7 +12450,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09384",
@@ -12469,7 +12469,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09385",
@@ -12488,7 +12488,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09386",
@@ -12507,7 +12507,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09387",
@@ -12526,7 +12526,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09388",
@@ -12545,7 +12545,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09389",
@@ -12564,7 +12564,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09390",
@@ -12583,7 +12583,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09391",
@@ -12602,7 +12602,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09392",
@@ -12621,7 +12621,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09393",
@@ -12640,7 +12640,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09394",
@@ -12659,7 +12659,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09395",
@@ -12678,7 +12678,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09396",
@@ -12697,7 +12697,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09397",
@@ -12716,7 +12716,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09398",
@@ -12735,7 +12735,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09399",
@@ -12754,7 +12754,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09400",
@@ -12773,7 +12773,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09401",
@@ -12792,7 +12792,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09402",
@@ -12811,7 +12811,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09404",
@@ -12830,7 +12830,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09405",
@@ -12849,7 +12849,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09406",
@@ -12868,7 +12868,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09407",
@@ -12887,7 +12887,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09408",
@@ -12906,7 +12906,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09409",
@@ -12925,7 +12925,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09410",
@@ -12944,7 +12944,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09411",
@@ -12963,7 +12963,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09412",
@@ -12982,7 +12982,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09413",
@@ -13001,7 +13001,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09414",
@@ -13020,7 +13020,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09415",
@@ -13039,7 +13039,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09416",
@@ -13058,7 +13058,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09417",
@@ -13077,7 +13077,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09418",
@@ -13096,7 +13096,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09419",
@@ -13115,7 +13115,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09420",
@@ -13134,7 +13134,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09421",
@@ -13153,7 +13153,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09422",
@@ -13172,7 +13172,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09423",
@@ -13191,7 +13191,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09424",
@@ -13210,7 +13210,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09425",
@@ -13229,7 +13229,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09426",
@@ -13248,7 +13248,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09427",
@@ -13267,7 +13267,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09428",
@@ -13286,7 +13286,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09429",
@@ -13305,7 +13305,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09430",
@@ -13324,7 +13324,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09431",
@@ -13343,7 +13343,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09432",
@@ -13362,7 +13362,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09433",
@@ -13381,7 +13381,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09434",
@@ -13400,7 +13400,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09435",
@@ -13419,7 +13419,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09436",
@@ -13438,7 +13438,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09437",
@@ -13457,7 +13457,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09438",
@@ -13476,7 +13476,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09439",
@@ -13495,7 +13495,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09444",
@@ -13514,7 +13514,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09445",
@@ -13533,7 +13533,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09446",
@@ -13552,7 +13552,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09447",
@@ -13571,7 +13571,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09448",
@@ -13590,7 +13590,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09449",
@@ -13609,7 +13609,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09450",
@@ -13628,7 +13628,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09451",
@@ -13647,7 +13647,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09452",
@@ -13666,7 +13666,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09453",
@@ -13685,7 +13685,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09454",
@@ -13704,7 +13704,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09455",
@@ -13723,7 +13723,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09456",
@@ -13742,7 +13742,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09457",
@@ -13761,7 +13761,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09458",
@@ -13780,7 +13780,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09459",
@@ -13799,7 +13799,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09460",
@@ -13818,7 +13818,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09461",
@@ -13837,7 +13837,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09462",
@@ -13856,7 +13856,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09463",
@@ -13875,7 +13875,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09464",
@@ -13894,7 +13894,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09465",
@@ -13913,7 +13913,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09466",
@@ -13932,7 +13932,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09467",
@@ -13951,7 +13951,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09468",
@@ -13970,7 +13970,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09469",
@@ -13989,7 +13989,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09601",
@@ -14008,7 +14008,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09602",
@@ -14027,7 +14027,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09603",
@@ -14046,7 +14046,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09604",
@@ -14065,7 +14065,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09605",
@@ -14084,7 +14084,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09606",
@@ -14103,7 +14103,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09607",
@@ -14122,7 +14122,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09608",
@@ -14141,7 +14141,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09609",
@@ -14160,7 +14160,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09610",
@@ -14179,7 +14179,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09611",
@@ -14198,7 +14198,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09612",
@@ -14217,7 +14217,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09613",
@@ -14236,7 +14236,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09614",
@@ -14255,7 +14255,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09615",
@@ -14274,7 +14274,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09616",
@@ -14293,7 +14293,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09617",
@@ -14312,7 +14312,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09619",
@@ -14331,7 +14331,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09620",
@@ -14350,7 +14350,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09621",
@@ -14369,7 +14369,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09622",
@@ -14388,7 +14388,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09623",
@@ -14407,7 +14407,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09624",
@@ -14426,7 +14426,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09625",
@@ -14445,7 +14445,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09626",
@@ -14464,7 +14464,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09627",
@@ -14483,7 +14483,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09628",
@@ -14502,7 +14502,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09629",
@@ -14521,7 +14521,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09630",
@@ -14540,7 +14540,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09631",
@@ -14559,7 +14559,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09632",
@@ -14578,7 +14578,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09633",
@@ -14597,7 +14597,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09634",
@@ -14616,7 +14616,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09635",
@@ -14635,7 +14635,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09636",
@@ -14654,7 +14654,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09637",
@@ -14673,7 +14673,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09638",
@@ -14692,7 +14692,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09639",
@@ -14711,7 +14711,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09640",
@@ -14730,7 +14730,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09641",
@@ -14749,7 +14749,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09642",
@@ -14768,7 +14768,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09643",
@@ -14787,7 +14787,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09644",
@@ -14806,7 +14806,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09645",
@@ -14825,7 +14825,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09646",
@@ -14844,7 +14844,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09647",
@@ -14863,7 +14863,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09648",
@@ -14882,7 +14882,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09649",
@@ -14901,7 +14901,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09650",
@@ -14920,7 +14920,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09651",
@@ -14939,7 +14939,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09652",
@@ -14958,7 +14958,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09653",
@@ -14977,7 +14977,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09654",
@@ -14996,7 +14996,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09655",
@@ -15015,7 +15015,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09656",
@@ -15034,7 +15034,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09657",
@@ -15053,7 +15053,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09658",
@@ -15072,7 +15072,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09659",
@@ -15091,7 +15091,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09660",
@@ -15110,7 +15110,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09661",
@@ -15129,7 +15129,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09662",
@@ -15148,7 +15148,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09663",
@@ -15167,7 +15167,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09664",
@@ -15186,7 +15186,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09665",
@@ -15205,7 +15205,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09666",
@@ -15224,7 +15224,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09667",
@@ -15243,7 +15243,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09668",
@@ -15262,7 +15262,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09669",
@@ -15281,7 +15281,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09670",
@@ -15300,7 +15300,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09671",
@@ -15319,7 +15319,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09672",
@@ -15338,7 +15338,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09673",
@@ -15357,7 +15357,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09674",
@@ -15376,7 +15376,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09675",
@@ -15395,7 +15395,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09676",
@@ -15414,7 +15414,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09677",
@@ -15433,7 +15433,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09678",
@@ -15452,7 +15452,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09679",
@@ -15471,7 +15471,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09680",
@@ -15490,7 +15490,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09681",
@@ -15509,7 +15509,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09682",
@@ -15528,7 +15528,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09683",
@@ -15547,7 +15547,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09684",
@@ -15566,7 +15566,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09685",
@@ -15585,7 +15585,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09686",
@@ -15604,7 +15604,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09687",
@@ -15623,7 +15623,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09688",
@@ -15642,7 +15642,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09689",
@@ -15661,7 +15661,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09690",
@@ -15680,7 +15680,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09691",
@@ -15699,7 +15699,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09692",
@@ -15718,7 +15718,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09693",
@@ -15737,7 +15737,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09694",
@@ -15756,7 +15756,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09695",
@@ -15775,7 +15775,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09696",
@@ -15794,7 +15794,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09697",
@@ -15813,7 +15813,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09698",
@@ -15832,7 +15832,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09699",
@@ -15851,7 +15851,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09700",
@@ -15870,7 +15870,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09701",
@@ -15889,7 +15889,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ 09702",
@@ -15908,7 +15908,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ DEREF 003",
@@ -15927,7 +15927,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - NXQ DEREF 004",
@@ -15946,7 +15946,7 @@ export const neXtProt = [
       "SH"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - convertNextProt",
@@ -15962,7 +15962,7 @@ export const neXtProt = [
       "neXtProt"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - convertNextProt2",
@@ -15978,7 +15978,7 @@ export const neXtProt = [
       "neXtProt"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   },
   {
     "name": "neXtProt - prefixes",
@@ -15994,6 +15994,6 @@ export const neXtProt = [
       "neXtProt"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss neXtProt"
+    "category": "sib-swiss neXtProt"
   }
 ];

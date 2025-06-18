@@ -89,7 +89,7 @@ function parseQueryFile(content, folderName, fileName, date) {
     query,
     ontologies: [folderName, ...prefixes],
     sparqlConcepts,
-    level: `sib-swiss ${folderName}`
+    category: `sib-swiss ${folderName}`
   };
 }
 

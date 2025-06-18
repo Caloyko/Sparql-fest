@@ -13,7 +13,7 @@ export const GlyConnect = [
       "GlyConnect"
     ],
     "sparqlConcepts": [],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 1",
@@ -36,7 +36,7 @@ export const GlyConnect = [
       "PREFIX",
       "SELECT"
     ],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 2",
@@ -59,7 +59,7 @@ export const GlyConnect = [
       "PREFIX",
       "SELECT"
     ],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 3",
@@ -82,7 +82,7 @@ export const GlyConnect = [
       "PREFIX",
       "SELECT"
     ],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 4",
@@ -106,7 +106,7 @@ export const GlyConnect = [
       "SELECT",
       "FILTER"
     ],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 5",
@@ -129,6 +129,6 @@ export const GlyConnect = [
       "PREFIX",
       "SELECT"
     ],
-    "level": "sib-swiss GlyConnect"
+    "category": "sib-swiss GlyConnect"
   }
 ];

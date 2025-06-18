@@ -21,7 +21,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 10",
@@ -49,7 +49,7 @@ export const Rhea = [
       "EC",
       "FILTER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 100 Get the number of ChEBI participant with at least one xref to CAS number as provided by ChEBI",
@@ -82,7 +82,7 @@ export const Rhea = [
       "CAS",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 101 Pairs of reaction participants that belong to the same reaction but on distinct sides and number of reactions in which they occur",
@@ -114,7 +114,7 @@ export const Rhea = [
       "DESC",
       "LIMIT"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 103 Select all approved reactions linked to a given EC number",
@@ -144,7 +144,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 104 Select the number of reactions linked to EC numbers",
@@ -170,7 +170,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 105 Select all reactions linked to EC numbers",
@@ -198,7 +198,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 106 Select all reactions linked to more than one EC number",
@@ -229,7 +229,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 107 Select the number of reactions with no links to EC numbers",
@@ -258,7 +258,7 @@ export const Rhea = [
       "NOT",
       "EXISTS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 108 Select all reactions with no links to EC numbers",
@@ -289,7 +289,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 109 Distribution of reactions according to the first level of enzyme classification",
@@ -316,7 +316,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 11",
@@ -348,7 +348,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 110 Select reaction ec protein for a given reaction",
@@ -378,7 +378,7 @@ export const Rhea = [
       "SERVICE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 111 Select reaction ec protein for a given EC number",
@@ -408,7 +408,7 @@ export const Rhea = [
       "SERVICE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 112 Total number of reaction ec protein links",
@@ -436,7 +436,7 @@ export const Rhea = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 113 Number of distinct rhea EC number UniProtKB Swiss-Prot entries involved in links",
@@ -463,7 +463,7 @@ export const Rhea = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 114 Retrieve the set of reactions catalyzed by enzymes of the ECOLI reference proteome reaction EC protein",
@@ -490,7 +490,7 @@ export const Rhea = [
       "SERVICE",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 115 Retrieve the set of metabolites involved in reactions catalyzed by human genes HUMAN reference proteome",
@@ -515,7 +515,7 @@ export const Rhea = [
       "SERVICE",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 116 Retrieve the set of reactions catalyzed by human enzymes reactions EC proteins from HUMAN reference proteome",
@@ -545,7 +545,7 @@ export const Rhea = [
       "SERVICE",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 117 Retrieve parent reactions and their catalyzing enzymes for a metabolite that is not directly involved in a reaction",
@@ -577,7 +577,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 118 Number of approved reactions missing citations",
@@ -607,7 +607,7 @@ export const Rhea = [
       "NOT",
       "EXISTS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 119 Give me the set of approved reactions missing citations",
@@ -639,7 +639,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 12",
@@ -668,7 +668,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 126 list protein components ec",
@@ -691,7 +691,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 128 list EC numbers not linked to UniProt entries",
@@ -717,7 +717,7 @@ export const Rhea = [
       "NOT",
       "EXISTS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 13",
@@ -746,7 +746,7 @@ export const Rhea = [
       "VALUES",
       "GRAPH"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 130 Where are the human genes encoding enzymes metabolizing cholesterol expressed",
@@ -774,7 +774,7 @@ export const Rhea = [
       "SERVICE",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 131 Where are the human genes encoding enzymes metabolizing cholesterol expressed",
@@ -803,7 +803,7 @@ export const Rhea = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 14",
@@ -831,7 +831,7 @@ export const Rhea = [
       "WHERE",
       "VALUES"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 15",
@@ -860,7 +860,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 16",
@@ -888,7 +888,7 @@ export const Rhea = [
       "WHERE",
       "VALUES"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 17",
@@ -916,7 +916,7 @@ export const Rhea = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 18",
@@ -944,7 +944,7 @@ export const Rhea = [
       "CC",
       "CCCC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 19 draft human metabolome",
@@ -969,7 +969,7 @@ export const Rhea = [
       "WHERE",
       "SERVICE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 2",
@@ -998,7 +998,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 20 search chemical names in japanese",
@@ -1028,7 +1028,7 @@ export const Rhea = [
       "STR",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 21 count rhea examples",
@@ -1053,7 +1053,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 22 Select all reactions and their equation ordered by reaction identifier",
@@ -1080,7 +1080,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 23 Select all reaction IDs status and equations ordered by reaction identifier",
@@ -1107,7 +1107,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 24 Display only a subset of reactions",
@@ -1135,7 +1135,7 @@ export const Rhea = [
       "BY",
       "LIMIT"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 25 Select the first 10 reactions starting from the fifth reaction",
@@ -1164,7 +1164,7 @@ export const Rhea = [
       "LIMIT",
       "OFFSET"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 26 Select the number of reactions with status Approved",
@@ -1189,7 +1189,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 27 Select the number of reactions that have Xrefs",
@@ -1217,7 +1217,7 @@ export const Rhea = [
       "FILTER",
       "BOUND"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 28 Select all reactions with Xrefs",
@@ -1248,7 +1248,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 29 Select all approved reactions linked to PMID X",
@@ -1277,7 +1277,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 3",
@@ -1304,7 +1304,7 @@ export const Rhea = [
       "WHERE",
       "VALUES"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 30 Select all approved reactions annotated with a given Pubmed ID",
@@ -1331,7 +1331,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 31 Select the average number of citation of reactions that have at least one citation",
@@ -1362,7 +1362,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 32 Select the distribution of reactions according to their status",
@@ -1390,7 +1390,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 33 Select all approved transport reactions",
@@ -1418,7 +1418,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 34 Select all cross-references for a given reaction",
@@ -1447,7 +1447,7 @@ export const Rhea = [
       "AS",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 35 Select all cross-references Kegg MetaCyc Macie for a given reaction",
@@ -1476,7 +1476,7 @@ export const Rhea = [
       "AS",
       "OPTIONAL"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 36 Select the number of reactions with cross-references to KEGG resource",
@@ -1503,7 +1503,7 @@ export const Rhea = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 37 Select the number of reactions with cross-references to MetaCyc",
@@ -1534,7 +1534,7 @@ export const Rhea = [
       "METACYC",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 39 Select all reactions annotated with a given Pubmed ID",
@@ -1562,7 +1562,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 4",
@@ -1591,7 +1591,7 @@ export const Rhea = [
       "BIND",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 40 Select all citations of a given reaction",
@@ -1619,7 +1619,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 41 Select all reactions with citations display the number of citations and order by reaction ID",
@@ -1652,7 +1652,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 42 Select the average number of citation of reactions that have at least one citation",
@@ -1683,7 +1683,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 43 Select the child reactions of a given reaction in the Rhea hierarchy",
@@ -1711,7 +1711,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 44 Select the descendant reaction of a given reaction in the Rhea hierarchy",
@@ -1739,7 +1739,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 45 Select the parent reactions of a given reaction",
@@ -1767,7 +1767,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 46 Number of IsA relationships",
@@ -1795,7 +1795,7 @@ export const Rhea = [
       "AS",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 47 Select all children reactions and give the number of parent reactions",
@@ -1821,7 +1821,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 48 Select all reactions with at least one parent reaction and give the number ancestor reactions",
@@ -1851,7 +1851,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 49 Select parent reactions give the number of child and descendant reactions",
@@ -1880,7 +1880,7 @@ export const Rhea = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 5",
@@ -1907,7 +1907,7 @@ export const Rhea = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 50 Number of reactions that have parent and child reactions",
@@ -1937,7 +1937,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 51 Select all reactions that have parents and children reactions",
@@ -1963,7 +1963,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 52 List all small molecules",
@@ -1991,7 +1991,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 53 List all polymers",
@@ -2019,7 +2019,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 54 List all generic compounds",
@@ -2047,7 +2047,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 55 Number of compounds according to their category",
@@ -2077,7 +2077,7 @@ export const Rhea = [
       "BY",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 56 Distribution of GenericParticipant",
@@ -2102,7 +2102,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 57 Give me the list of Rhea generics",
@@ -2130,7 +2130,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 58 Give me the reactions involving a given Rhea generic",
@@ -2158,7 +2158,7 @@ export const Rhea = [
       "GROUP",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 59 Select reaction participants for a given reaction ID. Display their coefficient and their name",
@@ -2186,7 +2186,7 @@ export const Rhea = [
       "FILTER",
       "GENERIC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 6",
@@ -2216,7 +2216,7 @@ export const Rhea = [
       "BIND",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 60 Select the number of approved reactions using CHEBI 29985 as small molecule participant",
@@ -2245,7 +2245,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 61 Select all approved reactions using CHEBI 29985 as small molecule participant",
@@ -2273,7 +2273,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 62 Select the number of approved reactions using L-glutamine AND L-glutamate in different reaction sides",
@@ -2302,7 +2302,7 @@ export const Rhea = [
       "WHERE",
       "FILTER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 63 Select all approved reactions using L-glutamine AND L-glutamate in different reaction sides",
@@ -2330,7 +2330,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 64 Number of reaction participants per reaction side",
@@ -2360,7 +2360,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 65 Number of reaction participants per reaction side",
@@ -2389,7 +2389,7 @@ export const Rhea = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 66 Select all compounds and count their occurrence in Rhea reactions",
@@ -2420,7 +2420,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 67 Select all compounds and count their occurrence in Rhea reactions",
@@ -2451,7 +2451,7 @@ export const Rhea = [
       "ORDER",
       "DESC"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 68 Select reaction participants that appear in only one reaction",
@@ -2481,7 +2481,7 @@ export const Rhea = [
       "HAVING",
       "ORDER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 69 Select all the direct children of carbohydrate in the ChEBI ontology used in Rhea reaction or not",
@@ -2511,7 +2511,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 7",
@@ -2539,7 +2539,7 @@ export const Rhea = [
       "BIND",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 70 Select all the descendants of  carbohydrate  in the ChEBI ontology used in Rhea reaction or not",
@@ -2569,7 +2569,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 71 Select count of descendants of  carbohydrate  in the ChEBI ontology used in Rhea reaction or not",
@@ -2598,7 +2598,7 @@ export const Rhea = [
       "AS",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 72 Select children of ChEBI 35179 in the ChEBI hierarchy used in Rhea reactions or not",
@@ -2628,7 +2628,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 73 Select all the descendants of CHEBI 35179 in the ChEBI hierarchy used in Rhea reaction or not",
@@ -2658,7 +2658,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 74 Select children of CHEBI 35179 in the ChEBI hierarchy used in Rhea reactions and show the reactions",
@@ -2688,7 +2688,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 75 Select all the descendants of CHEBI 35179 in the ChEBI hierarchy used in Rhea reactions and show the reactions",
@@ -2718,7 +2718,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 76 Select the number of approved reactions involving a monosaccharide derivative  based on the ChEBI ontology",
@@ -2746,7 +2746,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 77 Select all approved reactions involving a monosaccharide derivative",
@@ -2776,7 +2776,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 78 Select the number of approved reactions involving a monosaccharide",
@@ -2804,7 +2804,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 79 Select all approved reactions involving a monosaccharide",
@@ -2832,7 +2832,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 8",
@@ -2861,7 +2861,7 @@ export const Rhea = [
       "CONTAINS",
       "GO_"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 80 Select the number of approved reactions involving a carbohydrate derivative",
@@ -2889,7 +2889,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 81 Select all approved reactions involving a carbohydrate derivative",
@@ -2919,7 +2919,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 82 Select the number of approved reactions involving a carbohydrate",
@@ -2947,7 +2947,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 83 Select all approved reactions involving a carbohydrate",
@@ -2977,7 +2977,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 84 Select the number of approved reactions involving  lipids",
@@ -3005,7 +3005,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 85 Select all approved reactions involving lipids based on the ChEBI ontology",
@@ -3035,7 +3035,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 86 Select all approved reactions involving lipids",
@@ -3065,7 +3065,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 87 Select all approved reactions involving lipids that are parent reactions and give their number of descendants",
@@ -3095,7 +3095,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 88 How many descendants of CHEBI 17815",
@@ -3123,7 +3123,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 89 Give me all CHEBI identifier and label for the descendants of CHEBI 17815",
@@ -3153,7 +3153,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 9",
@@ -3180,7 +3180,7 @@ export const Rhea = [
       "WHERE",
       "BIND"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 90 How many reactions involve CHEBI 17815",
@@ -3208,7 +3208,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 91 How many reactions involve CHEBI 17815",
@@ -3236,7 +3236,7 @@ export const Rhea = [
       "SELECT",
       "WHERE"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 92 Select all approved reactions with participants being CHEBI 17815  or one of its descendant",
@@ -3267,7 +3267,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 93 Select all approved reactions with CHEBI 17815 or one of its descendant optional EC",
@@ -3298,7 +3298,7 @@ export const Rhea = [
       "ORDER",
       "BY"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 94 Select all approved reactions with CHEBI or one of its descendant optional UniProtKB reviewed EC",
@@ -3332,7 +3332,7 @@ export const Rhea = [
       "BY",
       "ORDER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 95 Get uniprot name of a given chebi compound",
@@ -3363,7 +3363,7 @@ export const Rhea = [
       "AS",
       "FILTER"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 96 Get tautomer of a given chebi compound",
@@ -3391,7 +3391,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 97 Get structural data of a given ChEBI compound",
@@ -3418,7 +3418,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 98 Get chebi compound of a given InChI",
@@ -3443,7 +3443,7 @@ export const Rhea = [
       "BIND",
       "AS"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   },
   {
     "name": "Rhea - 99 Get the list of reactions involving a ChEBI participant with  has role antifungal agent",
@@ -3472,6 +3472,6 @@ export const Rhea = [
       "WHERE",
       "UNION"
     ],
-    "level": "sib-swiss Rhea"
+    "category": "sib-swiss Rhea"
   }
 ];
