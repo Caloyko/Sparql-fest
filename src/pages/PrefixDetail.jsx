@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import InProgress from '../components/reusable/InProgress'
 import { useParams } from 'react-router-dom';
-import { sparqlPrefixes } from '../data/prefixes';
+import { sparqlPrefixes } from '../data/all-prefixes';
 import Section from '../components/reusable/Section';
 
 

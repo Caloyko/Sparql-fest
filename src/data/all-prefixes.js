@@ -4,8 +4,10 @@ import ordoImg from "../assets/images/prefixes/ordo.png"
 import unknownImg from "../assets/images/prefixes/unknown.avif"
 import hoomImg from "../assets/images/prefixes/hoom.jpg"
 import dcImg from "../assets/images/prefixes/dc.jpeg"
+import { prefixes as sibPrefixes } from "./queries-data/sib-swiss/prefixes.js";
 
-export const sparqlPrefixes = [
+
+const basicPrefixes = [
     {
       prefix: "RDF",
       name: "RDF ",
@@ -93,3 +95,23 @@ export const sparqlPrefixes = [
 
   ]
   
+
+const enrichedMap = new Map(basicPrefixes.map(p => [p.prefix.toUpperCase(), p]));
+
+for (const dp of sibPrefixes) {
+  const key = dp.prefix.toUpperCase();
+  if (!enrichedMap.has(key)) {
+    enrichedMap.set(key, {
+      ...dp,
+      description: "No description available.",
+      logo: unknownImg,
+      documentation: null,
+      download: null,
+      version: null,
+      category: "Unknown",
+      usedIn: []
+    });
+  }
+}
+
+export const sparqlPrefixes = Array.from(enrichedMap.values());

@@ -1,7 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
-console.log(process.cwd());
+
+const globalPrefixes = new Map();
+
+
 const sibSwissLogo = 'src/assets/images/SIB_logo.jpg';
 const basePath = path.resolve(process.cwd(), '../../data/external/sib-swiss'); 
 const outputPath = path.resolve(process.cwd(), '../../data/queries-data/sib-swiss'); 
@@ -53,6 +56,12 @@ function generateFiles(collected) {
   
     fs.writeFileSync(outputFile, fileContent, 'utf-8');
     console.log(`✅ Files generated : ${outputFile}`);
+
+    const prefixList = Array.from(globalPrefixes.values());
+    const prefixOutputPath = path.join(outputPath, `prefixes.js`);
+    const prefixContent = `export const prefixes = ${JSON.stringify(prefixList, null, 2)};`;
+    fs.writeFileSync(prefixOutputPath, prefixContent, 'utf-8');
+    console.log(`✅ Prefix file generated: ${prefixOutputPath}`);
   }
 }
 
@@ -70,7 +79,22 @@ function parseQueryFile(content, folderName, fileName, date) {
   const query = queryMatch ? queryMatch[1].trim() : null;
 
   // PREFIX
-  const prefixes = Array.from(content.matchAll(/^@prefix\s+(\w+):\s+/gm)).map(m => m[1].toUpperCase());
+  const prefixMatches = Array.from(content.matchAll(/^@prefix\s+(\w+):\s+<([^>]+)>/gm));
+  const prefixes = [];
+  
+  for (const match of prefixMatches) {
+    const prefix = match[1].toUpperCase();
+    const namespace = match[2];
+    prefixes.push(prefix);
+  
+    if (!globalPrefixes.has(prefix)) {
+      globalPrefixes.set(prefix, {
+        prefix,
+        name: match[1],
+        namespace,
+      });
+    }
+  }
 
   // Concepts
   const sparqlConcepts = query

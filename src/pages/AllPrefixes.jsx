@@ -1,7 +1,7 @@
 import React from 'react'
 import InProgress from '../components/reusable/InProgress'
 import TableList from '../components/reusable/TableList';
-import { sparqlPrefixes } from '../data/prefixes';
+import { sparqlPrefixes } from '../data/all-prefixes';
 import Section from '../components/reusable/Section';
 
 const AllPrefixes = () => {
