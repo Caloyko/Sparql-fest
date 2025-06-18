@@ -106,7 +106,7 @@ function parseQueryFile(content, folderName, fileName, date) {
     slug,
     date,
     image: sibSwissLogo,
-    source: "https://github.com/sib-swiss/sparql-examples",
+    source: "SIB",
     description,
     context: null,
     inidces: [],

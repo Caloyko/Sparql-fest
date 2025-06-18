@@ -5,6 +5,7 @@ import CodeBlock from '../components/ui/CodeBlock';
 import QueryBasicData from '../components/QueryBasicData';
 import Section from '../components/reusable/Section';
 import { TbBulb } from 'react-icons/tb';
+import { allSources } from '../data/all-sources';
 
 const QueryDetail = () => {
     const [hintIsOpen, setHintIsOpen] = useState(false);
@@ -25,9 +26,8 @@ const QueryDetail = () => {
       }
     
       const headerImage = detail.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
-      const isFull = detail.source === "https://sib-swiss.github.io/sparql-examples/"
-
-
+      const isFull = detail.source === "SIB"
+      const sourceInfo = allSources.find(src => src.id === detail.source)
 
     return (
         <>
@@ -52,19 +52,25 @@ const QueryDetail = () => {
                 variant="dark"
                 bg={false}
                 >
-                    {(detail.source || detail.context) ? (<><h2 class="text-xl font-bold mt-4 mb-2">Context</h2>
-                    <p className="text-neutral-300 mb-6">
-                    {detail.context ? (
-                        detail.context
-                    ) : (
+                    {(detail.source || detail.context) && (
                         <>
-                        This query was created by <strong>{detail.source}</strong>. You can find more information at:{" "}
-                        <a href={detail.source} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
-                            {detail.source}
-                        </a>
+                            <h2 className="text-xl font-bold mt-4 mb-2">Context</h2>
+
+                            {detail.context ? (
+                            <p className="text-neutral-300 mb-6">{detail.context}</p>
+                            ) : sourceInfo ? (
+                            <div className="text-neutral-300 mb-6">
+                                This query was created by <strong>{sourceInfo.name}</strong>. You can find more information at:{" "}
+                                <a href={sourceInfo.url} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                                {sourceInfo.url}
+                                </a>
+                            </div>
+                            ) : (
+                            <div className="text-neutral-300 mb-6">No context available.</div>
+                            )}
                         </>
-                    )}
-                    </p></>) : undefined}
+                        )}
+
 
                     <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
                     <p class="text-neutral-300 mb-6">{detail.description}</p>

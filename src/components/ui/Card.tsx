@@ -16,7 +16,6 @@ type CardProps = {
 export default function Card({ data, withPrefix = false }: CardProps) {
   const { name, image, category, date, ontologies, slug } = data;
   const link = withPrefix ? `/sparql-queries/${slug}` : slug;
-  console.log(link)
 
   return (
 <div className="rounded-xl overflow-hidden shadow-md shadow-stone-950 ring-1 ring-white/10 flex flex-col hover:shadow-lg hover:shadow-orange-900/50 transition-shadow bg-neutral-800 ">

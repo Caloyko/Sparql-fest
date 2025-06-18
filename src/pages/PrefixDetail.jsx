@@ -11,7 +11,6 @@ const PrefixDetail = () => {
   const [detail, setDetail] = useState([]);
   useEffect(() => {
     const findDetail = sparqlPrefixes.filter(query => query.prefix === slug);
-    console.log(findDetail)
     if (findDetail.length > 0){
       setDetail(findDetail[0]);
     }else{
@@ -22,7 +21,6 @@ const PrefixDetail = () => {
   if (!detail) {
       return <div className="text-center py-10">Loading or not found...</div>;
     }
-  console.log(slug)
 
   return (
     <div class="w-full px-4">

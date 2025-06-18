@@ -20,7 +20,7 @@ function mergeAndFormatSwissQueries() {
     const tmp = {
       ...query,
       image: sibLogo,
-      source: "https://sib-swiss.github.io/sparql-examples/"
+      source: "SIB"
     };
     return tmp
   });

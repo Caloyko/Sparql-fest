@@ -13,7 +13,7 @@ const AllPrefixes = () => {
             description="List of all prefixes that are used in our queries."
             variant="dark"
         >
-      <div className="flex -center h-screen">
+      <div className="flex-center">
             <TableList data={sparqlPrefixes} />
         </div>
     </Section>

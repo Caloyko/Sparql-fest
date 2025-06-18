@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Editor } from '@monaco-editor/react';
 const CodeBlock = ({dataQuery}) => {
-  console.log(dataQuery)
+
   const [copied, setCopied] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const editorRef = useRef<any>(null);
@@ -26,7 +26,6 @@ const CodeBlock = ({dataQuery}) => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
     };
-  console.log(query)
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     setMousePosition({ x: e.clientX, y: e.clientY });

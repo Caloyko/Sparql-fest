@@ -31,13 +31,11 @@ function mergeAndFormatQueries(amcQueries, swissQueries) {
 
   return merged.map((query, index) => {
     const levelNumber = query.level?.match(/\d+/)?.[0] || "0";
-    const tmp = {
+    return {
       ...query,
       id: index + 1,
       image: query.image || imgLevel[levelNumber]
     };
-    console.log(tmp)
-    return tmp
   });
 }
 
