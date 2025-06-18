@@ -32,7 +32,7 @@ return (
       bg={false}
       >
           <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
-          <p class="text-neutral-300 mb-6">Find more information at : <a href={detail.namespace} target="_blank" className="text-orange-400 hover:underline">{detail.namespace}</a></p>
+          <p class="text-neutral-300 mb-6">Find more information at : <a href={detail.namespace} target="_blank" className="text-blue-400 hover:underline">{detail.namespace}</a></p>
           {detail?.other ? (<>
           <h2 class="text-xl font-bold mt-4 mb-2">Other Info</h2>
           <ul className="space-y-4">
@@ -41,7 +41,7 @@ return (
                     <div className="font-bold mb-2">Type: <span className='bg-gradient-to-r from-orange-500 to-orange-800 py-1 px-2 rounded-md'>{article.type}</span></div>
                     <div className="font-bold">Name: <span className="font-normal">{article.name}</span></div>
                     <div className="font-bold">Metadata: <br></br> <span className="font-normal">{article.metadata}</span></div>
-                    <div className="font-bold">Link: <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">{article.link}</a></div>
+                    <div className="font-bold">Link: <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline font-normal">{article.link}</a></div>
                 </li>
             ))}
         </ul></>) : undefined }

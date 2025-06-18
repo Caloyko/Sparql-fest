@@ -6,6 +6,7 @@ import QueryBasicData from '../components/QueryBasicData';
 import Section from '../components/reusable/Section';
 import { TbBulb } from 'react-icons/tb';
 import { allSources } from '../data/all-sources';
+import { Link } from 'react-router-dom';
 
 const QueryDetail = () => {
     const [hintIsOpen, setHintIsOpen] = useState(false);
@@ -28,6 +29,7 @@ const QueryDetail = () => {
       const headerImage = detail.image || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
       const isFull = detail.source === "SIB"
       const sourceInfo = allSources.find(src => src.id === detail.source)
+      console.log(sourceInfo)
 
     return (
         <>
@@ -60,10 +62,20 @@ const QueryDetail = () => {
                             <p className="text-neutral-300 mb-6">{detail.context}</p>
                             ) : sourceInfo ? (
                             <div className="text-neutral-300 mb-6">
-                                This query was created by <strong>{sourceInfo.name}</strong>. You can find more information at:{" "}
-                                <a href={sourceInfo.url} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
-                                {sourceInfo.url}
-                                </a>
+                                This query was created by <strong>{sourceInfo.name}</strong>. 
+                                You can find more information at:{" "}
+                                <ul className="list-disc list-inside mt-2">
+                                    <li>
+                                        <a href={sourceInfo.namespace} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                                            {sourceInfo.namespace}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <Link to={`/other-resources/${sourceInfo.id}`} className="underline text-blue-400">
+                                            Our internal resources about {sourceInfo.name}
+                                        </Link>
+                                    </li>
+                                </ul>
                             </div>
                             ) : (
                             <div className="text-neutral-300 mb-6">No context available.</div>
