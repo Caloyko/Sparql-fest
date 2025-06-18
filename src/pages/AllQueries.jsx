@@ -18,7 +18,10 @@ const AllQueries = () => {
 
   const filteredQueries = useMemo(() => {
     return sparqlQueries.filter(query => {
-      const matchesSearch = query.name.toLowerCase().includes(search.toLowerCase());
+      const matchesSearch = 
+        typeof query.name === 'string' &&
+        typeof search === 'string' &&
+        query.name.toLowerCase().includes(search.toLowerCase());
       const matchesLevel = selectedLevel ? query.level === selectedLevel : true;
       const matchesSource = selectedSource ? query.source === selectedSource : true;
       const matchesConcepts = selectedConcepts.length > 0

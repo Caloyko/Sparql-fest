@@ -3,7 +3,9 @@ import img1 from "../assets/images/network-bg-2.avif"
 import img2 from "../assets/images/network-bg-3.jpg"
 import { amcQueries } from "./queries-data/amc-ex"
 import { swissQueries } from "./queries-data/swiss-sparql-ex"
+
 /*
+
 type Query = {
   id: number;
   name: string;
@@ -18,7 +20,9 @@ type Query = {
   level: string;
   rdfResultExample: string;
   source?: string;
-};*/
+};
+
+*/
 
 const imgLevel = [img0, img1, img2]
 
