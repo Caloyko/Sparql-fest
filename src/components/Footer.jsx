@@ -1,4 +1,3 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import logo from '../assets/logo.png'
 import { Link } from "react-router-dom";
 
@@ -17,18 +16,18 @@ const Footer = () => {
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
-            { name: "About", id: "about" },
-            { name: "SPARQL queries", id: "sparql-queries" },
-            { name: "Contact", id: "contact" },
-            { name: "Prefixes", id: "prefixes" },
+            { name: "About", href: "/#about" },
+            { name: "SPARQL queries", href: "sparql-queries" },
+            { name: "Contact", href: "/#contact" },
+            { name: "Prefixes", href: "sparql-prefixes" },
           ].map((item, index) => (
-            <button
+            <Link
               key={index}
-              onClick={() => handleScroll(item.id)}
+              to={item.href}
               className="hover:text-orange-500 text-sm sm:text-base my-1"
             >
               {item.name}
-            </button>
+            </Link>
           ))}
         </nav>
         {/* Copyright Text */}
