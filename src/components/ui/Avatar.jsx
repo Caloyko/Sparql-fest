@@ -46,12 +46,12 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
               src={photo}
               alt={name}
             />
-            <div className="text-sm">
+            <div>
             <div className="flex items-center font-medium">
               <a
                 href={orcidUrl || '#'}
                 onClick={(e) => e.preventDefault()}
-                className="font-medium leading-none text-white hover:text-orange-600 transition duration-500 ease-in-out"
+                className="font-medium leading-none text-white hover:text-orange-600 transition duration-500 ease-in-out mb-1"
               >
                 {name}
               </a>
@@ -65,13 +65,13 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
             </div>
           </div>
     
-          <p className="mx-2 mt-2 text-sm text-white">
+          <p className="mx-2 mt-3 text-sm text-white">
             {description}
           </p>
 
-          <p className="mx-2 mt-2 text-sm">{mail}</p>
+          <p className="mx-2 mt-1 text-sm">{mail}</p>
     
-          <div className="flex mt-4 space-x-3">
+          <div className="flex mt-2 space-x-3">
         {Object.entries(socials).map(([platform, url]) => {
             if (!url || !icons[platform] || platform === "ORCID") return null;
             const Icon = icons[platform];

@@ -2,13 +2,14 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { sparqlQueries } from '../data/all-queries'
 import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
+import MultiSelectDropdown from '../components/reusable/MultiSelectDropDown'
 
 const AllQueries = () => {
   const [visibleCount, setVisibleCount] = useState(20);
 
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedSource, setSelectedSource] = useState('');
+  const [selectedSource, setSelectedSource] = useState([]);
   const [selectedConcepts, setSelectedConcepts] = useState([]);
   const [selectedOntologies, setSelectedOntologies] = useState([]);
   const [total, setTotal] = useState(0);
@@ -31,7 +32,10 @@ const AllQueries = () => {
         typeof search === 'string' &&
         query.name.toLowerCase().includes(search.toLowerCase());
       const matchesCategory = selectedCategory ? query.category === selectedCategory : true;
-      const matchesSource = selectedSource ? query.source === selectedSource : true;
+      const matchesSource = selectedSource.length > 0
+        ? selectedSource.includes(query.source)
+        : true;
+      console.log(selectedSource)
       const matchesConcepts = selectedConcepts.length > 0
         ? selectedConcepts.every(concept => query.sparqlConcepts.includes(concept))
         : true;
@@ -84,10 +88,12 @@ const AllQueries = () => {
                   {allCategories.map(category => <option key={category} value={category}>{category}</option>)}
                 </select>
 
-                <select className="p-2 rounded" value={selectedSource} onChange={(e) => setSelectedSource(e.target.value)}>
-                  <option value="">All Sources</option>
-                  {allSources.map(source => <option key={source} value={source}>{source}</option>)}
-                </select>
+                <MultiSelectDropdown
+                  options={allSources}
+                  selectedOptions={selectedSource}
+                  onChange={setSelectedSource}
+                  placeholder="All Sources"
+                />
 
                 <select multiple className="p-2 rounded" value={selectedConcepts} onChange={(e) => setSelectedConcepts([...e.target.selectedOptions].map(o => o.value))}>
                   {allConcepts.map(concept => <option key={concept} value={concept}>{concept}</option>)}
