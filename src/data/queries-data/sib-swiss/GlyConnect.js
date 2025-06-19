@@ -19,7 +19,7 @@ export const GlyConnect = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 2",
@@ -42,7 +42,7 @@ export const GlyConnect = [
       "STR",
       "IF"
     ],
-    "category": "undefined GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 3",
@@ -65,7 +65,7 @@ export const GlyConnect = [
       "STR",
       "IF"
     ],
-    "category": "undefined GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 4",
@@ -90,7 +90,7 @@ export const GlyConnect = [
       "REGEX",
       "IF"
     ],
-    "category": "undefined GlyConnect"
+    "category": "sib-swiss GlyConnect"
   },
   {
     "name": "GlyConnect - 5",
@@ -111,6 +111,6 @@ export const GlyConnect = [
       "WHERE",
       "DISTINCT"
     ],
-    "category": "undefined GlyConnect"
+    "category": "sib-swiss GlyConnect"
   }
 ];

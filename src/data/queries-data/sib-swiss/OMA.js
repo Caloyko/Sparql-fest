@@ -18,7 +18,7 @@ export const OMA = [
       "WHERE",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 02-all-species",
@@ -39,7 +39,7 @@ export const OMA = [
       "WHERE",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 03-ins-encoded-proteins",
@@ -64,7 +64,7 @@ export const OMA = [
       "URI",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 04-orthologs-of-ensembl-gene",
@@ -88,7 +88,7 @@ export const OMA = [
       "IF",
       "CONTAINS"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 05-paralogs-of-ensembl-gene",
@@ -112,7 +112,7 @@ export const OMA = [
       "IF",
       "CONTAINS"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 06-paralogs-with-uniprot-xrefs",
@@ -134,7 +134,7 @@ export const OMA = [
       "FILTER",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 07-orthologs-with-uniprot-xrefs",
@@ -156,7 +156,7 @@ export const OMA = [
       "FILTER",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 08-rabbit-apoci-orthologs",
@@ -178,7 +178,7 @@ export const OMA = [
       "FILTER",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 09-rabbit-orthologs-of-mouse-homoglobinY",
@@ -201,7 +201,7 @@ export const OMA = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 10-paralogs-in-human-of-hbb",
@@ -224,7 +224,7 @@ export const OMA = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 11-percentage-of-proteins-with-paralogs",
@@ -249,7 +249,7 @@ export const OMA = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 12-orthologs-between-two-species",
@@ -272,7 +272,7 @@ export const OMA = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 13-hog-members-at-level-from-query-protein",
@@ -295,7 +295,7 @@ export const OMA = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 14-compare-mbgd-oma",
@@ -320,7 +320,7 @@ export const OMA = [
       "EXISTS",
       "NOT EXISTS"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   },
   {
     "name": "OMA - 15-biosodafrontend-rat-TP53",
@@ -343,6 +343,6 @@ export const OMA = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OMA"
+    "category": "sib-swiss OMA"
   }
 ];

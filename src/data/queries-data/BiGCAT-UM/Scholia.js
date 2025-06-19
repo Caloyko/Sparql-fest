@@ -39,7 +39,7 @@ export const Scholia = [
       "IF",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 002",
@@ -77,7 +77,7 @@ export const Scholia = [
       "ALL",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 003",
@@ -118,7 +118,7 @@ export const Scholia = [
       "YEAR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 004",
@@ -160,7 +160,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 005",
@@ -204,7 +204,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 006",
@@ -248,7 +248,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 007",
@@ -294,7 +294,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 008",
@@ -341,7 +341,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 009",
@@ -380,7 +380,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 010",
@@ -428,7 +428,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 011",
@@ -465,7 +465,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 012",
@@ -508,7 +508,7 @@ export const Scholia = [
       "MAX",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 013",
@@ -555,7 +555,7 @@ export const Scholia = [
       "MIN",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 014",
@@ -602,7 +602,7 @@ export const Scholia = [
       "MIN",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 015",
@@ -651,7 +651,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 016",
@@ -695,7 +695,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 017",
@@ -735,7 +735,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 018",
@@ -769,7 +769,7 @@ export const Scholia = [
       "ORDER BY",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 019",
@@ -807,7 +807,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 020",
@@ -847,7 +847,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 021",
@@ -888,7 +888,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 022",
@@ -933,7 +933,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 023",
@@ -971,7 +971,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 024",
@@ -1008,7 +1008,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 025",
@@ -1049,7 +1049,7 @@ export const Scholia = [
       "YEAR",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 026",
@@ -1092,7 +1092,7 @@ export const Scholia = [
       "YEAR",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 027",
@@ -1129,7 +1129,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 028",
@@ -1168,7 +1168,7 @@ export const Scholia = [
       "LANG",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 029",
@@ -1206,7 +1206,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 030",
@@ -1239,7 +1239,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 031",
@@ -1277,7 +1277,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 032",
@@ -1319,7 +1319,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 033",
@@ -1362,7 +1362,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 034",
@@ -1400,7 +1400,7 @@ export const Scholia = [
       "IRI",
       "REPLACE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 035",
@@ -1443,7 +1443,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 036",
@@ -1489,7 +1489,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 037",
@@ -1532,7 +1532,7 @@ export const Scholia = [
       "REPLACE",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 038",
@@ -1572,7 +1572,7 @@ export const Scholia = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 039",
@@ -1617,7 +1617,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 040",
@@ -1652,7 +1652,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 041",
@@ -1698,7 +1698,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 042",
@@ -1736,7 +1736,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 043",
@@ -1775,7 +1775,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 044",
@@ -1816,7 +1816,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 045",
@@ -1863,7 +1863,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 046",
@@ -1910,7 +1910,7 @@ export const Scholia = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 047",
@@ -1953,7 +1953,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 048",
@@ -2000,7 +2000,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 049",
@@ -2042,7 +2042,7 @@ export const Scholia = [
       "SUBSTR",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 050",
@@ -2080,7 +2080,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 051",
@@ -2124,7 +2124,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 052",
@@ -2164,7 +2164,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 053",
@@ -2204,7 +2204,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 054",
@@ -2249,7 +2249,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 055",
@@ -2296,7 +2296,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 056",
@@ -2344,7 +2344,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 057",
@@ -2386,7 +2386,7 @@ export const Scholia = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 058",
@@ -2426,7 +2426,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 059",
@@ -2467,7 +2467,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 060",
@@ -2508,7 +2508,7 @@ export const Scholia = [
       "NOT EXISTS",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 061",
@@ -2549,7 +2549,7 @@ export const Scholia = [
       "NOT EXISTS",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 062",
@@ -2587,7 +2587,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 063",
@@ -2633,7 +2633,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 064",
@@ -2680,7 +2680,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 065",
@@ -2728,7 +2728,7 @@ export const Scholia = [
       "YEAR",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 066",
@@ -2768,7 +2768,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 067",
@@ -2807,7 +2807,7 @@ export const Scholia = [
       "LANG",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 068",
@@ -2850,7 +2850,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 069",
@@ -2891,7 +2891,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 070",
@@ -2931,7 +2931,7 @@ export const Scholia = [
       "IF",
       "YEAR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 071",
@@ -2975,7 +2975,7 @@ export const Scholia = [
       "YEAR",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 072",
@@ -3009,7 +3009,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 073",
@@ -3046,7 +3046,7 @@ export const Scholia = [
       "LANG",
       "YEAR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 074",
@@ -3092,7 +3092,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 075",
@@ -3137,7 +3137,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 076",
@@ -3181,7 +3181,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 077",
@@ -3223,7 +3223,7 @@ export const Scholia = [
       "IF",
       "NOW"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 078",
@@ -3264,7 +3264,7 @@ export const Scholia = [
       "YEAR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 079",
@@ -3307,7 +3307,7 @@ export const Scholia = [
       "SUBSTR",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 080",
@@ -3350,7 +3350,7 @@ export const Scholia = [
       "COALESCE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 081",
@@ -3396,7 +3396,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 082",
@@ -3442,7 +3442,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 083",
@@ -3489,7 +3489,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 084",
@@ -3535,7 +3535,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 085",
@@ -3576,7 +3576,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 086",
@@ -3617,7 +3617,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 087",
@@ -3661,7 +3661,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 088",
@@ -3700,7 +3700,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 089",
@@ -3747,7 +3747,7 @@ export const Scholia = [
       "SUM",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 090",
@@ -3783,7 +3783,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 091",
@@ -3820,7 +3820,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 092",
@@ -3860,7 +3860,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 093",
@@ -3907,7 +3907,7 @@ export const Scholia = [
       "DAY",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 094",
@@ -3950,7 +3950,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 095",
@@ -3993,7 +3993,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 096",
@@ -4026,7 +4026,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 097",
@@ -4059,7 +4059,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 098",
@@ -4093,7 +4093,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 099",
@@ -4131,7 +4131,7 @@ export const Scholia = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 100",
@@ -4169,7 +4169,7 @@ export const Scholia = [
       "LANG",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 101",
@@ -4205,7 +4205,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 102",
@@ -4252,7 +4252,7 @@ export const Scholia = [
       "SUBSTR",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 103",
@@ -4297,7 +4297,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 104",
@@ -4341,7 +4341,7 @@ export const Scholia = [
       "REPLACE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 105",
@@ -4377,7 +4377,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 106",
@@ -4417,7 +4417,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 107",
@@ -4456,7 +4456,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 108",
@@ -4495,7 +4495,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 109",
@@ -4536,7 +4536,7 @@ export const Scholia = [
       "LANG",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 110",
@@ -4579,7 +4579,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 111",
@@ -4621,7 +4621,7 @@ export const Scholia = [
       "EXISTS",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 112",
@@ -4663,7 +4663,7 @@ export const Scholia = [
       "COUNT",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 113",
@@ -4705,7 +4705,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 114",
@@ -4742,7 +4742,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 115",
@@ -4782,7 +4782,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 116",
@@ -4825,7 +4825,7 @@ export const Scholia = [
       "SUM",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 117",
@@ -4862,7 +4862,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 118",
@@ -4908,7 +4908,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 119",
@@ -4950,7 +4950,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 120",
@@ -4992,7 +4992,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 121",
@@ -5032,7 +5032,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 122",
@@ -5066,7 +5066,7 @@ export const Scholia = [
       "SERVICE",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 123",
@@ -5107,7 +5107,7 @@ export const Scholia = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 124",
@@ -5150,7 +5150,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 125",
@@ -5194,7 +5194,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 126",
@@ -5237,7 +5237,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 127",
@@ -5274,7 +5274,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 128",
@@ -5321,7 +5321,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 129",
@@ -5364,7 +5364,7 @@ export const Scholia = [
       "SUBSTR",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 130",
@@ -5407,7 +5407,7 @@ export const Scholia = [
       "SUBSTR",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 131",
@@ -5449,7 +5449,7 @@ export const Scholia = [
       "SUBSTR",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 132",
@@ -5485,7 +5485,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 133",
@@ -5529,7 +5529,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 134",
@@ -5576,7 +5576,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 135",
@@ -5619,7 +5619,7 @@ export const Scholia = [
       "SUBSTR",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 136",
@@ -5659,7 +5659,7 @@ export const Scholia = [
       "COUNT",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 137",
@@ -5699,7 +5699,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 138",
@@ -5741,7 +5741,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 139",
@@ -5778,7 +5778,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 140",
@@ -5813,7 +5813,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 141",
@@ -5857,7 +5857,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 142",
@@ -5900,7 +5900,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 143",
@@ -5946,7 +5946,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 144",
@@ -5982,7 +5982,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 145",
@@ -6018,7 +6018,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 146",
@@ -6058,7 +6058,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 147",
@@ -6096,7 +6096,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 148",
@@ -6134,7 +6134,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 149",
@@ -6167,7 +6167,7 @@ export const Scholia = [
       "LIMIT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 150",
@@ -6209,7 +6209,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 151",
@@ -6252,7 +6252,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 152",
@@ -6290,7 +6290,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 153",
@@ -6333,7 +6333,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 154",
@@ -6375,7 +6375,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 155",
@@ -6412,7 +6412,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 156",
@@ -6453,7 +6453,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 157",
@@ -6492,7 +6492,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 158",
@@ -6535,7 +6535,7 @@ export const Scholia = [
       "SAMPLE",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 159",
@@ -6574,7 +6574,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 160",
@@ -6610,7 +6610,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 161",
@@ -6648,7 +6648,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 162",
@@ -6688,7 +6688,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 163",
@@ -6734,7 +6734,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 164",
@@ -6775,7 +6775,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 165",
@@ -6811,7 +6811,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 166",
@@ -6851,7 +6851,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 167",
@@ -6889,7 +6889,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 168",
@@ -6931,7 +6931,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 169",
@@ -6973,7 +6973,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 170",
@@ -7007,7 +7007,7 @@ export const Scholia = [
       "DEFAULT",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 171",
@@ -7052,7 +7052,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 172",
@@ -7090,7 +7090,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 173",
@@ -7134,7 +7134,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 174",
@@ -7167,7 +7167,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 175",
@@ -7214,7 +7214,7 @@ export const Scholia = [
       "REPLACE",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 176",
@@ -7253,7 +7253,7 @@ export const Scholia = [
       "LANG",
       "COALESCE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 177",
@@ -7292,7 +7292,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 178",
@@ -7325,7 +7325,7 @@ export const Scholia = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 179",
@@ -7368,7 +7368,7 @@ export const Scholia = [
       "IF",
       "CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 180",
@@ -7410,7 +7410,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 181",
@@ -7450,7 +7450,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 182",
@@ -7493,7 +7493,7 @@ export const Scholia = [
       "SUM",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 183",
@@ -7537,7 +7537,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 184",
@@ -7575,7 +7575,7 @@ export const Scholia = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 185",
@@ -7618,7 +7618,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 186",
@@ -7662,7 +7662,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 187",
@@ -7705,7 +7705,7 @@ export const Scholia = [
       "LANG",
       "STRSTARTS"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 188",
@@ -7748,7 +7748,7 @@ export const Scholia = [
       "NOT EXISTS",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 189",
@@ -7794,7 +7794,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 190",
@@ -7836,7 +7836,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 191",
@@ -7881,7 +7881,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 192",
@@ -7926,7 +7926,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 193",
@@ -7972,7 +7972,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 194",
@@ -8014,7 +8014,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 195",
@@ -8058,7 +8058,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 196",
@@ -8098,7 +8098,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 197",
@@ -8142,7 +8142,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 198",
@@ -8180,7 +8180,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 199",
@@ -8224,7 +8224,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 200",
@@ -8263,7 +8263,7 @@ export const Scholia = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 201",
@@ -8301,7 +8301,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 202",
@@ -8342,7 +8342,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 203",
@@ -8388,7 +8388,7 @@ export const Scholia = [
       "MIN",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 204",
@@ -8432,7 +8432,7 @@ export const Scholia = [
       "NOW",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 205",
@@ -8472,7 +8472,7 @@ export const Scholia = [
       "IF",
       "YEAR"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 206",
@@ -8511,7 +8511,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 207",
@@ -8551,7 +8551,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 208",
@@ -8591,7 +8591,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 209",
@@ -8629,7 +8629,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 210",
@@ -8665,7 +8665,7 @@ export const Scholia = [
       "STR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 211",
@@ -8708,7 +8708,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 212",
@@ -8751,7 +8751,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 213",
@@ -8795,7 +8795,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 214",
@@ -8833,7 +8833,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 215",
@@ -8874,7 +8874,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 216",
@@ -8914,7 +8914,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 217",
@@ -8953,7 +8953,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 218",
@@ -8994,7 +8994,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 219",
@@ -9032,7 +9032,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 220",
@@ -9073,7 +9073,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 221",
@@ -9118,7 +9118,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 222",
@@ -9157,7 +9157,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 223",
@@ -9198,7 +9198,7 @@ export const Scholia = [
       "YEAR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 224",
@@ -9236,7 +9236,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 225",
@@ -9276,7 +9276,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 226",
@@ -9319,7 +9319,7 @@ export const Scholia = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 227",
@@ -9363,7 +9363,7 @@ export const Scholia = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 228",
@@ -9409,7 +9409,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 229",
@@ -9452,7 +9452,7 @@ export const Scholia = [
       "LANG",
       "STRSTARTS"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 230",
@@ -9499,7 +9499,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 231",
@@ -9536,7 +9536,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 232",
@@ -9573,7 +9573,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 233",
@@ -9619,7 +9619,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 234",
@@ -9664,7 +9664,7 @@ export const Scholia = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 235",
@@ -9711,7 +9711,7 @@ export const Scholia = [
       "MAX",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 236",
@@ -9757,7 +9757,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 237",
@@ -9801,7 +9801,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 238",
@@ -9836,7 +9836,7 @@ export const Scholia = [
       "ALL",
       "IF"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 239",
@@ -9885,7 +9885,7 @@ export const Scholia = [
       "COUNT",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 240",
@@ -9930,7 +9930,7 @@ export const Scholia = [
       "SUM",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 241",
@@ -9976,7 +9976,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 242",
@@ -10020,7 +10020,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 243",
@@ -10062,7 +10062,7 @@ export const Scholia = [
       "COUNT",
       "MIN"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 244",
@@ -10101,7 +10101,7 @@ export const Scholia = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 245",
@@ -10144,7 +10144,7 @@ export const Scholia = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 246",
@@ -10196,7 +10196,7 @@ export const Scholia = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 247",
@@ -10242,7 +10242,7 @@ export const Scholia = [
       "YEAR",
       "MAX"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 248",
@@ -10281,7 +10281,7 @@ export const Scholia = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 249",
@@ -10326,7 +10326,7 @@ export const Scholia = [
       "LCASE",
       "STRSTARTS"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 250",
@@ -10367,7 +10367,7 @@ export const Scholia = [
       "IF",
       "CONCAT"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 251",
@@ -10407,7 +10407,7 @@ export const Scholia = [
       "LANG",
       "SUM"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   },
   {
     "name": "Scholia - 252",
@@ -10446,6 +10446,6 @@ export const Scholia = [
       "ENCODE_FOR_URI",
       "REPLACE"
     ],
-    "category": "undefined Scholia"
+    "category": "BiGCAT-UM Scholia"
   }
 ];

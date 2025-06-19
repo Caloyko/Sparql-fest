@@ -25,7 +25,7 @@ export const dbgi = [
       "IRI",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 002",
@@ -50,7 +50,7 @@ export const dbgi = [
       "SUBSTR",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 003",
@@ -80,7 +80,7 @@ export const dbgi = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 004",
@@ -108,7 +108,7 @@ export const dbgi = [
       "MIN",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 005",
@@ -135,7 +135,7 @@ export const dbgi = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 006",
@@ -166,7 +166,7 @@ export const dbgi = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 007",
@@ -195,7 +195,7 @@ export const dbgi = [
       "IRI",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 008",
@@ -222,7 +222,7 @@ export const dbgi = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 009",
@@ -250,7 +250,7 @@ export const dbgi = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 011",
@@ -276,7 +276,7 @@ export const dbgi = [
       "WITH",
       "IF"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 012",
@@ -304,7 +304,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 013",
@@ -336,7 +336,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 014",
@@ -368,7 +368,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 015",
@@ -399,7 +399,7 @@ export const dbgi = [
       "IRI",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 016",
@@ -431,7 +431,7 @@ export const dbgi = [
       "IRI",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 017",
@@ -463,7 +463,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 018",
@@ -493,7 +493,7 @@ export const dbgi = [
       "STR",
       "IF"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 019",
@@ -526,7 +526,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 020",
@@ -557,7 +557,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 021",
@@ -588,7 +588,7 @@ export const dbgi = [
       "IF",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 022",
@@ -624,7 +624,7 @@ export const dbgi = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   },
   {
     "name": "dbgi - 023",
@@ -662,6 +662,6 @@ export const dbgi = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "undefined dbgi"
+    "category": "sib-swiss dbgi"
   }
 ];

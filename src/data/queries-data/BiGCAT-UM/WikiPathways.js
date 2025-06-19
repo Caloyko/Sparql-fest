@@ -21,7 +21,7 @@ export const WikiPathways = [
       "CREATE",
       "STR"
     ],
-    "category": "undefined WikiPathways"
+    "category": "BiGCAT-UM WikiPathways"
   },
   {
     "name": "WikiPathways - 002",
@@ -46,7 +46,7 @@ export const WikiPathways = [
       "CREATE",
       "STR"
     ],
-    "category": "undefined WikiPathways"
+    "category": "BiGCAT-UM WikiPathways"
   },
   {
     "name": "WikiPathways - 003",
@@ -67,7 +67,7 @@ export const WikiPathways = [
       "SELECT",
       "WHERE"
     ],
-    "category": "undefined WikiPathways"
+    "category": "BiGCAT-UM WikiPathways"
   },
   {
     "name": "WikiPathways - 004",
@@ -90,7 +90,7 @@ export const WikiPathways = [
       "DISTINCT",
       "STR"
     ],
-    "category": "undefined WikiPathways"
+    "category": "BiGCAT-UM WikiPathways"
   },
   {
     "name": "WikiPathways - 005",
@@ -116,6 +116,6 @@ export const WikiPathways = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "undefined WikiPathways"
+    "category": "BiGCAT-UM WikiPathways"
   }
 ];

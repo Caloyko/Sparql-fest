@@ -26,7 +26,7 @@ export const VHP4Safety = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined VHP4Safety"
+    "category": "BiGCAT-UM VHP4Safety"
   },
   {
     "name": "VHP4Safety - 002",
@@ -55,7 +55,7 @@ export const VHP4Safety = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined VHP4Safety"
+    "category": "BiGCAT-UM VHP4Safety"
   },
   {
     "name": "VHP4Safety - 003",
@@ -79,7 +79,7 @@ export const VHP4Safety = [
       "SERVICE",
       "LANG"
     ],
-    "category": "undefined VHP4Safety"
+    "category": "BiGCAT-UM VHP4Safety"
   },
   {
     "name": "VHP4Safety - 004",
@@ -109,6 +109,6 @@ export const VHP4Safety = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "undefined VHP4Safety"
+    "category": "BiGCAT-UM VHP4Safety"
   }
 ];

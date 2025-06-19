@@ -20,7 +20,7 @@ export const HAMAP = [
       "WHERE",
       "STR"
     ],
-    "category": "undefined HAMAP"
+    "category": "sib-swiss HAMAP"
   },
   {
     "name": "HAMAP - 3",
@@ -45,7 +45,7 @@ export const HAMAP = [
       "STR",
       "CONTAINS"
     ],
-    "category": "undefined HAMAP"
+    "category": "sib-swiss HAMAP"
   },
   {
     "name": "HAMAP - 4",
@@ -68,6 +68,6 @@ export const HAMAP = [
       "ADD",
       "STR"
     ],
-    "category": "undefined HAMAP"
+    "category": "sib-swiss HAMAP"
   }
 ];

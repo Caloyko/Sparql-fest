@@ -24,7 +24,7 @@ function printFolderStructure(currentPath,category,  indent = '',dir="", collect
     } else {
       try {
         const content = fs.readFileSync(itemPath, 'utf-8');
-        const result = parseQueryFile(content, dir, item.name, "18-06-2025" )
+        const result = parseQueryFile(content, dir, item.name, "18-06-2025" , category)
         if (result){
           if (collected[dir]) {
             collected[dir].push(result);

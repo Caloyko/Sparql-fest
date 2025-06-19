@@ -24,7 +24,7 @@ export const WikidataMastodon = [
       "ALL",
       "LANG"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   },
   {
     "name": "WikidataMastodon - 002",
@@ -48,7 +48,7 @@ export const WikidataMastodon = [
       "SERVICE",
       "LANG"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   },
   {
     "name": "WikidataMastodon - 003",
@@ -74,7 +74,7 @@ export const WikidataMastodon = [
       "SERVICE",
       "LANG"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   },
   {
     "name": "WikidataMastodon - 004",
@@ -101,7 +101,7 @@ export const WikidataMastodon = [
       "LANG",
       "IF"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   },
   {
     "name": "WikidataMastodon - 005",
@@ -134,7 +134,7 @@ export const WikidataMastodon = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   },
   {
     "name": "WikidataMastodon - 006",
@@ -162,6 +162,6 @@ export const WikidataMastodon = [
       "DISTINCT",
       "LANG"
     ],
-    "category": "undefined WikidataMastodon"
+    "category": "BiGCAT-UM WikidataMastodon"
   }
 ];

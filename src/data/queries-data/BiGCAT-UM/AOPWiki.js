@@ -20,7 +20,7 @@ export const AOPWiki = [
       "WHERE",
       "DISTINCT"
     ],
-    "category": "undefined AOPWiki"
+    "category": "BiGCAT-UM AOPWiki"
   },
   {
     "name": "AOPWiki - 001",
@@ -43,7 +43,7 @@ export const AOPWiki = [
       "WHERE",
       "DISTINCT"
     ],
-    "category": "undefined AOPWiki"
+    "category": "BiGCAT-UM AOPWiki"
   },
   {
     "name": "AOPWiki - 002",
@@ -65,7 +65,7 @@ export const AOPWiki = [
       "SELECT",
       "WHERE"
     ],
-    "category": "undefined AOPWiki"
+    "category": "BiGCAT-UM AOPWiki"
   },
   {
     "name": "AOPWiki - 003",
@@ -88,7 +88,7 @@ export const AOPWiki = [
       "WHERE",
       "DISTINCT"
     ],
-    "category": "undefined AOPWiki"
+    "category": "BiGCAT-UM AOPWiki"
   },
   {
     "name": "AOPWiki - 004",
@@ -111,6 +111,6 @@ export const AOPWiki = [
       "WHERE",
       "MIN"
     ],
-    "category": "undefined AOPWiki"
+    "category": "BiGCAT-UM AOPWiki"
   }
 ];

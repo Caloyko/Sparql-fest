@@ -20,7 +20,7 @@ export const MetaNetX = [
       "OPTIONAL",
       "FROM"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 10",
@@ -46,7 +46,7 @@ export const MetaNetX = [
       "ALL",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 11",
@@ -74,7 +74,7 @@ export const MetaNetX = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 12",
@@ -102,7 +102,7 @@ export const MetaNetX = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 13",
@@ -128,7 +128,7 @@ export const MetaNetX = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 2",
@@ -151,7 +151,7 @@ export const MetaNetX = [
       "IF",
       "MIN"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 3",
@@ -173,7 +173,7 @@ export const MetaNetX = [
       "FROM",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 4",
@@ -195,7 +195,7 @@ export const MetaNetX = [
       "FROM",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 5",
@@ -217,7 +217,7 @@ export const MetaNetX = [
       "FROM",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 6",
@@ -243,7 +243,7 @@ export const MetaNetX = [
       "IF",
       "SUBSTR"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 7",
@@ -267,7 +267,7 @@ export const MetaNetX = [
       "FROM",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 8",
@@ -291,7 +291,7 @@ export const MetaNetX = [
       "FROM",
       "IF"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   },
   {
     "name": "MetaNetX - 9",
@@ -318,6 +318,6 @@ export const MetaNetX = [
       "ALL",
       "COUNT"
     ],
-    "category": "undefined MetaNetX"
+    "category": "sib-swiss MetaNetX"
   }
 ];

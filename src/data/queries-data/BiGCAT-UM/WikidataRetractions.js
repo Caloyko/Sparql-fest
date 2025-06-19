@@ -31,7 +31,7 @@ export const WikidataRetractions = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 002",
@@ -65,7 +65,7 @@ export const WikidataRetractions = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 003",
@@ -100,7 +100,7 @@ export const WikidataRetractions = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 004",
@@ -133,7 +133,7 @@ export const WikidataRetractions = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 005",
@@ -168,7 +168,7 @@ export const WikidataRetractions = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 006",
@@ -203,7 +203,7 @@ export const WikidataRetractions = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 007",
@@ -230,7 +230,7 @@ export const WikidataRetractions = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 008",
@@ -257,7 +257,7 @@ export const WikidataRetractions = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 009",
@@ -292,7 +292,7 @@ export const WikidataRetractions = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 010",
@@ -322,7 +322,7 @@ export const WikidataRetractions = [
       "WITH",
       "LANG"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   },
   {
     "name": "WikidataRetractions - 011",
@@ -356,6 +356,6 @@ export const WikidataRetractions = [
       "LANG",
       "COUNT"
     ],
-    "category": "undefined WikidataRetractions"
+    "category": "BiGCAT-UM WikidataRetractions"
   }
 ];

@@ -23,7 +23,7 @@ export const OrthoDB = [
       "LCASE",
       "STRSTARTS"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 10",
@@ -48,7 +48,7 @@ export const OrthoDB = [
       "COPY",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 11",
@@ -74,7 +74,7 @@ export const OrthoDB = [
       "LIMIT",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 12",
@@ -97,7 +97,7 @@ export const OrthoDB = [
       "ORDER BY",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 13",
@@ -123,7 +123,7 @@ export const OrthoDB = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 14",
@@ -146,7 +146,7 @@ export const OrthoDB = [
       "FILTER",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 15",
@@ -167,7 +167,7 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 16",
@@ -192,7 +192,7 @@ export const OrthoDB = [
       "MAX",
       "AVG"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 17",
@@ -214,7 +214,7 @@ export const OrthoDB = [
       "WHERE",
       "SERVICE"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 18",
@@ -239,7 +239,7 @@ export const OrthoDB = [
       "DISTINCT",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 19",
@@ -270,7 +270,7 @@ export const OrthoDB = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 2",
@@ -293,7 +293,7 @@ export const OrthoDB = [
       "ORDER BY",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 20",
@@ -318,7 +318,7 @@ export const OrthoDB = [
       "STR",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 3",
@@ -344,7 +344,7 @@ export const OrthoDB = [
       "EXISTS",
       "NOT EXISTS"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 4",
@@ -366,7 +366,7 @@ export const OrthoDB = [
       "WHERE",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 5",
@@ -392,7 +392,7 @@ export const OrthoDB = [
       "IF",
       "COUNT"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 6",
@@ -414,7 +414,7 @@ export const OrthoDB = [
       "WHERE",
       "IF"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 7",
@@ -441,7 +441,7 @@ export const OrthoDB = [
       "IF",
       "STRSTARTS"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 8",
@@ -466,7 +466,7 @@ export const OrthoDB = [
       "LCASE",
       "CONTAINS"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   },
   {
     "name": "OrthoDB - 9",
@@ -490,6 +490,6 @@ export const OrthoDB = [
       "UCASE",
       "CONTAINS"
     ],
-    "category": "undefined OrthoDB"
+    "category": "sib-swiss OrthoDB"
   }
 ];

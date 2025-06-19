@@ -22,6 +22,6 @@ export const ChEMBL = [
       "IF",
       "MIN"
     ],
-    "category": "undefined ChEMBL"
+    "category": "BiGCAT-UM ChEMBL"
   }
 ];

@@ -30,6 +30,6 @@ export const WikidataCiTO = [
       "SUBSTR",
       "COUNT"
     ],
-    "category": "undefined WikidataCiTO"
+    "category": "BiGCAT-UM WikidataCiTO"
   }
 ];

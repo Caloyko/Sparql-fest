@@ -18,7 +18,7 @@ export const SwissLipids = [
       "SELECT",
       "WHERE"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 10",
@@ -43,7 +43,7 @@ export const SwissLipids = [
       "STR",
       "REGEX"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 11",
@@ -66,7 +66,7 @@ export const SwissLipids = [
       "ORDER BY",
       "IF"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 12",
@@ -87,7 +87,7 @@ export const SwissLipids = [
       "WHERE",
       "ORDER BY"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 13",
@@ -109,7 +109,7 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 14",
@@ -135,7 +135,7 @@ export const SwissLipids = [
       "STR",
       "REGEX"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 15",
@@ -161,7 +161,7 @@ export const SwissLipids = [
       "IF",
       "CONCAT"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 16",
@@ -187,7 +187,7 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 2",
@@ -211,7 +211,7 @@ export const SwissLipids = [
       "STR",
       "IF"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 26",
@@ -232,7 +232,7 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 27",
@@ -254,7 +254,7 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 3",
@@ -277,7 +277,7 @@ export const SwissLipids = [
       "ORDER BY",
       "STR"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 34",
@@ -298,7 +298,7 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 35",
@@ -320,7 +320,7 @@ export const SwissLipids = [
       "VALUES",
       "FROM"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 36",
@@ -347,7 +347,7 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 37",
@@ -374,7 +374,7 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 38",
@@ -401,7 +401,7 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 4",
@@ -424,7 +424,7 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 5",
@@ -450,7 +450,7 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 6",
@@ -476,7 +476,7 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 7",
@@ -500,7 +500,7 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 8",
@@ -525,7 +525,7 @@ export const SwissLipids = [
       "STR",
       "STRSTARTS"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   },
   {
     "name": "SwissLipids - 9",
@@ -548,6 +548,6 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "undefined SwissLipids"
+    "category": "sib-swiss SwissLipids"
   }
 ];
