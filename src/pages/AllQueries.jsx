@@ -73,7 +73,7 @@ const AllQueries = () => {
                   setSelectedConcepts([]);
                   setSelectedOntologies([]);
                 }}
-                className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded"
               >
                 Reset Filters
               </button>

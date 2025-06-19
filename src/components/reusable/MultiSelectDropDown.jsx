@@ -23,11 +23,11 @@ const MultiSelectDropdown = ({ options, selectedOptions, onChange, placeholder }
   }, []);
 
   return (
-    <div className="relative w-60" ref={dropdownRef}>
+    <div className="relative w-60 bg-amber-950" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left text-sm"
+        className="w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left text-sm"
       >
         <span className="block truncate">
           {selectedOptions.length > 0 ? selectedOptions.join(', ') : (placeholder || 'Select options')}
@@ -38,7 +38,7 @@ const MultiSelectDropdown = ({ options, selectedOptions, onChange, placeholder }
       </button>
 
       {open && (
-        <div className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-sm ring-1 ring-black ring-opacity-5 overflow-auto">
+        <div className="absolute z-10 mt-1 w-full shadow-lg max-h-60 rounded-md py-1 text-sm ring-1 ring-black ring-opacity-5 overflow-auto">
           {options.map(option => (
             <div
               key={option}
