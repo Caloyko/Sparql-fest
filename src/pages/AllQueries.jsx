@@ -69,7 +69,7 @@ const AllQueries = () => {
                 onClick={() => {
                   setSearch('');
                   setSelectedCategory('');
-                  setSelectedSource('');
+                  setSelectedSource([]);
                   setSelectedConcepts([]);
                   setSelectedOntologies([]);
                 }}
@@ -125,12 +125,17 @@ const AllQueries = () => {
         <button onClick={() => setSelectedCategory('')} className="ml-2">×</button>
       </span>
     )}
-    {selectedSource && (
-      <span className="bg-green-600 text-white px-2 py-1 rounded flex items-center">
-        {selectedSource}
-        <button onClick={() => setSelectedSource('')} className="ml-2">×</button>
-      </span>
-    )}
+    {selectedSource.map(source => (
+    <span key={source} className="bg-green-600 text-white px-2 py-1 rounded flex items-center">
+      {source}
+      <button
+        onClick={() => setSelectedSource(prev => prev.filter(s => s !== source))}
+        className="ml-2"
+      >
+        ×
+      </button>
+    </span>
+  ))}
     {selectedConcepts.map(concept => (
       <span key={concept} className="bg-purple-600 text-white px-2 py-1 rounded flex items-center">
         {concept}
