@@ -11,6 +11,8 @@ const AllQueries = () => {
   const [selectedSource, setSelectedSource] = useState('');
   const [selectedConcepts, setSelectedConcepts] = useState([]);
   const [selectedOntologies, setSelectedOntologies] = useState([]);
+  const [total, setTotal] = useState(0);
+  
 
   const allCategories = [...new Set(sparqlQueries.map(q => q.category))];
   const allSources = [...new Set(sparqlQueries.map(q => q.source).filter(Boolean))];
@@ -21,7 +23,7 @@ const AllQueries = () => {
   useEffect(() => {
     setVisibleCount(20);
   }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
-
+  
   const filteredQueries = useMemo(() => {
     return sparqlQueries.filter(query => {
       const matchesSearch = 
@@ -41,6 +43,9 @@ const AllQueries = () => {
     });
   }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
 
+  useEffect(() => {
+    setTotal(filteredQueries.length);
+  }, [filteredQueries]);
 
   return (
     <div>
@@ -52,6 +57,9 @@ const AllQueries = () => {
             bg={true}
         >
           <div className="mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mb-4 text-white font-semibold text-lg">
+            {total} quer{total !== 1 ? 'ies' : 'y'} found
+          </div>
           <input
             type="text"
             placeholder="Search by name..."
