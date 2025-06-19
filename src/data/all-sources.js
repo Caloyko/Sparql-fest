@@ -1,5 +1,6 @@
 import amcLogo from "../assets/images/amc_logo.jpeg"
 import sibLogo from "../assets/images/SIB2.jpg"
+import bigcatUmLogo from "../assets/images/bigcat-um.png"
 export const allSources = [
     {
         id:"AMC",
@@ -21,5 +22,12 @@ export const allSources = [
             link: "https://arxiv.org/abs/2410.06010",
             metadata: "author : Jerven Bolleman and Vincent Emonet and Adrian Altenhoff and Amos Bairoch and Marie-Claude Blatter and Alan Bridge and Severine Duvaud and Elisabeth Gasteiger and Dmitry Kuznetsov and Sebastien Moretti and Pierre-Andre Michel and Anne Morgat and Marco Pagni and Nicole Redaschi and Monique Zahn-Zabal and Tarcisio Mendes de Farias and Ana Claudia Sima"
         }]
+    },
+    {
+        id:"BiGCAT-UM",
+        name: "Maastricht University - Dept of Translational Genomics",
+        logo: bigcatUmLogo,
+        prefix: "BiGCAT-UM",
+        namespace: "https://bigcat-um.github.io/sparql-examples/",
     }
 ]
