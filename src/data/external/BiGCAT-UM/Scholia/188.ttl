@@ -1,0 +1,64 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:188 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q45340488> 
+
+#defaultView:Graph
+SELECT DISTINCT ?citing_country ?citing_countryLabel ?citing_flag ?cited_country ?cited_countryLabel ?cited_flag
+WITH {
+  SELECT DISTINCT ?cited_country ?citing_country (COUNT(?citing_country) AS ?count)
+                                  WHERE {
+    ?citing_work wdt:P50 ?citing_author . 
+    ?citing_work wdt:P921 target: .
+    ?cited_work wdt:P921 target: .
+    ?citing_work wdt:P2860 ?cited_work . 
+    ?cited_work wdt:P50 ?cited_author .  
+    FILTER (?citing_work != ?cited_work)
+    FILTER NOT EXISTS {
+      ?citing_work wdt:P50 ?author .
+      ?citing_work wdt:P2860 ?cited_work .
+      ?cited_work  wdt:P50 ?author .
+    }
+    ?citing_author (wdt:P108|wdt:P1416) ?citing_organization . 
+    ?cited_author (wdt:P108|wdt:P1416) ?cited_organization . 
+    ?cited_organization wdt:P17 ?cited_country.
+    ?citing_organization wdt:P17 ?citing_country.
+    FILTER (?citing_country != ?cited_country)
+  }
+  GROUP BY ?cited_country ?citing_country
+  ORDER BY DESC(?count)
+  LIMIT 42 # Adjust number of connections to display
+} AS %results
+WHERE {
+  INCLUDE %results
+  ?cited_country wdt:P41 ?cited_flag . 
+  ?citing_country wdt:P41 ?citing_flag . 
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }        
+ }
+''';
+  scholia:aspect scholiaAspect:Topic ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Topic aspect: country citation graph"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/topic_country-citation-graph.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

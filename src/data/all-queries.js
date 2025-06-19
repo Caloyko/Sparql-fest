@@ -2,6 +2,7 @@ import img0 from "../assets/images/network-bg-1.jpg"
 import img1 from "../assets/images/network-bg-2.avif"
 import img2 from "../assets/images/network-bg-3.jpg"
 import { amcQueries } from "./queries-data/amc-ex"
+import { bigcatUmQueries } from "./queries-data/BiGCAT-UM-sparql-ex"
 import { swissQueries } from "./queries-data/swiss-sparql-ex"
 
 /*
@@ -27,7 +28,7 @@ type Query = {
 const imgLevel = [img0, img1, img2]
 
 function mergeAndFormatQueries(amcQueries, swissQueries) {
-  const merged = [...amcQueries, ...swissQueries];
+  const merged = [...amcQueries, ...swissQueries, ...bigcatUmQueries];
 
   return merged.map((query, index) => {
     const levelNumber = query.level?.match(/\d+/)?.[0] || "0";

@@ -1,0 +1,57 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:228 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Table
+
+PREFIX target: <http://www.wikidata.org/entity/Q60687720>
+
+SELECT ?count
+       ?wikiproject ?wikiprojectLabel (CONCAT("/wikiproject/", SUBSTR(STR(?wikiproject), 32)) AS ?wikiprojectUrl)
+       ?example_entity ?example_entityLabel (CONCAT("/", SUBSTR(STR(?example_entity), 32)) AS ?example_entityUrl)
+WITH {
+  SELECT (COUNT(?work) AS ?count) ?wikiproject (SAMPLE(?work) AS ?example_entity) WHERE {
+    # Find works for the specific queried wikiproject
+	  VALUES ?p { wdt:P6104 wdt:P5008 }
+	  SERVICE bd:sample { ?work ?p target: . bd:serviceParam bd:sample.limit 100000 }
+    
+    # Find co-occuring wikiprojects
+    ?work ?p ?wikiproject .
+    
+    # Avoid listing the queried wikiproject
+      FILTER (target: != ?wikiproject)
+  }
+  GROUP BY ?wikiproject
+} AS %result
+WHERE {
+  # Label the results
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+ORDER BY DESC(?count)
+''';
+  scholia:aspect scholiaAspect:Wikiproject ;
+  scholia:defaultView scholiaView:Table ;
+  rdfs:comment "Wikiproject aspect: co occurring wikiprojects"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/wikiproject_co-occurring-wikiprojects.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

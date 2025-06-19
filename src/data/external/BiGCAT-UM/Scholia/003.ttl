@@ -1,0 +1,38 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:003 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#defaultView:BarChart
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+SELECT ?year (count(distinct ?citing_work) as ?count) ?kind  WHERE {
+  ?work wdt:P50 target: .
+  ?citing_work wdt:P2860 ?work .
+  bind(if (exists { ?citing_work wdt:P50 target: }, "self-citations", "citations from others") as ?kind)
+  ?citing_work wdt:P577 ?date .
+  BIND(str(YEAR(?date)) AS ?year)
+} group by ?year ?kind
+order by desc(?year)
+''';
+  scholia:aspect scholiaAspect:Author ;
+  scholia:defaultView scholiaView:BarChart ;
+  rdfs:comment "Author aspect: citations by year"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_citations-by-year.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

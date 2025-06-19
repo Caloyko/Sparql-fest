@@ -1,0 +1,65 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:103 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q1309>
+
+# title: Nearby academic institutions around a specified geographic entity.
+SELECT
+  ?distance ?unit ?unitLabel
+  ?organization ?organizationLabel ?organizationDescription (CONCAT("/organization/", SUBSTR(STR(?organization), 32)) AS ?organizationUrl)
+WITH {
+  # Universities, research centers, etc.
+  SELECT ?university WHERE {
+    VALUES ?university { wd:Q3918 wd:Q1371037 wd:Q7315155  wd:Q31855 }
+  }
+} AS %universities
+WITH {
+  # Academic institutions on all levels
+  SELECT DISTINCT ?organization ?other_geo WHERE {
+    INCLUDE %universities
+    ?organization wdt:P361* / wdt:P31 / wdt:P279* ?university .
+    ?organization wdt:P625 ?other_geo .
+  }
+} AS %organizations
+WITH {
+  # Compute distance.
+  SELECT ?organization ?distance ?unit WHERE {
+    INCLUDE %organizations
+    target: wdt:P159* / wdt:P625 ?geo .
+    BIND(geof:distance(?other_geo, ?geo) AS ?distance)
+    BIND(wd:Q828224 AS ?unit)
+    FILTER(?distance < 250)
+  }
+} AS %results
+WHERE {
+  INCLUDE %results
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+ORDER BY ?distance
+''';
+  scholia:aspect scholiaAspect:Location ;
+  rdfs:comment "Location aspect: Nearby academic institutions around a specified geographic entity."@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/location_nearby-organizations.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

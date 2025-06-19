@@ -1,0 +1,53 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:062 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+# title: Organizations for a specific country
+PREFIX target: <http://www.wikidata.org/entity/Q35>
+
+SELECT
+  ?number_of_authors
+  ?number_of_works
+  ?organization ?organizationLabel
+WITH {  
+  SELECT
+    ?organization
+    (COUNT(DISTINCT ?author) AS ?number_of_authors)
+    (COUNT(DISTINCT ?work) AS ?number_of_works)
+  WHERE {
+    ?organization wdt:P17 target: .
+    ?author wdt:P108 | wdt:P463 | wdt:P1416/wdt:P361* ?organization .
+    ?work wdt:P50 ?author .
+  }
+  GROUP BY ?organization 
+} AS %results
+WHERE {
+  INCLUDE %results
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en,da,es,fr,jp,nl,no,ru,sv,zh". }
+}
+ORDER BY DESC(?number_of_authors) DESC(?number_of_works)
+''';
+  scholia:aspect scholiaAspect:Country ;
+  rdfs:comment "Country aspect: Organizations for a specific country"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/country_organizations.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

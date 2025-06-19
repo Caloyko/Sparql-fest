@@ -1,0 +1,62 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:166 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#description: Show software library, programming language and developer dependencies
+
+PREFIX target: <http://www.wikidata.org/entity/Q1635410>
+
+#defaultView:Graph
+SELECT ?resource1 ?resource1Label ?image1 ?rgb ?resource2 ?resource2Label ?image2
+WITH {
+  SELECT
+    ?resource1 (SAMPLE(?image1_) AS ?image1) ?rgb
+    ?resource2 (SAMPLE(?image2_) AS ?image2)
+    {
+      {
+        # root node with coloring
+        BIND(target: AS ?resource1)
+        BIND("3080BB" AS ?rgb)
+      }
+      UNION
+      {
+        # dependencies, programming language, developer
+        target: ( wdt:P1547 | wdt:P277 | wdt:P178 | wdt:P2283 | wdt:P275 )+ ?resource1 .
+        OPTIONAL { ?resource1 wdt:P18 ?image1_ }
+      }
+      target: ( wdt:P1547 | wdt:P277 | wdt:P178 | wdt:P2283 | wdt:P275 )+ ?resource2 .
+      OPTIONAL { ?resource2 wdt:P18 ?image2_ }
+      ?resource1 ( wdt:P1547 | wdt:P277 | wdt:P178 | wdt:P2283 | wdt:P275 ) ?resource2 .
+    }
+    GROUP BY ?resource1 ?resource2 ?rgb
+} AS %result
+{
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+''';
+  scholia:aspect scholiaAspect:Software ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Software aspect: software dependencies"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/software_software-dependencies.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

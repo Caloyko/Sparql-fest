@@ -1,0 +1,46 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:011 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Map
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+SELECT DISTINCT ?image ?item ?itemLabel ?geo (?property_item_label AS ?layer)
+WHERE {
+  target: ?property ?item .
+  ?item p:P159/pq:P625 | wdt:P276*/wdt:P625 ?geo .
+  ?property_item wikibase:directClaim ?property .
+  OPTIONAL { ?item wdt:P18 ?image . } 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+  
+  # No automatic labeling on the property, - for some reason.
+  ?property_item rdfs:label ?property_item_label . FILTER(LANG(?property_item_label) = 'en')
+}
+''';
+  scholia:aspect scholiaAspect:Author ;
+  scholia:defaultView scholiaView:Map ;
+  rdfs:comment "Author aspect: other locations"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_other-locations.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

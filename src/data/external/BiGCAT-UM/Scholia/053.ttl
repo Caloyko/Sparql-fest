@@ -1,0 +1,66 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:053 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q64651365>
+
+SELECT
+  ?score
+  ?trial ?trialLabel
+WHERE {
+  {
+    SELECT
+      (SUM(?score_) AS ?score)
+      ?trial
+    WHERE {
+      BIND(target: AS ?query_trial)
+      ?trial wdt:P31 wd:Q30612 .
+      { 
+        ?query_trial wdt:P1050 / ^wdt:P1050 ?trial .
+        BIND(3 AS ?score_)
+      }
+      UNION 
+      {
+        ?query_trial wdt:P4844 / ^wdt:P4844 ?trial .
+        BIND(2 AS ?score_)        
+      }
+      UNION 
+      {
+        ?query_trial wdt:P859 / ^wdt:P859 ?trial .
+        BIND(1 AS ?score_)        
+      }
+    }
+    GROUP BY ?trial
+    ORDER BY DESC(?score)
+    LIMIT 500
+  }
+  FILTER (target: != ?trial)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+ORDER BY DESC(?score)
+''';
+  scholia:aspect scholiaAspect:Clinical-trial ;
+  rdfs:comment "Clinical-trial aspect: related trials"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/clinical-trial_related-trials.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

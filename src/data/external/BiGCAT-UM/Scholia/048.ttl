@@ -1,0 +1,73 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:048 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# title: recent literature about this chemical
+PREFIX target: <http://www.wikidata.org/entity/Q2270>
+
+SELECT ?date ?work ?workLabel ?type ?via ?topics
+WITH {
+  SELECT DISTINCT ?work  ?via ?topic WHERE {
+    { VALUES ?topic { target:}
+      ?work wdt:P921 ?topic . BIND ("main topic" AS ?via) }
+    UNION
+    { ?work wdt:P921 ?topic . ?topic ((^wdt:P361)+) target: . BIND ("part" AS ?via) }
+    UNION
+    { ?work wdt:P921 ?topic . ?topic (wdt:P31* / wdt:P279* ) target: . BIND ("subclass" AS ?via). FILTER (?topic != target:) }
+    UNION
+    { ?work wdt:P921 ?topic . ?topic (wdt:P1269+ ) target: . BIND ("facet" AS ?via)}
+    UNION
+    {
+      target: ?propp ?statement .
+      ?statement a wikibase:BestRank ;
+                 prov:wasDerivedFrom/pr:P248 ?work .
+      BIND ("statement" AS ?via)
+    }
+  }
+} AS %works
+WITH {
+  SELECT (MAX(?dates) as ?datetime) ?work (GROUP_CONCAT(DISTINCT ?type_label; separator=", ") AS ?type) ?via (GROUP_CONCAT(DISTINCT ?topic_label; separator=" // ") AS ?topics) WHERE {
+    INCLUDE %works
+    ?work wdt:P921 ?topic . 
+    OPTIONAL { ?work wdt:P31 ?type_ . ?type_ rdfs:label ?type_label . FILTER (LANG(?type_label) = 'en') }
+    OPTIONAL { ?work wdt:P577 ?dates . }
+    ?topic rdfs:label ?topic_label .  FILTER (lang(?topic_label) = 'en')
+  }
+  GROUP BY ?work ?via
+} AS %result
+WHERE {
+  INCLUDE %result
+  BIND(xsd:date(?datetime) AS ?date)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+ORDER BY DESC(?date)
+LIMIT 500
+''';
+  scholia:aspect scholiaAspect:Chemical ;
+  rdfs:comment "Chemical aspect: recent literature about this chemical"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/chemical_recent-literature.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

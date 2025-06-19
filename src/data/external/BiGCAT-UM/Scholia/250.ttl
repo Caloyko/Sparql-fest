@@ -1,0 +1,111 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:250 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+#defaultView:Timeline
+
+PREFIX target: <http://www.wikidata.org/entity/Q28942417>
+
+SELECT DISTINCT ?datetime ?description WHERE {
+  {
+    target: wdt:P577 ?datetime .
+    BIND("🌞 publication date" AS ?description)
+  }
+  UNION 
+  {
+    target: wdt:P2507 / wdt:P577 ?datetime .
+    BIND("❗ erratum" AS ?description)
+  }
+  UNION 
+  {
+    target: wdt:P5824 / wdt:P577 ?datetime .
+    BIND("⛔ retracted" AS ?description)
+  }
+  UNION 
+  {
+    target: p:P793 ?event_statement .
+    ?event_statement ps:P793 ?event_type .
+    ?event_type rdfs:label ?description_ .
+    ?event_statement pq:P585 ?datetime .
+    FILTER (LANG(?description_) = "en")
+    
+    # Warning icon for retraction
+    BIND(
+      IF(
+        ?event_type = wd:Q45203135,
+        CONCAT("⛔ ", ?description_),
+        IF(
+          ?event_type = wd:Q56478588,
+          CONCAT("❓ ", ?description_),
+          ?description_
+          )
+        ) AS ?description)
+  }
+  UNION
+  {
+    SELECT ?datetime ?description WHERE {
+      target: wdt:P2860 / wdt:P577 ?datetime
+      BIND("📖➡️ cited work with earliest publication date" AS ?description)
+    }
+    ORDER BY ?datetime
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?datetime ?description WHERE {
+      target: wdt:P2860 / wdt:P577 ?datetime
+      BIND("📖➡️ cited work with latest publication date" AS ?description)
+    }
+    ORDER BY DESC(?datetime)
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?datetime ?description WHERE {
+      target: ^wdt:P2860 / wdt:P577 ?datetime
+      BIND("📖⬅️ citing work with earliest publication date" AS ?description)
+    }
+    ORDER BY ?datetime
+    LIMIT 1
+  }
+  UNION
+  {
+    SELECT ?datetime ?description WHERE {
+      target: ^wdt:P2860 / wdt:P577 ?datetime
+      BIND("📖⬅️ citing work with latest publication date" AS ?description)
+    }
+    ORDER BY DESC(?datetime)
+    LIMIT 1
+  }
+    UNION
+  {
+    target: (wdt:P747 | ^wdt:P629) / wdt:P577 ?datetime
+    BIND("🌞 Publication of edition" AS ?description)
+  }
+}''';
+  scholia:aspect scholiaAspect:Work ;
+  scholia:defaultView scholiaView:Timeline ;
+  rdfs:comment "Work aspect: timeline"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/work_timeline.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

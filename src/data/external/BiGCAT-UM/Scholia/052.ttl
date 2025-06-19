@@ -1,0 +1,121 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:052 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX target: <http://www.wikidata.org/entity/Q64651365>
+
+SELECT ?description ?value ?valueUrl
+WHERE {
+  BIND(target: AS ?trial)
+  {
+    BIND(1 AS ?order)
+    BIND("Title" AS ?description)
+    ?trial wdt:P1476 ?value .
+  }
+  UNION
+  {
+    BIND(10 AS ?order)
+    BIND("Number of participants" AS ?description)
+    ?trial wdt:P1132 ?value .
+  }
+  UNION
+  {
+    BIND(11 AS ?order)
+    BIND("Clinical trial phase" AS ?description)
+    ?trial wdt:P6099 ?iri .
+
+    BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+    ?iri rdfs:label ?value_string . 
+    FILTER (LANG(?value_string) = 'en')
+    BIND(COALESCE(?value_string, ?q) AS ?value)
+    BIND(CONCAT("../topic/", ?q) AS ?valueUrl)
+  }
+  UNION
+  {
+    BIND(12 AS ?order)
+    BIND("Medical condition" AS ?description)
+    ?trial wdt:P1050 ?iri .
+
+    BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+    ?iri rdfs:label ?value_string . 
+    FILTER (LANG(?value_string) = 'en')
+    BIND(COALESCE(?value_string, ?q) AS ?value)
+    BIND(CONCAT("../disease/", ?q) AS ?valueUrl)
+  }
+  UNION
+  {
+    BIND(13 AS ?order)
+    BIND("Research intervention" AS ?description)
+    ?trial wdt:P4844 ?iri .
+
+    BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+    ?iri rdfs:label ?value_string . 
+    FILTER (LANG(?value_string) = 'en')
+    BIND(COALESCE(?value_string, ?q) AS ?value)
+    BIND(CONCAT("../topic/", ?q) AS ?valueUrl)
+  }
+  UNION
+  {
+    BIND(20 AS ?order)
+    BIND("Sponsor" AS ?description)
+    ?trial wdt:P859 ?iri .
+
+    BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+    ?iri rdfs:label ?value_string . 
+    FILTER (LANG(?value_string) = 'en')
+    BIND(COALESCE(?value_string, ?q) AS ?value)
+    BIND(CONCAT("../sponsor/", ?q) AS ?valueUrl)
+  }
+
+  UNION
+  {
+    BIND(100 AS ?order)
+    BIND("ClinicalTrials.gov" AS ?description)
+    ?trial wdt:P3098 ?value_ .
+    BIND(CONCAT(?value_, " ↗") AS ?value)
+    BIND(CONCAT("https://clinicaltrials.gov/show/", ?value_) AS ?valueUrl)
+  }
+
+  UNION
+  {
+    BIND(101 AS ?order)
+    BIND("ClinWiki" AS ?description)
+    ?trial wdt:P3098 ?value_ .
+    BIND(CONCAT(?value_, " ↗") AS ?value)
+    BIND(CONCAT("https://www.clinwiki.org/study/", ?value_) AS ?valueUrl)
+  }
+
+  UNION
+  {
+    BIND(103 AS ?order)
+    BIND("OpenTrials" AS ?description)
+    ?trial wdt:P6220 ?value_ .
+    BIND(CONCAT(?value_, " ↗") AS ?value)
+    BIND(CONCAT("https://explorer.opentrials.net/trials/", ?value_) AS ?valueUrl)
+  }
+
+} 
+ORDER BY ?order''';
+  scholia:aspect scholiaAspect:Clinical-trial ;
+  rdfs:comment "Clinical-trial aspect: data"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/clinical-trial_data.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

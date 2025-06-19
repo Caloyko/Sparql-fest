@@ -1,0 +1,55 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:091 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Timeline
+
+PREFIX target: <http://www.wikidata.org/entity/Q133457282>
+
+SELECT ?time ?item ?itemLabel ?image
+WHERE {
+  {
+    target: wdt:P580 | wdt:P585 ?time .
+    OPTIONAL { target: wdt:P18 ?image . }
+    BIND(wd:Q24575110 AS ?item)
+  }
+  UNION
+  {
+    target: wdt:P582 ?time .
+    OPTIONAL { target: wdt:P18 ?image . }
+    BIND(wd:Q24575125 AS ?item)
+  }
+  UNION 
+  { target: p:P793 [ ps:P793 ?item ; pq:P585 ?time ] . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
+
+''';
+  scholia:aspect scholiaAspect:Event ;
+  scholia:defaultView scholiaView:Timeline ;
+  rdfs:comment "Event aspect: timeline"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/event_timeline.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

@@ -1,0 +1,47 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:021 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#defaultView:BubbleChart
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+SELECT ?count ?venue (SAMPLE(?venue_label_) AS ?venue_label) 
+WITH {
+  SELECT (COUNT(?work) as ?count) ?venue WHERE {
+    ?work wdt:P50 target: .
+    ?work wdt:P1433 ?venue .
+  }
+  GROUP BY ?venue
+} AS %counts
+WHERE {
+  INCLUDE %counts
+  ?venue rdfs:label ?long_venue_label FILTER(LANG(?long_venue_label) = 'en')
+  OPTIONAL { ?venue wdt:P1813 ?short_name . }
+  BIND(COALESCE(?short_name, ?long_venue_label) AS ?venue_label_)
+}
+GROUP BY ?venue ?count
+ORDER BY DESC(?count)  
+''';
+  scholia:aspect scholiaAspect:Author ;
+  scholia:defaultView scholiaView:BubbleChart ;
+  rdfs:comment "Author aspect: venue statistics chart"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_venue-statistics-chart.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

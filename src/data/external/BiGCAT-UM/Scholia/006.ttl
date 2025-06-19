@@ -1,0 +1,67 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:006 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+SELECT
+  (xsd:date(MIN(?start)) AS ?date)  
+  ?event ?eventLabel
+  (CONCAT("/event/", SUBSTR(STR(?event), 32)) AS ?eventUrl)
+  (GROUP_CONCAT(DISTINCT ?role; separator=", ") AS ?roles)
+  (GROUP_CONCAT(DISTINCT ?location_label; separator=", ") AS ?locations)
+WHERE {
+    BIND(target: AS ?person)
+    {  # speaker
+      ?event wdt:P823 ?person .
+      BIND("speaker" AS ?role)
+    } UNION {  # organizer
+      ?event wdt:P664 ?person .
+      BIND("organizer" AS ?role)
+    } UNION {  # participant
+      ?person wdt:P1344 | ^wdt:P710 ?event  .
+      BIND("participant" AS ?role)
+    } UNION {  # editor
+      ?person ^wdt:P98 / wdt:P4745 ?event  .
+      BIND("editor of proceedings" AS ?role)
+    } UNION {  # author
+      ?person ^wdt:P50 / wdt:P1433 / wdt:P4745 ?event  .
+      BIND("author" AS ?role)
+    } UNION {  # program committee member
+      ?event wdt:P5804 ?person .
+      BIND("program committee member" AS ?role)
+    }
+    OPTIONAL { ?event wdt:P276 ?location . ?location rdfs:label ?location_label . FILTER (LANG(?location_label) = 'en')}
+    OPTIONAL { ?event wdt:P580 | wdt:P585 ?start }
+ 
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en,da,de,es,fr,jp,no,ru,sv,zh". }
+}
+GROUP BY ?event ?eventLabel
+ORDER BY DESC(?date) 
+''';
+  scholia:aspect scholiaAspect:Author ;
+  rdfs:comment "Author aspect: events"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_events.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

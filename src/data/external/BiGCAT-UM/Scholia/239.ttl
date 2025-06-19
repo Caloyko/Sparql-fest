@@ -1,0 +1,107 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:239 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+#defaultView:Graph
+
+PREFIX target: <http://www.wikidata.org/entity/Q28942417>
+
+SELECT
+  ?citing_work ?citing_workLabel ?rgb 
+  ?cited_work ?cited_workLabel
+WITH { 
+  SELECT (COUNT(*) AS ?count) ?citing_work WHERE {
+    target: (^wdt:P2860 | wdt:P2860) / (^wdt:P2860 | wdt:P2860)? ?citing_work .
+  }
+  GROUP BY ?citing_work
+  ORDER BY DESC(?count)
+  LIMIT 40
+} AS %citing_works
+WITH { 
+  SELECT (COUNT(*) AS ?count_) ?cited_work WHERE {
+    target: (^wdt:P2860 | wdt:P2860) / (^wdt:P2860 | wdt:P2860)? ?cited_work .
+  }
+  GROUP BY ?cited_work
+  ORDER BY DESC(?count_)
+  LIMIT 40
+} AS %cited_works
+WITH {
+  SELECT (MAX(?count) AS ?max_count) WHERE {
+    INCLUDE %citing_works
+    BIND(1 AS ?dummy)
+  } 
+  GROUP BY ?dummy
+} AS %max_count
+WHERE {
+  INCLUDE %citing_works
+  INCLUDE %max_count
+  INCLUDE %cited_works
+  
+  ?citing_work wdt:P2860 ?cited_work .
+  
+  BIND(STR(xsd:integer(99 * (1 - ?count / ?max_count))) AS ?grey)
+  BIND(CONCAT(SUBSTR("0", 1, 2 - STRLEN(?grey)), ?grey) AS ?padded_grey)
+  BIND(CONCAT(?padded_grey, ?padded_grey, ?padded_grey) AS ?rgb)
+
+  { 
+      ?citing_work (p:P50) ?citing_author_statement . 
+      ?citing_author_statement pq:P1545 "1" .
+      ?citing_author_statement ps:P50 ?citing_author .
+      ?citing_author rdfs:label ?citing_author_name .
+      filter(lang(?citing_author_name) = 'en')
+    }
+    union 
+  	{ 
+      ?citing_work (p:P2093) ?citing_author_statement . 
+      ?citing_author_statement pq:P1545 "1" .
+      ?citing_author_statement ps:P2093 ?citing_author_name .
+    }
+  
+    { 
+      ?cited_work (p:P50) ?cited_author_statement . 
+      ?cited_author_statement pq:P1545 "1" .
+      ?cited_author_statement ps:P50 ?cited_author .
+      ?cited_author rdfs:label ?cited_author_name .
+      filter(lang(?cited_author_name) = 'en')
+    }
+    union 
+  	{ 
+      ?cited_work (p:P2093) ?cited_author_statement . 
+      ?cited_author_statement pq:P1545 "1" .
+      ?cited_author_statement ps:P2093 ?cited_author_name .
+    }
+
+    ?citing_work wdt:P577 ?citing_date . 
+    ?cited_work wdt:P577 ?cited_date . 
+    bind(year(?citing_date) as ?citing_year)
+    bind(year(?cited_date) as ?cited_year)
+    bind(concat(?citing_author_name, ", ", str(?citing_year)) as ?citing_workLabel)
+    bind(concat(?cited_author_name, ", ", str(?cited_year)) as ?cited_workLabel)
+}
+ORDER BY DESC(?count)''';
+  scholia:aspect scholiaAspect:Work ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Work aspect: citation graph"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/work_citation-graph.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

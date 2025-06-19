@@ -1,0 +1,40 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/WikidataRetractions/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:006 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List of researchers at Maastricht University (via the ROR identifier) citing retracted articles."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wdt: <http://wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?researcher ?researcherLabel ?orcid ?count WITH {
+  SELECT ?researcher ?orcid
+       (COUNT(DISTINCT ?article) AS ?count)
+  WHERE {
+    VALUES ?ror { "02jz4aj89" } # 02jz4aj89 is Maastricht University
+    ?researcher ( wdt:P108| wdt:P463 | wdt:P1416 ) / wdt:P361* ?organization .
+    OPTIONAL { ?researcher wdt:P496 ?orcid }
+    ?organization wdt:P6782 ?ror .
+    ?article wdt:P50 ?researcher; wdt:P2860 ?retractedArticle .
+    ?retractedArticle wdt:P31 wd:Q45182324 .
+  } GROUP BY ?researcher ?orcid
+    ORDER BY DESC(?count)
+} AS %RESEARCHERS WHERE {
+  INCLUDE %RESEARCHERS
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} ORDER BY DESC(?count)""";
+    schema:target <https://query.wikidata.org/sparql> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    dc:contributor "Egon Willighagen" ;
+    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    schema:keywords "retraction", "ror" .

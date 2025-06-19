@@ -1,0 +1,65 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:191 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Map
+
+PREFIX target: <http://www.wikidata.org/entity/Q45340488>
+
+SELECT ?organization ?organizationLabel ?geo ?count ?layer
+WITH {
+  SELECT DISTINCT ?work WHERE {
+  # Works on the topic
+    ?work wdt:P921 / (wdt:P361+ | wdt:P1269+ | (wdt:P31* / wdt:P279*) ) target: .
+  }
+  LIMIT 20000
+} AS %works
+WITH {
+  SELECT DISTINCT ?organization ?geo (COUNT(DISTINCT ?work) AS ?count) WHERE {
+    INCLUDE %works
+    # Authors who have published works on the topic
+    ?work wdt:P50 ?author . 
+    ?author ( wdt:P108 | wdt:P463 | wdt:P1416 ) / wdt:P361* ?organization . 
+    # Use the headquarters location by default but keep the coordinate location as a fallback
+    OPTIONAL{?organization p:P159/pq:P625 ?hq_geo}
+    OPTIONAL{?organization wdt:P625 ?coord_geo}
+    BIND(IF(BOUND(?hq_geo), ?hq_geo, ?coord_geo) AS ?geo) .
+    FILTER(BOUND(?geo)) .
+  }
+  GROUP BY ?organization ?geo
+  ORDER BY DESC (?count)
+  LIMIT 2000
+} AS %organizations
+WHERE {
+  INCLUDE %organizations
+  BIND(IF( (?count < 1), "No results", IF((?count < 2), "1 result", IF((?count < 11), "1 < results ≤ 10", IF((?count < 101), "10 < results ≤ 100", IF((?count < 1001), "100 < results ≤ 1000", IF((?count < 10001), "1000 < results ≤ 10000", "10000 or more results") ) ) ) )) AS ?layer )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }        
+ }
+ORDER BY DESC (?count)
+''';
+  scholia:aspect scholiaAspect:Topic ;
+  scholia:defaultView scholiaView:Map ;
+  rdfs:comment "Topic aspect: organization map"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/topic_organization-map.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

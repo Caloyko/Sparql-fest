@@ -1,0 +1,53 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:109 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Graph
+
+PREFIX target: <http://www.wikidata.org/entity/Q104785223>
+
+SELECT ?author1 ?author1Label ?rgb ?author2 ?author2Label 
+WITH {
+  SELECT DISTINCT ?author1 ?author2 ?rgb WHERE {
+    VALUES ?organisation { target: }
+    { ?author1 wdt:P108 ?organisation . } union { ?author1 wdt:P1416 [ wdt:P361* ?organisation ] .  }
+    { ?author2 wdt:P108 ?organisation . } union { ?author2 wdt:P1416 [ wdt:P361* ?organisation ] .  }
+    {?author1 wdt:P184 ?author2 }
+    UNION
+    {?author2 wdt:P185 ?author1 }
+    OPTIONAL { ?author1 wdt:P21 ?gender1 }.
+    BIND ( IF(?gender1 = wd:Q6581097, "3182BD", "E6550D") AS ?rgb)
+  }
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" .
+  }
+}
+''';
+  scholia:aspect scholiaAspect:Organization ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Organization aspect: advisor graph"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/organization_advisor-graph.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

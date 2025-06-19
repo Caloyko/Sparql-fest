@@ -1,0 +1,85 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:240 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#defaultView:BarChart
+
+PREFIX target: <http://www.wikidata.org/entity/Q28942417>
+
+SELECT
+  (STR(?year_) AS ?year)
+  (SUM(?count_) AS ?count)
+  ?kind
+WHERE {
+  {
+    VALUES ?year_ { 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013
+                    2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 }
+    BIND(0 AS ?count_)
+    BIND("_" AS ?kind)
+  }
+  UNION 
+  {
+    SELECT
+      ?year_
+      (COUNT(DISTINCT ?citing_work) AS ?count_)
+      ?kind
+    WHERE {
+      ?citing_work wdt:P2860 target: .
+  
+      # Detect self-citations
+      BIND(IF(EXISTS { target: wdt:P50 ?selfauthor . ?citing_work  wdt:P50 ?selfauthor } ,
+        "detected incoming self-citations",
+        "citations from others or non-detected self-citations") AS ?kind)
+
+      # Year of citation
+      ?citing_work wdt:P577 ?date .
+      BIND(YEAR(?date) AS ?year_)
+    }
+    GROUP BY ?year_ ?kind
+  }
+  UNION 
+  {
+    SELECT
+      ?year_
+      (COUNT(DISTINCT ?cited_work) AS ?count_)
+      ?kind
+    WHERE {
+      target: wdt:P2860 ?cited_work .
+  
+      # Detect self-citations
+      BIND(IF(EXISTS { ?cited_work wdt:P50 ?selfauthor . target: wdt:P50 ?selfauthor },
+        "detected outgoing self-citations",
+        "outgoing citations to others or non-detected self-citations") AS ?kind)
+
+      # Year of citation
+      ?cited_work wdt:P577 ?date .
+      BIND(YEAR(?date) AS ?year_)
+    }
+    GROUP BY ?year_ ?kind
+  }
+}
+GROUP BY ?year_ ?kind
+ORDER BY DESC(?year_)
+''';
+  scholia:aspect scholiaAspect:Work ;
+  scholia:defaultView scholiaView:BarChart ;
+  rdfs:comment "Work aspect: citations per year"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/work_citations-per-year.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

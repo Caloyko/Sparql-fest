@@ -1,0 +1,69 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:071 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q47501052>
+
+# title: List of event and proceedings for a specific event series
+SELECT DISTINCT 
+  (SAMPLE(?years) AS ?year)
+  (SAMPLE(?ordinal_) AS ?ordinal)
+  (SAMPLE(?short_names) AS ?short_name)
+  ?event ?eventLabel (CONCAT("/event/", SUBSTR(STR(?event), 32)) AS ?eventUrl)
+  ?proceedings ?proceedingsLabel (CONCAT("/venue/", SUBSTR(STR(?proceedings), 32)) AS ?proceedingsUrl)
+WHERE {
+  {
+    ?event wdt:P179 | wdt:P31 target: .
+    OPTIONAL {
+      ?event wdt:P585 | wdt:P580 ?datetime .
+      BIND(YEAR(?datetime) AS ?years)
+    }
+    OPTIONAL {
+      ?event wdt:P1813 ?short_names
+    }
+    OPTIONAL {
+      ?proceedings wdt:P4745 ?event
+    }
+    OPTIONAL{
+      ?event p:P179/pq:P1545 ?ordinal_
+    }
+  }
+  UNION
+  {
+    # proceedings even if the event is not there!!!
+    ?proceedings ( wdt:P179 / wdt:P4745 ) target: .
+    OPTIONAL {
+      ?proceedings wdt:P577 ?datetime .
+      BIND(YEAR(?datetime) AS ?years)    
+    }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+  }
+GROUP BY ?event ?year ?eventLabel ?proceedings ?proceedingsLabel
+ORDER BY DESC(?year)
+''';
+  scholia:aspect scholiaAspect:Event-series ;
+  rdfs:comment "Event-series aspect: List of event and proceedings for a specific event series"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/event-series_events.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

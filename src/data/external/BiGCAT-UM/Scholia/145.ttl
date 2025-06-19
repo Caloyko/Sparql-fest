@@ -1,0 +1,59 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:145 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#defaultView:Timeline{"hide": ["?end_time", "?start_time"]}
+
+PREFIX target: <http://www.wikidata.org/entity/Q27990087>
+
+SELECT DISTINCT ?start_time ?end_time ?description WHERE {
+  {  
+    target: (wdt:P571 | wdt:P580) ?start_time ;
+      (wdt:P576 | wdt:P582) ?end_time .
+    BIND("Project time" AS ?description)
+  } 
+  UNION 
+  {  
+    target: (^wdt:P1344 | wdt:P710)+ ?project .
+    ?project (wdt:P571 | wdt:P580) ?start_time ;
+             (wdt:P576 | wdt:P582) ?end_time .
+    ?project rdfs:label ?projectName .
+    FILTER (lang(?projectName) = "en")
+    BIND(?projectName AS ?description)
+  }   
+  UNION 
+  {
+    ?work wdt:P859/(wdt:P1344|^wdt:P710)* target: ;
+                wdt:P577 ?start_time .
+    BIND("Publication" AS ?description)
+  }
+  UNION
+  {
+    ?event wdt:P859 target: .
+    ?event wdt:P585 | wdt:P580 ?start_time .
+    BIND("📅 Sponsored event" AS ?description)
+  }
+}''';
+  scholia:aspect scholiaAspect:Project ;
+  scholia:defaultView scholiaView:Timeline ;
+  rdfs:comment "Project aspect: timeline"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/project_timeline.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

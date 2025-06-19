@@ -1,0 +1,21 @@
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/AOP-Wiki/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+ex:004 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "[fill out comment here]"@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX cheminf: <http://semanticscience.org/resource/CHEMINF_>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+SELECT ?CAS ?ChemicalName
+WHERE {
+ ?cas a cheminf:000000 ;
+ dc:title ?ChemicalName ;
+ cheminf:000446 ?CAS . 
+}""" ;
+    schema:target <https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/> ;
+    dc:contributor "Marvin Martens" .

@@ -1,0 +1,88 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:080 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Graph
+
+PREFIX target: <http://www.wikidata.org/entity/Q133457282>
+
+SELECT 
+  ?author1 ?author1Label (SAMPLE(?image1_) AS ?image1) ?rgb
+  ?author2 ?author2Label (SAMPLE(?image2_) AS ?image2)
+WITH {
+  SELECT
+    ?author1
+    (SAMPLE(?dark_rgb_) AS ?dark_rgb)
+    (SAMPLE(?light_rgb_) AS ?light_rgb)
+  WHERE {
+    # Find people at the event
+    { 
+      target: (wdt:P823 | wdt:P664 | ^wdt:P1344 | wdt:P710) ?author1 .
+      BIND ("EEEEEE" AS ?dark_rgb_)
+    }
+    UNION 
+    {
+      # author of article in proceedings, or program committee member
+      target:  (^wdt:P4745 / ^wdt:P1433 / wdt:P50) | wdt:P5804 ?author1 .
+      BIND ("FFFFFF" AS ?light_rgb_)
+    }
+    UNION
+    {
+      # author of article in proceedings, or program committee member
+      ?presentation wdt:P823 ?author1;
+      wdt:P5072 target:
+      BIND ("FFFFFF" AS ?light_rgb_)
+   }
+  }
+  GROUP BY ?author1
+} AS %authors
+WITH {
+  SELECT DISTINCT ?author1 ?author2 ?rgb WHERE {
+    INCLUDE %authors
+    {        
+    target: (wdt:P823 | wdt:P664 | ^wdt:P1344 | wdt:P710 | ^wdt:P4745 / ^wdt:P1433 / wdt:P50)  ?author2 .}
+    UNION
+    { ?presentation wdt:P823 ?author2; wdt:P5072 target:    }
+            
+    # Find co-authors
+    ?work wdt:P50 ?author1 , ?author2 .
+    FILTER (?author1 != ?author2)
+
+    BIND(COALESCE(?dark_rgb, ?light_rgb) AS ?rgb)
+  }
+} AS %result
+WHERE {
+  INCLUDE %result
+    
+  OPTIONAL { ?author1 wdt:P18 ?image1_ . }
+  OPTIONAL { ?author2 wdt:P18 ?image2_ . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" .
+  }
+}
+GROUP BY ?author1 ?author1Label ?rgb ?author2 ?author2Label  
+''';
+  scholia:aspect scholiaAspect:Event ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Event aspect: co authors"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/event_co-authors.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

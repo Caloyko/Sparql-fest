@@ -1,0 +1,70 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:204 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX target: <http://www.wikidata.org/entity/Q6294930>
+
+# title: Articles in a specific venue citing retracted articles
+SELECT DISTINCT
+  ?retracted_work ?retracted_workLabel
+  ?date
+  ?citing_work ?citing_workLabel
+WITH {
+  # Find retracted papers indicated by instance of retracted paper, 
+  # by retraction notice property or by significant event
+  SELECT DISTINCT ?retracted_work WHERE {
+    # articles marked as "retracted"
+    { ?retracted_work wdt:P31 wd:Q45182324 }
+    UNION
+    # articles linked to a retraction notice
+    { ?retracted_work wdt:P5824 [] }
+    UNION
+    # articles with a 'retraction' event
+    { ?retracted_work wdt:P793 wd:Q45203135 }
+  }
+} AS %retracted_works
+WHERE {
+  INCLUDE %retracted_works
+  ?citing_work wdt:P2860 ?retracted_work ; wdt:P1433 target: .
+  OPTIONAL {
+    ?retracted_work wdt:P5824 ?retraction .
+    ?retraction wdt:P577 ?retraction_datetime
+    FILTER ( ?citing_work != ?retraction )
+  }
+  MINUS { ?citing_work wdt:P31 wd:Q1348305 }
+  OPTIONAL {
+    ?retracted_work p:P793 [ ps:P793 wd:Q45203135 ; pq:P585 ?keyevent_datetime ]
+  }
+  BIND(COALESCE(xsd:date(COALESCE(?retraction_datetime, ?keyevent_datetime)), "Unknown date") AS ?date)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
+ORDER BY DESC(?date)
+''';
+  scholia:aspect scholiaAspect:Venue ;
+  rdfs:comment "Venue aspect: Articles in a specific venue citing retracted articles"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/venue_articles-citing-retracted-articles.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

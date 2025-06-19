@@ -1,0 +1,27 @@
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/ChEMBL/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:001 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "Show 100 small molecules with their chemical structure depicted from their SMILES representation and from their image from the database."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX chembl: <http://rdf.ebi.ac.uk/terms/chembl#>
+PREFIX cheminf: <http://semanticscience.org/resource/>
+PREFIX chembl_mol: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+Select ?identifier ?image ?smilesDepict where{
+  
+  ?s a chembl:SmallMolecule.
+  ?s chembl:chemblId ?identifier.
+  ?s foaf:depiction ?image.
+  ?s cheminf:SIO_000008 [ a cheminf:CHEMINF_000018; 
+                            cheminf:SIO_000300 ?smilesDepict].
+} LIMIT 100""" ;
+    schema:target <https://chemblmirror.rdf.bigcat-bioinformatics.org> , <https://idsm.elixir-czech.cz/sparql/endpoint/idsm> .
