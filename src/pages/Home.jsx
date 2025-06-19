@@ -32,6 +32,7 @@ const Home = () => {
       <WhySparql />
       <PrefixesSparql />
       <Contact />
+      {/** TODO: add next event section */}
     </div>
   )
 }

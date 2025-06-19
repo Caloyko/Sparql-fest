@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png'
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,6 +21,8 @@ const Footer = () => {
             { name: "SPARQL queries", href: "sparql-queries" },
             { name: "Contact", href: "/#contact" },
             { name: "Prefixes", href: "sparql-prefixes" },
+            { name: <span className="inline-flex items-center"><FaGithub className="mr-1 text-lg" />GitHub</span>, href: "https://github.com/Caloyko/Sparql-fest" },
+
           ].map((item, index) => (
             <Link
               key={index}
