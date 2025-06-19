@@ -1,0 +1,73 @@
+name: Add a new SPARQL query
+description: Submit a new SPARQL query in Sparql Fest
+title: "[Query] "
+labels: [query]
+body:
+  - type: input
+    id: query-name
+    attributes:
+      label: Name of the query
+      description: A short, descriptive title (3–8 words)
+      placeholder: (e.g. Find diseases with genetic causes in ORDO)
+    validations:
+      required: true
+
+  - type: textarea
+    id: query-description
+    attributes:
+      label: What does this query do?
+      description: Describe the objective of the query in a few lines or the instructions for reproducing it.
+      placeholder: (e.g. This query retrieves all diseases annotated with genetic causes from DOID.)
+    validations:
+      required: true
+
+  - type: textarea
+    id: query-context
+    attributes:
+      label: Is there a context for this query??
+      description: For example, if this query is related to research, a particular subject, a multi-step reasoning or other.
+      placeholder: (e.g. Used in the FERDO project to analyze mappings between genetic annotations.)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      description: How hard is it to write or understand this query?
+      options:
+        - Beginner - Level 0
+        - Intermediate - Level 1
+        - Advanced - Level 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: sparql-query
+    attributes:
+      label: SPARQL Query (with PREFIX)
+      description: Paste the full SPARQL query with all necessary PREFIX declarations.
+      placeholder: |
+        eg :
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+        SELECT ?disease ?label
+        WHERE {
+          ?disease a obo:ORDO_0000000 ;
+                   rdfs:label ?label .
+        }
+    validations:
+      required: true
+
+  - type: textarea
+    id: rdf-result
+    attributes:
+      label: Sample RDF Result (optional)
+      description: If you have any result, Provide a small example of expected RDF output (Turtle, RDF/XML or JSON-LD).
+  
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      description: Do you have any comments or information to give us?
