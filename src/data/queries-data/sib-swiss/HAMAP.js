@@ -3,8 +3,6 @@ export const HAMAP = [
     "name": "HAMAP - 1",
     "slug": "HAMAP_1",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all hamap rules",
     "context": null,
     "inidces": [],
@@ -22,14 +20,12 @@ export const HAMAP = [
       "WHERE",
       "STR"
     ],
-    "category": "sib-swiss HAMAP"
+    "category": "undefined HAMAP"
   },
   {
     "name": "HAMAP - 3",
     "slug": "HAMAP_3",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all hamap rules that deal with Catalytic Activity",
     "context": null,
     "inidces": [],
@@ -49,14 +45,12 @@ export const HAMAP = [
       "STR",
       "CONTAINS"
     ],
-    "category": "sib-swiss HAMAP"
+    "category": "undefined HAMAP"
   },
   {
     "name": "HAMAP - 4",
     "slug": "HAMAP_4",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all hamap rules that annotate a Rhea reaction with an EC enzyme class",
     "context": null,
     "inidces": [],
@@ -74,6 +68,6 @@ export const HAMAP = [
       "ADD",
       "STR"
     ],
-    "category": "sib-swiss HAMAP"
+    "category": "undefined HAMAP"
   }
 ];

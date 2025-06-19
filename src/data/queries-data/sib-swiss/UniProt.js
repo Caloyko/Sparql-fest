@@ -3,8 +3,6 @@ export const UniProt = [
     "name": "UniProt - 100 uniprot organelles or plasmids",
     "slug": "UniProt_100_uniprot_organelles_or_plasmids",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List the proteins encoded by a gene that is located in an organelle other than the nucleus, or on a plasmid rather than a chromosome. In these cases the gene location is stored with encodedIn properties. Note that if a plasmid has several names, they are listed as multiple <em>rdfs:label</em> properties.",
     "context": null,
     "inidces": [],
@@ -21,14 +19,12 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 101 uniprot potential isoforms",
     "slug": "UniProt_101_uniprot_potential_isoforms",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all human UniProtKB entries and their computationaly mapped potential isoforms.",
     "context": null,
     "inidces": [],
@@ -46,14 +42,12 @@ export const UniProt = [
       "GRAPH",
       "ALL"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 102 uniprot primary accession",
     "slug": "UniProt_102_uniprot_primary_accession",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Extracting an UniProtKB primary accession from our IRIs. Is done with a bit of string manipulation. While UniProt primary accession are unique within UniProtKB they may be reused by accident or itentionally by other data sources. If we provided them as strings (not IRI) and if you used them in a query that way, you might accidentaly retrieve completely wrong records.",
     "context": null,
     "inidces": [],
@@ -72,14 +66,12 @@ export const UniProt = [
       "STRLEN",
       "SUBSTR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 103 uniprot proteome location of gene",
     "slug": "UniProt_103_uniprot_proteome_location_of_gene",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List UniProtKB proteins with genetic replicon that they are encoded on using the Proteome data.",
     "context": null,
     "inidces": [],
@@ -97,14 +89,12 @@ export const UniProt = [
       "DISTINCT",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 104 uniprot recomended protein full name",
     "slug": "UniProt_104_uniprot_recomended_protein_full_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "The recommended protein full names for UniProtKB entries",
     "context": null,
     "inidces": [],
@@ -119,14 +109,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 105 uniprot recomended protein short name",
     "slug": "UniProt_105_uniprot_recomended_protein_short_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "The recommended protein short names for UniProtKB entries",
     "context": null,
     "inidces": [],
@@ -141,14 +129,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 106 uniprot reviewed or not",
     "slug": "UniProt_106_uniprot_reviewed_or_not",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB proteins and if they are reviewed (Swiss-Prot) or unreviewed (TrEMBL)",
     "context": null,
     "inidces": [],
@@ -163,14 +149,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 107 uniprot sequences and mark which is cannonical for human",
     "slug": "UniProt_107_uniprot_sequences_and_mark_which_is_cannonical_for_human",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all human UniProtKB entries and their sequences, marking if the sequence listed is the cannonical sequence of the matching entry.",
     "context": null,
     "inidces": [],
@@ -195,14 +179,12 @@ export const UniProt = [
       "SUBSTR",
       "STRENDS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 108 uniprot signature match start end",
     "slug": "UniProt_108_uniprot_signature_match_start_end",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all InterPro member database signature match start and end for a specific UniProtKB protein.",
     "context": null,
     "inidces": [],
@@ -219,14 +201,12 @@ export const UniProt = [
       "GRAPH",
       "VALUES"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 109 uniprot transporter in liver",
     "slug": "UniProt_109_uniprot_transporter_in_liver",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find human transporter proteins in reviewed UniProtKB/Swiss-Prot, that are expressed in the liver (Uses Bgee and UBERON).",
     "context": null,
     "inidces": [],
@@ -246,14 +226,12 @@ export const UniProt = [
       "SERVICE",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 10 human variant leading to transposition of tyrosine to phenylalanine",
     "slug": "UniProt_10_human_variant_leading_to_transposition_of_tyrosine_to_phenylalanine",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all human UniProtKB entries with a sequence variant that leads to a tyrosine to phenylalanine substitution",
     "context": null,
     "inidces": [],
@@ -272,14 +250,12 @@ export const UniProt = [
       "STR",
       "SUBSTR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 110 uniprot unamed plasmids",
     "slug": "UniProt_110_uniprot_unamed_plasmids",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Sometimes it is known that a gene encoding a protein UniProtKB is located on a plasmid or an organelle, but the name of the plasmid is unknown.",
     "context": null,
     "inidces": [],
@@ -295,14 +271,12 @@ export const UniProt = [
       "WHERE",
       "OPTIONAL"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 111 uniprot make chain sequence fasta",
     "slug": "UniProt_111_uniprot_make_chain_sequence_fasta",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Given an UniProt chain identifier, generate the matching sequence as a FASTA",
     "context": null,
     "inidces": [],
@@ -322,14 +296,12 @@ export const UniProt = [
       "CONCAT",
       "SUBSTR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 112 count human transporters",
     "slug": "UniProt_112_count_human_transporters",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Count the number of Human Transporter Proteins",
     "context": null,
     "inidces": [],
@@ -348,14 +320,12 @@ export const UniProt = [
       "STR",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 113 UniProtKB Swiss-Prot entries annotated with CC-CA Rhea involving lipids",
     "slug": "UniProt_113_UniProtKB_Swiss-Prot_entries_annotated_with_CC-CA_Rhea_involving_lipids",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "UniProtKB/Swiss-Prot entries annotated with CC-CA/Rhea involving lipids",
     "context": null,
     "inidces": [],
@@ -377,14 +347,12 @@ export const UniProt = [
       "CONTAINS",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 114 Number of EC numbers described at protein domain and component levels",
     "slug": "UniProt_114_Number_of_EC_numbers_described_at_protein_domain_and_component_levels",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -403,14 +371,12 @@ export const UniProt = [
       "BOUND",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 115 Number of complete EC numbers described at protein level at domain levels at component level",
     "slug": "UniProt_115_Number_of_complete_EC_numbers_described_at_protein_level_at_domain_levels_at_component_level",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -427,14 +393,12 @@ export const UniProt = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 116 biosodafrontend rabit mouse orthologs",
     "slug": "UniProt_116_biosodafrontend_rabit_mouse_orthologs",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Rabbit's proteins encoded by genes that are orthologous to Mouse's HBB-Y gene and their cross reference links to Uniprot",
     "context": null,
     "inidces": [],
@@ -452,14 +416,12 @@ export const UniProt = [
       "SERVICE",
       "DISTINCT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 117 biosodafrontend glioblastoma orthologs rat",
     "slug": "UniProt_117_biosodafrontend_glioblastoma_orthologs_rat",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Which are the proteins associated with glioblastoma and the orthologs expressed in the rat brain?",
     "context": null,
     "inidces": [],
@@ -478,14 +440,12 @@ export const UniProt = [
       "DISTINCT",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 118 biosodafrontend rat brain human cancer",
     "slug": "UniProt_118_biosodafrontend_rat_brain_human_cancer",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "What are the Homo sapiens genes associated with cancer and their orthologs expressed in the Rattus norvegicus brain?",
     "context": null,
     "inidces": [],
@@ -504,14 +464,12 @@ export const UniProt = [
       "IF",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 119 uniref distinct ec in seed",
     "slug": "UniProt_119_uniref_distinct_ec_in_seed",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Distinct Enzymes in UniRef50 seed entries",
     "context": null,
     "inidces": [],
@@ -529,14 +487,12 @@ export const UniProt = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 11 entries with transmem on cannonical sequence",
     "slug": "UniProt_11_entries_with_transmem_on_cannonical_sequence",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all UniProtKB entries with annotated transmembrane regions and the regions' begin and end coordinates on the canonical sequence",
     "context": null,
     "inidces": [],
@@ -551,14 +507,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 120 for taxon find reference proteomes",
     "slug": "UniProt_120_for_taxon_find_reference_proteomes",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "For a ncbi taxon identifier as a digit find it's reference proteome(s) if they exist",
     "context": null,
     "inidces": [],
@@ -580,14 +534,12 @@ export const UniProt = [
       "IF",
       "CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 121 proteins and diseases linked",
     "slug": "UniProt_121_proteins_and_diseases_linked",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB proteins and the diseases are annotated to be related.",
     "context": null,
     "inidces": [],
@@ -604,14 +556,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 122 enzymes transporting lipids in reviewed human",
     "slug": "UniProt_122_enzymes_transporting_lipids_in_reviewed_human",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB SwissProt entries, facilitation the transport of lipids.",
     "context": null,
     "inidces": [],
@@ -633,14 +583,12 @@ export const UniProt = [
       "STR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 12 entries integrated on date",
     "slug": "UniProt_12_entries_integrated_on_date",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all UniProtKB entries that were integrated on the 30th of November 2010",
     "context": null,
     "inidces": [],
@@ -656,14 +604,34 @@ export const UniProt = [
       "WHERE",
       "CREATE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
+  },
+  {
+    "name": "UniProt - 16 triples about species human in taxonomy graph",
+    "slug": "UniProt_16_triples_about_species_human_in_taxonomy_graph",
+    "date": "18-06-2025",
+    "description": "Select all triples that relate to the taxon that describes <i>Homo sapiens</i> in the named graph for <a href=\\",
+    "context": null,
+    "inidces": [],
+    "query": "PREFIX taxon: <http://purl.uniprot.org/taxonomy/>\n\nDESCRIBE taxon:9606 \nFROM <http://sparql.uniprot.org/taxonomy>",
+    "ontologies": [
+      "EX",
+      "RDF",
+      "RDFS",
+      "SCHEMA",
+      "SH",
+      "SPEX"
+    ],
+    "sparqlConcepts": [
+      "DESCRIBE",
+      "FROM"
+    ],
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 17 average count to PDB",
     "slug": "UniProt_17_average_count_to_PDB",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the average number of cross-references to the <a href=\\",
     "context": null,
     "inidces": [],
@@ -684,14 +652,12 @@ export const UniProt = [
       "COUNT",
       "AVG"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 18 top level ec classification group by count",
     "slug": "UniProt_18_top_level_ec_classification_group_by_count",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the number of UniProtKB entries for each of the EC (Enzyme Commission) top level categories",
     "context": null,
     "inidces": [],
@@ -710,14 +676,12 @@ export const UniProt = [
       "ORDER BY",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 19 natural variants associated with pubmed id",
     "slug": "UniProt_19_natural_variants_associated_with_pubmed_id",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all natural variant annotations if associated via an evidence tag to an article with a PubMed identifier",
     "context": null,
     "inidces": [],
@@ -737,14 +701,12 @@ export const UniProt = [
       "SUBSTR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 1 select all taxa used in uniprot",
     "slug": "UniProt_1_select_all_taxa_used_in_uniprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all taxa from the <a href=\\",
     "context": null,
     "inidces": [],
@@ -761,14 +723,12 @@ export const UniProt = [
       "WHERE",
       "FROM"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 20 how often citation used in evidence tag",
     "slug": "UniProt_20_how_often_citation_used_in_evidence_tag",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find how often an article in PubMed was used in an evidence tag in a human protein (ordered by most used to least)",
     "context": null,
     "inidces": [],
@@ -786,14 +746,12 @@ export const UniProt = [
       "ORDER BY",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 21 where are genetic disease related proteins in a cell",
     "slug": "UniProt_21_where_are_genetic_disease_related_proteins_in_a_cell",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find where disease related proteins are known to be located in the cell",
     "context": null,
     "inidces": [],
@@ -808,14 +766,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 22 go term labels per go category for multiple proteins",
     "slug": "UniProt_22_go_term_labels_per_go_category_for_multiple_proteins",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "For two accession numbers (ACs) find the GO term labels and group them into GO process,function and component",
     "context": null,
     "inidces": [],
@@ -844,14 +800,12 @@ export const UniProt = [
       "MIN",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 23 human proteins related to kinase activity",
     "slug": "UniProt_23_human_proteins_related_to_kinase_activity",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Number of reviewed entries (UniProtKB/Swiss-Prot) that are related to <a href=\\",
     "context": null,
     "inidces": [],
@@ -870,14 +824,12 @@ export const UniProt = [
       "IF",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 24 uniprot release in endpoint",
     "slug": "UniProt_24_uniprot_release_in_endpoint",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the release number of the UniProt data that is currently being queried",
     "context": null,
     "inidces": [],
@@ -894,14 +846,12 @@ export const UniProt = [
       "FROM",
       "NOW"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 25 protein name of any kind with value",
     "slug": "UniProt_25_protein_name_of_any_kind_with_value",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB entry which has a protein name 'HLA class I histocompatibility antigen, B-73 alpha chain'",
     "context": null,
     "inidces": [],
@@ -917,14 +867,12 @@ export const UniProt = [
       "WHERE",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 26 component HLA class I histocompatibility domain",
     "slug": "UniProt_26_component_HLA_class_I_histocompatibility_domain",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB entry, or an UniProtKB entries domain or component which has a name 'HLA class I histocompatibility antigen, B-73 alpha chain'",
     "context": null,
     "inidces": [],
@@ -940,14 +888,12 @@ export const UniProt = [
       "WHERE",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 27 all names of protein",
     "slug": "UniProt_27_all_names_of_protein",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all names associated with UniProtKB entry P05067, and if the name is associated with the entry it's domains or its components",
     "context": null,
     "inidces": [],
@@ -966,14 +912,12 @@ export const UniProt = [
       "VALUES",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 28 all entries encoded on chromosome of proteome",
     "slug": "UniProt_28_all_entries_encoded_on_chromosome_of_proteome",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Get the list of UniProtKB entries for the chromosome of proteome <a href=\\",
     "context": null,
     "inidces": [],
@@ -990,14 +934,12 @@ export const UniProt = [
       "WHERE",
       "VALUES"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 29 search uniprot in japanese with allie",
     "slug": "UniProt_29_search_uniprot_in_japanese_with_allie",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Use <a href=\\",
     "context": null,
     "inidces": [],
@@ -1021,14 +963,12 @@ export const UniProt = [
       "STR",
       "LANG"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 2 bacteria taxa and their scientific name",
     "slug": "UniProt_2_bacteria_taxa_and_their_scientific_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all bacterial taxa and their scientific name from the <a href=\\",
     "context": null,
     "inidces": [],
@@ -1045,14 +985,12 @@ export const UniProt = [
       "WHERE",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 30 merged loci",
     "slug": "UniProt_30_merged_loci",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB entries with merged loci in <a href=\\",
     "context": null,
     "inidces": [],
@@ -1073,14 +1011,12 @@ export const UniProt = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 31 uniparc record with most subentries",
     "slug": "UniProt_31_uniparc_record_with_most_subentries",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniParc records whose sequence point to the most database entries",
     "context": null,
     "inidces": [],
@@ -1099,14 +1035,12 @@ export const UniProt = [
       "ORDER BY",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 32 uniprot with more than x topodom",
     "slug": "UniProt_32_uniprot_with_more_than_x_topodom",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB entries with more than 1 <a href=\\",
     "context": null,
     "inidces": [],
@@ -1127,14 +1061,12 @@ export const UniProt = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 33 longest variant comment",
     "slug": "UniProt_33_longest_variant_comment",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find longest comment text associated with a UniProtKB natural variant annotation",
     "context": null,
     "inidces": [],
@@ -1152,14 +1084,12 @@ export const UniProt = [
       "STR",
       "STRLEN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 34 cooccurence count of topodom",
     "slug": "UniProt_34_cooccurence_count_of_topodom",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the co-occurence count of topological domain comment text in UniProtKB entries",
     "context": null,
     "inidces": [],
@@ -1182,14 +1112,12 @@ export const UniProt = [
       "CONTAINS",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 35 similar proteins via uniref clusters",
     "slug": "UniProt_35_similar_proteins_via_uniref_clusters",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the similar proteins for UniProtKB entry P05067 sorted by UniRef cluster identity",
     "context": null,
     "inidces": [],
@@ -1209,14 +1137,12 @@ export const UniProt = [
       "FROM",
       "SAMETERM"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 36 orthologous proteins via orthodb",
     "slug": "UniProt_36_orthologous_proteins_via_orthodb",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the orthologous proteins for UniProtKB entry P05067 using the <a href=\\",
     "context": null,
     "inidces": [],
@@ -1238,14 +1164,12 @@ export const UniProt = [
       "IF",
       "STRLEN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 37 Epitope VSTQ where T is a phosporylated threonine",
     "slug": "UniProt_37_Epitope_VSTQ_where_T_is_a_phosporylated_threonine",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the human protein which contains an epitope VSTQ, where T is a phosphorylated threonine",
     "context": null,
     "inidces": [],
@@ -1265,14 +1189,12 @@ export const UniProt = [
       "SUBSTR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 38 find gene region in wikidata for known entry",
     "slug": "UniProt_38_find_gene_region_in_wikidata_for_known_entry",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "For the human entry P05067 (Amyloid-beta precursor protein) find the gene start ends in WikiData",
     "context": null,
     "inidces": [],
@@ -1296,14 +1218,12 @@ export const UniProt = [
       "STRLEN",
       "SUBSTR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 39 experimental catalytic activities in swissprot",
     "slug": "UniProt_39_experimental_catalytic_activities_in_swissprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve entries and catalytic activities in the reviewed (UniProtKB/Swiss-Prot) section that have experimental evidences,",
     "context": null,
     "inidces": [],
@@ -1320,14 +1240,12 @@ export const UniProt = [
       "GRAPH",
       "BIND"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 3 entry sequences organism",
     "slug": "UniProt_3_entry_sequences_organism",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all UniProtKB entries, and their organism and amino acid sequences (including isoforms), for <a href=\\",
     "context": null,
     "inidces": [],
@@ -1342,14 +1260,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 40 human enzymes that metabolize sphingolipids",
     "slug": "UniProt_40_human_enzymes_that_metabolize_sphingolipids",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve human enzymes that metabolize sphingolipids and are annotated in ChEMBL",
     "context": null,
     "inidces": [],
@@ -1367,14 +1283,12 @@ export const UniProt = [
       "DISTINCT",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 41 fragmented sequences",
     "slug": "UniProt_41_fragmented_sequences",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve UniProtKB entries with sequences that are composed of fragments",
     "context": null,
     "inidces": [],
@@ -1392,14 +1306,12 @@ export const UniProt = [
       "DISTINCT",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 42 connect patents to epo",
     "slug": "UniProt_42_connect_patents_to_epo",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Connect patents cited in UniProtKB with those in the patent database at EPO via publication number.",
     "context": null,
     "inidces": [],
@@ -1420,14 +1332,12 @@ export const UniProt = [
       "SUBSTR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 43 patents used in uniprot granted twenty years in the past",
     "slug": "UniProt_43_patents_used_in_uniprot_granted_twenty_years_in_the_past",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Connect patents cited in UniProtKB with those in the patent database at EPO via publication number, whose grant date is more than twenty years in the past.",
     "context": null,
     "inidces": [],
@@ -1453,14 +1363,12 @@ export const UniProt = [
       "COUNT",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 44 rhea interpro union in uniprot",
     "slug": "UniProt_44_rhea_interpro_union_in_uniprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the Rhea and InterPro combinations in UniProtKB entries.",
     "context": null,
     "inidces": [],
@@ -1477,14 +1385,12 @@ export const UniProt = [
       "ORDER BY",
       "FROM"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 45 drugs targeting human sterol metabolism enzymes",
     "slug": "UniProt_45_drugs_targeting_human_sterol_metabolism_enzymes",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve drugs that target human enzymes involved in sterol metabolism (federated query with WikiData and Rhea).",
     "context": null,
     "inidces": [],
@@ -1514,14 +1420,12 @@ export const UniProt = [
       "SUBSTR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 46 duck pictures via eepa and taxonomy",
     "slug": "UniProt_46_duck_pictures_via_eepa_and_taxonomy",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve images of 'Anas' (Ducks) from the European Environmental Agency databases (federated query).",
     "context": null,
     "inidces": [],
@@ -1540,14 +1444,12 @@ export const UniProt = [
       "SERVICE",
       "STR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 47 protein with transmembrane region with close by alanine",
     "slug": "UniProt_47_protein_with_transmembrane_region_with_close_by_alanine",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB entries with a transmembrane region, with an alanine in the 15 amino acid region preceding the transmembrane",
     "context": null,
     "inidces": [],
@@ -1570,14 +1472,12 @@ export const UniProt = [
       "CONTAINS",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 48 glycosylation sites and glycans",
     "slug": "UniProt_48_glycosylation_sites_and_glycans",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve glycosylation sites and glycans on human enzymes (federated with Glyconnect)",
     "context": null,
     "inidces": [],
@@ -1596,14 +1496,12 @@ export const UniProt = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 49 tissues where genes metabolizing cholestrol are expressed",
     "slug": "UniProt_49_tissues_where_genes_metabolizing_cholestrol_are_expressed",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve the UniProtKB proteins, their catalyzed Rhea reactions, their encoding genes (Ensembl) and the anatomic entities where the genes are expressed (UBERON anatomic entites from Bgee expression data resource).",
     "context": null,
     "inidces": [],
@@ -1626,14 +1524,12 @@ export const UniProt = [
       "CONTAINS",
       "REPLACE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 4 uniprot mnemonic id",
     "slug": "UniProt_4_uniprot_mnemonic_id",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the UniProtKB entry with the <a href=\\",
     "context": null,
     "inidces": [],
@@ -1649,14 +1545,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 50 tissues where genes sphingosines are expressed",
     "slug": "UniProt_50_tissues_where_genes_sphingosines_are_expressed",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -1675,14 +1569,12 @@ export const UniProt = [
       "FROM",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 51 all proteins linked to arachidonate",
     "slug": "UniProt_51_all_proteins_linked_to_arachidonate",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all proteins linked to arachidonate (CHEBI:32395)",
     "context": null,
     "inidces": [],
@@ -1702,14 +1594,12 @@ export const UniProt = [
       "DISTINCT",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 52 drugs targeting sterol metabolism",
     "slug": "UniProt_52_drugs_targeting_sterol_metabolism",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve drugs that target human enzymes involved in sterol metabolism (federated query with Rhea and ChEMBL via IDSM/Elixir czech republic).",
     "context": null,
     "inidces": [],
@@ -1733,14 +1623,12 @@ export const UniProt = [
       "STR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 53 mouse homologs of sterol enzymes via omabrowser",
     "slug": "UniProt_53_mouse_homologs_of_sterol_enzymes_via_omabrowser",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find mouse homologs in OMABrowser of human enzymes that catalyze reactions involving sterols (CHEBI:15889). Federating with Rhea and OMABrowser.",
     "context": null,
     "inidces": [],
@@ -1758,14 +1646,12 @@ export const UniProt = [
       "DISTINCT",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 54 binding sites for ligands similar to heme sachem",
     "slug": "UniProt_54_binding_sites_for_ligands_similar_to_heme_sachem",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Proteins with binding sites for ligands similar to heme",
     "context": null,
     "inidces": [],
@@ -1783,14 +1669,12 @@ export const UniProt = [
       "SERVICE",
       "ORDER BY"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 55 metal or sulphur cluster binding sites experimental",
     "slug": "UniProt_55_metal_or_sulphur_cluster_binding_sites_experimental",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Number of proteins with binding sites for metals or metal sulfur clusters (and experimental evidence for the binding)",
     "context": null,
     "inidces": [],
@@ -1810,14 +1694,12 @@ export const UniProt = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 56 enzymes that have a known allosteric effect",
     "slug": "UniProt_56_enzymes_that_have_a_known_allosteric_effect",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select enzymes that have ligands known to have an allosteric effect",
     "context": null,
     "inidces": [],
@@ -1836,14 +1718,12 @@ export const UniProt = [
       "ALL",
       "REGEX"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 57 map pdb identifiers plus chains to uniprot",
     "slug": "UniProt_57_map_pdb_identifiers_plus_chains_to_uniprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Map a selection of PDB identifiers plus chains to UniProtKB",
     "context": null,
     "inidces": [],
@@ -1867,14 +1747,12 @@ export const UniProt = [
       "CONCAT",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 58 uniprot to HGNC and symbols",
     "slug": "UniProt_58_uniprot_to_HGNC_and_symbols",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Map a selection of UniProtKB accession numbers (ACs) to HGNC identifiers and symbols",
     "context": null,
     "inidces": [],
@@ -1894,14 +1772,12 @@ export const UniProt = [
       "IRI",
       "CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 59 all isoforms for a given proteome",
     "slug": "UniProt_59_all_isoforms_for_a_given_proteome",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Count all isoforms for a given proteome",
     "context": null,
     "inidces": [],
@@ -1919,14 +1795,12 @@ export const UniProt = [
       "ALL",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 5 mapping to PDB",
     "slug": "UniProt_5_mapping_to_PDB",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select a mapping of UniProtKB to PDB entries using the UniProtKB cross-references to the <a href=\\",
     "context": null,
     "inidces": [],
@@ -1941,14 +1815,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 60 enzymes working on substrate with Cholestene backbone",
     "slug": "UniProt_60_enzymes_working_on_substrate_with_Cholestene_backbone",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find human proteins that catalyze reactions where substrates or product have a <a href=\\",
     "context": null,
     "inidces": [],
@@ -1972,14 +1844,12 @@ export const UniProt = [
       "SUBSTR",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 61 Gene Protein Reaction sets",
     "slug": "UniProt_61_Gene_Protein_Reaction_sets",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the Gene Protein Reaction sets for Human (Ensembl Gene, Human UniProtKB, Catalyzed Rhea reactions)",
     "context": null,
     "inidces": [],
@@ -1996,14 +1866,12 @@ export const UniProt = [
       "DISTINCT",
       "FROM"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 62 diseases involving enzymes",
     "slug": "UniProt_62_diseases_involving_enzymes",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find diseases that are thought to be related to enzymes",
     "context": null,
     "inidces": [],
@@ -2018,14 +1886,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 63 diseases involving enzymes located in mitochondrion",
     "slug": "UniProt_63_diseases_involving_enzymes_located_in_mitochondrion",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find (Human genetic) diseases that are thought to be related to Enzymes, known to be located in the Mitochondrion",
     "context": null,
     "inidces": [],
@@ -2042,14 +1908,12 @@ export const UniProt = [
       "UNION",
       "DISTINCT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 64 diseases related to mutation in active site",
     "slug": "UniProt_64_diseases_related_to_mutation_in_active_site",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find (Human Genetic) diseases, that are related to a natural variant on the active site of an enzyme.",
     "context": null,
     "inidces": [],
@@ -2067,14 +1931,12 @@ export const UniProt = [
       "UNION",
       "DISTINCT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 65 distinct extinct organisms in uniprotkb",
     "slug": "UniProt_65_distinct_extinct_organisms_in_uniprotkb",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "How many distinct extinct organisms are represented in UniProtKB",
     "context": null,
     "inidces": [],
@@ -2097,14 +1959,12 @@ export const UniProt = [
       "COUNT",
       "SAMPLE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 66 distinct rhea transport in reviewed uniprot",
     "slug": "UniProt_66_distinct_rhea_transport_in_reviewed_uniprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Count number of unique Rhea transport reactions annotated in reviewed UniProtKB entries.",
     "context": null,
     "inidces": [],
@@ -2124,14 +1984,12 @@ export const UniProt = [
       "STR",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 67 draft human metabolome",
     "slug": "UniProt_67_draft_human_metabolome",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Generate a draft human metabolome",
     "context": null,
     "inidces": [],
@@ -2148,14 +2006,12 @@ export const UniProt = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 68 drosophila enzymes derived from at least two mRNAs",
     "slug": "UniProt_68_drosophila_enzymes_derived_from_at_least_two_mRNAs",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find Drosophila enzymes, that depend on more than one transcript (requires cross-references to Ensembl family of resources).",
     "context": null,
     "inidces": [],
@@ -2174,14 +2030,12 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 69 drosophila proteins derived from at least two mRNAs",
     "slug": "UniProt_69_drosophila_proteins_derived_from_at_least_two_mRNAs",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find Drosophila proteins, that depend on more than one transcript (requires cross-references to Ensembl family of resources).",
     "context": null,
     "inidces": [],
@@ -2199,14 +2053,12 @@ export const UniProt = [
       "HAVING",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 6 cross ref in category 3D",
     "slug": "UniProt_6_cross_ref_in_category_3D",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all cross-references to external databases of the category <a href=\\",
     "context": null,
     "inidces": [],
@@ -2226,14 +2078,12 @@ export const UniProt = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 70 enzymes interacting with molecules similar to dopamine",
     "slug": "UniProt_70_enzymes_interacting_with_molecules_similar_to_dopamine",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Look for enzymes catalyzing reactions with molecules similar to dopamine.",
     "context": null,
     "inidces": [],
@@ -2252,14 +2102,12 @@ export const UniProt = [
       "CONTAINS",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 71 enzymes interacting with molecules similar to dopamine with variants related to disease",
     "slug": "UniProt_71_enzymes_interacting_with_molecules_similar_to_dopamine_with_variants_related_to_disease",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Look for enzymes catalyzing reactions with molecules similar to dopamine, with natural variants related to a disease.",
     "context": null,
     "inidces": [],
@@ -2278,14 +2126,12 @@ export const UniProt = [
       "CONTAINS",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 72 enzymes mapping to PDB",
     "slug": "UniProt_72_enzymes_mapping_to_PDB",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -2302,14 +2148,12 @@ export const UniProt = [
       "WHERE",
       "UNION"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 73 enzymes related to protein",
     "slug": "UniProt_73_enzymes_related_to_protein",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -2327,14 +2171,12 @@ export const UniProt = [
       "UNION",
       "DISTINCT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 74 enzymes with at least two transmembrane domains",
     "slug": "UniProt_74_enzymes_with_at_least_two_transmembrane_domains",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find Hydrolases (enzymes that catalyse the hydrolysis of various bonds) that have at least two transmembrane domains",
     "context": null,
     "inidces": [],
@@ -2353,14 +2195,12 @@ export const UniProt = [
       "DISTINCT",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 75 enzymes with at least two transmembrane domains PDB xray",
     "slug": "UniProt_75_enzymes_with_at_least_two_transmembrane_domains_PDB_xray",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find enzymes that have at least two transmembrane domains, whose 3D structure is elucidated through X-Ray analysis",
     "context": null,
     "inidces": [],
@@ -2382,14 +2222,12 @@ export const UniProt = [
       "ALL",
       "COUNT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 76 enzymes with mutagenesis affecting active site",
     "slug": "UniProt_76_enzymes_with_mutagenesis_affecting_active_site",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find enzymes, where the active site is a region affected by mutagenesis and show the comment regarding mutagenesis effect.",
     "context": null,
     "inidces": [],
@@ -2405,14 +2243,12 @@ export const UniProt = [
       "WHERE",
       "FILTER"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 77 enzymes with tyrosine as active site",
     "slug": "UniProt_77_enzymes_with_tyrosine_as_active_site",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find enzymes with a Tyrosine (Y) as an active site",
     "context": null,
     "inidces": [],
@@ -2430,14 +2266,12 @@ export const UniProt = [
       "STR",
       "SUBSTR"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 78 genetic disease related proteins",
     "slug": "UniProt_78_genetic_disease_related_proteins",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB proteins annotated to be related to a genetic disease.",
     "context": null,
     "inidces": [],
@@ -2454,14 +2288,12 @@ export const UniProt = [
       "OPTIONAL",
       "GRAPH"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 79 mnemonic also known as id",
     "slug": "UniProt_79_mnemonic_also_known_as_id",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB protein ID (mnemonic) for current UniProtKB entries.",
     "context": null,
     "inidces": [],
@@ -2477,14 +2309,12 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 7 swissprot with rec protein name if pref gene name contains word DNA",
     "slug": "UniProt_7_swissprot_with_rec_protein_name_if_pref_gene_name_contains_word_DNA",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select reviewed UniProtKB entries (Swiss-Prot), and their recommended protein name, that have a preferred gene name that contains the text 'DNA'",
     "context": null,
     "inidces": [],
@@ -2501,14 +2331,12 @@ export const UniProt = [
       "FILTER",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 80 obsolete mnemonic also known as id",
     "slug": "UniProt_80_obsolete_mnemonic_also_known_as_id",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all UniProtKB protein ID (mnemonic) that where used in the past for current UniProtKB entries.",
     "context": null,
     "inidces": [],
@@ -2524,14 +2352,12 @@ export const UniProt = [
       "WHERE",
       "GRAPH"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 81 rhea reactions annotated as experimental and only small molecules",
     "slug": "UniProt_81_rhea_reactions_annotated_as_experimental_and_only_small_molecules",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all Rhea (only small molecule) that are used in UniProtKB where the annotation has a paper and is tagged having experimental evidence.",
     "context": null,
     "inidces": [],
@@ -2556,14 +2382,12 @@ export const UniProt = [
       "CONTAINS",
       "SUM"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 82 rhea reactions associated with ec in uniprotkb",
     "slug": "UniProt_82_rhea_reactions_associated_with_ec_in_uniprotkb",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List <a href=\\",
     "context": null,
     "inidces": [],
@@ -2579,14 +2403,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 83 rhea reactions not associated with ec in uniprotkb",
     "slug": "UniProt_83_rhea_reactions_not_associated_with_ec_in_uniprotkb",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List <a href=\\",
     "context": null,
     "inidces": [],
@@ -2604,14 +2426,12 @@ export const UniProt = [
       "MINUS",
       "MIN"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 84 taxonomy hierarchy",
     "slug": "UniProt_84_taxonomy_hierarchy",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all taxonomic records that describe species of the genus <a href=\\",
     "context": null,
     "inidces": [],
@@ -2628,14 +2448,12 @@ export const UniProt = [
       "WHERE",
       "BIND"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 85 taxonomy host",
     "slug": "UniProt_85_taxonomy_host",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find taxon records that are known to have part of their life cycle in other organisms (e.g. parasite, symbiont, infection)",
     "context": null,
     "inidces": [],
@@ -2651,14 +2469,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 86 taxonomy rank and scientific name",
     "slug": "UniProt_86_taxonomy_rank_and_scientific_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Retrieve the rank and the scientific name of an taxonomic record. Not all taxonomic records have a <a href=\\",
     "context": null,
     "inidces": [],
@@ -2676,14 +2492,12 @@ export const UniProt = [
       "OPTIONAL",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 87 taxonomy with at least one swissprot",
     "slug": "UniProt_87_taxonomy_with_at_least_one_swissprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find taxon records for which one reviewed UniProtKB/Swiss-Prot entry exists. We might expect species, strains, subspecies and isolates in the taxon list.",
     "context": null,
     "inidces": [],
@@ -2702,14 +2516,12 @@ export const UniProt = [
       "DISTINCT",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 88 uniparc linked to active uniprot",
     "slug": "UniProt_88_uniparc_linked_to_active_uniprot",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Show for a given UniParc accessions which active UniProtKB entries have the same amino acid sequence",
     "context": null,
     "inidces": [],
@@ -2726,14 +2538,12 @@ export const UniProt = [
       "GRAPH",
       "BIND"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 89 uniparc triples directly associated",
     "slug": "UniProt_89_uniparc_triples_directly_associated",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Predicates and objects, for a given UniParc accession as a subject",
     "context": null,
     "inidces": [],
@@ -2748,14 +2558,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 8 prefered gene name of human disease related proteins",
     "slug": "UniProt_8_prefered_gene_name_of_human_disease_related_proteins",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the preferred gene name and disease annotation of all human UniProtKB entries that are known to be involved in a disease",
     "context": null,
     "inidces": [],
@@ -2770,14 +2578,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 90 uniprot affected by metabolic diseases using MeSH",
     "slug": "UniProt_90_uniprot_affected_by_metabolic_diseases_using_MeSH",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find UniProtKB proteins involved in metabolic diseases using the MeSH concept for 'Metabolic Diseases'.",
     "context": null,
     "inidces": [],
@@ -2794,14 +2600,12 @@ export const UniProt = [
       "GRAPH",
       "SERVICE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 91 uniprot alternative protein full name",
     "slug": "UniProt_91_uniprot_alternative_protein_full_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Alternative protein full names for UniProtKB entries",
     "context": null,
     "inidces": [],
@@ -2816,14 +2620,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 92 uniprot bioregistry iri translation",
     "slug": "UniProt_92_uniprot_bioregistry_iri_translation",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Translate the global unique identifier for a UniProtKB record into other options using the bioregistry translating endpoint.",
     "context": null,
     "inidces": [],
@@ -2842,14 +2644,12 @@ export const UniProt = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 93 uniprot created modified updated",
     "slug": "UniProt_93_uniprot_created_modified_updated",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List the created, last modified, and last sequence update dates for UniProtKB proteins.",
     "context": null,
     "inidces": [],
@@ -2866,14 +2666,12 @@ export const UniProt = [
       "CREATE",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 94 uniprot encoding gene",
     "slug": "UniProt_94_uniprot_encoding_gene",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List UniProtKB proteins with their associated named gene",
     "context": null,
     "inidces": [],
@@ -2888,14 +2686,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 95 uniprot encoding gene alternative names",
     "slug": "UniProt_95_uniprot_encoding_gene_alternative_names",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List UniProtKB proteins with their associated gene and the gene's names that are used in the field, but not recommended for use by UniProtKB",
     "context": null,
     "inidces": [],
@@ -2910,14 +2706,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 96 uniprot encoding gene name",
     "slug": "UniProt_96_uniprot_encoding_gene_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List UniProtKB proteins with their associated gene and the gene's preffered name",
     "context": null,
     "inidces": [],
@@ -2932,14 +2726,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 97 uniprot encoding gene org name",
     "slug": "UniProt_97_uniprot_encoding_gene_org_name",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List UniProtKB proteins with their associated gene and the gene's ORF label",
     "context": null,
     "inidces": [],
@@ -2954,14 +2746,12 @@ export const UniProt = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 98 uniprot entries with more than two geneid crossrefences",
     "slug": "UniProt_98_uniprot_entries_with_more_than_two_geneid_crossrefences",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find GeneID's crosslinked to more than one human or mouse UniProtKB entry",
     "context": null,
     "inidces": [],
@@ -2983,14 +2773,12 @@ export const UniProt = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 99 uniprot identifiers org translation",
     "slug": "UniProt_99_uniprot_identifiers_org_translation",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Translate a selection of UniProtKB accession numbers into other options using the identifiers.org translating endpoint.",
     "context": null,
     "inidces": [],
@@ -3008,14 +2796,12 @@ export const UniProt = [
       "SERVICE",
       "IF"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   },
   {
     "name": "UniProt - 9 human variant loss of function",
     "slug": "UniProt_9_human_variant_loss_of_function",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all human UniProtKB entries with a sequence variant that leads to a 'loss of function'",
     "context": null,
     "inidces": [],
@@ -3032,6 +2818,6 @@ export const UniProt = [
       "FILTER",
       "CONTAINS"
     ],
-    "category": "sib-swiss UniProt"
+    "category": "undefined UniProt"
   }
 ];

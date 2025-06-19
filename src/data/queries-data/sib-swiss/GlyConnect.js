@@ -3,8 +3,6 @@ export const GlyConnect = [
     "name": "GlyConnect - 1",
     "slug": "GlyConnect_1",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Get all Glyconnect proteins their Uniprot reference isoform",
     "context": null,
     "inidces": [],
@@ -21,14 +19,12 @@ export const GlyConnect = [
       "DISTINCT",
       "IF"
     ],
-    "category": "sib-swiss GlyConnect"
+    "category": "undefined GlyConnect"
   },
   {
     "name": "GlyConnect - 2",
     "slug": "GlyConnect_2",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Get all Glyconnect glycan with their graphical SNFG representation",
     "context": null,
     "inidces": [],
@@ -46,14 +42,12 @@ export const GlyConnect = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss GlyConnect"
+    "category": "undefined GlyConnect"
   },
   {
     "name": "GlyConnect - 3",
     "slug": "GlyConnect_3",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all glycosylations (glycan, protein, position) with their reference articles",
     "context": null,
     "inidces": [],
@@ -71,14 +65,12 @@ export const GlyConnect = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss GlyConnect"
+    "category": "undefined GlyConnect"
   },
   {
     "name": "GlyConnect - 4",
     "slug": "GlyConnect_4",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select all glycosylations (glycan, protein, position) with their associated disease where the name start with 'cancer'",
     "context": null,
     "inidces": [],
@@ -98,14 +90,12 @@ export const GlyConnect = [
       "REGEX",
       "IF"
     ],
-    "category": "sib-swiss GlyConnect"
+    "category": "undefined GlyConnect"
   },
   {
     "name": "GlyConnect - 5",
     "slug": "GlyConnect_5",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Get all Glyconnect reference papers",
     "context": null,
     "inidces": [],
@@ -121,6 +111,6 @@ export const GlyConnect = [
       "WHERE",
       "DISTINCT"
     ],
-    "category": "sib-swiss GlyConnect"
+    "category": "undefined GlyConnect"
   }
 ];

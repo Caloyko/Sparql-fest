@@ -25,14 +25,14 @@ export const prefixes = [
     "namespace": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   },
   {
-    "prefix": "SPEX",
-    "name": "spex",
-    "namespace": "https://purl.expasy.org/sparql-examples/ontology#"
-  },
-  {
     "prefix": "DCTERMS",
     "name": "dcterms",
     "namespace": "http://purl.org/dc/terms/"
+  },
+  {
+    "prefix": "SPEX",
+    "name": "spex",
+    "namespace": "https://purl.expasy.org/sparql-examples/ontology#"
   },
   {
     "prefix": "EX120",

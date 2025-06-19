@@ -3,8 +3,6 @@ export const OrthoDB = [
     "name": "OrthoDB - 1",
     "slug": "OrthoDB_1",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all OrthoDB species with attached OrthoDB organisms containing \\",
     "context": null,
     "inidces": [],
@@ -25,14 +23,12 @@ export const OrthoDB = [
       "LCASE",
       "STRSTARTS"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 10",
     "slug": "OrthoDB_10",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find most conservative single copy Danio rerio genes at the Vertebrata level",
     "context": null,
     "inidces": [],
@@ -52,14 +48,12 @@ export const OrthoDB = [
       "COPY",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 11",
     "slug": "OrthoDB_11",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find shortest rapidly evolving Caudovirales genes",
     "context": null,
     "inidces": [],
@@ -80,14 +74,12 @@ export const OrthoDB = [
       "LIMIT",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 12",
     "slug": "OrthoDB_12",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find orthologous human and mouse genes in the group(s) annotated with GO MF GO:0005164 (tumor necrosis factor receptor binding) and GO BP GO:0045739 (positive regulation of DNA repair)",
     "context": null,
     "inidces": [],
@@ -105,14 +97,12 @@ export const OrthoDB = [
       "ORDER BY",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 13",
     "slug": "OrthoDB_13",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "List all xrefs attached to the groups annotated with at least three Interpro domains (IPR011990, IPR013083 and IPR001841)",
     "context": null,
     "inidces": [],
@@ -133,14 +123,12 @@ export const OrthoDB = [
       "CONCAT",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 14",
     "slug": "OrthoDB_14",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find genes with their properties by a list of their xrefs",
     "context": null,
     "inidces": [],
@@ -158,14 +146,12 @@ export const OrthoDB = [
       "FILTER",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 15",
     "slug": "OrthoDB_15",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find orthologous group/s at any level containing protein with Uniprot id P12345",
     "context": null,
     "inidces": [],
@@ -181,14 +167,12 @@ export const OrthoDB = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 16",
     "slug": "OrthoDB_16",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find statistics on translated sequence length for genes matching both IPR002117 and GO:0008219",
     "context": null,
     "inidces": [],
@@ -208,14 +192,12 @@ export const OrthoDB = [
       "MAX",
       "AVG"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 17",
     "slug": "OrthoDB_17",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find genes having Uniprot xrefs in the group 6400at314295, along with their names fetched from Uniprot SPARQL endpoint",
     "context": null,
     "inidces": [],
@@ -232,14 +214,12 @@ export const OrthoDB = [
       "WHERE",
       "SERVICE"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 18",
     "slug": "OrthoDB_18",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find zebrafish orthologs of disease-implicated (according to Nextprot SPARQL endpoint) human genes via Vertebrata-level orthogroup/s annotated with both IPR000719 (protein kinase domain) and GO:0048013 (ephrin receptor signaling pathway)",
     "context": null,
     "inidces": [],
@@ -259,14 +239,12 @@ export const OrthoDB = [
       "DISTINCT",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 19",
     "slug": "OrthoDB_19",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find distribution of oxidation reactions catalyzed by genes arranged into several Eukaryota-level orthologous groups annotated with IPR002328 across species in Alveolata, Stramenopiles, Liliopsida and Coleoptera via cooperation with both Uniprot SPARQL endpoint and RHEA SPARQL endpoint",
     "context": null,
     "inidces": [],
@@ -292,14 +270,12 @@ export const OrthoDB = [
       "COUNT",
       "GROUP_CONCAT"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 2",
     "slug": "OrthoDB_2",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all clades, i.e. taxonomic levels where orthologous groups were built on, with their Latin names and ranks underneath Bacteria, sorted alphabetically by rank, then name",
     "context": null,
     "inidces": [],
@@ -317,14 +293,12 @@ export const OrthoDB = [
       "ORDER BY",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 20",
     "slug": "OrthoDB_20",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find single-copy phyletic profile at all orthologous levels of STRING-anotated well known interacting genes pertinent to mouse gene/s from the OrthoDB orthologous group annotated with GO MF GO:0005164 (tumor necrosis factor receptor binding) and GO BP GO:0045739 (positive regulation of DNA repair)",
     "context": null,
     "inidces": [],
@@ -344,14 +318,12 @@ export const OrthoDB = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 3",
     "slug": "OrthoDB_3",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find LCA in the OrthoDB tree for fruit fly and honey bee taxons",
     "context": null,
     "inidces": [],
@@ -372,14 +344,12 @@ export const OrthoDB = [
       "EXISTS",
       "NOT EXISTS"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 4",
     "slug": "OrthoDB_4",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find URI and some properties of the orthologous group 6400at314295 by its short text label",
     "context": null,
     "inidces": [],
@@ -396,14 +366,12 @@ export const OrthoDB = [
       "WHERE",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 5",
     "slug": "OrthoDB_5",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all properties of the orthologous group 6400at314295 by its URI",
     "context": null,
     "inidces": [],
@@ -424,14 +392,12 @@ export const OrthoDB = [
       "IF",
       "COUNT"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 6",
     "slug": "OrthoDB_6",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find all genes with their name and description in the orthologous group 6400at314295",
     "context": null,
     "inidces": [],
@@ -448,14 +414,12 @@ export const OrthoDB = [
       "WHERE",
       "IF"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 7",
     "slug": "OrthoDB_7",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find A.thaliana genes with their properties by a list of their gene symbols/names",
     "context": null,
     "inidces": [],
@@ -477,14 +441,12 @@ export const OrthoDB = [
       "IF",
       "STRSTARTS"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 8",
     "slug": "OrthoDB_8",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find in any organsim under Gammaproteobacteria all genes containing word \\",
     "context": null,
     "inidces": [],
@@ -504,14 +466,12 @@ export const OrthoDB = [
       "LCASE",
       "CONTAINS"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   },
   {
     "name": "OrthoDB - 9",
     "slug": "OrthoDB_9",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "At the LCA level, find all human orthologs of mouse genes with name containing \\",
     "context": null,
     "inidces": [],
@@ -530,6 +490,6 @@ export const OrthoDB = [
       "UCASE",
       "CONTAINS"
     ],
-    "category": "sib-swiss OrthoDB"
+    "category": "undefined OrthoDB"
   }
 ];

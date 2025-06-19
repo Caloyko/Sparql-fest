@@ -3,8 +3,6 @@ export const SwissLipids = [
     "name": "SwissLipids - 1",
     "slug": "SwissLipids_1",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Select the SwissLipids categories and their labels.",
     "context": null,
     "inidces": [],
@@ -20,14 +18,12 @@ export const SwissLipids = [
       "SELECT",
       "WHERE"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 10",
     "slug": "SwissLipids_10",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -47,14 +43,12 @@ export const SwissLipids = [
       "STR",
       "REGEX"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 11",
     "slug": "SwissLipids_11",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -72,14 +66,12 @@ export const SwissLipids = [
       "ORDER BY",
       "IF"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 12",
     "slug": "SwissLipids_12",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -95,14 +87,12 @@ export const SwissLipids = [
       "WHERE",
       "ORDER BY"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 13",
     "slug": "SwissLipids_13",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -119,14 +109,12 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 14",
     "slug": "SwissLipids_14",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -147,14 +135,12 @@ export const SwissLipids = [
       "STR",
       "REGEX"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 15",
     "slug": "SwissLipids_15",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -175,14 +161,12 @@ export const SwissLipids = [
       "IF",
       "CONCAT"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 16",
     "slug": "SwissLipids_16",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -203,14 +187,12 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 2",
     "slug": "SwissLipids_2",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -229,14 +211,12 @@ export const SwissLipids = [
       "STR",
       "IF"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 26",
     "slug": "SwissLipids_26",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Lipids produced in different organisms",
     "context": null,
     "inidces": [],
@@ -252,14 +232,12 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 27",
     "slug": "SwissLipids_27",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Find the list of SwissLipids for all organisms and their Isomeric subspecies",
     "context": null,
     "inidces": [],
@@ -276,14 +254,12 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 3",
     "slug": "SwissLipids_3",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -301,14 +277,12 @@ export const SwissLipids = [
       "ORDER BY",
       "STR"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 34",
     "slug": "SwissLipids_34",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Lipids affected by human enzymes",
     "context": null,
     "inidces": [],
@@ -324,14 +298,12 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 35",
     "slug": "SwissLipids_35",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": "Lipids by fatty acid component (hexadecanoate) at position sn1",
     "context": null,
     "inidces": [],
@@ -348,14 +320,12 @@ export const SwissLipids = [
       "VALUES",
       "FROM"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 36",
     "slug": "SwissLipids_36",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -377,14 +347,12 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 37",
     "slug": "SwissLipids_37",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -406,14 +374,12 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 38",
     "slug": "SwissLipids_38",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -435,14 +401,12 @@ export const SwissLipids = [
       "STR",
       "SAMETERM"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 4",
     "slug": "SwissLipids_4",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -460,14 +424,12 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 5",
     "slug": "SwissLipids_5",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -488,14 +450,12 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 6",
     "slug": "SwissLipids_6",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -516,14 +476,12 @@ export const SwissLipids = [
       "IF",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 7",
     "slug": "SwissLipids_7",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -542,14 +500,12 @@ export const SwissLipids = [
       "SERVICE",
       "CONTAINS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 8",
     "slug": "SwissLipids_8",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -569,14 +525,12 @@ export const SwissLipids = [
       "STR",
       "STRSTARTS"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   },
   {
     "name": "SwissLipids - 9",
     "slug": "SwissLipids_9",
     "date": "18-06-2025",
-    "image": "src/assets/images/SIB_logo.jpg",
-    "source": "SIB",
     "description": null,
     "context": null,
     "inidces": [],
@@ -594,6 +548,6 @@ export const SwissLipids = [
       "VALUES",
       "ORDER BY"
     ],
-    "category": "sib-swiss SwissLipids"
+    "category": "undefined SwissLipids"
   }
 ];
