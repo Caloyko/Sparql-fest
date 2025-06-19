@@ -1,0 +1,83 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:179 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+#defaultView:Graph
+
+PREFIX target: <http://www.wikidata.org/entity/Q12024>
+
+SELECT
+  ?child ?childLabel
+  ?rgb 
+  ?parent ?parentLabel
+WITH {
+  SELECT ?child ?rgb ?parent WHERE {
+    { 
+      # Parent taxa
+      SELECT ?child ?rgb ?parent  WHERE {
+        SERVICE gas:service {
+          gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.BFS" ;
+                  gas:in target: ;
+                  # We should not do undirected here because this could result
+                  # in very big graphs.
+                  gas:traversalDirection "Forward" ;
+                  gas:out ?child ;
+                  gas:out1 ?depth ;
+                  gas:out2 ?parent1 ;
+                  gas:linkType wdt:P171 ;
+        }
+        ?child wdt:P171 ?parent .
+        BIND(IF(?child = target:, "FF0000", "FFFFFF") AS ?rgb)
+      }
+    }
+    UNION 
+    {
+      # Child taxa
+      SELECT ?child ?rgb ?parent WHERE {
+        BIND(target: AS ?parent)
+        ?child wdt:P171 ?parent . 
+        BIND("DDDDDD" AS ?rgb)
+      }
+      LIMIT 100
+    }
+  }
+} AS %results
+WHERE {
+  INCLUDE %results 
+          
+  ?child rdfs:label ?child_label . FILTER(LANG(?child_label) = 'en')
+  ?parent rdfs:label ?parent_label . FILTER(LANG(?parent_label) = 'en')
+  OPTIONAL {
+    ?child wdt:P105 / rdfs:label ?child_rank_label . FILTER (LANG(?child_rank_label) = 'en')
+  }
+  OPTIONAL {
+    ?parent wdt:P105 / rdfs:label ?parent_rank_label . FILTER (LANG(?parent_rank_label) = 'en')
+  }
+  BIND(CONCAT(?child_label, " - ", COALESCE(?child_rank_label, "???")) AS ?childLabel)
+  BIND(CONCAT(?parent_label, " - ", COALESCE(?parent_rank_label, "???")) AS ?parentLabel)
+
+}
+''';
+  scholia:aspect scholiaAspect:Taxon ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Taxon aspect: tree"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/taxon_tree.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

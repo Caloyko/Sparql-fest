@@ -1,0 +1,53 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:002 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+#defaultView:ImageGrid
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+SELECT DISTINCT ?image WHERE {
+  {
+    # Images of the person
+    target: wdt:P18 ?image .
+  }
+  UNION {
+    # Images from whatever property value is linked.
+    
+    # Excluded "different from" property and take all other properties
+    target: !wdt:P1889 ?item .
+
+    ?item wdt:P18 ?image . 
+    
+    # All people are humans, so these images are excluded.
+    FILTER (?item != wd:Q5)
+  }
+  UNION {
+    # Images associated with works of the author, both direct images,
+    # images of topics of the works and images of coauthors.
+    target: ^wdt:P50 / (wdt:P921* | wdt:P50) / wdt:P18 ?image .
+  }
+}   
+''';
+  scholia:aspect scholiaAspect:Author ;
+  scholia:defaultView scholiaView:ImageGrid ;
+  rdfs:comment "Author aspect: associated images"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_associated-images.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

@@ -1,0 +1,24 @@
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/VHP4Safety/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:003 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List all compounds of which the xenometabolism is known."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <https://compoundcloud.wikibase.cloud/entity/>
+PREFIX wdt: <https://compoundcloud.wikibase.cloud/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?cmp ?cmpLabel ?xenometabolism
+WHERE {
+  ?cmp wdt:P19 ?xenometabolism .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}""" ;
+    schema:target <https://compoundcloud.wikibase.cloud/query/> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    schema:keywords "xenometabolism", "compound" .

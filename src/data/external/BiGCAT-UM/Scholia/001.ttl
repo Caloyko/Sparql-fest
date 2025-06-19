@@ -1,0 +1,107 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:001 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:Graph
+PREFIX target: <http://www.wikidata.org/entity/Q97270>
+
+# Doctoral student/advisor network with a source from a spectific researcher
+PREFIX gas: <http://www.bigdata.com/rdf/gas#>
+
+SELECT DISTINCT ?student1 ?student1Label ?rgb ?supervisor1 ?supervisor1Label
+WHERE {
+  { 
+    SELECT ?student1 ?supervisor1 (MIN(?depth1) as ?depth)
+    WHERE {
+      SERVICE gas:service {
+        gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.BFS" ;
+                gas:in target: ;
+                gas:traversalDirection "Forward" ;
+                gas:out ?student1 ;
+                gas:out1 ?depth1 ;
+                gas:out2 ?supervisor1 ;
+                gas:linkType wdt:P185 ;
+      }
+    }
+    GROUP BY ?student1 ?supervisor1
+  }
+  UNION
+  { 
+    SELECT ?student1 ?supervisor1 (MIN(?depth1) as ?depth)
+    WHERE {
+      service gas:service {
+        gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.BFS" ;
+                gas:in target: ;
+                gas:traversalDirection "Forward" ;
+                gas:out ?supervisor1 ;
+                gas:out1 ?depth1 ;
+                gas:out2 ?student1 ;
+                gas:linkType wdt:P184 ;
+      }
+    }
+    GROUP BY ?student1 ?supervisor1
+  }
+  UNION
+  { 
+    SELECT ?student1 ?supervisor1 (MIN(?depth1) as ?depth)
+    WHERE {
+      SERVICE gas:service {
+        gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.BFS" ;
+                gas:in target: ;
+                gas:traversalDirection "Reverse" ;
+                gas:out ?student1 ;
+                gas:out1 ?depth1 ;
+                gas:out2 ?supervisor1 ;
+                gas:linkType wdt:P184 ;
+      }
+    }
+    GROUP BY ?student1 ?supervisor1
+  }
+  UNION
+  { 
+    SELECT ?student1 ?supervisor1 (MIN(?depth1) as ?depth)
+    WHERE {
+      SERVICE gas:service {
+        gas:program gas:gasClass "com.bigdata.rdf.graph.analytics.BFS" ;
+                gas:in target: ;
+                gas:traversalDirection "Reverse" ;
+                gas:out ?supervisor1 ;
+                gas:out1 ?depth1 ;
+                gas:out2 ?student1 ;
+                gas:linkType wdt:P185 ;
+      }
+    }
+    GROUP BY ?student1 ?supervisor1
+  }
+  
+  BIND( IF( ?student1 = target:, "3080BB", "ffffff") AS ?rgb)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" .  } 
+}
+
+''';
+  scholia:aspect scholiaAspect:Author ;
+  scholia:defaultView scholiaView:Graph ;
+  rdfs:comment "Author aspect: academic tree"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/author_academic-tree.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

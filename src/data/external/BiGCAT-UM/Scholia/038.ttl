@@ -1,0 +1,55 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:038 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX psv: <http://www.wikidata.org/prop/statement/value/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q1098>
+
+SELECT DISTINCT ?allotrope ?allotropeLabel ?density ?densityUnit ?densityUnitLabel WITH {
+  SELECT ?allotrope (SAMPLE(?densityStats) AS ?densityStat) WHERE {
+    ?allotrope wdt:P31|wdt:P279 ?allotropeType .
+    ?allotropeType p:P279 ?allotropeSpecsStatement .
+    ?allotropeSpecsStatement ps:P279 wd:Q21198401 ;
+                             pq:P642 target: .
+    OPTIONAL {
+      ?allotrope p:P2054 ?densityStats .
+    }
+  } GROUP BY ?allotrope
+} AS %ALLOTROPES {
+  INCLUDE %ALLOTROPES
+  OPTIONAL {
+    ?allotrope p:P2054 ?densityStat .
+    ?densityStat psv:P2054 ?densityValNode .
+    ?densityValNode wikibase:quantityAmount ?density ;
+                    wikibase:quantityUnit ?densityUnit .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+} ORDER BY ASC(?allotropeLabel)
+''';
+  scholia:aspect scholiaAspect:Chemical-element ;
+  rdfs:comment "Chemical-element aspect: allotropes"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/chemical-element_allotropes.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

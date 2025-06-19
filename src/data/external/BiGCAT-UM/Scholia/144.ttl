@@ -1,0 +1,43 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:144 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+# title: Statistics for projects identifiers
+SELECT ?count ?description {
+  {
+    { SELECT (COUNT(*) AS ?count) WHERE { [] wdt:P3400 []. } }
+    BIND("Total number of projects with a CORDIS number" AS ?description)
+  }
+  UNION 
+  {
+    { SELECT (COUNT(*) AS ?count) WHERE { [] wdt:P4870 []. } }
+    BIND("Total number of projects with a GEPRIS number" AS ?description)
+  }
+  UNION 
+  {
+    { SELECT (COUNT(*) AS ?count) WHERE { [] wdt:P6536 []. } }
+    BIND("Total number of projects with a Gateway to Research Project ID" AS ?description)
+  }
+}
+ORDER BY DESC(?count)
+''';
+  scholia:aspect scholiaAspect:Project ;
+  rdfs:comment "Project aspect: Statistics for projects identifiers"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/project_statistics.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

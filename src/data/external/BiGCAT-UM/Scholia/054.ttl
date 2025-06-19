@@ -1,0 +1,84 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:054 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+#defaultView:BarChart
+PREFIX target: <http://www.wikidata.org/entity/Q90012272>
+
+SELECT
+  (STR(?year_) AS ?year)
+  (COUNT(?work) AS ?number_of_publications)
+
+  # Work type used to color the bar chart
+  ?type
+WITH {
+  # Find works with the topic. Also report the year
+  SELECT
+    ?work (MIN(?years) AS ?year_) (1 AS ?dummy) (SAMPLE(?article_type_) AS ?article_type)
+  WHERE {
+    VALUES ?complex { target: }
+    ?work wdt:P921 / (wdt:P31*/wdt:P279* | wdt:P361+ | wdt:P1269+) ?complex .
+    ?work wdt:P577 ?dates .
+    BIND(YEAR(?dates) AS ?years) .
+
+    ?work wdt:P31 ?article_type_ .
+  }
+  GROUP BY ?work 
+} AS %works
+WITH {
+  SELECT ?year_ WHERE {
+    # default values = 0
+    ?year_item wdt:P31 wd:Q577 . 
+    ?year_item wdt:P585 ?date .
+    BIND(YEAR(?date) AS ?year_)
+  }
+} AS %default_counts
+WITH {
+  # Find earliest publication year
+  SELECT (MIN(?year_) AS ?earliest_year) WHERE {
+    INCLUDE %works
+  }
+  GROUP BY ?dummy
+} AS %earliest  
+WHERE {
+  {
+    INCLUDE %works
+    ?article_type rdfs:label ?type . FILTER (LANG(?type) = "en")
+  }
+  UNION
+  {
+    INCLUDE %default_counts
+    BIND("_" AS ?type)
+  }
+  INCLUDE %earliest
+  BIND(YEAR(NOW()) AS ?this_year)
+  FILTER (?year_ >= ?earliest_year && ?year_ <= ?this_year && ?year_ >= YEAR("1900-01-01"^^xsd:dateTime))
+}
+GROUP BY ?year_ ?type
+ORDER BY ?year
+''';
+  scholia:aspect scholiaAspect:Complex ;
+  scholia:defaultView scholiaView:BarChart ;
+  rdfs:comment "Complex aspect: articles by year"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/complex_articles-by-year.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

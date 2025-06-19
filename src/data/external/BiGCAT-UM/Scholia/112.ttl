@@ -1,0 +1,62 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:112 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#defaultView:BarChart
+
+PREFIX target: <http://www.wikidata.org/entity/Q104785223>
+
+SELECT ?year (SUM(?citations_per_author_) AS ?citations_per_author) ?researcherLabel
+WITH {
+  # Find researchers affiliated with the organization
+  SELECT DISTINCT ?researcher WHERE {
+    ?researcher wdt:P108 | wdt:P463 | wdt:P1416/wdt:P361* target: .
+  }
+} AS %researchers 
+WITH {
+  # Find works of the researchers and count the number of citations
+  SELECT
+    ?researcher ?work ?year (COUNT(DISTINCT ?citing_work) / COUNT(DISTINCT ?researcher_of_paper) AS ?citations_per_author_)
+  WHERE {
+    INCLUDE %researchers
+    ?work wdt:P50 | wdt:P2093 ?researcher_of_paper .
+    ?work wdt:P50 ?researcher .
+    ?citing_work wdt:P2860 ?work .
+    ?work wdt:P577 ?date . 
+    BIND(STR(YEAR(?date)) AS ?year)
+  }
+  GROUP BY ?work ?researcher ?year
+} AS %counts
+WHERE {
+  # Label the results
+  INCLUDE %counts    
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+GROUP BY ?year ?researcher ?researcherLabel
+ORDER BY ?year
+''';
+  scholia:aspect scholiaAspect:Organization ;
+  scholia:defaultView scholiaView:BarChart ;
+  rdfs:comment "Organization aspect: co author normalized citations"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/organization_co-author-normalized-citations.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

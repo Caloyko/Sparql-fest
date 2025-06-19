@@ -1,0 +1,28 @@
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/VHP4Safety/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:001 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List all compounds with a PubChem identifier and optionally list the ToxBank Wiki link and roles."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <https://compoundcloud.wikibase.cloud/entity/>
+PREFIX wdt: <https://compoundcloud.wikibase.cloud/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?cmp ?cmpLabel ?pubchem ?toxbank
+       (GROUP_CONCAT(DISTINCT ?roleLabel; separator=", ") AS ?roles)
+WHERE {
+  ?cmp wdt:P13 ?pubchem .
+  OPTIONAL { ?cmp wdt:P4 ?toxbank }
+  OPTIONAL { ?cmp wdt:P17 ?role . ?role rdfs:label ?roleLabel}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+} GROUP BY ?cmp ?cmpLabel ?pubchem ?toxbank""" ;
+    schema:target <https://compoundcloud.wikibase.cloud/query/> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    schema:keywords "PubChem", "ToxBank", "role", "compound" .

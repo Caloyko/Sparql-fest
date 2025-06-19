@@ -1,0 +1,61 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:211 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX target: <http://www.wikidata.org/entity/Q6294930>
+
+# title: Cited venues from specific journal
+SELECT
+  ?count
+  ?short_name
+  ?cited_journal ?cited_journalLabel
+WITH {
+  SELECT
+    (COUNT(?cited_work) AS ?count)
+    ?cited_journal
+    (SAMPLE(?short_name_) AS ?short_name)
+  WHERE {
+    ?work wdt:P1433 target: .
+    ?work wdt:P2860 ?cited_work .
+    ?cited_work wdt:P1433 ?cited_journal . 
+    OPTIONAL {
+      ?work wdt:P577 ?publication_datetime .
+      BIND(xsd:date(?publication_datetime) AS ?publication_date)
+    }
+    OPTIONAL { ?cited_journal wdt:P1813 ?short_name_ . }
+  }
+  GROUP BY ?cited_journal
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . } 
+}
+ORDER BY DESC(?count)
+LIMIT 200
+''';
+  scholia:aspect scholiaAspect:Venue ;
+  rdfs:comment "Venue aspect: Cited venues from specific journal"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/venue_cited-venues.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

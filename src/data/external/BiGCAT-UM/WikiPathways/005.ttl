@@ -1,0 +1,23 @@
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/WikiPathways/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+ex:005 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List all diseases and the number of pathways they are linked to, in decreasing order."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?diseaseLabel ?disease (COUNT(DISTINCT ?pathway) AS ?count)
+WHERE {
+  ?pathway wp:diseaseOntologyTag ?disease ; 
+           a wp:Pathway .
+  ?disease rdfs:label ?diseaseLabel .
+} GROUP BY ?diseaseLabel ?disease
+  ORDER BY DESC(?count)""" ;
+    schema:target <https://sparql.wikipathways.org/sparql> ;
+    schema:keywords "disease" .

@@ -1,0 +1,69 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:203 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX pq: <http://www.wikidata.org/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+#defaultView:BarChart
+
+PREFIX target: <http://www.wikidata.org/entity/Q6294930>
+
+# Inspired from LEGOLAS - http://abel.lis.illinois.edu/legolas/
+# Shubhanshu Mishra, Vetle Torvik
+select ?year (count(?work) as ?number_of_publications) ?intention where {
+  {
+    select (str(?year_) as ?year) (0 as ?pages) ("_" as ?intention) where {
+      # default values = 0
+      ?year_item wdt:P31 wd:Q577 . 
+      ?year_item wdt:P585 ?date .
+      bind(year(?date) as ?year_)
+      {
+        select (min(?year_) as ?earliest_year)  (max(?year_) as ?latest_year) where {
+          VALUES ?JOURNAL { target: }
+          ?work wdt:P1433 ?JOURNAL .
+          ?work wdt:P577 ?publication_date . 
+          bind(year(?publication_date) as ?year_)
+        }
+      }
+      bind(year(now())+1 as ?next_year)
+      filter (?year_ >= ?earliest_year && ?year_ <= ?latest_year)
+    }
+  }
+  union {
+    select ?work ?intention (min(?years) as ?year) where {
+      VALUES ?JOURNAL { target: }
+      ?work wdt:P577 ?dates ;
+            p:P2860 / pq:P3712 / rdfs:label ?intention ;
+            wdt:P1433 ?JOURNAL .
+      bind(str(year(?dates)) as ?years) .
+      FILTER (LANG(?intention) = "en")
+    }
+    group by ?work ?intention
+  }
+}
+group by ?year ?intention
+order by ?year
+''';
+  scholia:aspect scholiaAspect:Venue ;
+  scholia:defaultView scholiaView:BarChart ;
+  rdfs:comment "Venue aspect: articles by intention"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/venue_articles-by-intention.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

@@ -1,0 +1,118 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:252 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX hint: <http://www.bigdata.com/queryHints#>
+PREFIX mwapi: <>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT
+  ?title ?titleUrl
+  ?wikipedia ?wikipediaLabel
+  ?item ?itemLabel ?itemDescription 
+WHERE {
+  {
+    SELECT ?title_ ?titleUrl ?item ?wikipedia {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "da.wikipedia.org" ;
+                        wikibase:api "Generator" ;
+			mwapi:generator "search" ;
+                        mwapi:gsrsearch 'Q28942417{% for doi in dois %} OR "{{ doi }}"{% endfor %}' ;
+                        mwapi:gsrlimit "200" .
+        ?title_ wikibase:apiOutput mwapi:title .
+	?item wikibase:apiOutputItem mwapi:item .
+      }
+      BIND(URI(CONCAT("https://da.wikipedia.org/wiki/", ENCODE_FOR_URI(REPLACE(?title_, " ", "_")))) AS ?titleUrl)
+      BIND(wd:Q181163 AS ?wikipedia)
+    } 
+  }
+  UNION
+  {
+    SELECT ?title_ ?titleUrl ?item ?wikipedia {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "de.wikipedia.org" ;
+                        wikibase:api "Generator" ;
+			mwapi:generator "search" ;
+                        mwapi:gsrsearch 'Q28942417{% for doi in dois %} OR "{{ doi }}"{% endfor %}' ;
+                        mwapi:gsrlimit "200" .
+        ?title_ wikibase:apiOutput mwapi:title .
+	?item wikibase:apiOutputItem mwapi:item .
+      }
+      BIND(URI(CONCAT("https://de.wikipedia.org/wiki/", ENCODE_FOR_URI(REPLACE(?title_, " ", "_")))) AS ?titleUrl)
+      BIND(wd:Q48183 AS ?wikipedia)
+    }     
+  }
+  UNION
+  {
+    SELECT ?title_ ?titleUrl ?item ?wikipedia {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "en.wikipedia.org" ;
+                        wikibase:api "Generator" ;
+			mwapi:generator "search" ;
+                        mwapi:gsrsearch 'Q28942417{% for doi in dois %} OR "{{ doi }}"{% endfor %}' ;
+                        mwapi:gsrlimit "200" .
+        ?title_ wikibase:apiOutput mwapi:title .
+	?item wikibase:apiOutputItem mwapi:item .
+      }
+      BIND(URI(CONCAT("https://en.wikipedia.org/wiki/", ENCODE_FOR_URI(REPLACE(?title_, " ", "_")))) AS ?titleUrl)
+      BIND(wd:Q328 AS ?wikipedia)
+    }     
+  }
+  UNION
+  {
+    SELECT ?title_ ?titleUrl ?item ?wikipedia {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "fr.wikipedia.org" ;
+                        wikibase:api "Generator" ;
+			mwapi:generator "search" ;
+                        mwapi:gsrsearch 'Q28942417{% for doi in dois %} OR "{{ doi }}"{% endfor %}' ;
+                        mwapi:gsrlimit "200" .
+        ?title_ wikibase:apiOutput mwapi:title .
+	?item wikibase:apiOutputItem mwapi:item .
+      }
+      BIND(URI(CONCAT("https://fr.wikipedia.org/wiki/", ENCODE_FOR_URI(REPLACE(?title_, " ", "_")))) AS ?titleUrl)
+      BIND(wd:Q8447 AS ?wikipedia)
+    }     
+  }
+  UNION
+  {
+    SELECT ?title_ ?titleUrl ?item ?wikipedia {
+      SERVICE wikibase:mwapi {
+        bd:serviceParam wikibase:endpoint "pt.wikipedia.org" ;
+                        wikibase:api "Generator" ;
+			mwapi:generator "search" ;
+                        mwapi:gsrsearch 'Q28942417{% for doi in dois %} OR "{{ doi }}"{% endfor %}' ;
+                        mwapi:gsrlimit "200" .
+        ?title_ wikibase:apiOutput mwapi:title .
+	?item wikibase:apiOutputItem mwapi:item .
+      }
+      BIND(URI(CONCAT("https://pt.wikipedia.org/wiki/", ENCODE_FOR_URI(REPLACE(?title_, " ", "_")))) AS ?titleUrl)
+      BIND(wd:Q11921 AS ?wikipedia)
+    }     
+  }
+  hint:Prior hint:runFirst "true" .
+  BIND(CONCAT(?title_, "&nbsp;↗") AS ?title)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+} ''';
+  scholia:aspect scholiaAspect:Work ;
+  rdfs:comment "Work aspect: wikipedia mentions"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/work_wikipedia-mentions.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

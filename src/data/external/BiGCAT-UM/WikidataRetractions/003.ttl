@@ -1,0 +1,44 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/WikidataRetractions/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:003 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List of publishers with the most retractions."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wdt: <http://wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT DISTINCT
+  (COUNT(DISTINCT ?work) AS ?works)
+  ?publisher ?publisherLabel
+  (CONCAT("#publisher/", SUBSTR(STR(?publisher), 32)) AS ?publisherUrl)
+  ?publisherDescription
+WHERE {
+  ?work wdt:P31 wd:Q45182324 ; 
+        wdt:P1433 ?venue .
+  SERVICE <https://query-main.wikidata.org/sparql> {
+    {
+      SELECT DISTINCT ?venue ?publisher ?publisherLabel  ?publisherDescription
+      WHERE {
+        ?venue wdt:P123 ?publisher .
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+      }
+    }
+  }
+} GROUP BY ?publisher ?publisherLabel ?publisherUrl ?publisherDescription
+  ORDER BY DESC(?works)
+  LIMIT 200""";
+    schema:target <https://query.wikidata.org/sparql> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    dc:contributor "Egon Willighagen" ;
+    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    schema:keywords "retraction" .

@@ -1,0 +1,35 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/WikidataRetractions/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:005 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "List of Maastricht University authors with retracted articles."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wdt: <http://wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT DISTINCT ?author ?authorLabel ?orcid (COUNT(DISTINCT ?work) AS ?count) WHERE {
+  VALUES ?institute { wd:Q1137652 } # Maastricht University
+  { ?work wdt:P31 wd:Q45182324 . } UNION
+  { ?work wdt:P793 wd:Q7316896 . } UNION
+  { ?work wdt:P5824 [] . }
+  ?work wdt:P50 ?author .
+  ?author ( wdt:P108 | wdt:P463 | wdt:P1416 ) / wdt:P361* ?institute .
+  OPTIONAL { ?author wdt:P496 ?orcid }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+} GROUP BY ?author ?authorLabel ?orcid
+  ORDER BY DESC(?count)""";
+    schema:target <https://query.wikidata.org/sparql> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    dc:contributor "Egon Willighagen" ;
+    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    schema:keywords "retraction" .

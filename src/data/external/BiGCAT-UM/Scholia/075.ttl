@@ -1,0 +1,70 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:075 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX target: <http://www.wikidata.org/entity/Q47501052>
+
+SELECT
+  ?date
+  ?work ?workLabel (CONCAT("/work/", SUBSTR(STR(?work), 32)) AS ?workUrl)
+  ?authors ?authorsUrl
+  ?topics ?topicsUrl
+WITH {
+  SELECT
+    (MIN(?date_) AS ?date) 
+    ?work
+    (GROUP_CONCAT(DISTINCT ?author_label; separator=", ") AS ?authors)
+    (CONCAT("../authors/", GROUP_CONCAT(DISTINCT SUBSTR(STR(?author), 32); separator=",")) AS ?authorsUrl)
+    (GROUP_CONCAT(DISTINCT ?topic_label; separator=", ") AS ?topics)
+    (CONCAT("../topics/", GROUP_CONCAT(DISTINCT SUBSTR(STR(?topic), 32); separator=",")) AS ?topicsUrl)
+  WHERE {
+    ?work wdt:P1433 / wdt:P4745 / (wdt:P179 | wdt:P31) target: .
+    OPTIONAL {
+      ?work wdt:P577 ?publication_datetime .
+      BIND(xsd:date(?publication_datetime) AS ?date_)
+    }
+    OPTIONAL {
+      ?work wdt:P50 ?author .
+      ?author rdfs:label ?author_label . FILTER(LANG(?author_label) = "en")
+    }
+    OPTIONAL {
+      ?work wdt:P921 ?topic .
+      ?topic rdfs:label ?topic_label . FILTER(LANG(?topic_label) = "en")
+    }
+  }
+  GROUP BY ?work
+  ORDER BY DESC(?date)
+  LIMIT 500
+} AS %results
+WHERE {
+  INCLUDE %results
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
+ORDER BY DESC(?date)
+''';
+  scholia:aspect scholiaAspect:Event-series ;
+  rdfs:comment "Event-series aspect: proceedings publications"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/event-series_proceedings-publications.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

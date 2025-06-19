@@ -1,0 +1,63 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:249 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+#title: Statements referencing the Q28942417 article
+#defaultView:Table
+
+PREFIX target: <http://www.wikidata.org/entity/Q28942417>
+
+SELECT ?item ?itemLabel ?property ?propertyLabel ?value ?valueLabel ?unit ?unitLabel
+WITH {
+  SELECT ?statement WHERE { 
+	  ?statement prov:wasDerivedFrom/pr:P248 target: .
+  }
+  LIMIT 2000
+} AS %statements 
+WITH {
+  SELECT distinct ?item ?property ?value ?unit
+  WHERE {
+    INCLUDE %statements
+    ?item ?p ?statement .
+    ?property wikibase:claim ?p . OPTIONAL { ?property wikibase:statementValueNormalized ?a1 }
+    ?statement ?a1 ?value1 ; ?a2 ?value2 . BIND (COALESCE(?value1, ?value2) AS ?value) BIND (COALESCE(?a1, ?a2) AS ?a)
+    FILTER (!STRSTARTS(LCASE(STR(?value)), "http://wikiba.se/ontology#"))
+    FILTER (!STRSTARTS(LCASE(STR(?value)), "http://www.wikidata.org/value/"))
+    FILTER (!STRSTARTS(LCASE(STR(?value)), "http://www.wikidata.org/reference/"))
+    OPTIONAL {?statement ?psv_statement_predicate ?psv_statement .
+    ?statement_predicate_property wikibase:statementValue ?psv_statement_predicate.
+    ?psv_statement wikibase:quantityUnit ?unit}
+  }
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . } 
+} 
+ORDER BY DESC(?itemLabel)
+''';
+  scholia:aspect scholiaAspect:Work ;
+  scholia:defaultView scholiaView:Table ;
+  rdfs:comment "Work aspect: statements"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/work_statements.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

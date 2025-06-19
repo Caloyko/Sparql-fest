@@ -1,0 +1,62 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:064 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q4203254>
+
+SELECT
+  ?Identifier ?IdentifierLabel
+  ?id (SAMPLE(?idUrls) as ?idUrl)
+  ?IdentifierDescription
+WITH {
+  SELECT ?Identifier ?id ?formatterurl WHERE {
+    target: ?IDdir ?id .
+    ?Identifier wikibase:directClaim ?IDdir ;
+            wdt:P31/wdt:P279* wd:Q19847637 .
+    OPTIONAL {
+      ?Identifier wdt:P1630 ?formatterurl .
+    }
+  } LIMIT 500
+} AS %RESULTS {
+  { SELECT * WHERE {
+      INCLUDE %RESULTS
+      FILTER (?Identifier = wd:P234)
+      BIND(IRI(REPLACE(?formatterurl, '\\\\$1', ENCODE_FOR_URI(str(?id)))) AS ?idUrls).
+    }
+  } UNION {
+    SELECT * WHERE {
+      INCLUDE %RESULTS
+      FILTER (?Identifier != wd:P234)
+      BIND(IRI(REPLACE(?formatterurl, '\\\\$1', str(?id))) AS ?idUrls).
+    }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
+GROUP BY ?Identifier ?IdentifierLabel ?IdentifierDescription ?id
+ORDER BY ASC(?IdentifierLabel)
+''';
+  scholia:aspect scholiaAspect:Dataset ;
+  rdfs:comment "Dataset aspect: identifiers"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/dataset_identifiers.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

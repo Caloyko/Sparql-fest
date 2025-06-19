@@ -1,0 +1,83 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:133 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX target: <http://www.wikidata.org/entity/Q124262264>
+
+SELECT DISTINCT ?description ?value ?valueUrl
+WHERE {
+  BIND(target: AS ?podcast)
+  {
+    BIND(1 AS ?order)
+    BIND("Title" AS ?description)
+    ?podcast wdt:P1476 ?value .
+  }
+  UNION
+  {
+    SELECT
+      (2 AS ?order)
+      ("Presenters" AS ?description)
+      (GROUP_CONCAT(?value_; separator=", ") AS ?value)
+      (CONCAT("../authors/", GROUP_CONCAT(?q; separator=",")) AS ?valueUrl)
+    {
+      BIND(1 AS ?dummy)
+      target: wdt:P371 ?iri .
+      BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+      ?iri rdfs:label ?value_string . 
+      FILTER (LANG(?value_string) = 'en')
+      BIND(COALESCE(?value_string, ?q) AS ?value_)
+    }
+    GROUP BY ?dummy
+  }
+  UNION
+  {
+    BIND(3 AS ?order)
+    BIND("Language" AS ?description)
+    ?podcast wdt:P407 ?iri .
+    BIND(SUBSTR(STR(?iri), 32) AS ?q) 
+    ?iri rdfs:label ?value_string .
+    FILTER (LANG(?value_string) = 'en')
+    BIND(STR(?value_string) AS ?value)
+    BIND(CONCAT("../language/", ?q, "/podcast") AS ?valueUrl)
+  }
+  UNION
+  {
+    SELECT ?description ?order (MAX(?value_) AS ?value) WHERE {
+      BIND(target: AS ?podcast)
+      ?podcast wdt:P1113 ?value_ .
+      BIND(4 AS ?order)
+      BIND("Number of episodes" AS ?description)
+    } GROUP BY ?description ?order
+  }
+  UNION
+  {
+    BIND(5 AS ?order)
+    BIND("Web feed" AS ?description)
+    ?podcast wdt:P1019 ?valueUrl .
+    BIND("feed" AS ?value)
+  }
+} 
+ORDER BY ?order
+''';
+  scholia:aspect scholiaAspect:Podcast ;
+  rdfs:comment "Podcast aspect: data"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/podcast_data.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

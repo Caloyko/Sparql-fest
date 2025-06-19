@@ -1,0 +1,69 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:069 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q917357>
+
+SELECT
+  ?count
+  ?gene_count
+  ?symptom_count
+  ?disease ?diseaseLabel
+  ?genes
+  ?symptoms
+{
+  {
+    SELECT ?disease (COUNT(?gene) AS ?gene_count) (GROUP_CONCAT(?gene_label; separator=" // ") AS ?genes) WHERE {
+      target: wdt:P2293 ?gene .
+      ?gene wdt:P2293 ?disease . 
+      FILTER (target: != ?disease)
+      ?gene rdfs:label ?gene_label
+      FILTER(lang(?gene_label) = "en")
+    }
+    GROUP BY ?disease
+  }
+  UNION
+  {
+    SELECT
+      ?disease (COUNT(?symptom) AS ?symptom_count) (GROUP_CONCAT(?symptom_label; separator=" // ") AS ?symptoms)
+    {
+      target: wdt:P780 ?symptom .
+      ?disease wdt:P780 ?symptom . 
+      FILTER (target: != ?disease)
+      ?symptom rdfs:label ?symptom_label . FILTER(lang(?symptom_label) = "en")
+    }
+    GROUP BY ?disease
+  }
+
+  # Aggregate count
+  BIND((COALESCE(?symptom_count, 0) + COALESCE(?gene_count, 0)) AS ?count)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+ORDER BY DESC(?count)
+''';
+  scholia:aspect scholiaAspect:Disease ;
+  rdfs:comment "Disease aspect: related diseases"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/disease_related-diseases.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

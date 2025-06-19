@@ -1,0 +1,70 @@
+@prefix q: <https://bigcat-um.github.io/sparql-examples/Scholia/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix scholia: <http://scholia.toolforge.org/ns/> .
+@prefix scholiaAspect: <http://scholia.toolforge.org/ns/aspect/> .
+@prefix scholiaView: <http://scholia.toolforge.org/ns/view/> .
+@prefix wd: <http://wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+
+q:037 a sh:SPARQLExecutable,
+  sh:SPARQLSelectExecutable;
+  sh:prefixes _:sparql_examples_prefixes ;
+  sh:select '''PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX target: <http://www.wikidata.org/entity/Q46995757>
+
+SELECT ?mol ?molLabel ?InChIKey ?CAS ?CASUrl ?ChemSpider ?ChemSpiderUrl ?PubChem_CID ?PubChem_CIDUrl WITH {
+SELECT DISTINCT ?mol WHERE {
+  ?mol wdt:P279* target: .
+  MINUS { [] wdt:P279 ?mol }
+} LIMIT 500
+} AS %result
+WHERE {
+INCLUDE %result
+OPTIONAL { ?mol wdt:P235 ?InChIKey }
+OPTIONAL {
+  VALUES ?CASIDdir { wdt:P231 }
+  ?mol ?CASIDdir ?CAS .
+  OPTIONAL {
+    ?CASIDpred wikibase:directClaim ?CASIDdir .
+    ?CASIDpred wdt:P1630 ?CASformatterurl .
+  }
+  BIND(IRI(REPLACE(?CASformatterurl, '\\\\$1', str(?CAS))) AS ?CASUrl).
+}
+OPTIONAL {
+  VALUES ?IDdir { wdt:P661 }
+  ?mol ?IDdir ?ChemSpider .
+  OPTIONAL {
+    ?IDpred wikibase:directClaim ?IDdir .
+    ?IDpred wdt:P1630 ?formatterurl .
+  }
+  BIND(IRI(REPLACE(?formatterurl, '\\\\$1', str(?ChemSpider))) AS ?ChemSpiderUrl).
+}
+OPTIONAL { ?mol wdt:P662 ?PubChem_CID }
+OPTIONAL {
+  VALUES ?PCIDdir { wdt:P662 }
+  ?mol ?PCIDdir ?PubChem_CID .
+  OPTIONAL {
+    ?PCIDpred wikibase:directClaim ?PCIDdir .
+    ?PCIDpred wdt:P1630 ?PCformatterurl .
+  }
+  BIND(IRI(REPLACE(?PCformatterurl, '\\\\$1', str(?PubChem_CID))) AS ?PubChem_CIDUrl).
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en" . }
+}
+''';
+  scholia:aspect scholiaAspect:Chemical-class ;
+  rdfs:comment "Chemical-class aspect: related chemicals"@en ;
+  schema:target <https://query.wikidata.org/sparql> ;
+  spex:federatesWith <http://wikiba.se/ontology#label> ;
+  cito:usesMethodIn <https://github.com/WDscholia/scholia/tree/master/scholia/app/templates/chemical-class_related-chemicals.sparql> ;
+  dcterms:license <https://www.gnu.org/licenses/gpl-3.0> .

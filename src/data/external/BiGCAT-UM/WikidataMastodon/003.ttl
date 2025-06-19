@@ -1,0 +1,35 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix ex: <https://bigcat-um.github.io/sparql-examples/WikidataMastodon/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix spex: <https://purl.expasy.org/sparql-examples/ontology#> .
+
+ex:003 a sh:SPARQLExecutable,
+       sh:SPARQLSelectExecutable ;
+    rdfs:comment "Nobel Prize winners with a Mastodon account."@en ;
+    sh:prefixes _:sparql_examples_prefixes ;
+    sh:select """PREFIX wd: <http://wikidata.org/entity/>
+PREFIX wdt: <http://wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+SELECT ?winner ?winnerLabel ?mastodon WHERE {
+  VALUES ?nobel {
+    wd:Q7191
+    wd:Q35637
+    wd:Q37922
+    wd:Q38104
+    wd:Q44585
+    wd:Q47170
+    wd:Q80061
+  }
+  ?winner wdt:P166 ?nobel ; wdt:P4033 ?mastodon .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+""" ;
+    schema:target <https://query.wikidata.org/sparql> ;
+    spex:federatesWith <http://wikiba.se/ontology#label> ;
+    schema:keywords "nobel prize", "mastodon" ;
+    cito:usesMethodIn <https://doi.org/10.59350/v08gc-ney75> .
