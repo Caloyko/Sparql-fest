@@ -42,7 +42,7 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
         <div className="p-5 border rounded text-gray-500 bg-stone-900">
           <div className="flex items-center cursor-pointer" onClick={handleNamePhotoClick}>
             <img
-              className="inline-flex object-cover border-2 border-orange-600 rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] shadow-orange-600/100 bg-indigo-50 text-orange-500 h-16 w-16 mr-3"
+              className="inline-flex object-cover border-2 border-orange-600 rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] shadow-orange-600/100 bg-indigo-50 text-orange-500 h-20 w-20 mr-3"
               src={photo}
               alt={name}
             />
@@ -62,6 +62,7 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
             )}
             </div>
               <p>{role}</p>
+              <p className="text-sm">{mail}</p>
             </div>
           </div>
     
@@ -69,7 +70,6 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
             {description}
           </p>
 
-          <p className="mx-2 mt-1 text-sm">{mail}</p>
     
           <div className="flex mt-2 space-x-3">
         {Object.entries(socials).map(([platform, url]) => {

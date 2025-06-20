@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './reusable/Section'
 import Avatar from './ui/Avatar'
+import pauline from "../assets/images/avatar/pauline2.jpeg"
 
 const Contact = () => {
   return (
@@ -16,33 +17,19 @@ const Contact = () => {
           {/** Add link to slack */}
         <div className="flex flex-col space-y-6">
         <Avatar
-          name="Jane Doe"
-          photo="https://images.ctfassets.net/denf86kkcx7r/3KAW3ZtZZONzfHH47xWocR/b78710225146139041fcb7b8eb9f2a7f/chiot_Cavalier_King_Charles?fm=webp&w=612"
-          role="Role"
-          description="Lorem ipsum dolor sit amet, consecte adipisicing elit. Voluptatibus quia maiores et perferendis eaque."
-          mail="@gmail.com"
+          name="Pauline Lubet"
+          photo={pauline}
+          role="PhD Candidate"
+          description={ <>
+            I'm a PhD candidate at Amsterdam University Medical Center, focusing on ontology mapping, curation, and extension for rare diseases. My research is part of the European ERDERA network. <br></br> My thesis will have a focus on: <em>"From Mapping to Usability: Making Rare Disease Ontologies FAIR and Accessible."</em>
+          </>}
+          mail="p.j.e.lubet@amsterdamumc.nl"
           socials={{
-            LinkedIn: "https://linkedin.com/in/janedoe",
-            GitHub: "https://github.com/janedoe",
-            Twitter: "https://twitter.com/janedoe",
-            Instagram: "",
+            LinkedIn: "https://www.linkedin.com/in/pauline-lubet/",
+            GitHub: "https://github.com/Caloyko",
             ORCID: "https://orcid.org/0009-0006-1234-2915",
           }}
-        />     
-        <Avatar
-          name="Jane Doe"
-          photo="https://images.ctfassets.net/denf86kkcx7r/3KAW3ZtZZONzfHH47xWocR/b78710225146139041fcb7b8eb9f2a7f/chiot_Cavalier_King_Charles?fm=webp&w=612"
-          role="Role"
-          description="Lorem ipsum dolor sit amet, consecte adipisicing elit. Voluptatibus quia maiores et perferendis eaque."
-          mail="@gmail.com"
-          socials={{
-            LinkedIn: "https://linkedin.com/in/janedoe",
-            GitHub: "https://github.com/janedoe",
-            Twitter: "https://twitter.com/janedoe",
-            Instagram: "",
-            ORCID: "https://orcid.org/0009-0006-1234-2915",
-          }}
-        />   
+        />    
         </div>     
         </Section>
     </>
