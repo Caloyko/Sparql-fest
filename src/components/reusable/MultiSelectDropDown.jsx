@@ -23,11 +23,11 @@ const MultiSelectDropdown = ({ options, selectedOptions, onChange, placeholder }
   }, []);
 
   return (
-    <div className="relative w-60 bg-amber-950" ref={dropdownRef}>
+    <div className="relative w-50" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left text-sm"
+        className="w-full border border-gray-400 rounded-md shadow-sm pl-3 pr-10 py-2 text-left text-sm"
       >
         <span className="block truncate">
           {selectedOptions.length > 0 ? selectedOptions.join(', ') : (placeholder || 'Select options')}
@@ -38,18 +38,18 @@ const MultiSelectDropdown = ({ options, selectedOptions, onChange, placeholder }
       </button>
 
       {open && (
-        <div className="absolute z-10 mt-1 w-full shadow-lg max-h-60 rounded-md py-1 text-sm ring-1 ring-black ring-opacity-5 overflow-auto">
+        <div className="absolute z-10 mt-1 w-full shadow-lg max-h-60 rounded-md py-1 text-sm ring-1 ring-black ring-opacity-5 overflow-auto bg-stone-800">
           {options.map(option => (
             <div
               key={option}
               onClick={() => toggleOption(option)}
               className={`cursor-pointer select-none relative py-2 pl-3 pr-9 hover:bg-orange-500 hover:text-white ${
-                selectedOptions.includes(option) ? 'font-semibold text-orange-700' : ''
+                selectedOptions.includes(option) ? 'font-semibold text-orange-500' : ''
               }`}
             >
               {option}
               {selectedOptions.includes(option) && (
-                <span className="absolute inset-y-0 right-0 flex items-center pr-4 text-orange-600">
+                <span className="absolute inset-y-0 right-0 flex items-center pr-4 text-orange-500">
                   ✓
                 </span>
               )}
