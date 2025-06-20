@@ -1,19 +1,50 @@
-import React from 'react';
+import React, { useState, useMemo, useEffect } from 'react'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import { FiSearch } from 'react-icons/fi';
 
 const TableList = ({ data }) => {
+    const [search, setSearch] = useState('');
+      const [total, setTotal] = useState(0);
+    
+    const filteredData = useMemo(() => {
+        return data.filter(d => {
+          
+        const matchesSearch = 
+        typeof search === 'string' &&
+        (
+          (typeof d.name === 'string' && d.name.toLowerCase().includes(search.toLowerCase())) ||
+          (typeof d.description === 'string' && d.description.toLowerCase().includes(search.toLowerCase())) ||
+          (typeof d.prefix === 'string' && d.prefix.toLowerCase().includes(search.toLowerCase())) ||
+          (typeof d.namespace === 'string' && d.namespace.toLowerCase().includes(search.toLowerCase()))
+        );
+          return matchesSearch
+        });
+      }, [search]);
+
+    useEffect(() => {
+        setTotal(filteredData.length);
+    }, [filteredData]);
     return (
         <div className="w-full p-10">
             <div className="flex items-center justify-between mb-4">
-                <h5 className="text-xl font-bold leading-none text-gray-100 ">View all</h5>
-                <a href="#" className="text-sm font-medium text-orange-600 hover:underline">
-                    Later filter
-                </a>
+                <h5 className="text-l font-bold leading-none text-gray-200 ">                                    
+                    {total} result{total !== 1 ? 's' : ''}
+                </h5>
+                <div className="relative">
+                    <input
+                    type="text"
+                    placeholder="Search ..."
+                    className=" border border-neutral-500  placeholder-neutral-400 px-4 pr-10 py-2 rounded-full w-50 focus:w-64 transition-all duration-500 ease-in-out focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-orange-500"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                    />
+                    <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500/70 pointer-events-none" />
+                </div>
             </div>
             <div className="flow-root">
                 <ul role="list" className="divide-y divide-gray-200">
-                    {data.map((data, index) => (
+                    {filteredData.map((data, index) => (
                         <li key={index} className="py-3 sm:py-4">
                             <div className="flex items-center">
                                 <div className="shrink-0">
