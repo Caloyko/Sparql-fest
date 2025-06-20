@@ -2,6 +2,7 @@ import React from 'react'
 import Section from './reusable/Section'
 import Avatar from './ui/Avatar'
 import pauline from "../assets/images/avatar/pauline2.jpeg"
+import andra from "../assets/images/avatar/andra.jpeg"
 
 const Contact = () => {
   return (
@@ -28,6 +29,20 @@ const Contact = () => {
             LinkedIn: "https://www.linkedin.com/in/pauline-lubet/",
             GitHub: "https://github.com/Caloyko",
             ORCID: "https://orcid.org/0009-0006-1234-2915",
+          }}
+        />    
+        <Avatar
+          name="Andra Waagmeester"
+          photo={andra}
+          role="Assistant professor Amsterdam UMC"
+          description={ <>
+            Assistant professor Amsterdam UMC (and really good supervisor !).
+          </>}
+          mail="andra.waagmeester@erdera.org"
+          socials={{
+            LinkedIn: "https://www.linkedin.com/in/andra-waagmeester/",
+            GitHub: "https://github.com/andrawaag",
+            ORCID: "https://orcid.org/0000-0001-9773-4008",
           }}
         />    
         </div>     
