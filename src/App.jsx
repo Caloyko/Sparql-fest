@@ -10,11 +10,15 @@ import Tutorials from './pages/Tutorials'
 import OtherResources from './pages/OtherResources'
 import PrefixDetail from './pages/PrefixDetail'
 import ResourceDetail from './pages/ResourceDetail'
+import { Toaster } from 'react-hot-toast'
+
 
 const App = () => {
   return (
       <BrowserRouter basename="/Sparql-fest">
           <Navbar />
+          <Toaster position="top-right" reverseOrder={false} />
+
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/sparql-queries" element={<AllQueries/>}/>

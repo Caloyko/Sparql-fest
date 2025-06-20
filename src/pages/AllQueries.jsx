@@ -4,6 +4,7 @@ import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
 import MultiSelectDropdown from '../components/reusable/MultiSelectDropDown'
 import { FiSearch } from 'react-icons/fi';
+import toast from 'react-hot-toast';
 
 const AllQueries = () => {
   const [visibleCount, setVisibleCount] = useState(20);
@@ -161,8 +162,9 @@ const AllQueries = () => {
                   setSelectedSource([]);
                   setSelectedConcepts([]);
                   setSelectedOntologies([]);
+                  toast.success('Filters successfully reset');
                 }}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded"
+                className="bg-gradient-to-r from-orange-500 to-orange-800 py-1 my-3 px-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-900/50"
               >
                 Reset Filters
               </button>
