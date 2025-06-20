@@ -2,17 +2,22 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { sparqlQueries } from '../data/all-queries'
 import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
+import MultiSelectDropdown from '../components/reusable/MultiSelectDropDown'
+import { FiSearch } from 'react-icons/fi';
+import toast from 'react-hot-toast';
 
 const AllQueries = () => {
   const [visibleCount, setVisibleCount] = useState(20);
 
   const [search, setSearch] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedSource, setSelectedSource] = useState('');
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedSource, setSelectedSource] = useState([]);
   const [selectedConcepts, setSelectedConcepts] = useState([]);
   const [selectedOntologies, setSelectedOntologies] = useState([]);
+  const [total, setTotal] = useState(0);
+  
 
-  const allCategories = [...new Set(sparqlQueries.map(q => q.category))];
+  const allCategories = [...new Set(sparqlQueries.map(q => q.category).filter(Boolean))];
   const allSources = [...new Set(sparqlQueries.map(q => q.source).filter(Boolean))];
   const allConcepts = [...new Set(sparqlQueries.flatMap(q => q.sparqlConcepts))];
   const allOntologies = [...new Set(sparqlQueries.flatMap(q => q.ontologies))];
@@ -20,16 +25,21 @@ const AllQueries = () => {
 
   useEffect(() => {
     setVisibleCount(20);
-  }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
-
+  }, [search, selectedCategories, selectedSource, selectedConcepts, selectedOntologies]);
+  
   const filteredQueries = useMemo(() => {
     return sparqlQueries.filter(query => {
       const matchesSearch = 
         typeof query.name === 'string' &&
         typeof search === 'string' &&
         query.name.toLowerCase().includes(search.toLowerCase());
-      const matchesCategory = selectedCategory ? query.category === selectedCategory : true;
-      const matchesSource = selectedSource ? query.source === selectedSource : true;
+      const matchesCategories = selectedCategories.length > 0 
+        ? selectedCategories.includes(query.category)
+        : true;
+      const matchesSource = selectedSource.length > 0
+        ? selectedSource.includes(query.source)
+        : true;
+      console.log(selectedSource)
       const matchesConcepts = selectedConcepts.length > 0
         ? selectedConcepts.every(concept => query.sparqlConcepts.includes(concept))
         : true;
@@ -37,10 +47,13 @@ const AllQueries = () => {
         ? selectedOntologies.every(onto => query.ontologies.includes(onto))
         : true;
 
-      return matchesSearch && matchesCategory && matchesSource && matchesConcepts && matchesOntologies;
+      return matchesSearch && matchesCategories && matchesSource && matchesConcepts && matchesOntologies;
     });
-  }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
+  }, [search, selectedCategories, selectedSource, selectedConcepts, selectedOntologies]);
 
+  useEffect(() => {
+    setTotal(filteredQueries.length);
+  }, [filteredQueries]);
 
   return (
     <div>
@@ -51,35 +64,115 @@ const AllQueries = () => {
             variant="dark"
             bg={true}
         >
-          <div className="mb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <input
-            type="text"
-            placeholder="Search by name..."
-            className="p-2 rounded"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          <div className="mb-6 space-y-4">
+            {/* ACTIVE FILTER BADGES */}
+<div className="flex flex-wrap gap-2">
+    {selectedCategories.map(categorie => (
+        <span key={categorie} className="bg-lime-600 text-white px-2 py-1 rounded flex items-center">
+          {categorie}
+          <button
+            onClick={() => setSelectedCategories(prev => prev.filter(c => c !== categorie))}
+            className="ml-2"
+          >
+            ×
+          </button>
+        </span>
+      ))}
+    {selectedSource.map(source => (
+    <span key={source} className="bg-teal-600 text-white px-2 py-1 rounded flex items-center">
+      {source}
+      <button
+        onClick={() => setSelectedSource(prev => prev.filter(s => s !== source))}
+        className="ml-2"
+      >
+        ×
+      </button>
+    </span>
+  ))}
+    {selectedConcepts.map(concept => (
+      <span key={concept} className="bg-purple-600 text-white px-2 py-1 rounded flex items-center">
+        {concept}
+        <button onClick={() => setSelectedConcepts(prev => prev.filter(c => c !== concept))} className="ml-2">×</button>
+      </span>
+    ))}
+    {selectedOntologies.map(onto => (
+      <span key={onto} className="bg-pink-800 text-white px-2 py-1 rounded flex items-center">
+        {onto}
+        <button onClick={() => setSelectedOntologies(prev => prev.filter(o => o !== onto))} className="ml-2">×</button>
+      </span>
+    ))}
+  </div>
 
-          <select className="p-2 rounded" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
-            <option value="">All Categoires</option>
-            {allCategories.map(category => <option key={category} value={category}>{category}</option>)}
-          </select>
+            {/* FILTER SECTION */}
+            <div className="pt-2 flex flex-col sm:flex-row gap-4 w-full">
+              {/* Left: Filters */}
+              <div className="flex flex-wrap gap-2 w-full">
+                <MultiSelectDropdown
+                    options={allCategories}
+                    selectedOptions={selectedCategories}
+                    onChange={setSelectedCategories}
+                    placeholder="All categories"
+                  />
 
-          <select className="p-2 rounded" value={selectedSource} onChange={(e) => setSelectedSource(e.target.value)}>
-            <option value="">All Sources</option>
-            {allSources.map(source => <option key={source} value={source}>{source}</option>)}
-          </select>
+                <MultiSelectDropdown
+                  options={allSources}
+                  selectedOptions={selectedSource}
+                  onChange={setSelectedSource}
+                  placeholder="All Sources"
+                />
 
-          <select multiple className="p-2 rounded" onChange={(e) => setSelectedConcepts([...e.target.selectedOptions].map(o => o.value))}>
-            {allConcepts.map(concept => <option key={concept} value={concept}>{concept}</option>)}
-          </select>
+                <MultiSelectDropdown
+                  options={allConcepts}
+                  selectedOptions={selectedConcepts}
+                  onChange={setSelectedConcepts}
+                  placeholder="Select concepts"
+                />
 
-          <select multiple className="p-2 rounded" onChange={(e) => setSelectedOntologies([...e.target.selectedOptions].map(o => o.value))}>
-            {allOntologies.map(onto => <option key={onto} value={onto}>{onto}</option>)}
-          </select>
+                <MultiSelectDropdown
+                  options={allOntologies}
+                  selectedOptions={selectedOntologies}
+                  onChange={setSelectedOntologies}
+                  placeholder="Select prefix"
+                />
+              </div>
+              {/* Right: Search */}
+              <div className="w-full sm:w-1/3 flex justify-end items-start sm:items-center">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search by name..."
+                    className=" border border-neutral-500  placeholder-neutral-400 px-4 pr-10 py-2 rounded-full w-50 focus:w-64 transition-all duration-500 ease-in-out focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-orange-500"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+                  <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500/70 pointer-events-none" />
+                </div>
+              </div>
+            </div>
 
-          
-        </div>
+            <hr className="border-gray-500 my-2" />
+            <div className="flex justify-between items-center">
+              <div className="text-white font-semibold text-lg">
+                {total} quer{total !== 1 ? 'ies' : 'y'} found
+              </div>
+              <button
+                onClick={() => {
+                  setSearch('');
+                  setSelectedCategories([]);
+                  setSelectedSource([]);
+                  setSelectedConcepts([]);
+                  setSelectedOntologies([]);
+                  toast.success('Filters successfully reset');
+                }}
+                className="bg-gradient-to-r from-orange-500 to-orange-800 py-1 my-3 px-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-900/50"
+              >
+                Reset Filters
+              </button>
+            </div>
+
+
+          </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
       {filteredQueries.slice(0, visibleCount).map((product, key) => (
         <Card key={key} data={product} />
