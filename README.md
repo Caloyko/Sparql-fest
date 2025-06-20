@@ -8,13 +8,13 @@ Welcome to **SPARQL Fest**, an interactive platform for exploring SPARQL queries
 
 ---
 
-## 🌐 Visit the Website
+## Visit the Website
 
 👉 [Click here to access SPARQL Fest](https://caloyko.github.io/Sparql-fest)
 
 ---
 
-## 🧠 What is SPARQL Fest?
+## What is SPARQL Fest?
 
 **SPARQL Fest** is a user-friendly web interface designed to help you:
 - **Discover SPARQL with queries** on various RDF data sources;
@@ -25,20 +25,20 @@ No programming skills required. The platform is intended for researchers, studen
 
 ---
 
-## 📚 Key Features
+## Key Features
 
 - 🧪 **Ready-to-use SPARQL query examples**
 - 🧭 **Intuitive navigation by category, concept, or level**
 - 🗂️ **Organized by theme and difficulty**
 
-### 🔮 Upcoming Features
+### Upcoming Features
 - 🛠️ **Visual exploration of RDF graphs**
 - 🧩 **Multilingual support** (if enabled)
 - 🌓 **Dark/light mode**
 
 ---
 
-## 🚀 How to Contribute or Participate
+## How to Contribute or Participate
 
 You don’t need to touch the code to get involved! Here’s how you can help:
 
@@ -63,7 +63,7 @@ We regularly organize workshops and community events to:
 
 ---
 
-## 📁 Repository Overview
+## Repository Overview
 
 > This repository contains the **source code** for the SPARQL Fest website. You do not need to install anything to use the platform.
 
