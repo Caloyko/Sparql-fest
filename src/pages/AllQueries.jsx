@@ -8,14 +8,14 @@ const AllQueries = () => {
   const [visibleCount, setVisibleCount] = useState(20);
 
   const [search, setSearch] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedSource, setSelectedSource] = useState([]);
   const [selectedConcepts, setSelectedConcepts] = useState([]);
   const [selectedOntologies, setSelectedOntologies] = useState([]);
   const [total, setTotal] = useState(0);
   
 
-  const allCategories = [...new Set(sparqlQueries.map(q => q.category))];
+  const allCategories = [...new Set(sparqlQueries.map(q => q.category).filter(Boolean))];
   const allSources = [...new Set(sparqlQueries.map(q => q.source).filter(Boolean))];
   const allConcepts = [...new Set(sparqlQueries.flatMap(q => q.sparqlConcepts))];
   const allOntologies = [...new Set(sparqlQueries.flatMap(q => q.ontologies))];
@@ -23,7 +23,7 @@ const AllQueries = () => {
 
   useEffect(() => {
     setVisibleCount(20);
-  }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
+  }, [search, selectedCategories, selectedSource, selectedConcepts, selectedOntologies]);
   
   const filteredQueries = useMemo(() => {
     return sparqlQueries.filter(query => {
@@ -31,7 +31,9 @@ const AllQueries = () => {
         typeof query.name === 'string' &&
         typeof search === 'string' &&
         query.name.toLowerCase().includes(search.toLowerCase());
-      const matchesCategory = selectedCategory ? query.category === selectedCategory : true;
+      const matchesCategories = selectedCategories.length > 0 
+        ? selectedCategories.includes(query.category)
+        : true;
       const matchesSource = selectedSource.length > 0
         ? selectedSource.includes(query.source)
         : true;
@@ -43,9 +45,9 @@ const AllQueries = () => {
         ? selectedOntologies.every(onto => query.ontologies.includes(onto))
         : true;
 
-      return matchesSearch && matchesCategory && matchesSource && matchesConcepts && matchesOntologies;
+      return matchesSearch && matchesCategories && matchesSource && matchesConcepts && matchesOntologies;
     });
-  }, [search, selectedCategory, selectedSource, selectedConcepts, selectedOntologies]);
+  }, [search, selectedCategories, selectedSource, selectedConcepts, selectedOntologies]);
 
   useEffect(() => {
     setTotal(filteredQueries.length);
@@ -68,7 +70,7 @@ const AllQueries = () => {
               <button
                 onClick={() => {
                   setSearch('');
-                  setSelectedCategory('');
+                  setSelectedCategories([]);
                   setSelectedSource([]);
                   setSelectedConcepts([]);
                   setSelectedOntologies([]);
@@ -83,10 +85,12 @@ const AllQueries = () => {
             <div className="flex flex-col lg:flex-row gap-4">
               {/* Left: Filters */}
               <div className="flex flex-wrap gap-2 flex-1">
-                <select className="p-2 rounded" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
-                  <option value="">All Categories</option>
-                  {allCategories.map(category => <option key={category} value={category}>{category}</option>)}
-                </select>
+                <MultiSelectDropdown
+                    options={allCategories}
+                    selectedOptions={selectedCategories}
+                    onChange={setSelectedCategories}
+                    placeholder="All categories"
+                  />
 
                 <MultiSelectDropdown
                   options={allSources}
@@ -119,12 +123,17 @@ const AllQueries = () => {
 
 {/* ACTIVE FILTER BADGES */}
 <div className="flex flex-wrap gap-2">
-    {selectedCategory && (
-      <span className="bg-blue-600 text-white px-2 py-1 rounded flex items-center">
-        {selectedCategory}
-        <button onClick={() => setSelectedCategory('')} className="ml-2">×</button>
-      </span>
-    )}
+    {selectedCategories.map(categorie => (
+        <span key={categorie} className="bg-cyan-600 text-white px-2 py-1 rounded flex items-center">
+          {categorie}
+          <button
+            onClick={() => setSelectedCategories(prev => prev.filter(c => c !== categorie))}
+            className="ml-2"
+          >
+            ×
+          </button>
+        </span>
+      ))}
     {selectedSource.map(source => (
     <span key={source} className="bg-green-600 text-white px-2 py-1 rounded flex items-center">
       {source}
