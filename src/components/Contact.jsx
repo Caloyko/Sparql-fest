@@ -36,9 +36,9 @@ const Contact = () => {
           photo={andra}
           role="Assistant professor Amsterdam UMC"
           description={ <>
-            Assistant professor Amsterdam UMC (and really good supervisor !).
+            Assistant professor at Amsterdam UMC. Advocates for SPARQL and RDF simplicity. If it looks complex, that’s reality talking—don’t shoot the messenger.
           </>}
-          mail="andra.waagmeester@erdera.org"
+          mail="a.s.waagmeester@amsterdamumc.nl"
           socials={{
             LinkedIn: "https://www.linkedin.com/in/andra-waagmeester/",
             GitHub: "https://github.com/andrawaag",
