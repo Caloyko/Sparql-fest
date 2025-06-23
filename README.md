@@ -27,7 +27,7 @@ The platform is intended for researchers, students, and anyone curious about sem
 
 - **Ready-to-use SPARQL query examples**
 - **Intuitive navigation by category, concept, or level**
-- 🗂**Organized by theme and difficulty**
+- **Organized by theme and difficulty**
 
 ### Upcoming Features
 - **Visual exploration of RDF graphs**
