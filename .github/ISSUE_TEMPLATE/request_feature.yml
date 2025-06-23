@@ -1,0 +1,44 @@
+name: Feature Request
+description: Template to request a new feature.
+title: "[FEATURE] Feature Title"
+labels: [feature]
+assignees: [username]
+
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label:  Type of Request
+      description: 
+      options:
+        - Query Visualization
+        - User Interaction
+        - Tutorials
+        - Resources
+        - Prefixes
+        - Other ...
+    required: true
+
+  - type: input
+    id: other_request_type
+    attributes:
+      label: If Other, Please Specify
+      placeholder: "Please specify the type of request."
+
+  
+  - type: markdown
+    attributes:
+      value: |
+        Describe the feature you would like to add.
+
+  - type: input
+    id: motivation
+    attributes:
+      label: Motivation
+      placeholder: "Why is this feature important?"
+
+  - type: input
+    id: additional_context
+    attributes:
+      label: Additional Context
+      placeholder: "Add any other relevant context."
