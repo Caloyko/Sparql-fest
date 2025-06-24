@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Editor } from '@monaco-editor/react';
-const CodeBlock = ({dataQuery}) => {
+
+const CodeBlock = ({dataQuery, header=true, line= true, headerTitle= "Sparql"}) => {
 
   const [copied, setCopied] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const editorRef = useRef<any>(null);
   const [height, setHeight] = useState(100);
-
+  const lineNumbers = line ? 'on' : "off";
   const handleEditorDidMount = (editor: any) => {
     editorRef.current = editor;
     updateHeight();
@@ -16,8 +17,8 @@ const CodeBlock = ({dataQuery}) => {
   const updateHeight = () => {
     if (!editorRef.current) return;
     const lineCount = editorRef.current.getModel()?.getLineCount?.() ?? 1;
-    const lineHeight = editorRef.current.getOption(28); // 28 = EditorOption.lineHeight
-    const newHeight = lineCount * (lineHeight * 20) + 20; // 20 for padding
+    const lineHeight = editorRef.current.getOption(28);
+    const newHeight = lineCount * (lineHeight * 20) + 20;
     setHeight(newHeight);
   };
   const [query, setQuery] = useState("");
@@ -36,15 +37,16 @@ const CodeBlock = ({dataQuery}) => {
       className="relative bg-gray-800 rounded-xl overflow-hidden mb-6 shadow-lg"
       onMouseMove={handleMouseMove}
     >
-      <div className="bg-gray-700 text-white text-xs uppercase px-4 py-4 font-mono tracking-wide">
-        {"sparql"}
+      { header && (<>
+      <div className="bg-gray-700 text-white text-xs uppercase px-4 py-3 font-mono tracking-wide">
+        {headerTitle}
       </div>
 
       <button
         onClick={handleCopy}
         className="absolute top-2 right-2 text-xs bg-gray-600 text-white px-2 py-1 rounded hover:bg-gray-500"
       >
-        Copier
+        Copy
       </button>
 
       {copied && (
@@ -55,9 +57,9 @@ const CodeBlock = ({dataQuery}) => {
             left: mousePosition.x + 10,
           }}
         >
-          ✅ Copié !
+          ✅ Copied !
         </div>
-      )}
+      )}</>)}
 
 <Editor
         height={height}
@@ -71,7 +73,7 @@ const CodeBlock = ({dataQuery}) => {
           scrollBeyondLastLine: false,
           fontSize: 14,
           theme: 'vs-dark',
-          lineNumbers: 'on',
+          lineNumbers: lineNumbers,
         }}
       />
     </div>

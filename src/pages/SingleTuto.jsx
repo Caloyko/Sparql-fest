@@ -83,13 +83,13 @@ const SingleTuto = () => {
         </aside>
 
           
-          <main className=" overflow-y-auto  col-span-5  shadow-lg rounded-lg p-6">
+          <div className=" overflow-y-auto  col-span-5  shadow-lg rounded-lg p-6">
             <div className="min-h-screen">
                {detail.content.map((section, key) => (
                     <TutoSection key={key} section={section} />
                 ))}
             </div>
-          </main>
+          </div>
         </div>
         </Section>
 
