@@ -11,6 +11,7 @@ import OtherResources from './pages/OtherResources'
 import PrefixDetail from './pages/PrefixDetail'
 import ResourceDetail from './pages/ResourceDetail'
 import { Toaster } from 'react-hot-toast'
+import SingleTuto from './pages/SingleTuto'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
               <Route path="/sparql-prefixes" element={<AllPrefixes/>}/>
               <Route path="sparql-prefixes/:slug" element={<PrefixDetail/>} />
               <Route path="/tutorials" element={<Tutorials/>}/>
+              <Route path="/tutorials/:slug" element={<SingleTuto/>}/>
               <Route path="/other-resources" element={<OtherResources/>}/>
               <Route path="/other-resources/:slug" element={<ResourceDetail/>}/>
             </Routes>
