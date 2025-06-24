@@ -94,35 +94,45 @@ These foundational tools are essential to building more complex SPARQL queries. 
         },
         {
             id: 3,
-            section_title: "3 – Structure of a SPARQL Query",
-            description: "Understanding the structure of a SPARQL query is the foundation for writing meaningful queries over RDF data. SPARQL follows a pattern-matching approach where queries are made up of graph patterns that describe what kind of data to retrieve.",
+            section_title: "3 - Filtering and Limiting Results",
+            description: "This section focuses on improving the **precision** and **readability** of SPARQL query results. You'll learn how to **filter** results based on language or values, how to **limit** the number of results returned, and how to use DISTINCT to avoid duplicates.",
             sparql_concept: [
                 {
-                    name: SparqlConcepts.PREFIX,
-                    description: "The PREFIX keyword is used to define short aliases (prefixes) for long URIs that appear frequently in RDF datasets. Since RDF resources are typically identified by long IRIs (e.g., http://xmlns.com/foaf/0.1/name), PREFIX helps simplify and clarify queries, making them more readable.",
-                    example: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>`,
-                    example_comment: "After this, we can use foaf:name instead of writing the full IRI each time.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#prefNames"
-                },
-                {
-                    name: SparqlConcepts.SELECT,
-                    description: "The SELECT clause specifies what variables (i.e., pieces of data) we want the query to return. Each variable is prefixed by a ? (e.g., ?person, ?name). This clause defines the shape of the results table, i.e., the columns of the returned dataset.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#select"
-                },
-                {
-                    name: SparqlConcepts.WHERE,
-                    description: "The WHERE clause contains the pattern of RDF triples we are trying to match. Each triple is written as:",
-                    example: "?subject ?predicate ?object",
-                    example_comment: "This is where the actual filtering and data selection logic happens: SPARQL will return all results that match this pattern in the dataset.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#WritingSimpleQueries",
+                    name: SparqlConcepts.FILTER,
+                    description: "The **FILTER** clause allows you to *narrow down* the results of your query based on specific criteria. It can be used with strings, numbers, dates, or language tags.",
+                    example: `# Only labels in English: 
+FILTER(LANG(?label) = "en")  
 
-                }
+# Only names that contain "disease":
+FILTER(CONTAINS(LCASE(?label), "disease"))`,
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#termConstraint"
+                },
+                {
+                    name: SparqlConcepts.LANG,
+                    description: "The ***LANG()*** function is often used inside a filter to check the *language tag* of a string. It is especially useful when querying multilingual datasets like Wikidata.",
+                    example: `FILTER(LANG(?label) = "en")`,
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#func-lang"
+                },
+                {
+                    name: SparqlConcepts.LIMIT,
+                    description: "Use LIMIT to restrict the number of rows returned. This is very helpful for debugging or to avoid overwhelming outputs in large datasets.",
+                    example: "LIMIT 10",
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#modResultLimit",
+                },
+                {
+                    name: SparqlConcepts.DISTINCT,
+                    description: "The ***DISTINCT*** keyword ensures that each returned result is *unique*. Without it, you may get duplicate rows if the same entity matches multiple times.",
+                    example: "SELECT DISTINCT ?drug",
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#sparqlDistinct",
+                },
             ],
-            conclusion: `These three components together make up the skeleton of any SPARQL query:
-PREFIX gives semantic context and simplifies IRIs,
-SELECT tells what to retrieve,
-WHERE describes what to match.`,
-            query: "tuto-1-basic-disease-labels"
+            conclusion: `In this section, you’ve learned how to:  
+    - Use **FILTER** to refine query results.  
+    - Select only results in a specific language using **LANG().**  
+    - Avoid duplicates with **DISTINCT.**  
+    - Reduce the number of results with **LIMIT.**  
+These tools help you **clean up and control** the data your queries return. This is essential when working with large and multilingual datasets like **Wikidata.**`,
+            query: "tuto-1-basic-drug-list-filtered"
         },
     ]
 };

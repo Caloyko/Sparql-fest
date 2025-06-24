@@ -72,5 +72,44 @@ export const tutoQueries = [
         ],
         category: "level-0",
         rdfResultExample: ``
+      },
+      {
+        name: "Basic drug list with filtering and limit",
+        slug: "tuto-1-basic-drug-list-filtered",
+        date: "24/06/2025",
+        description: `Retrieve a distinct list of pharmaceutical drugs with English labels using basic FILTER, DISTINCT, and LIMIT clauses.`,
+        context: `You are building a medical interface and want to display a few drug names in English. This query shows how to filter and limit the results properly.`,
+        inidces: [
+        "PREFIX wd: <http://www.wikidata.org/entity/>, defines the namespace for Wikidata entities.",
+        "SELECT DISTINCT ?drug ?label, returns a unique list of drug URIs and their labels.",
+        "WHERE { ?drug wdt:P31 wd:Q12140 . }, filters items that are instances of pharmaceutical drugs.",
+        "FILTER(LANG(?label) = \"en\"), ensures only English-language labels are included.",
+         "LIMIT 5, restricts the output to the first 5 matching results."
+        ],
+        query: `PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?drug ?label WHERE {
+  ?drug wdt:P31 wd:Q12140 .         # P31 = instance of, Q12140 = pharmaceutical drug
+  ?drug rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+}
+LIMIT 5
+`,
+        ontologies: [
+          "Wikidata",
+          "RDFS",
+        ],
+        sparqlConcepts: [
+          "DISTINCT",
+          "FILTER",
+          "LANG",
+          "LIMIT",
+          "SELECT",
+          "PREFIX",
+        ],
+        category: "level-0",
+        rdfResultExample: ``
       }     
 ]
