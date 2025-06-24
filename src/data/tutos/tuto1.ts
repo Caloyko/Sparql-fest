@@ -37,7 +37,7 @@ export const tuto1: Tuto = {
 PREFIX gives semantic context and simplifies IRIs,
 SELECT tells what to retrieve,
 WHERE describes what to match.`,
-            query: "slug"
+            query: "tuto-1-basic-disease-labels"
         },
         // TODO
         {
@@ -70,7 +70,7 @@ WHERE describes what to match.`,
 PREFIX gives semantic context and simplifies IRIs,
 SELECT tells what to retrieve,
 WHERE describes what to match.`,
-            query: "slug"
+            query: "tuto-1-basic-disease-labels"
         },
         {
             id: 3,
@@ -102,7 +102,7 @@ WHERE describes what to match.`,
 PREFIX gives semantic context and simplifies IRIs,
 SELECT tells what to retrieve,
 WHERE describes what to match.`,
-            query: "slug"
+            query: "tuto-1-basic-disease-labels"
         },
     ]
 };
