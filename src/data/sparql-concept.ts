@@ -1,6 +1,9 @@
 export enum SparqlConcepts {
+  IN = "IN",
+  SELECT_WHERE = "SELECT_WHERE",
+  FROM_NAMED = "FROM_NAMED",
   TYPE = "TYPE",
-  INVERSE = "INVERSE",
+  INVERSE_PATH = "INVERSE_PATH",
   A = "A",
   VARIABLE = "VARIABLE",
   RDFTRIPLE = "RDFTRIPLE",

@@ -20,10 +20,10 @@ const Tutorials = () => {
             {allTutos.slice(0, visibleCount).map((tuto, key) => (
               <Card key={key} data={{
                 name: tuto.title,
-                image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80",
+                image: tuto.img ? tuto.img : "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80",
                 category: tuto.category,
                 date: tuto.date.toLocaleDateString(),
-                ontologies : [],
+                ontologies : [tuto.status],
                 slug: tuto.slug
 
               }} />

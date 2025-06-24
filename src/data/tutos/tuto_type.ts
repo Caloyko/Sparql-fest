@@ -16,12 +16,19 @@ interface Section {
     conclusion: string;
     query: string;
 }
+export enum TaskStatus {
+    InProgress = 'InProgress',
+    Done = 'Done',
+    NeedsReview = 'NeedsReview'
+  }
 
 export interface Tuto {
+    img?: string;
     title: string;
     level: string;
     content: Section[];
     category: string;
     date: Date;
     slug: string;
+    status: TaskStatus
 }

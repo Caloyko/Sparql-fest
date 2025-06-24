@@ -5,7 +5,6 @@ import Section from '../components/reusable/Section';
 import TutoSection from '../components/TutoSection';
 
 const SingleTuto = () => {
-    const headerImage = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
     const {slug} = useParams();
     const [detail, setDetail] = useState(null);
     const [activeSection, setActiveSection] = useState('');
@@ -48,7 +47,9 @@ const SingleTuto = () => {
         return concepts;
     };
     const allSparqlConcepts = getAllSparqlConcepts();
-    console.log(allSparqlConcepts)
+
+    const headerImage = detail?.img ? detail.img : 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
+
     return (
       <>
         {/* Header Image */}

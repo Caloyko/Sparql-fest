@@ -81,7 +81,7 @@ const TutoSection = ({ section }) => {
                 </div>
             )}
 
-
+{query && (
             <div className="border rounded-lg p-4 mb-4 mt-5">
             <div className="flex items-center cursor-pointer " onClick={toggleDetails}>
                 <FaPencilAlt className=' text-orange-500' />
@@ -126,7 +126,7 @@ const TutoSection = ({ section }) => {
                     <CodeBlock dataQuery={query.query}/>
                 </div>
             )}
-        </div>
+        </div>)}
         </section>
     );
 };
