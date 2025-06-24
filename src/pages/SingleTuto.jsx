@@ -80,7 +80,7 @@ const SingleTuto = () => {
   
         {/* Main Content */}
         <div className="grid grid-cols-7 gap-4 p-4 min-h-screen">
-        <aside className="self-start sticky top-0 col-span-2 shadow-lg rounded-lg p-4">
+        <aside className="self-start sticky top-0 col-span-2 shadow-lg rounded-lg p-4 pt-20">
             <ul>
                 {detail.content.map((section) => (
                     <li key={section.id}>
