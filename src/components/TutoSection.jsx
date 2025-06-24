@@ -24,7 +24,7 @@ const TutoSection = ({ section }) => {
         <section id={section.id} className="mb-12 mt-5">
             <h2 className="text-2xl font-bold mb-2 text-orange-500">{section.section_title}</h2>
 
-            <p>{section.description}</p>
+            <Markdown>{section.description}</Markdown>
 
             {section.sparql_concept && section.sparql_concept.length > 0 && (
                 <div className="mt-4">

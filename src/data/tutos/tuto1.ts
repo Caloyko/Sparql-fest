@@ -134,6 +134,32 @@ FILTER(CONTAINS(LCASE(?label), "disease"))`,
 These tools help you **clean up and control** the data your queries return. This is essential when working with large and multilingual datasets like **Wikidata.**`,
             query: "tuto-1-basic-drug-list-filtered"
         },
+        {
+            id: 4,
+            section_title: "4 - Optional and Alternative properties",
+            description: "When working with open datasets like Wikidata, it's common to encounter missing, optional, or alternative information. SPARQL provides two essential tools to help deal with this: **OPTIONAL** and **UNION**.",
+            sparql_concept: [
+                {
+                    name: SparqlConcepts.OPTIONAL,
+                    description: "Allows you to **optionally match** a triple pattern. If the optional data exists, it will be included; if it doesn't, the rest of the result will still be returned.",
+                    example: `OPTIONAL { ?item wdt:P18 ?image . }`,
+                    example_comment : "Useful when not all entities have a certain property (like an image or description), but you still want them included in results.",
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#optionals"
+                },
+                {
+                    name: SparqlConcepts.UNION,
+                    description: "Combines **multiple patterns** in a logic OR. Results that match any of the unioned patterns will be included.",
+                    example: `{ ?item wdt:P31 wd:Q12136 } UNION { ?item wdt:P31 wd:Q5 }`,
+                    example_comment: `Useful to retrieve different types of entities (e.g. medical conditions OR people) in the same query result.`,
+                    w3c_link: "https://www.w3.org/TR/sparql11-query/#alternatives"
+                },
+            ],
+            conclusion: `This section introduced two key tools for making your queries more flexible:  
+    - **OPTIONAL:** Helps you avoid missing data by returning what is available without excluding entities.  
+    - **UNION:** Gives you logical alternatives—perfect when entities may match different shapes or classifications.  
+These features are essential for querying **real-world, incomplete RDF datasets**, especially in large knowledge graphs like Wikidata.`,
+            query: "tuto-1-disease-cause-or-symptom"
+        },
     ]
 };
 
