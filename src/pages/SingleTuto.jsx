@@ -6,6 +6,8 @@ const SingleTuto = () => {
     const headerImage = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
     const {slug} = useParams();
     const [detail, setDetail] = useState(null);
+    const [activeSection, setActiveSection] = useState('');
+
 
     useEffect(() => {
       const findDetail = allTutos.filter(tuto => tuto.slug === slug);
@@ -23,6 +25,8 @@ const SingleTuto = () => {
 
       const handleScrollToSection = (id) => {
         const section = document.getElementById(id);
+        setActiveSection(id)
+        console.log(activeSection)
         if (section) {
             section.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
@@ -47,7 +51,8 @@ const SingleTuto = () => {
                     <li key={section.id}>
                         <a 
                             onClick={() => handleScrollToSection(section.id)} 
-                            className="block p-2 rounded hover:bg-blue-100 transition cursor-pointer"
+                            className={`block p-2 rounded transition cursor-pointer 
+                                ${activeSection === section.id ? 'text-orange-500' : 'hover:bg-stone-100 hover:text-orange-500'}`}
                         >
                             {section.section_title}
                         </a>
