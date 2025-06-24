@@ -11,7 +11,7 @@ interface SparqlConcept {
 interface Section {
     id: number;
     section_title: string;
-    description: string;
+    description:  string;
     sparql_concept: SparqlConcept[];
     conclusion: string;
     query: string;
@@ -19,6 +19,7 @@ interface Section {
 
 export interface Tuto {
     title: string;
+    level: string;
     content: Section[];
     category: string;
     date: Date;

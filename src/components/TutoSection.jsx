@@ -4,12 +4,13 @@ import { FaLink, FaComment } from 'react-icons/fa6';
 import w3cImg from "../assets/images/prefixes/w3c.jpg"
 import { FaArrowDown, FaArrowUp, FaInfo, FaPencilAlt } from 'react-icons/fa';
 import { tutoQueries } from "../data/queries-data/tutos/tutosquery"
-import QueryBasicData from './QueryBasicData';
 import { TbBulb } from 'react-icons/tb';
+import Markdown from 'react-markdown'
+
+
 const TutoSection = ({ section }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [hintIsOpen, setHintIsOpen] = useState(false);
-
     const toggleDetails = () => {
         setIsOpen(!isOpen);
     };
@@ -55,7 +56,7 @@ const TutoSection = ({ section }) => {
                                             <FaInfo className="w-5 h-5 mr-2" />
                                         </div>
                                     <span>
-                                        {concept.description}
+                                        <Markdown>{concept.description}</Markdown>
                                     </span>
                                 </div>
                             {concept.example && (
@@ -69,18 +70,19 @@ const TutoSection = ({ section }) => {
                                             <FaComment className="w-5 h-5 mr-2" />
                                         </div>
                                     <span>
-                                        {concept.example_comment}
+                                        <Markdown>{concept.example_comment}</Markdown>
                                     </span>
                                 </div>
                             )}
                             
                         </div>
                     ))}
+                    <Markdown>{section.conclusion}</Markdown>
                 </div>
             )}
 
 
-            <div className="border rounded-lg p-4 mb-4">
+            <div className="border rounded-lg p-4 mb-4 mt-5">
             <div className="flex items-center cursor-pointer " onClick={toggleDetails}>
                 <FaPencilAlt className=' text-orange-500' />
                 <h1 className="ml-2 text-lg font-semibold flex-grow ">Write query to learn</h1>
