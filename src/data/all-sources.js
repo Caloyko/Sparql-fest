@@ -1,6 +1,7 @@
 import amcLogo from "../assets/images/amc_logo.jpeg"
 import sibLogo from "../assets/images/SIB2.jpg"
 import bigcatUmLogo from "../assets/images/bigcat-um.png"
+import SPLogo from "../assets/logo.png"
 export const allSources = [
     {
         id:"AMC",
@@ -29,5 +30,12 @@ export const allSources = [
         logo: bigcatUmLogo,
         prefix: "BiGCAT-UM",
         namespace: "https://bigcat-um.github.io/sparql-examples/",
+    },
+    {
+        id:"Tutorials",
+        name: "Sparql Fest Tutorials",
+        logo: SPLogo,
+        prefix: "Tutorials",
+        namespace: "https://caloyko.github.io/Sparql-fest/",
     }
 ]

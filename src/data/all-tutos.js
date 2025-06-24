@@ -6,6 +6,15 @@ import { tuto2 } from "./tutos/tuto2"
 import { tuto3 } from "./tutos/tuto3"
 import { tuto4 } from "./tutos/tuto4"
 
-const imgLevel = [img0, img1, img2]
+function mergeQueries(source) {
+  const merged =  [tuto1, tuto2, tuto3, tuto4]
 
-export const allTutos = [tuto1, tuto2, tuto3, tuto4]
+  return merged.map((query, index) => {
+    const tmp = {
+      ...query,
+      source: source
+    };
+    return tmp
+  });
+}
+export const allTutos = mergeQueries("Tutorials")
