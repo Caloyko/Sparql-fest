@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react';
 import CodeBlock from './ui/CodeBlock';
 import { FaLink, FaComment } from 'react-icons/fa6';
 import w3cImg from "../assets/images/prefixes/w3c.jpg"
-import { FaInfo } from 'react-icons/fa';
+import { FaArrowDown, FaArrowUp, FaInfo, FaPencilAlt } from 'react-icons/fa';
 import { tutoQueries } from "../data/queries-data/tutos/tutosquery"
+import QueryBasicData from './QueryBasicData';
+import { TbBulb } from 'react-icons/tb';
 const TutoSection = ({ section }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [hintIsOpen, setHintIsOpen] = useState(false);
+
+    const toggleDetails = () => {
+        setIsOpen(!isOpen);
+    };
+
     console.log(tutoQueries)
     const findquery = tutoQueries.filter(tuto => tuto.slug === section.query);
     console.log(findquery[0])
     const query = findquery[0]
     console.log(query)
     return (
-        <section id={section.id} className="mb-8">
+        <section id={section.id} className="mb-12 mt-5">
             <h2 className="text-2xl font-bold mb-2 text-orange-500">{section.section_title}</h2>
 
             <p>{section.description}</p>
@@ -70,7 +79,52 @@ const TutoSection = ({ section }) => {
                 </div>
             )}
 
-            <p>{query.name}</p>
+
+            <div className="border rounded-lg p-4 mb-4">
+            <div className="flex items-center cursor-pointer " onClick={toggleDetails}>
+                <FaPencilAlt className=' text-orange-500' />
+                <h1 className="ml-2 text-lg font-semibold flex-grow ">Write query to learn</h1>
+                {isOpen ? <FaArrowUp /> : <FaArrowDown />}
+            </div>
+
+            {isOpen && (
+                <div className="mt-4">
+                    <h1 className='text-xl'>{query.name}</h1>
+                    <h2 className="font-bold mt-4 mb-2">Description</h2>
+                    <p className="text-neutral-300 mb-6">{query.description}</p>
+
+                    <h2 className="font-bold mt-4 mb-2">Contexte</h2>
+                    <p className="text-neutral-300 mb-6">{query.context}</p>
+
+                    <h2
+                        className="flex items-center cursor-pointer select-none text-xl font-semibold mb-3"
+                        onClick={() => setHintIsOpen(!hintIsOpen)}
+                    > 
+                    <TbBulb className="text-yellow-500 mr-2" size={24} />
+                    Hints 
+                    <button
+                        aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
+                        className="ml-auto text-sm text-stone-200 hover:text-orange-è00"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setHintIsOpen(!hintIsOpen);
+                        }}
+                        >
+                        {hintIsOpen ? "Hide" : "Show"}
+                </button>
+                </h2>
+                {hintIsOpen && (
+                    <ol className="ml-6 list-disc list-inside space-y-2 text-neutral-300">
+                    {(query.inidces || []).map((hint, i) => (
+                        <li key={i}>{hint}</li>
+                    ))}
+                    </ol>
+                )}
+                    <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
+                    <CodeBlock dataQuery={query.query}/>
+                </div>
+            )}
+        </div>
             {/**
              * Write a query  to learn (open and close)
              * Description
