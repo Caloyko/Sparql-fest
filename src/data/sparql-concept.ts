@@ -1,4 +1,7 @@
 export enum SparqlConcepts {
+  A = "A",
+  VARIABLE = "VARIABLE",
+  RDFTRIPLE = "RDFTRIPLE",
   PREFIX = "PREFIX",
   SELECT = "SELECT",
   ASK = "ASK",

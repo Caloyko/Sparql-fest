@@ -10,7 +10,7 @@ export const tuto1: Tuto = {
     content: [
         {
             id: 1,
-            section_title: "Section 1.1 – Structure of a SPARQL Query",
+            section_title: "1 - Structure of a SPARQL Query",
             description: "In this lesson, you will learn how to structure a minimal SPARQL query using the most essential components. You will see how to retrieve data from a real-world SPARQL endpoint, Wikidata, using a healthcare-related example.",
             sparql_concept: [
                 {
@@ -49,38 +49,48 @@ export const tuto1: Tuto = {
     - **WHERE** describes what to match.`,  
             query: "tuto-1-basic-disease-labels"
         },
-        // TODO
         {
             id: 2,
-            section_title: "2 – Structure of a SPARQL Query",
-            description: "Understanding the structure of a SPARQL query is the foundation for writing meaningful queries over RDF data. SPARQL follows a pattern-matching approach where queries are made up of graph patterns that describe what kind of data to retrieve.",
+            section_title: "2 - Understanding Triples, Variables, and the `a` Abbreviation",
+            description: "This section explains the basic structure of data in SPARQL queries: the **triple pattern.** You will also learn how to use **variables** to retrieve values from a dataset, and how to simplify your query using the a keyword, which stands for *rdf:type.*",
             sparql_concept: [
                 {
-                    name: SparqlConcepts.PREFIX,
-                    description: "The PREFIX keyword is used to define short aliases (prefixes) for long URIs that appear frequently in RDF datasets. Since RDF resources are typically identified by long IRIs (e.g., http://xmlns.com/foaf/0.1/name), PREFIX helps simplify and clarify queries, making them more readable.",
-                    example: `PREFIX foaf: <http://xmlns.com/foaf/0.1/>`,
-                    example_comment: "After this, we can use foaf:name instead of writing the full IRI each time.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#prefNames"
+                    name: SparqlConcepts.RDFTRIPLE,
+                    description: `An RDF triple is the basic data structure in SPARQL. Each triple is composed of three parts:  
+    - **Subject** (the entity we're talking about)
+    - **Predicate** (the property or relationship)
+    - **Object** (the value or related entity)`,
+                    example: `?disease wdt:P279 wd:Q12136 .`,
+                    example_comment: `This means:  
+    - **?disease** is a subclass (**P279**) of **Q12136** (disease).`,
+                    w3c_link: ""
                 },
                 {
-                    name: SparqlConcepts.SELECT,
-                    description: "The SELECT clause specifies what variables (i.e., pieces of data) we want the query to return. Each variable is prefixed by a ? (e.g., ?person, ?name). This clause defines the shape of the results table, i.e., the columns of the returned dataset.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#select"
+                    name: SparqlConcepts.VARIABLE,
+                    description: `SPARQL uses variables to request unknown information. Variables start with a question mark, e.g. *?label*, *?disease*, *?drug*. These are placeholders: SPARQL will fill them with matching values.`,
+                    example: `SELECT ?disease ?label`,
+                    example_comment: `This means:
+    - Give me the values of the variables ?disease and ?label that match the pattern.`,
+                    w3c_link: ""
                 },
                 {
-                    name: SparqlConcepts.WHERE,
-                    description: "The WHERE clause contains the pattern of RDF triples we are trying to match. Each triple is written as:",
-                    example: "?subject ?predicate ?object",
-                    example_comment: "This is where the actual filtering and data selection logic happens: SPARQL will return all results that match this pattern in the dataset.",
-                    w3c_link: "https://www.w3.org/TR/sparql11-query/#WritingSimpleQueries",
+                    name: SparqlConcepts.A,
+                    description: "The keyword ***a*** is a *shortcut for* **rdf:type**, which is used to say that a resource is of a certain class/type.",
+                    example: `?disease a wd:Q12136 .
+# This is equivalent to:
 
+?disease rdf:type wd:Q12136 .
+`,
+                    example_comment: "Both mean: '*?disease* is a disease'. Using **a** makes queries **shorter** and **easier to read.**",
+                    w3c_link: "",
                 }
             ],
-            conclusion: `These three concepts together make up the skeleton of any SPARQL query:
-- PREFIX gives semantic context and simplifies IRIs,
-SELECT tells what to retrieve,
-WHERE describes what to match.`,
-            query: "tuto-1-basic-disease-labels"
+            conclusion: `In this section, you’ve learned:  
+    - How SPARQL queries are structured using **RDF triples**.  
+    - How to use **variables** to retrieve unknown values.  
+    - How the **a keyword** simplifies the use of rdf:type to declare the type of a resource.  
+These foundational tools are essential to building more complex SPARQL queries. In the next section, we’ll explore how to **filter** data and **limit** results for cleaner outputs.`,
+            query: "tuto-1-medical-conditions-labels"
         },
         {
             id: 3,

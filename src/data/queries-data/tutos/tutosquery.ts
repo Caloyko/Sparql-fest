@@ -31,14 +31,46 @@ export const tutoQueries = [
           "WHERE"
         ],
         category: "level-0",
-        rdfResultExample: `
-      | disease                           | label                        |
-      |----------------------------------|------------------------------|
-      | wd:Q12192                        | "Lyme disease"@en           |
-      | wd:Q12205                        | "Tuberculosis"@en           |
-      | wd:Q181255                      | "Malaria"@en                |
-      | wd:Q133212                      | "Parkinson's disease"@en    |
-      | wd:Q201658                      | "Diabetes mellitus"@en      |
-      `
-      }      
+        rdfResultExample: ``
+      }  ,
+      {
+        name: "Finding Medical Conditions and Their Labels",
+        slug: "tuto-1-medical-conditions-labels",
+        date: "24/06/2025",
+        description: `Retrieve some entities classified as medical conditions along with their labels.
+  This teaches how to write a simple RDF triple using the **'a'** keyword (which means rdf:type),
+  and how to extract information (like labels) for a variable.`,
+        context: `You want to explore Wikidata to find items that are medical conditions and get
+  their readable name (label). This exercise introduces the concept of typing an entity
+  using **a**, and retrieving basic properties with triple patterns.`,
+        inidces: [
+          "PREFIX wd: <http://www.wikidata.org/entity/> — Provides access to specific entities like 'medical condition' (Q12136).",
+          "PREFIX wdt: <http://www.wikidata.org/prop/direct/> — Used for direct relationships (not needed in this query).",
+          "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> — Allows retrieval of human-readable labels.",
+          "SELECT ?condition ?label — Tells the query to return the condition’s ID and its label.",
+          "WHERE { ?condition a wd:Q12136 . ?condition rdfs:label ?label . } — Retrieves all entities of type 'medical condition' and their label.",
+          "a : shortcut for rdf:type, used to declare that a resource belongs to a class (like wd:Q12136 = medical condition)."
+        ],
+        query: ` PREFIX wd: <http://www.wikidata.org/entity/>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+  SELECT ?condition ?label WHERE {
+    ?condition a wd:Q12136 .
+    ?condition rdfs:label ?label .
+  }`,
+        ontologies: [
+          "Wikidata",
+          "RDFS",
+        ],
+        sparqlConcepts: [
+          "TRIPLE",
+          "VARIABLE",
+          "WHERE",
+          "A",
+          "SELECT",
+          "PREFIX",
+        ],
+        category: "level-0",
+        rdfResultExample: ``
+      }     
 ]
