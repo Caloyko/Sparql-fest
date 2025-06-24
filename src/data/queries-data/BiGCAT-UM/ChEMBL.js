@@ -2,7 +2,7 @@ export const ChEMBL = [
   {
     "name": "ChEMBL - 001",
     "slug": "ChEMBL_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Show 100 small molecules with their chemical structure depicted from their SMILES representation and from their image from the database.",
     "context": null,
     "inidces": [],

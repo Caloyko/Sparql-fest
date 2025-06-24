@@ -2,7 +2,7 @@ export const WikiPathways = [
   {
     "name": "WikiPathways - 001",
     "slug": "WikiPathways_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Returns the title of the dataset, creation date, and license.",
     "context": null,
     "inidces": [],
@@ -26,7 +26,7 @@ export const WikiPathways = [
   {
     "name": "WikiPathways - 002",
     "slug": "WikiPathways_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lists all linksets defined in this database with their titles, licenses, and creation dates.",
     "context": null,
     "inidces": [],
@@ -51,7 +51,7 @@ export const WikiPathways = [
   {
     "name": "WikiPathways - 003",
     "slug": "WikiPathways_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lists prefixes used in this database.",
     "context": null,
     "inidces": [],
@@ -72,7 +72,7 @@ export const WikiPathways = [
   {
     "name": "WikiPathways - 004",
     "slug": "WikiPathways_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all pathways in the AOP community portal and their title.",
     "context": null,
     "inidces": [],
@@ -95,7 +95,7 @@ export const WikiPathways = [
   {
     "name": "WikiPathways - 005",
     "slug": "WikiPathways_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all diseases and the number of pathways they are linked to, in decreasing order.",
     "context": null,
     "inidces": [],

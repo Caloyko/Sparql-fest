@@ -2,7 +2,7 @@ export const dbgi = [
   {
     "name": "dbgi - 001",
     "slug": "dbgi_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Among the SIRIUS structural annotations from Tabernaemontana coffeoides (Apocynaceae) seeds extract, which ones are reported in the Tabernaemontana genus?",
     "context": null,
     "inidces": [],
@@ -30,7 +30,7 @@ export const dbgi = [
   {
     "name": "dbgi - 002",
     "slug": "dbgi_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Among the structural annotations from Tabernaemontana coffeoides (Apocynaceae) seeds extract, which ones contain an aspidospermidine substructure?",
     "context": null,
     "inidces": [],
@@ -55,7 +55,7 @@ export const dbgi = [
   {
     "name": "dbgi - 003",
     "slug": "dbgi_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Filter the positive ionization mode features of Melochia umbellate annotated as [M+H]+ by SIRIUS to keep the ones for which a feature in negative ionization mode is detected with the same retention time (± 3 seconds) and a mass corresponding to the [M-H]- adduct (± 5 ppm).",
     "context": null,
     "inidces": [],
@@ -85,7 +85,7 @@ export const dbgi = [
   {
     "name": "dbgi - 004",
     "slug": "dbgi_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "For features from Melochia umbellata in positive ionization mode with SIRIUS annotations, get the ones for which a feature in negative ionization mode with the same retention time (± 3 sec) has the same SIRIUS annotation (2D InChIKey).",
     "context": null,
     "inidces": [],
@@ -113,7 +113,7 @@ export const dbgi = [
   {
     "name": "dbgi - 005",
     "slug": "dbgi_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "How many features have the same SIRIUS and ISDB annotation?",
     "context": null,
     "inidces": [],
@@ -140,7 +140,7 @@ export const dbgi = [
   {
     "name": "dbgi - 006",
     "slug": "dbgi_006",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Search spectrally related features with and within the VGF151_E05 sample of a datura stramonium through counts of common peaks and loss. Return their species, family and genus names",
     "context": null,
     "inidces": [],
@@ -171,7 +171,7 @@ export const dbgi = [
   {
     "name": "dbgi - 007",
     "slug": "dbgi_007",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Show chemical structures in Melochia umbellata extracts with structural annotations where the cosmic score is greater than 0.5 and the zodiac score is less than 0.8. For ISDB annotations, consider taxon scores greater than or equal to 6",
     "context": null,
     "inidces": [],
@@ -200,7 +200,7 @@ export const dbgi = [
   {
     "name": "dbgi - 008",
     "slug": "dbgi_008",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which features in the positive ionization mode have the most fragments and neutral losses in common with the feature identified as mzspec:MSV000087728:VGF143_H08_features_ms2_pos.mgf:scan:707",
     "context": null,
     "inidces": [],
@@ -227,7 +227,7 @@ export const dbgi = [
   {
     "name": "dbgi - 009",
     "slug": "dbgi_009",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which samples have features annotated as Aspidosperma_type alkaloids by CANOPUS with a probability score above 0.5, ordered by the decreasing count of features?",
     "context": null,
     "inidces": [],
@@ -255,7 +255,7 @@ export const dbgi = [
   {
     "name": "dbgi - 011",
     "slug": "dbgi_011",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List interactions of all species which have an IUCN status (wdt:P141) of near threatened (wd:Q719675).",
     "context": null,
     "inidces": [],
@@ -281,7 +281,7 @@ export const dbgi = [
   {
     "name": "dbgi - 012",
     "slug": "dbgi_012",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List traits of all species which have an IUCN status (wdt:P141) of near threatened (wd:Q719675).",
     "context": null,
     "inidces": [],
@@ -309,7 +309,7 @@ export const dbgi = [
   {
     "name": "dbgi - 013",
     "slug": "dbgi_013",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all metabolites produced by species with near threatened (wd:Q719675) IUCN status (wdt:P141) and with values available (or greater than a specific value) for trait 'Seed dry mass'.",
     "context": null,
     "inidces": [],
@@ -341,7 +341,7 @@ export const dbgi = [
   {
     "name": "dbgi - 014",
     "slug": "dbgi_014",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List traits (and their values) of plants producing Diterpenoids",
     "context": null,
     "inidces": [],
@@ -373,7 +373,7 @@ export const dbgi = [
   {
     "name": "dbgi - 015",
     "slug": "dbgi_015",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of possible natural locations of organisms, which produce Bahamaolide A,  (wd:Q75068439) which is an antifungal (https://doi.org/10.1021/np3001915).",
     "context": null,
     "inidces": [],
@@ -404,7 +404,7 @@ export const dbgi = [
   {
     "name": "dbgi - 016",
     "slug": "dbgi_016",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of possible natural locations of plants, which produce  senkyunolide (wd:Q27251426)  which is a thalide for cerebral disorders (https://doi.org/10.3390/molecules28083636).",
     "context": null,
     "inidces": [],
@@ -436,7 +436,7 @@ export const dbgi = [
   {
     "name": "dbgi - 017",
     "slug": "dbgi_017",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List metabolites of plants that interact with plant parasite moth Orgyia postica (wd:Q7102162) .",
     "context": null,
     "inidces": [],
@@ -468,7 +468,7 @@ export const dbgi = [
   {
     "name": "dbgi - 018",
     "slug": "dbgi_018",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List links between host-parasite and host-allelopathic interactions, where host is an agricultural crop, allelopath is usually a plant that inhibits growth of parasites which are usually insects. Inhibition happens by root/stem/leaf exudates of the allelopath.",
     "context": null,
     "inidces": [],
@@ -498,7 +498,7 @@ export const dbgi = [
   {
     "name": "dbgi - 019",
     "slug": "dbgi_019",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "A list of interactions depicting connections between parasatoids harmful for insects living as parasites on plants.",
     "context": null,
     "inidces": [],
@@ -531,7 +531,7 @@ export const dbgi = [
   {
     "name": "dbgi - 020",
     "slug": "dbgi_020",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Natural producers (and their interactions that might be useful in agriculture) of Onpordopicrin (wd:Q27107580), which might exhibit antimicrobial and cytotoxic activities, especially against human-derived macrophages and against epidermoid carcinoma cells. There is limited scientific evidence to support these claims (https://www.sciencedirect.com/science/article/abs/pii/S138614251500685X).",
     "context": null,
     "inidces": [],
@@ -562,7 +562,7 @@ export const dbgi = [
   {
     "name": "dbgi - 021",
     "slug": "dbgi_021",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List possible interactions of plants that can produce Norhyocyamine (wd:Q27107545), a plant secondary metabolite.",
     "context": null,
     "inidces": [],
@@ -593,7 +593,7 @@ export const dbgi = [
   {
     "name": "dbgi - 022",
     "slug": "dbgi_022",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve data of 4 traits in leaf economics spectrum.",
     "context": null,
     "inidces": [],
@@ -629,7 +629,7 @@ export const dbgi = [
   {
     "name": "dbgi - 023",
     "slug": "dbgi_023",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve metabolites of organisms with data available from 4 traits in leaf economics spectrum.",
     "context": null,
     "inidces": [],

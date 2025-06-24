@@ -2,7 +2,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 1",
     "slug": "SwissLipids_1",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the SwissLipids categories and their labels.",
     "context": null,
     "inidces": [],
@@ -23,7 +23,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 10",
     "slug": "SwissLipids_10",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -48,7 +48,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 11",
     "slug": "SwissLipids_11",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -71,7 +71,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 12",
     "slug": "SwissLipids_12",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -92,7 +92,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 13",
     "slug": "SwissLipids_13",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -114,7 +114,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 14",
     "slug": "SwissLipids_14",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -140,7 +140,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 15",
     "slug": "SwissLipids_15",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -166,7 +166,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 16",
     "slug": "SwissLipids_16",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -192,7 +192,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 2",
     "slug": "SwissLipids_2",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -216,7 +216,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 26",
     "slug": "SwissLipids_26",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lipids produced in different organisms",
     "context": null,
     "inidces": [],
@@ -237,7 +237,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 27",
     "slug": "SwissLipids_27",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Find the list of SwissLipids for all organisms and their Isomeric subspecies",
     "context": null,
     "inidces": [],
@@ -259,7 +259,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 3",
     "slug": "SwissLipids_3",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -282,7 +282,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 34",
     "slug": "SwissLipids_34",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lipids affected by human enzymes",
     "context": null,
     "inidces": [],
@@ -303,7 +303,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 35",
     "slug": "SwissLipids_35",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lipids by fatty acid component (hexadecanoate) at position sn1",
     "context": null,
     "inidces": [],
@@ -325,7 +325,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 36",
     "slug": "SwissLipids_36",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -352,7 +352,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 37",
     "slug": "SwissLipids_37",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -379,7 +379,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 38",
     "slug": "SwissLipids_38",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -406,7 +406,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 4",
     "slug": "SwissLipids_4",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -429,7 +429,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 5",
     "slug": "SwissLipids_5",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -455,7 +455,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 6",
     "slug": "SwissLipids_6",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -481,7 +481,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 7",
     "slug": "SwissLipids_7",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -505,7 +505,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 8",
     "slug": "SwissLipids_8",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -530,7 +530,7 @@ export const SwissLipids = [
   {
     "name": "SwissLipids - 9",
     "slug": "SwissLipids_9",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],

@@ -2,7 +2,7 @@ export const AOPWiki = [
   {
     "name": "AOPWiki - 000",
     "slug": "AOPWiki_000",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "[fill out comment here]",
     "context": null,
     "inidces": [],
@@ -25,7 +25,7 @@ export const AOPWiki = [
   {
     "name": "AOPWiki - 001",
     "slug": "AOPWiki_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "[fill out comment here]",
     "context": null,
     "inidces": [],
@@ -48,7 +48,7 @@ export const AOPWiki = [
   {
     "name": "AOPWiki - 002",
     "slug": "AOPWiki_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "[fill out comment here]",
     "context": null,
     "inidces": [],
@@ -70,7 +70,7 @@ export const AOPWiki = [
   {
     "name": "AOPWiki - 003",
     "slug": "AOPWiki_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "[fill out comment here]",
     "context": null,
     "inidces": [],
@@ -93,7 +93,7 @@ export const AOPWiki = [
   {
     "name": "AOPWiki - 004",
     "slug": "AOPWiki_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "[fill out comment here]",
     "context": null,
     "inidces": [],

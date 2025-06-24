@@ -2,7 +2,7 @@ export const HAMAP = [
   {
     "name": "HAMAP - 1",
     "slug": "HAMAP_1",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all hamap rules",
     "context": null,
     "inidces": [],
@@ -25,7 +25,7 @@ export const HAMAP = [
   {
     "name": "HAMAP - 3",
     "slug": "HAMAP_3",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all hamap rules that deal with Catalytic Activity",
     "context": null,
     "inidces": [],
@@ -50,7 +50,7 @@ export const HAMAP = [
   {
     "name": "HAMAP - 4",
     "slug": "HAMAP_4",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all hamap rules that annotate a Rhea reaction with an EC enzyme class",
     "context": null,
     "inidces": [],

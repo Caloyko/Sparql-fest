@@ -2,7 +2,7 @@ export const Rhea = [
   {
     "name": "Rhea - 1",
     "slug": "Rhea_1",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions",
     "context": null,
     "inidces": [],
@@ -25,7 +25,7 @@ export const Rhea = [
   {
     "name": "Rhea - 10",
     "slug": "Rhea_10",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions linked to an enzyme classification (sub)-class",
     "context": null,
     "inidces": [],
@@ -51,7 +51,7 @@ export const Rhea = [
   {
     "name": "Rhea - 100 Get the number of ChEBI participant with at least one xref to CAS number as provided by ChEBI",
     "slug": "Rhea_100_Get_the_number_of_ChEBI_participant_with_at_least_one_xref_to_CAS_number_as_provided_by_ChEBI",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Get the number of ChEBI participant with at least one xref to CAS number as provided by ChEBI",
     "context": null,
     "inidces": [],
@@ -84,7 +84,7 @@ export const Rhea = [
   {
     "name": "Rhea - 101 Pairs of reaction participants that belong to the same reaction but on distinct sides and number of reactions in which they occur",
     "slug": "Rhea_101_Pairs_of_reaction_participants_that_belong_to_the_same_reaction_but_on_distinct_sides_and_number_of_reactions_in_which_they_occur",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pairs of reaction participants that belong to the same reaction but on distinct sides and number of reactions in which they occur",
     "context": null,
     "inidces": [],
@@ -113,7 +113,7 @@ export const Rhea = [
   {
     "name": "Rhea - 103 Select all approved reactions linked to a given EC number",
     "slug": "Rhea_103_Select_all_approved_reactions_linked_to_a_given_EC_number",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions linked to a given EC number (EC 1.1.1.353)",
     "context": null,
     "inidces": [],
@@ -137,7 +137,7 @@ export const Rhea = [
   {
     "name": "Rhea - 104 Select the number of reactions linked to EC numbers",
     "slug": "Rhea_104_Select_the_number_of_reactions_linked_to_EC_numbers",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions linked to EC numbers",
     "context": null,
     "inidces": [],
@@ -160,7 +160,7 @@ export const Rhea = [
   {
     "name": "Rhea - 105 Select all reactions linked to EC numbers",
     "slug": "Rhea_105_Select_all_reactions_linked_to_EC_numbers",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions linked to EC numbers",
     "context": null,
     "inidces": [],
@@ -183,7 +183,7 @@ export const Rhea = [
   {
     "name": "Rhea - 106 Select all reactions linked to more than one EC number",
     "slug": "Rhea_106_Select_all_reactions_linked_to_more_than_one_EC_number",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions linked to more than one EC number",
     "context": null,
     "inidces": [],
@@ -209,7 +209,7 @@ export const Rhea = [
   {
     "name": "Rhea - 107 Select the number of reactions with no links to EC numbers",
     "slug": "Rhea_107_Select_the_number_of_reactions_with_no_links_to_EC_numbers",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions with no links to EC numbers",
     "context": null,
     "inidces": [],
@@ -235,7 +235,7 @@ export const Rhea = [
   {
     "name": "Rhea - 108 Select all reactions with no links to EC numbers",
     "slug": "Rhea_108_Select_all_reactions_with_no_links_to_EC_numbers",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions with no links to EC numbers",
     "context": null,
     "inidces": [],
@@ -261,7 +261,7 @@ export const Rhea = [
   {
     "name": "Rhea - 109 Distribution of reactions according to the first level of enzyme classification",
     "slug": "Rhea_109_Distribution_of_reactions_according_to_the_first_level_of_enzyme_classification",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -285,7 +285,7 @@ export const Rhea = [
   {
     "name": "Rhea - 11",
     "slug": "Rhea_11",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Distribution of reactions according to the first class of the enzyme classification (federated query)",
     "context": null,
     "inidces": [],
@@ -314,7 +314,7 @@ export const Rhea = [
   {
     "name": "Rhea - 110 Select reaction ec protein for a given reaction",
     "slug": "Rhea_110_Select_reaction_ec_protein_for_a_given_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select <reaction> <ec> <protein> for a given reaction",
     "context": null,
     "inidces": [],
@@ -339,7 +339,7 @@ export const Rhea = [
   {
     "name": "Rhea - 111 Select reaction ec protein for a given EC number",
     "slug": "Rhea_111_Select_reaction_ec_protein_for_a_given_EC_number",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select <reaction> <ec> <protein> for a given EC number",
     "context": null,
     "inidces": [],
@@ -364,7 +364,7 @@ export const Rhea = [
   {
     "name": "Rhea - 112 Total number of reaction ec protein links",
     "slug": "Rhea_112_Total_number_of_reaction_ec_protein_links",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Total number of <reaction> <ec> <protein> links",
     "context": null,
     "inidces": [],
@@ -389,7 +389,7 @@ export const Rhea = [
   {
     "name": "Rhea - 113 Number of distinct rhea EC number UniProtKB Swiss-Prot entries involved in links",
     "slug": "Rhea_113_Number_of_distinct_rhea_EC_number_UniProtKB_Swiss-Prot_entries_involved_in_links",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Number of distinct rhea, EC number, UniProtKB/Swiss-Prot entries involved in (<reaction> <ec> <protein>) links",
     "context": null,
     "inidces": [],
@@ -414,7 +414,7 @@ export const Rhea = [
   {
     "name": "Rhea - 114 Retrieve the set of reactions catalyzed by enzymes of the ECOLI reference proteome reaction EC protein",
     "slug": "Rhea_114_Retrieve_the_set_of_reactions_catalyzed_by_enzymes_of_the_ECOLI_reference_proteome_reaction_EC_protein",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve the set of reactions catalyzed by enzymes of the ECOLI reference proteome (<reaction> - <EC> - <protein>)",
     "context": null,
     "inidces": [],
@@ -440,7 +440,7 @@ export const Rhea = [
   {
     "name": "Rhea - 115 Retrieve the set of metabolites involved in reactions catalyzed by human genes HUMAN reference proteome",
     "slug": "Rhea_115_Retrieve_the_set_of_metabolites_involved_in_reactions_catalyzed_by_human_genes_HUMAN_reference_proteome",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -466,7 +466,7 @@ export const Rhea = [
   {
     "name": "Rhea - 116 Retrieve the set of reactions catalyzed by human enzymes reactions EC proteins from HUMAN reference proteome",
     "slug": "Rhea_116_Retrieve_the_set_of_reactions_catalyzed_by_human_enzymes_reactions_EC_proteins_from_HUMAN_reference_proteome",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve the set of reactions catalyzed by human enzymes (reactions - EC - proteins from HUMAN reference proteome)",
     "context": null,
     "inidces": [],
@@ -493,7 +493,7 @@ export const Rhea = [
   {
     "name": "Rhea - 117 Retrieve parent reactions and their catalyzing enzymes for a metabolite that is not directly involved in a reaction",
     "slug": "Rhea_117_Retrieve_parent_reactions_and_their_catalyzing_enzymes_for_a_metabolite_that_is_not_directly_involved_in_a_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve parent reactions (and their catalyzing enzymes) for a metabolite that is not directly involved in a reaction (ex: CHEBI:83137).",
     "context": null,
     "inidces": [],
@@ -520,7 +520,7 @@ export const Rhea = [
   {
     "name": "Rhea - 118 Number of approved reactions missing citations",
     "slug": "Rhea_118_Number_of_approved_reactions_missing_citations",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Number of approved reactions missing citations",
     "context": null,
     "inidces": [],
@@ -547,7 +547,7 @@ export const Rhea = [
   {
     "name": "Rhea - 119 Give me the set of approved reactions missing citations",
     "slug": "Rhea_119_Give_me_the_set_of_approved_reactions_missing_citations",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Give me the set of approved reactions missing citations",
     "context": null,
     "inidces": [],
@@ -574,7 +574,7 @@ export const Rhea = [
   {
     "name": "Rhea - 12",
     "slug": "Rhea_12",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions linked to protein sequences (enzymes and transporters) in UniProtKB",
     "context": null,
     "inidces": [],
@@ -600,7 +600,7 @@ export const Rhea = [
   {
     "name": "Rhea - 126 list protein components ec",
     "slug": "Rhea_126_list_protein_components_ec",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -620,7 +620,7 @@ export const Rhea = [
   {
     "name": "Rhea - 128 list EC numbers not linked to UniProt entries",
     "slug": "Rhea_128_list_EC_numbers_not_linked_to_UniProt_entries",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -645,7 +645,7 @@ export const Rhea = [
   {
     "name": "Rhea - 13",
     "slug": "Rhea_13",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions used in UniProtKB/Swiss-Prot for a given organism (NCBI taxonomy ID).",
     "context": null,
     "inidces": [],
@@ -671,7 +671,7 @@ export const Rhea = [
   {
     "name": "Rhea - 130 Where are the human genes encoding enzymes metabolizing cholesterol expressed",
     "slug": "Rhea_130_Where_are_the_human_genes_encoding_enzymes_metabolizing_cholesterol_expressed",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Where are the human genes encoding enzymes metabolizing cholesterol expressed?",
     "context": null,
     "inidces": [],
@@ -695,7 +695,7 @@ export const Rhea = [
   {
     "name": "Rhea - 131 Where are the human genes encoding enzymes metabolizing cholesterol expressed",
     "slug": "Rhea_131_Where_are_the_human_genes_encoding_enzymes_metabolizing_cholesterol_expressed",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Where are the human genes encoding enzymes metabolizing cholesterol expressed?",
     "context": null,
     "inidces": [],
@@ -722,7 +722,7 @@ export const Rhea = [
   {
     "name": "Rhea - 14",
     "slug": "Rhea_14",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions that have a given ChEBI ID as reaction participant",
     "context": null,
     "inidces": [],
@@ -747,7 +747,7 @@ export const Rhea = [
   {
     "name": "Rhea - 15",
     "slug": "Rhea_15",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all ChEBI compounds used in Rhea as reaction participant",
     "context": null,
     "inidces": [],
@@ -773,7 +773,7 @@ export const Rhea = [
   {
     "name": "Rhea - 16",
     "slug": "Rhea_16",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions that have a pair of ChEBI IDs as reaction participant and in opposite side",
     "context": null,
     "inidces": [],
@@ -798,7 +798,7 @@ export const Rhea = [
   {
     "name": "Rhea - 17",
     "slug": "Rhea_17",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions that involve a lipid, i.e. children of CHEBI:18059 in the ChEBI hierarchy.",
     "context": null,
     "inidces": [],
@@ -827,7 +827,7 @@ export const Rhea = [
   {
     "name": "Rhea - 18",
     "slug": "Rhea_18",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use <a href=\\",
     "context": null,
     "inidces": [],
@@ -852,7 +852,7 @@ export const Rhea = [
   {
     "name": "Rhea - 19 draft human metabolome",
     "slug": "Rhea_19_draft_human_metabolome",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Generate a draft human metabolome",
     "context": null,
     "inidces": [],
@@ -874,7 +874,7 @@ export const Rhea = [
   {
     "name": "Rhea - 2",
     "slug": "Rhea_2",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions annotated with a given Pubmed ID",
     "context": null,
     "inidces": [],
@@ -901,7 +901,7 @@ export const Rhea = [
   {
     "name": "Rhea - 20 search chemical names in japanese",
     "slug": "Rhea_20_search_chemical_names_in_japanese",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Search for Chemical names starting in Japanese, translated to english using allie",
     "context": null,
     "inidces": [],
@@ -929,7 +929,7 @@ export const Rhea = [
   {
     "name": "Rhea - 21 count rhea examples",
     "slug": "Rhea_21_count_rhea_examples",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "SELECT the number of reactions in Rhea",
     "context": null,
     "inidces": [],
@@ -951,7 +951,7 @@ export const Rhea = [
   {
     "name": "Rhea - 22 Select all reactions and their equation ordered by reaction identifier",
     "slug": "Rhea_22_Select_all_reactions_and_their_equation_ordered_by_reaction_identifier",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions and their equation, ordered by reaction identifier",
     "context": null,
     "inidces": [],
@@ -973,7 +973,7 @@ export const Rhea = [
   {
     "name": "Rhea - 23 Select all reaction IDs status and equations ordered by reaction identifier",
     "slug": "Rhea_23_Select_all_reaction_IDs_status_and_equations_ordered_by_reaction_identifier",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reaction IDs, status and equations ordered by reaction identifier",
     "context": null,
     "inidces": [],
@@ -995,7 +995,7 @@ export const Rhea = [
   {
     "name": "Rhea - 24 Display only a subset of reactions",
     "slug": "Rhea_24_Display_only_a_subset_of_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the 10 reactions, with the lowest identifier by alphabetic sort",
     "context": null,
     "inidces": [],
@@ -1018,7 +1018,7 @@ export const Rhea = [
   {
     "name": "Rhea - 25 Select the first 10 reactions starting from the fifth reaction",
     "slug": "Rhea_25_Select_the_first_10_reactions_starting_from_the_fifth_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the fifth to fiftheenth (inclusive) reactions, with the lowest identifier by alphabetic sort",
     "context": null,
     "inidces": [],
@@ -1042,7 +1042,7 @@ export const Rhea = [
   {
     "name": "Rhea - 26 Select the number of reactions with status Approved",
     "slug": "Rhea_26_Select_the_number_of_reactions_with_status_Approved",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions with status Approved",
     "context": null,
     "inidces": [],
@@ -1064,7 +1064,7 @@ export const Rhea = [
   {
     "name": "Rhea - 27 Select the number of reactions that have Xrefs",
     "slug": "Rhea_27_Select_the_number_of_reactions_that_have_Xrefs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions that have cross-references",
     "context": null,
     "inidces": [],
@@ -1090,7 +1090,7 @@ export const Rhea = [
   {
     "name": "Rhea - 28 Select all reactions with Xrefs",
     "slug": "Rhea_28_Select_all_reactions_with_Xrefs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions with cross-references",
     "context": null,
     "inidces": [],
@@ -1116,7 +1116,7 @@ export const Rhea = [
   {
     "name": "Rhea - 29 Select all approved reactions linked to PMID X",
     "slug": "Rhea_29_Select_all_approved_reactions_linked_to_PMID_X",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions linked to PMID:2460092",
     "context": null,
     "inidces": [],
@@ -1139,7 +1139,7 @@ export const Rhea = [
   {
     "name": "Rhea - 3",
     "slug": "Rhea_3",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the specific form of <a href=\\",
     "context": null,
     "inidces": [],
@@ -1162,7 +1162,7 @@ export const Rhea = [
   {
     "name": "Rhea - 30 Select all approved reactions annotated with a given Pubmed ID",
     "slug": "Rhea_30_Select_all_approved_reactions_annotated_with_a_given_Pubmed_ID",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions annotated with a given Pubmed ID (2460092, and show the pubmed id in result as text, using strafter and BIND)",
     "context": null,
     "inidces": [],
@@ -1185,7 +1185,7 @@ export const Rhea = [
   {
     "name": "Rhea - 31 Select the average number of citation of reactions that have at least one citation",
     "slug": "Rhea_31_Select_the_average_number_of_citation_of_reactions_that_have_at_least_one_citation",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -1209,7 +1209,7 @@ export const Rhea = [
   {
     "name": "Rhea - 32 Select the distribution of reactions according to their status",
     "slug": "Rhea_32_Select_the_distribution_of_reactions_according_to_their_status",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the distribution of reactions according to their status",
     "context": null,
     "inidces": [],
@@ -1233,7 +1233,7 @@ export const Rhea = [
   {
     "name": "Rhea - 33 Select all approved transport reactions",
     "slug": "Rhea_33_Select_all_approved_transport_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved transport reactions",
     "context": null,
     "inidces": [],
@@ -1257,7 +1257,7 @@ export const Rhea = [
   {
     "name": "Rhea - 34 Select all cross-references for a given reaction",
     "slug": "Rhea_34_Select_all_cross-references_for_a_given_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all cross-references for a given reaction (RHEA:11680)",
     "context": null,
     "inidces": [],
@@ -1281,7 +1281,7 @@ export const Rhea = [
   {
     "name": "Rhea - 35 Select all cross-references Kegg MetaCyc Macie for a given reaction",
     "slug": "Rhea_35_Select_all_cross-references_Kegg_MetaCyc_Macie_for_a_given_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all cross-references (to KEGG, MetaCyc, Macie, ...) for a given reaction (RHEA:11932)",
     "context": null,
     "inidces": [],
@@ -1305,7 +1305,7 @@ export const Rhea = [
   {
     "name": "Rhea - 36 Select the number of reactions with cross-references to KEGG resource",
     "slug": "Rhea_36_Select_the_number_of_reactions_with_cross-references_to_KEGG_resource",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions with cross-references to KEGG resource (via bidirectional rhea reactions)",
     "context": null,
     "inidces": [],
@@ -1332,7 +1332,7 @@ export const Rhea = [
   {
     "name": "Rhea - 37 Select the number of reactions with cross-references to MetaCyc",
     "slug": "Rhea_37_Select_the_number_of_reactions_with_cross-references_to_MetaCyc",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of reactions with cross-references to MetaCyc",
     "context": null,
     "inidces": [],
@@ -1360,7 +1360,7 @@ export const Rhea = [
   {
     "name": "Rhea - 39 Select all reactions annotated with a given Pubmed ID",
     "slug": "Rhea_39_Select_all_reactions_annotated_with_a_given_Pubmed_ID",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions annotated with a given Pubmed ID",
     "context": null,
     "inidces": [],
@@ -1383,7 +1383,7 @@ export const Rhea = [
   {
     "name": "Rhea - 4",
     "slug": "Rhea_4",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all cross-references for a given reaction",
     "context": null,
     "inidces": [],
@@ -1409,7 +1409,7 @@ export const Rhea = [
   {
     "name": "Rhea - 40 Select all citations of a given reaction",
     "slug": "Rhea_40_Select_all_citations_of_a_given_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all citations of a given reaction",
     "context": null,
     "inidces": [],
@@ -1432,7 +1432,7 @@ export const Rhea = [
   {
     "name": "Rhea - 41 Select all reactions with citations display the number of citations and order by reaction ID",
     "slug": "Rhea_41_Select_all_reactions_with_citations_display_the_number_of_citations_and_order_by_reaction_ID",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions with citations, display the number of citations and ORDER BY reaction ID",
     "context": null,
     "inidces": [],
@@ -1458,7 +1458,7 @@ export const Rhea = [
   {
     "name": "Rhea - 42 Select the average number of citation of reactions that have at least one citation",
     "slug": "Rhea_42_Select_the_average_number_of_citation_of_reactions_that_have_at_least_one_citation",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -1482,7 +1482,7 @@ export const Rhea = [
   {
     "name": "Rhea - 43 Select the child reactions of a given reaction in the Rhea hierarchy",
     "slug": "Rhea_43_Select_the_child_reactions_of_a_given_reaction_in_the_Rhea_hierarchy",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the child reaction(s) of a given reaction (RHEA:11628) in the Rhea hierarchy, (using rdfs:subClassOf)",
     "context": null,
     "inidces": [],
@@ -1505,7 +1505,7 @@ export const Rhea = [
   {
     "name": "Rhea - 44 Select the descendant reaction of a given reaction in the Rhea hierarchy",
     "slug": "Rhea_44_Select_the_descendant_reaction_of_a_given_reaction_in_the_Rhea_hierarchy",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the descendant reaction(s) of a given reaction (RHEA:11628) in the Rhea hierarchy, (using rdfs:subClassOf+)",
     "context": null,
     "inidces": [],
@@ -1528,7 +1528,7 @@ export const Rhea = [
   {
     "name": "Rhea - 45 Select the parent reactions of a given reaction",
     "slug": "Rhea_45_Select_the_parent_reactions_of_a_given_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the parent reaction(s) of a given reaction",
     "context": null,
     "inidces": [],
@@ -1551,7 +1551,7 @@ export const Rhea = [
   {
     "name": "Rhea - 46 Number of IsA relationships",
     "slug": "Rhea_46_Number_of_IsA_relationships",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Number of IsA relationships, distinct child reactions and distinct parent reactions",
     "context": null,
     "inidces": [],
@@ -1575,7 +1575,7 @@ export const Rhea = [
   {
     "name": "Rhea - 47 Select all children reactions and give the number of parent reactions",
     "slug": "Rhea_47_Select_all_children_reactions_and_give_the_number_of_parent_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all children reactions and give the number of parent reactions.",
     "context": null,
     "inidces": [],
@@ -1599,7 +1599,7 @@ export const Rhea = [
   {
     "name": "Rhea - 48 Select all reactions with at least one parent reaction and give the number ancestor reactions",
     "slug": "Rhea_48_Select_all_reactions_with_at_least_one_parent_reaction_and_give_the_number_ancestor_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions with at least one parent reaction and give the number ancestor reactions",
     "context": null,
     "inidces": [],
@@ -1624,7 +1624,7 @@ export const Rhea = [
   {
     "name": "Rhea - 49 Select parent reactions give the number of child and descendant reactions",
     "slug": "Rhea_49_Select_parent_reactions_give_the_number_of_child_and_descendant_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select parent reactions, give the number of child and descendant reactions",
     "context": null,
     "inidces": [],
@@ -1649,7 +1649,7 @@ export const Rhea = [
   {
     "name": "Rhea - 5",
     "slug": "Rhea_5",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions mapped to KEGG reactions",
     "context": null,
     "inidces": [],
@@ -1674,7 +1674,7 @@ export const Rhea = [
   {
     "name": "Rhea - 50 Number of reactions that have parent and child reactions",
     "slug": "Rhea_50_Number_of_reactions_that_have_parent_and_child_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Number of reactions that have parent and child reactions",
     "context": null,
     "inidces": [],
@@ -1700,7 +1700,7 @@ export const Rhea = [
   {
     "name": "Rhea - 51 Select all reactions that have parents and children reactions",
     "slug": "Rhea_51_Select_all_reactions_that_have_parents_and_children_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all reactions that have parents and children reactions",
     "context": null,
     "inidces": [],
@@ -1724,7 +1724,7 @@ export const Rhea = [
   {
     "name": "Rhea - 52 List all small molecules",
     "slug": "Rhea_52_List_all_small_molecules",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all small molecules",
     "context": null,
     "inidces": [],
@@ -1748,7 +1748,7 @@ export const Rhea = [
   {
     "name": "Rhea - 53 List all polymers",
     "slug": "Rhea_53_List_all_polymers",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all polymers",
     "context": null,
     "inidces": [],
@@ -1771,7 +1771,7 @@ export const Rhea = [
   {
     "name": "Rhea - 54 List all generic compounds",
     "slug": "Rhea_54_List_all_generic_compounds",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all generic compounds",
     "context": null,
     "inidces": [],
@@ -1794,7 +1794,7 @@ export const Rhea = [
   {
     "name": "Rhea - 55 Number of compounds according to their category",
     "slug": "Rhea_55_Number_of_compounds_according_to_their_category",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Number of compounds according to their category (Small molecule, Generic compound, Polymer)",
     "context": null,
     "inidces": [],
@@ -1819,7 +1819,7 @@ export const Rhea = [
   {
     "name": "Rhea - 56 Distribution of GenericParticipant",
     "slug": "Rhea_56_Distribution_of_GenericParticipant",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -1840,7 +1840,7 @@ export const Rhea = [
   {
     "name": "Rhea - 57 Give me the list of Rhea generics",
     "slug": "Rhea_57_Give_me_the_list_of_Rhea_generics",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Give me the list of Rhea generics, type polypeptide (rh:GenericPolypeptideParticipant)",
     "context": null,
     "inidces": [],
@@ -1864,7 +1864,7 @@ export const Rhea = [
   {
     "name": "Rhea - 58 Give me the reactions involving a given Rhea generic",
     "slug": "Rhea_58_Give_me_the_reactions_involving_a_given_Rhea_generic",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Give me the reactions involving a given Rhea generic (GENERIC:11964, \\",
     "context": null,
     "inidces": [],
@@ -1888,7 +1888,7 @@ export const Rhea = [
   {
     "name": "Rhea - 59 Select reaction participants for a given reaction ID. Display their coefficient and their name",
     "slug": "Rhea_59_Select_reaction_participants_for_a_given_reaction_ID._Display_their_coefficient_and_their_name",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select reaction participants for a given reaction ID. Display their coefficient and their name.",
     "context": null,
     "inidces": [],
@@ -1912,7 +1912,7 @@ export const Rhea = [
   {
     "name": "Rhea - 6",
     "slug": "Rhea_6",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions mapped to MetaCyc reactions",
     "context": null,
     "inidces": [],
@@ -1940,7 +1940,7 @@ export const Rhea = [
   {
     "name": "Rhea - 60 Select the number of approved reactions using CHEBI 29985 as small molecule participant",
     "slug": "Rhea_60_Select_the_number_of_approved_reactions_using_CHEBI_29985_as_small_molecule_participant",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions using CHEBI:29985 (L-glutamate) as small molecule participant",
     "context": null,
     "inidces": [],
@@ -1965,7 +1965,7 @@ export const Rhea = [
   {
     "name": "Rhea - 61 Select all approved reactions using CHEBI 29985 as small molecule participant",
     "slug": "Rhea_61_Select_all_approved_reactions_using_CHEBI_29985_as_small_molecule_participant",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions using CHEBI:29985 (L-glutamate) as small molecule participant",
     "context": null,
     "inidces": [],
@@ -1990,7 +1990,7 @@ export const Rhea = [
   {
     "name": "Rhea - 62 Select the number of approved reactions using L-glutamine AND L-glutamate in different reaction sides",
     "slug": "Rhea_62_Select_the_number_of_approved_reactions_using_L-glutamine_AND_L-glutamate_in_different_reaction_sides",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions using L-glutamine (CHEBI:29985) AND L-glutamate (CHEBI:58359) in different reaction sides",
     "context": null,
     "inidces": [],
@@ -2015,7 +2015,7 @@ export const Rhea = [
   {
     "name": "Rhea - 63 Select all approved reactions using L-glutamine AND L-glutamate in different reaction sides",
     "slug": "Rhea_63_Select_all_approved_reactions_using_L-glutamine_AND_L-glutamate_in_different_reaction_sides",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions using L-glutamine (CHEBI:29985) AND L-glutamate (CHEBI:58359) in different reaction sides",
     "context": null,
     "inidces": [],
@@ -2039,7 +2039,7 @@ export const Rhea = [
   {
     "name": "Rhea - 64 Number of reaction participants per reaction side",
     "slug": "Rhea_64_Number_of_reaction_participants_per_reaction_side",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Distribution: number of reaction participants per reaction Side",
     "context": null,
     "inidces": [],
@@ -2063,7 +2063,7 @@ export const Rhea = [
   {
     "name": "Rhea - 65 Number of reaction participants per reaction side",
     "slug": "Rhea_65_Number_of_reaction_participants_per_reaction_side",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Distribution: number of reaction participants per reaction Side",
     "context": null,
     "inidces": [],
@@ -2090,7 +2090,7 @@ export const Rhea = [
   {
     "name": "Rhea - 66 Select all compounds and count their occurrence in Rhea reactions",
     "slug": "Rhea_66_Select_all_compounds_and_count_their_occurrence_in_Rhea_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all compounds and count their occurrence in Rhea reactions",
     "context": null,
     "inidces": [],
@@ -2118,7 +2118,7 @@ export const Rhea = [
   {
     "name": "Rhea - 67 Select all compounds and count their occurrence in Rhea reactions",
     "slug": "Rhea_67_Select_all_compounds_and_count_their_occurrence_in_Rhea_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all compounds and count their occurrence in Rhea reactions",
     "context": null,
     "inidces": [],
@@ -2146,7 +2146,7 @@ export const Rhea = [
   {
     "name": "Rhea - 68 Select reaction participants that appear in only one reaction",
     "slug": "Rhea_68_Select_reaction_participants_that_appear_in_only_one_reaction",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select reaction participants that appear in only one reaction",
     "context": null,
     "inidces": [],
@@ -2174,7 +2174,7 @@ export const Rhea = [
   {
     "name": "Rhea - 69 Select all the direct children of carbohydrate in the ChEBI ontology used in Rhea reaction or not",
     "slug": "Rhea_69_Select_all_the_direct_children_of_carbohydrate_in_the_ChEBI_ontology_used_in_Rhea_reaction_or_not",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all the (direct) children of *carbohydrate* (CHEBI:16646) in the ChEBI ontology , used in Rhea reaction or not",
     "context": null,
     "inidces": [],
@@ -2197,7 +2197,7 @@ export const Rhea = [
   {
     "name": "Rhea - 7",
     "slug": "Rhea_7",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions mapped to Reactome reactions",
     "context": null,
     "inidces": [],
@@ -2224,7 +2224,7 @@ export const Rhea = [
   {
     "name": "Rhea - 70 Select all the descendants of  carbohydrate  in the ChEBI ontology used in Rhea reaction or not",
     "slug": "Rhea_70_Select_all_the_descendants_of__carbohydrate__in_the_ChEBI_ontology_used_in_Rhea_reaction_or_not",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all the descendants of *carbohydrate* (CHEBI:16646) in the ChEBI ontology, used in Rhea reaction or not",
     "context": null,
     "inidces": [],
@@ -2248,7 +2248,7 @@ export const Rhea = [
   {
     "name": "Rhea - 71 Select count of descendants of  carbohydrate  in the ChEBI ontology used in Rhea reaction or not",
     "slug": "Rhea_71_Select_count_of_descendants_of__carbohydrate__in_the_ChEBI_ontology_used_in_Rhea_reaction_or_not",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select count of descendants of *carbohydrate* (CHEBI:16646) in the ChEBI ontology, used in Rhea reaction or not",
     "context": null,
     "inidces": [],
@@ -2271,7 +2271,7 @@ export const Rhea = [
   {
     "name": "Rhea - 72 Select children of ChEBI 35179 in the ChEBI hierarchy used in Rhea reactions or not",
     "slug": "Rhea_72_Select_children_of_ChEBI_35179_in_the_ChEBI_hierarchy_used_in_Rhea_reactions_or_not",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select children of CHEBI:35179 (a 2-oxo carboxylate) in the ChEBI hierarchy (using rdfs:subClassOf), used in Rhea reactions or not",
     "context": null,
     "inidces": [],
@@ -2295,7 +2295,7 @@ export const Rhea = [
   {
     "name": "Rhea - 73 Select all the descendants of CHEBI 35179 in the ChEBI hierarchy used in Rhea reaction or not",
     "slug": "Rhea_73_Select_all_the_descendants_of_CHEBI_35179_in_the_ChEBI_hierarchy_used_in_Rhea_reaction_or_not",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all the descendants of CHEBI:35179 (a 2-oxo carboxylate) in the ChEBI hierarchy (using rdfs:subClassOf+), used in Rhea reaction or not",
     "context": null,
     "inidces": [],
@@ -2319,7 +2319,7 @@ export const Rhea = [
   {
     "name": "Rhea - 74 Select children of CHEBI 35179 in the ChEBI hierarchy used in Rhea reactions and show the reactions",
     "slug": "Rhea_74_Select_children_of_CHEBI_35179_in_the_ChEBI_hierarchy_used_in_Rhea_reactions_and_show_the_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select children of CHEBI:35179 (a 2-oxo carboxylate) in the ChEBI hierarchy (using rdfs:subClassOf) used in Rhea reaction(s), and show the reaction(s)",
     "context": null,
     "inidces": [],
@@ -2343,7 +2343,7 @@ export const Rhea = [
   {
     "name": "Rhea - 75 Select all the descendants of CHEBI 35179 in the ChEBI hierarchy used in Rhea reactions and show the reactions",
     "slug": "Rhea_75_Select_all_the_descendants_of_CHEBI_35179_in_the_ChEBI_hierarchy_used_in_Rhea_reactions_and_show_the_reactions",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all the descendants of CHEBI:35179 (a 2-oxo carboxylate) in the ChEBI hierarchy (using rdfs:subClassOf+) used in Rhea reaction(s), and show the reaction(s)",
     "context": null,
     "inidces": [],
@@ -2367,7 +2367,7 @@ export const Rhea = [
   {
     "name": "Rhea - 76 Select the number of approved reactions involving a monosaccharide derivative  based on the ChEBI ontology",
     "slug": "Rhea_76_Select_the_number_of_approved_reactions_involving_a_monosaccharide_derivative__based_on_the_ChEBI_ontology",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions involving a *_monosaccharide derivative_* (subclass of *CHEBI:63367*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2392,7 +2392,7 @@ export const Rhea = [
   {
     "name": "Rhea - 77 Select all approved reactions involving a monosaccharide derivative",
     "slug": "Rhea_77_Select_all_approved_reactions_involving_a_monosaccharide_derivative",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving a *_monosaccharide derivative_* (subclass of *CHEBI:63367*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2417,7 +2417,7 @@ export const Rhea = [
   {
     "name": "Rhea - 78 Select the number of approved reactions involving a monosaccharide",
     "slug": "Rhea_78_Select_the_number_of_approved_reactions_involving_a_monosaccharide",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions involving a *_monosaccharide_* (subclass of *CHEBI:35381*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2442,7 +2442,7 @@ export const Rhea = [
   {
     "name": "Rhea - 79 Select all approved reactions involving a monosaccharide",
     "slug": "Rhea_79_Select_all_approved_reactions_involving_a_monosaccharide",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving a *_monosaccharide_* (subclass of *CHEBI:35381*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2466,7 +2466,7 @@ export const Rhea = [
   {
     "name": "Rhea - 8",
     "slug": "Rhea_8",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions mapped to GO molecular functions",
     "context": null,
     "inidces": [],
@@ -2491,7 +2491,7 @@ export const Rhea = [
   {
     "name": "Rhea - 80 Select the number of approved reactions involving a carbohydrate derivative",
     "slug": "Rhea_80_Select_the_number_of_approved_reactions_involving_a_carbohydrate_derivative",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions involving a *_carbohydrate derivative_* (subclass of *CHEBI:63299*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2516,7 +2516,7 @@ export const Rhea = [
   {
     "name": "Rhea - 81 Select all approved reactions involving a carbohydrate derivative",
     "slug": "Rhea_81_Select_all_approved_reactions_involving_a_carbohydrate_derivative",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving a *_carbohydrate derivative_* (subclass of *CHEBI:63299*) based on the ChEBI ontology",
     "context": null,
     "inidces": [],
@@ -2541,7 +2541,7 @@ export const Rhea = [
   {
     "name": "Rhea - 82 Select the number of approved reactions involving a carbohydrate",
     "slug": "Rhea_82_Select_the_number_of_approved_reactions_involving_a_carbohydrate",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions involving a *_carbohydrate_* (subclass of *CHEBI:16646*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2566,7 +2566,7 @@ export const Rhea = [
   {
     "name": "Rhea - 83 Select all approved reactions involving a carbohydrate",
     "slug": "Rhea_83_Select_all_approved_reactions_involving_a_carbohydrate",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving a *_carbohydrate_* (subclass of *CHEBI:16646*) based on the ChEBI ontology (use of *subClassOf+*)",
     "context": null,
     "inidces": [],
@@ -2591,7 +2591,7 @@ export const Rhea = [
   {
     "name": "Rhea - 84 Select the number of approved reactions involving  lipids",
     "slug": "Rhea_84_Select_the_number_of_approved_reactions_involving__lipids",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select the number of approved reactions involving *lipids* (subclass of *CHEBI:18059*) based on the ChEBI ontology",
     "context": null,
     "inidces": [],
@@ -2616,7 +2616,7 @@ export const Rhea = [
   {
     "name": "Rhea - 85 Select all approved reactions involving lipids based on the ChEBI ontology",
     "slug": "Rhea_85_Select_all_approved_reactions_involving_lipids_based_on_the_ChEBI_ontology",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving *lipids* (subclass of *CHEBI:18059*) based on the ChEBI ontology",
     "context": null,
     "inidces": [],
@@ -2641,7 +2641,7 @@ export const Rhea = [
   {
     "name": "Rhea - 86 Select all approved reactions involving lipids",
     "slug": "Rhea_86_Select_all_approved_reactions_involving_lipids",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving *lipids* (subclass of *CHEBI:18059*) that have at least one parent reaction",
     "context": null,
     "inidces": [],
@@ -2666,7 +2666,7 @@ export const Rhea = [
   {
     "name": "Rhea - 87 Select all approved reactions involving lipids that are parent reactions and give their number of descendants",
     "slug": "Rhea_87_Select_all_approved_reactions_involving_lipids_that_are_parent_reactions_and_give_their_number_of_descendants",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions involving *lipids* (subclass of *CHEBI:18059*) that are parent reactions and give their number of descendants",
     "context": null,
     "inidces": [],
@@ -2693,7 +2693,7 @@ export const Rhea = [
   {
     "name": "Rhea - 88 How many descendants of CHEBI 17815",
     "slug": "Rhea_88_How_many_descendants_of_CHEBI_17815",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "How many descendants of CHEBI:17815 (a 1,2-diacyl-sn-glycerol) in the ChEBI ontology?",
     "context": null,
     "inidces": [],
@@ -2716,7 +2716,7 @@ export const Rhea = [
   {
     "name": "Rhea - 89 Give me all CHEBI identifier and label for the descendants of CHEBI 17815",
     "slug": "Rhea_89_Give_me_all_CHEBI_identifier_and_label_for_the_descendants_of_CHEBI_17815",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Give me all CHEBI identifier and label for the descendants of CHEBI:17815 (a 1,2-diacyl-sn-glycerol)",
     "context": null,
     "inidces": [],
@@ -2740,7 +2740,7 @@ export const Rhea = [
   {
     "name": "Rhea - 9",
     "slug": "Rhea_9",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all Rhea reactions mapped to enzyme classification (EC numbers)",
     "context": null,
     "inidces": [],
@@ -2765,7 +2765,7 @@ export const Rhea = [
   {
     "name": "Rhea - 90 How many reactions involve CHEBI 17815",
     "slug": "Rhea_90_How_many_reactions_involve_CHEBI_17815",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "How many reactions involve CHEBI:17815 (a 1,2-diacyl-sn-glycerol)?",
     "context": null,
     "inidces": [],
@@ -2789,7 +2789,7 @@ export const Rhea = [
   {
     "name": "Rhea - 91 How many reactions involve CHEBI 17815",
     "slug": "Rhea_91_How_many_reactions_involve_CHEBI_17815",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "How many reactions involve CHEBI:17815 (a 1,2-diacyl-sn-glycerol) or one of its descendant?",
     "context": null,
     "inidces": [],
@@ -2814,7 +2814,7 @@ export const Rhea = [
   {
     "name": "Rhea - 92 Select all approved reactions with participants being CHEBI 17815  or one of its descendant",
     "slug": "Rhea_92_Select_all_approved_reactions_with_participants_being_CHEBI_17815__or_one_of_its_descendant",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions with participant(s) being CHEBI:17815 (a 1,2-diacyl-sn-glycerol) or one of its descendant",
     "context": null,
     "inidces": [],
@@ -2839,7 +2839,7 @@ export const Rhea = [
   {
     "name": "Rhea - 93 Select all approved reactions with CHEBI 17815 or one of its descendant optional EC",
     "slug": "Rhea_93_Select_all_approved_reactions_with_CHEBI_17815_or_one_of_its_descendant_optional_EC",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions with CHEBI:17815 (a 1,2-diacyl-sn-glycerol) or one of its descendant. Display the EC numbers if the rhea-ec link exists.",
     "context": null,
     "inidces": [],
@@ -2865,7 +2865,7 @@ export const Rhea = [
   {
     "name": "Rhea - 94 Select all approved reactions with CHEBI or one of its descendant optional UniProtKB reviewed EC",
     "slug": "Rhea_94_Select_all_approved_reactions_with_CHEBI_or_one_of_its_descendant_optional_UniProtKB_reviewed_EC",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Select all approved reactions with CHEBI:17815 (a 1,2-diacyl-sn-glycerol) or one of its descendant. Display links to UniProtKB/Swiss-Prot entries via EC numbers if the link rhea-ec exists.",
     "context": null,
     "inidces": [],
@@ -2895,7 +2895,7 @@ export const Rhea = [
   {
     "name": "Rhea - 95 Get uniprot name of a given chebi compound",
     "slug": "Rhea_95_Get_uniprot_name_of_a_given_chebi_compound",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Get uniprot name of a given chebi compound",
     "context": null,
     "inidces": [],
@@ -2920,7 +2920,7 @@ export const Rhea = [
   {
     "name": "Rhea - 96 Get tautomer of a given chebi compound",
     "slug": "Rhea_96_Get_tautomer_of_a_given_chebi_compound",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Get tautomer of a given chebi compound",
     "context": null,
     "inidces": [],
@@ -2946,7 +2946,7 @@ export const Rhea = [
   {
     "name": "Rhea - 97 Get structural data of a given ChEBI compound",
     "slug": "Rhea_97_Get_structural_data_of_a_given_ChEBI_compound",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -2967,7 +2967,7 @@ export const Rhea = [
   {
     "name": "Rhea - 98 Get chebi compound of a given InChI",
     "slug": "Rhea_98_Get_chebi_compound_of_a_given_InChI",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": null,
     "context": null,
     "inidces": [],
@@ -2987,7 +2987,7 @@ export const Rhea = [
   {
     "name": "Rhea - 99 Get the list of reactions involving a ChEBI participant with  has role antifungal agent",
     "slug": "Rhea_99_Get_the_list_of_reactions_involving_a_ChEBI_participant_with__has_role_antifungal_agent",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Get the list of reactions involving a ChEBI participant with <em>has role</em> <strong>antifungal agent</strong> (CHEBI:35718)",
     "context": null,
     "inidces": [],

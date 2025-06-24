@@ -6,7 +6,7 @@ type CardProps = {
     name: string;
     image: string;
     category: string;
-    date: string;
+    date: Date;
     ontologies: string[];
     slug: string;
   };
@@ -15,6 +15,7 @@ type CardProps = {
 
 export default function Card({ data, withPrefix = false }: CardProps) {
   const { name, image, category, date, ontologies, slug } = data;
+
   const link = withPrefix ? `/sparql-queries/${slug}` : slug;
 
   return (
@@ -30,7 +31,7 @@ export default function Card({ data, withPrefix = false }: CardProps) {
       </div>
 
       <div className="px-6 py-4 mb-auto">
-        <p className="text-gray-500 text-sm mb-2">{date}</p>
+        <p className="text-gray-500 text-sm mb-2">{new Date(date).toLocaleDateString()}</p>
         <h3 className="font-medium text-lg inline-block hover:text-orange-600 transition duration-500 ease-in-out">
           {name}
         </h3>

@@ -2,7 +2,7 @@ export const WikidataCiTO = [
   {
     "name": "WikidataCiTO - 001",
     "slug": "WikidataCiTO_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lists journals that have CiTO citation intentions defined and returns the number of citation statements as well as the number of citing articles.",
     "context": null,
     "inidces": [],

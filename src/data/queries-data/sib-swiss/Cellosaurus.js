@@ -2,7 +2,7 @@ export const Cellosaurus = [
   {
     "name": "Cellosaurus - 101 publi cnt by type",
     "slug": "Cellosaurus_101_publi_cnt_by_type",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Count of referenced publications by publication type",
     "context": null,
     "inidces": [],
@@ -26,7 +26,7 @@ export const Cellosaurus = [
   {
     "name": "Cellosaurus - 102 cl cnt by category",
     "slug": "Cellosaurus_102_cl_cnt_by_category",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Count of cell lines by cell line category",
     "context": null,
     "inidces": [],
