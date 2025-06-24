@@ -5,9 +5,11 @@ import Card from '../components/ui/Card'
 import MultiSelectDropdown from '../components/reusable/MultiSelectDropDown'
 import { FiSearch } from 'react-icons/fi';
 import toast from 'react-hot-toast';
+import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'
 
 const AllQueries = () => {
   const [visibleCount, setVisibleCount] = useState(20);
+  const [order, setOrder] = useState('desc');
 
   const [search, setSearch] = useState('');
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -39,21 +41,34 @@ const AllQueries = () => {
       const matchesSource = selectedSource.length > 0
         ? selectedSource.includes(query.source)
         : true;
-      console.log(selectedSource)
       const matchesConcepts = selectedConcepts.length > 0
         ? selectedConcepts.every(concept => query.sparqlConcepts.includes(concept))
         : true;
       const matchesOntologies = selectedOntologies.length > 0
         ? selectedOntologies.every(onto => query.ontologies.includes(onto))
         : true;
-
+  
       return matchesSearch && matchesCategories && matchesSource && matchesConcepts && matchesOntologies;
-    });
+    }).sort((a, b) => b.date - a.date);
   }, [search, selectedCategories, selectedSource, selectedConcepts, selectedOntologies]);
+  
+  const [sortedDates, setSortedDates] = useState(filteredQueries);
 
   useEffect(() => {
     setTotal(filteredQueries.length);
+    setSortedDates(filteredQueries)
   }, [filteredQueries]);
+
+  const handleSort = () => {
+    if (order === 'desc') {
+      setOrder('asc');
+      setSortedDates(filteredQueries.sort((a, b) => a.date - b.date));
+    } else {
+      setOrder('desc');
+      setSortedDates(filteredQueries.sort((a, b) => b.date - a.date));
+     
+    }
+  };
 
   return (
     <div>
@@ -66,16 +81,16 @@ const AllQueries = () => {
         >
           <div className="mb-6 space-y-4">
             {/* ACTIVE FILTER BADGES */}
-<div className="flex flex-wrap gap-2">
-    {selectedCategories.map(categorie => (
-        <span key={categorie} className="bg-lime-600 text-white px-2 py-1 rounded flex items-center">
-          {categorie}
-          <button
-            onClick={() => setSelectedCategories(prev => prev.filter(c => c !== categorie))}
-            className="ml-2"
-          >
-            ×
-          </button>
+          <div className="flex flex-wrap gap-2">
+              {selectedCategories.map(categorie => (
+                  <span key={categorie} className="bg-lime-600 text-white px-2 py-1 rounded flex items-center">
+                    {categorie}
+                    <button
+                      onClick={() => setSelectedCategories(prev => prev.filter(c => c !== categorie))}
+                      className="ml-2"
+                    >
+                      ×
+                    </button>
         </span>
       ))}
     {selectedSource.map(source => (
@@ -104,6 +119,9 @@ const AllQueries = () => {
   </div>
 
             {/* FILTER SECTION */}
+            <button onClick={handleSort} className="flex items-center">
+              Order By date  {order === 'asc' ? <AiOutlineArrowUp /> : <AiOutlineArrowDown />}
+            </button>
             <div className="pt-2 flex flex-col sm:flex-row gap-4 w-full">
               {/* Left: Filters */}
               <div className="flex flex-wrap gap-2 w-full">
@@ -155,6 +173,7 @@ const AllQueries = () => {
               <div className="text-white font-semibold text-lg">
                 {total} quer{total !== 1 ? 'ies' : 'y'} found
               </div>
+              
               <button
                 onClick={() => {
                   setSearch('');
@@ -168,13 +187,14 @@ const AllQueries = () => {
               >
                 Reset Filters
               </button>
+              
             </div>
 
 
           </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-      {filteredQueries.slice(0, visibleCount).map((product, key) => (
+      {sortedDates.slice(0, visibleCount).map((product, key) => (
         <Card key={key} data={product} />
       ))}
       </div>

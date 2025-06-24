@@ -2,7 +2,7 @@ export const Bgee = [
   {
     "name": "Bgee - 001",
     "slug": "Bgee_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the species present in Bgee?",
     "context": null,
     "inidces": [],
@@ -22,7 +22,7 @@ export const Bgee = [
   {
     "name": "Bgee - 002",
     "slug": "Bgee_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the species present in Bgee and their scientific and common names?",
     "context": null,
     "inidces": [],
@@ -44,7 +44,7 @@ export const Bgee = [
   {
     "name": "Bgee - 003",
     "slug": "Bgee_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the APOC1 gene is expressed?",
     "context": null,
     "inidces": [],
@@ -65,7 +65,7 @@ export const Bgee = [
   {
     "name": "Bgee - 004",
     "slug": "Bgee_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the APOC1 Homo sapiens gene is expressed?",
     "context": null,
     "inidces": [],
@@ -89,7 +89,7 @@ export const Bgee = [
   {
     "name": "Bgee - 005",
     "slug": "Bgee_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the APOC1 gene is expressed independently of the developmental stage, sex, strain and cell type?",
     "context": null,
     "inidces": [],
@@ -111,7 +111,7 @@ export const Bgee = [
   {
     "name": "Bgee - 006",
     "slug": "Bgee_006",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the human gene APOC1 is expressed in the post-juvenile stage?",
     "context": null,
     "inidces": [],
@@ -135,7 +135,7 @@ export const Bgee = [
   {
     "name": "Bgee - 007",
     "slug": "Bgee_007",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the mouse gene APOC1 is expressed in the adult stages?",
     "context": null,
     "inidces": [],
@@ -160,7 +160,7 @@ export const Bgee = [
   {
     "name": "Bgee - 008",
     "slug": "Bgee_008",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain, sex, and cell type?",
     "context": null,
     "inidces": [],
@@ -186,7 +186,7 @@ export const Bgee = [
   {
     "name": "Bgee - 009",
     "slug": "Bgee_009",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex?",
     "context": null,
     "inidces": [],
@@ -210,7 +210,7 @@ export const Bgee = [
   {
     "name": "Bgee - 010",
     "slug": "Bgee_010",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities including cell types, if any, where the human gene APOC1 is expressed at the post-juvenile stage along with its expression score independently of the strain and sex?",
     "context": null,
     "inidces": [],
@@ -233,7 +233,7 @@ export const Bgee = [
   {
     "name": "Bgee - 011",
     "slug": "Bgee_011",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the developmental stages present in Bgee?",
     "context": null,
     "inidces": [],
@@ -254,7 +254,7 @@ export const Bgee = [
   {
     "name": "Bgee - 012",
     "slug": "Bgee_012",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the eel gene apoc1 is expressed along with its expression score independently of the strain, sex, and cell type?",
     "context": null,
     "inidces": [],
@@ -280,7 +280,7 @@ export const Bgee = [
   {
     "name": "Bgee - 013",
     "slug": "Bgee_013",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the P02654 gene is expressed? Note that P02654 is a UniProtKB identifier of the APOC1 human gene.",
     "context": null,
     "inidces": [],
@@ -301,7 +301,7 @@ export const Bgee = [
   {
     "name": "Bgee - 014",
     "slug": "Bgee_014",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What is all the metadata related to the ENSG00000130208 gene, where ENSG00000130208 is the identifier of the APOC1 human gene.",
     "context": null,
     "inidces": [],
@@ -325,7 +325,7 @@ export const Bgee = [
   {
     "name": "Bgee - 015",
     "slug": "Bgee_015",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the anatomical entities where the APOC1 Homo sapiens gene is not expressed, that is where is APOC1 absent?",
     "context": null,
     "inidces": [],
@@ -348,7 +348,7 @@ export const Bgee = [
   {
     "name": "Bgee - 016",
     "slug": "Bgee_016",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which are the genes in Human associated to a disease that are orthologous to a gene expressed in the rat's brain?",
     "context": null,
     "inidces": [],
@@ -371,7 +371,7 @@ export const Bgee = [
   {
     "name": "Bgee - 017",
     "slug": "Bgee_017",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Anatomical entities where the ins zebrafish gene is expressed and its gene GO annotations.",
     "context": null,
     "inidces": [],
@@ -398,7 +398,7 @@ export const Bgee = [
   {
     "name": "Bgee - 018",
     "slug": "Bgee_018",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which are the mouse's proteins encoded by genes which are expressed in the liver and are orthologous to human's INS gene?",
     "context": null,
     "inidces": [],
@@ -419,7 +419,7 @@ export const Bgee = [
   {
     "name": "Bgee - 019",
     "slug": "Bgee_019",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which are the orthologs of a gene that is expressed in the fruit fly's brain?",
     "context": null,
     "inidces": [],
@@ -445,7 +445,7 @@ export const Bgee = [
   {
     "name": "Bgee - 020",
     "slug": "Bgee_020",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which are the genes in Primates orthologous to a gene that is expressed in the fruit fly's eye?",
     "context": null,
     "inidces": [],
@@ -471,7 +471,7 @@ export const Bgee = [
   {
     "name": "Bgee - 021",
     "slug": "Bgee_021",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which species the Mt-co1 gene is present (without considering synonyms)?",
     "context": null,
     "inidces": [],
@@ -494,7 +494,7 @@ export const Bgee = [
   {
     "name": "Bgee - 022",
     "slug": "Bgee_022",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List the labels and identifiers of pig-tailed macaque genes in bgee",
     "context": null,
     "inidces": [],
@@ -519,7 +519,7 @@ export const Bgee = [
   {
     "name": "Bgee - 023",
     "slug": "Bgee_023",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Human anatomical entities at young adult developmental stage",
     "context": null,
     "inidces": [],
@@ -542,7 +542,7 @@ export const Bgee = [
   {
     "name": "Bgee - 024",
     "slug": "Bgee_024",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Human anatomic entities at young adult developmental stage",
     "context": null,
     "inidces": [],
@@ -565,7 +565,7 @@ export const Bgee = [
   {
     "name": "Bgee - 025",
     "slug": "Bgee_025",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What is the post-juvenile stage link and description?",
     "context": null,
     "inidces": [],
@@ -589,7 +589,7 @@ export const Bgee = [
   {
     "name": "Bgee - 026",
     "slug": "Bgee_026",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "What are the genes expressed in the human brain?",
     "context": null,
     "inidces": [],
@@ -611,7 +611,7 @@ export const Bgee = [
   {
     "name": "Bgee - 027-biosodafrontend",
     "slug": "Bgee_027-biosodafrontend",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Genes expressed in the human pancreas and their annotations in UniProt.",
     "context": null,
     "inidces": [],
@@ -634,7 +634,7 @@ export const Bgee = [
   {
     "name": "Bgee - 028-biosodafrontend",
     "slug": "Bgee_028-biosodafrontend",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Genes expressed in the human's brain during the infant stage and their UniProt disease annotations.",
     "context": null,
     "inidces": [],

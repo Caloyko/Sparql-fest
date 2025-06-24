@@ -2,7 +2,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 001",
     "slug": "WikidataRetractions_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of the 100 most cited retracted articles.",
     "context": null,
     "inidces": [],
@@ -36,7 +36,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 002",
     "slug": "WikidataRetractions_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of venues (e.g. journals) with the most retractions .",
     "context": null,
     "inidces": [],
@@ -70,7 +70,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 003",
     "slug": "WikidataRetractions_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of publishers with the most retractions.",
     "context": null,
     "inidces": [],
@@ -105,7 +105,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 004",
     "slug": "WikidataRetractions_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of 100 authors with the most retractions.",
     "context": null,
     "inidces": [],
@@ -138,7 +138,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 005",
     "slug": "WikidataRetractions_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of Maastricht University authors with retracted articles.",
     "context": null,
     "inidces": [],
@@ -173,7 +173,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 006",
     "slug": "WikidataRetractions_006",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List of researchers at Maastricht University (via the ROR identifier) citing retracted articles.",
     "context": null,
     "inidces": [],
@@ -208,7 +208,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 007",
     "slug": "WikidataRetractions_007",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "The number of articles citing retracted articles.",
     "context": null,
     "inidces": [],
@@ -235,7 +235,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 008",
     "slug": "WikidataRetractions_008",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "The number of authors (by P50) citing retracted articles.",
     "context": null,
     "inidces": [],
@@ -262,7 +262,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 009",
     "slug": "WikidataRetractions_009",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Map with organizations with retracted articles.",
     "context": null,
     "inidces": [],
@@ -297,7 +297,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 010",
     "slug": "WikidataRetractions_010",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikidata statements with a retracted paper as reference.",
     "context": null,
     "inidces": [],
@@ -327,7 +327,7 @@ export const WikidataRetractions = [
   {
     "name": "WikidataRetractions - 011",
     "slug": "WikidataRetractions_011",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Journals that cite retracted articles, sorted by citation count.",
     "context": null,
     "inidces": [],

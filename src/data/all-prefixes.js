@@ -4,6 +4,7 @@ import ordoImg from "../assets/images/prefixes/ordo.png"
 import unknownImg from "../assets/images/prefixes/unknown.avif"
 import hoomImg from "../assets/images/prefixes/hoom.jpg"
 import dcImg from "../assets/images/prefixes/dc.jpeg"
+import wikidataImg from "../assets/images/prefixes/wikidata.png"
 import { prefixes as sibPrefixes } from "./queries-data/sib-swiss/prefixes.js";
 
 
@@ -91,7 +92,20 @@ const basicPrefixes = [
       version: "1.1",
       category: "Metadata Standard",
       usedIn: ["Metadata Description", "Digital Libraries", "SPARQL Metadata"]
-    }
+    },
+    {
+      prefix: "Wikidata",
+      name: "Wikidata",
+      namespace: "http://www.wikidata.org/",
+      description: "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.",
+      logo: wikidataImg,
+      documentation: "https://www.wikidata.org/wiki/Wikidata:Main_Page",
+      download: "",
+      version: "",
+      category: "",
+      usedIn: []
+    },
+
 
   ]
   

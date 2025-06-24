@@ -2,7 +2,7 @@ export const OMA = [
   {
     "name": "OMA - 01-rat-proteins",
     "slug": "OMA_01-rat-proteins",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Find all Rattus norvegicus proteins present in OMA RDF database.",
     "context": null,
     "inidces": [],
@@ -23,7 +23,7 @@ export const OMA = [
   {
     "name": "OMA - 02-all-species",
     "slug": "OMA_02-all-species",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Which species are available on OMA database and their scientific names?",
     "context": null,
     "inidces": [],
@@ -44,7 +44,7 @@ export const OMA = [
   {
     "name": "OMA - 03-ins-encoded-proteins",
     "slug": "OMA_03-ins-encoded-proteins",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all proteins in OMA that is encoded by the INS gene and their mnemonics and evidence types from Uniprot database (federated query).",
     "context": null,
     "inidces": [],
@@ -69,7 +69,7 @@ export const OMA = [
   {
     "name": "OMA - 04-orthologs-of-ensembl-gene",
     "slug": "OMA_04-orthologs-of-ensembl-gene",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all genes that are orthologous to ENSLACG00000002497 Ensembl gene (identifier)",
     "context": null,
     "inidces": [],
@@ -93,7 +93,7 @@ export const OMA = [
   {
     "name": "OMA - 05-paralogs-of-ensembl-gene",
     "slug": "OMA_05-paralogs-of-ensembl-gene",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all genes that are paralogous to ENSG00000244734 Ensembl gene (identifier).",
     "context": null,
     "inidces": [],
@@ -117,7 +117,7 @@ export const OMA = [
   {
     "name": "OMA - 06-paralogs-with-uniprot-xrefs",
     "slug": "OMA_06-paralogs-with-uniprot-xrefs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all genes that are paralogous to HUMAN00529 OMA protein (identifier) and their cross-reference links to OMA and Uniprot.",
     "context": null,
     "inidces": [],
@@ -139,7 +139,7 @@ export const OMA = [
   {
     "name": "OMA - 07-orthologs-with-uniprot-xrefs",
     "slug": "OMA_07-orthologs-with-uniprot-xrefs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all genes that are orthologous to HUMAN22169 OMA protein (identifier) and their cross-reference links to OMA and Uniprot.",
     "context": null,
     "inidces": [],
@@ -161,7 +161,7 @@ export const OMA = [
   {
     "name": "OMA - 08-rabbit-apoci-orthologs",
     "slug": "OMA_08-rabbit-apoci-orthologs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all genes per species that are orthologous to Rabbit's APOCI or APOC1 gene and their cross-reference links to OMA and Uniprot including the corresponding Ensembl gene identifier.",
     "context": null,
     "inidces": [],
@@ -183,7 +183,7 @@ export const OMA = [
   {
     "name": "OMA - 09-rabbit-orthologs-of-mouse-homoglobinY",
     "slug": "OMA_09-rabbit-orthologs-of-mouse-homoglobinY",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all Rabbit's proteins encoded by genes that are orthologous to Mouses's hemoglobin Y gene and their cross-reference links to Uniprot.",
     "context": null,
     "inidces": [],
@@ -206,7 +206,7 @@ export const OMA = [
   {
     "name": "OMA - 10-paralogs-in-human-of-hbb",
     "slug": "OMA_10-paralogs-in-human-of-hbb",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all human proteins that are paralogous to the HBB gene and their UniProt cross-references.",
     "context": null,
     "inidces": [],
@@ -229,7 +229,7 @@ export const OMA = [
   {
     "name": "OMA - 11-percentage-of-proteins-with-paralogs",
     "slug": "OMA_11-percentage-of-proteins-with-paralogs",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "The percentage of proteins in Drosophila melanogaster that has at least one paralogous sequence (protein).",
     "context": null,
     "inidces": [],
@@ -254,7 +254,7 @@ export const OMA = [
   {
     "name": "OMA - 12-orthologs-between-two-species",
     "slug": "OMA_12-orthologs-between-two-species",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all orthologs between mouse and rabbit, together with their HOG id",
     "context": null,
     "inidces": [],
@@ -277,7 +277,7 @@ export const OMA = [
   {
     "name": "OMA - 13-hog-members-at-level-from-query-protein",
     "slug": "OMA_13-hog-members-at-level-from-query-protein",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve all proteins belongong to the Hierarchical Orthologous Group (HOG) at the level 'Vertebrata' to which humans' CDIN1 gene belong, together with their gene name symbol if available.",
     "context": null,
     "inidces": [],
@@ -300,7 +300,7 @@ export const OMA = [
   {
     "name": "OMA - 14-compare-mbgd-oma",
     "slug": "OMA_14-compare-mbgd-oma",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve pairwise orthologous genes of the Cyanobacterium-aponinum psb27- gene that are found in the MBGD database but are not present in OMA",
     "context": null,
     "inidces": [],
@@ -325,7 +325,7 @@ export const OMA = [
   {
     "name": "OMA - 15-biosodafrontend-rat-TP53",
     "slug": "OMA_15-biosodafrontend-rat-TP53",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Rattus norvegicus' proteins encoded by genes that are paralogous to its TP53 gene and their Uniprot function annotations.",
     "context": null,
     "inidces": [],

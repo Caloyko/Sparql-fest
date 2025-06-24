@@ -2,7 +2,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 001",
     "slug": "WikidataMastodon_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Lists universities with a Mastodon account.",
     "context": null,
     "inidces": [],
@@ -29,7 +29,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 002",
     "slug": "WikidataMastodon_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all Mastodon addresses in Wikidata.",
     "context": null,
     "inidces": [],
@@ -53,7 +53,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 003",
     "slug": "WikidataMastodon_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Nobel Prize winners with a Mastodon account.",
     "context": null,
     "inidces": [],
@@ -79,7 +79,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 004",
     "slug": "WikidataMastodon_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Academic journals with Mastodon.",
     "context": null,
     "inidces": [],
@@ -106,7 +106,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 005",
     "slug": "WikidataMastodon_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "People with Mastodon that published in a PLOS journal.",
     "context": null,
     "inidces": [],
@@ -139,7 +139,7 @@ export const WikidataMastodon = [
   {
     "name": "WikidataMastodon - 006",
     "slug": "WikidataMastodon_006",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Find your co-authors with your ORCID.",
     "context": null,
     "inidces": [],

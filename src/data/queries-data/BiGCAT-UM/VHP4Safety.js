@@ -2,7 +2,7 @@ export const VHP4Safety = [
   {
     "name": "VHP4Safety - 001",
     "slug": "VHP4Safety_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all compounds with a PubChem identifier and optionally list the ToxBank Wiki link and roles.",
     "context": null,
     "inidces": [],
@@ -31,7 +31,7 @@ export const VHP4Safety = [
   {
     "name": "VHP4Safety - 002",
     "slug": "VHP4Safety_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all collections and the number of compounds in that collection.",
     "context": null,
     "inidces": [],
@@ -60,7 +60,7 @@ export const VHP4Safety = [
   {
     "name": "VHP4Safety - 003",
     "slug": "VHP4Safety_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all compounds of which the xenometabolism is known.",
     "context": null,
     "inidces": [],
@@ -84,7 +84,7 @@ export const VHP4Safety = [
   {
     "name": "VHP4Safety - 004",
     "slug": "VHP4Safety_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all compounds in the HBM4EU priority substances collection with identifier wd:Q56, optionally with their InChIKey and PubChem CID identifiers.",
     "context": null,
     "inidces": [],

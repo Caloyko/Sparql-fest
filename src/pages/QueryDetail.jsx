@@ -50,7 +50,7 @@ const QueryDetail = () => {
             <Section
                 id={detail.slug}
                 title={detail.name}
-                description={detail.date}
+                description={new Date(detail.date).toLocaleDateString()}
                 variant="dark"
                 bg={false}
                 >

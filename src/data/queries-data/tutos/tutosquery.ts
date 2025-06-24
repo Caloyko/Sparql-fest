@@ -2,7 +2,7 @@ export const tutoQueries = [
     {
         name: "Getting disease labels from Wikidata",
         slug: "tuto-1-basic-disease-labels",
-        date: "24/06/2025",
+        date: new Date("2025-06-24"),
         description: "Basic query to retrieve diseases and their labels from Wikidata using only PREFIX, SELECT, and WHERE.",
         context: "We want to get a simple list of diseases from Wikidata, including their identifier and label. This example shows how to structure a minimal SPARQL query using the PREFIX, SELECT, and WHERE clauses, without any filtering.",
         inidces: [
@@ -30,13 +30,13 @@ export const tutoQueries = [
           "SELECT",
           "WHERE"
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       }  ,
       {
         name: "Finding Medical Conditions and Their Labels",
         slug: "tuto-1-medical-conditions-labels",
-        date: "24/06/2025",
+        date: new Date("2025-06-24"),
         description: `Retrieve some entities classified as medical conditions along with their labels.
   This teaches how to write a simple RDF triple using the **'a'** keyword (which means rdf:type),
   and how to extract information (like labels) for a variable.`,
@@ -70,13 +70,13 @@ export const tutoQueries = [
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       },
       {
         name: "Basic drug list with filtering and limit",
         slug: "tuto-1-basic-drug-list-filtered",
-        date: "24/06/2025",
+        date: new Date("2025-06-24"),
         description: `Retrieve a distinct list of pharmaceutical drugs with English labels using basic FILTER, DISTINCT, and LIMIT clauses.`,
         context: `You are building a medical interface and want to display a few drug names in English. This query shows how to filter and limit the results properly.`,
         inidces: [
@@ -109,13 +109,13 @@ LIMIT 5
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       },
       {
         name: "Diseases with alternative medical facts and optional image",
         slug: "tuto-1-disease-cause-or-symptom",
-        date: "24/06/2025",
+        date: new Date("2025-06-24"),
         description: ` Find diseases that are either linked to a known cause or have a documented symptom.
   Additionally, try to retrieve an image if available.`,
         context: `Suppose you are building a knowledge panel for diseases. You want to include for each disease either a main cause
@@ -164,7 +164,7 @@ LIMIT 5
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       }     
 ]

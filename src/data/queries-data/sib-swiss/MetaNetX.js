@@ -2,7 +2,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 1",
     "slug": "MetaNetX_1",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve the MNXref metabolite with name <em>N,N-dimethyl-beta-alanine</em>, together with molecular information.",
     "context": null,
     "inidces": [],
@@ -25,7 +25,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 10",
     "slug": "MetaNetX_10",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "A GEM is primarily a set of reactions: here are all the reaction equations occurring in bigg_e_coli_core. NB: here the reac label is the one produced while compiling MetaNetX",
     "context": null,
     "inidces": [],
@@ -51,7 +51,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 11",
     "slug": "MetaNetX_11",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Building on example 10. ...in addition reactions are endowed with a direction, flux bounds and possibly the description of the enzymes that catalyze it.",
     "context": null,
     "inidces": [],
@@ -79,7 +79,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 12",
     "slug": "MetaNetX_12",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Given the protein with UniProt accession number P42588 (PAT_ECOLI, putrescine aminotransferase, EC 2.6.1.82) retrieve all reactions and models in which this polypeptide appears.",
     "context": null,
     "inidces": [],
@@ -107,7 +107,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 13",
     "slug": "MetaNetX_13",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Given the protein with UniProt accession number <a href=\\",
     "context": null,
     "inidces": [],
@@ -133,7 +133,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 2",
     "slug": "MetaNetX_2",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve the identifiers for N,N-dimethyl-beta-alanine in external databases. This crosslinking of external identifiers is the core of MNXref.",
     "context": null,
     "inidces": [],
@@ -156,7 +156,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 3",
     "slug": "MetaNetX_3",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "For the KEGG compound C01732, retrieve the MNXref identifier, name and reference",
     "context": null,
     "inidces": [],
@@ -178,7 +178,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 4",
     "slug": "MetaNetX_4",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Retrieve the MNXref reaction identifier, that corresponds to the KEGG reaction R00703 (lactate dehydrogenase).",
     "context": null,
     "inidces": [],
@@ -200,7 +200,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 5",
     "slug": "MetaNetX_5",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List the external identifiers that correspond to the KEGG reaction R00703 (lactate dehydrogenase). This crosslinking of external identifiers is the core of MNXref",
     "context": null,
     "inidces": [],
@@ -222,7 +222,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 6",
     "slug": "MetaNetX_6",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Show the reaction equation catalyzed by lactate dehydrogenase (KEGG reaction R00703). NB: Stoichiometric coefficients for substrates are given a negative value.",
     "context": null,
     "inidces": [],
@@ -248,7 +248,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 7",
     "slug": "MetaNetX_7",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Show the reaction equation for the tartrate/succinate antiporter (rhea:34763). NB: there are two generic compartments here.)",
     "context": null,
     "inidces": [],
@@ -272,7 +272,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 8",
     "slug": "MetaNetX_8",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Show the reaction equation for ATP synthase (reaction ATPS4m from BiGG). NB: there are two types of protons here, as MetaNetX distinguishes protons used for balancing (MNXM1) from those that are translocated (MNXM01).",
     "context": null,
     "inidces": [],
@@ -296,7 +296,7 @@ export const MetaNetX = [
   {
     "name": "MetaNetX - 9",
     "slug": "MetaNetX_9",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "List all GEMs currently in the MetaNetX repository, with their numbers of reactions, chemical, compartments and genes/proteins.",
     "context": null,
     "inidces": [],

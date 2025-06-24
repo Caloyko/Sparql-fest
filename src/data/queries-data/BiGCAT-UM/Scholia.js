@@ -2,7 +2,7 @@ export const Scholia = [
   {
     "name": "Scholia - 001",
     "slug": "Scholia_001",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: academic tree",
     "context": null,
     "inidces": [],
@@ -44,7 +44,7 @@ export const Scholia = [
   {
     "name": "Scholia - 002",
     "slug": "Scholia_002",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: associated images",
     "context": null,
     "inidces": [],
@@ -82,7 +82,7 @@ export const Scholia = [
   {
     "name": "Scholia - 003",
     "slug": "Scholia_003",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: citations by year",
     "context": null,
     "inidces": [],
@@ -123,7 +123,7 @@ export const Scholia = [
   {
     "name": "Scholia - 004",
     "slug": "Scholia_004",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: coauthor map",
     "context": null,
     "inidces": [],
@@ -165,7 +165,7 @@ export const Scholia = [
   {
     "name": "Scholia - 005",
     "slug": "Scholia_005",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: coauthors",
     "context": null,
     "inidces": [],
@@ -209,7 +209,7 @@ export const Scholia = [
   {
     "name": "Scholia - 006",
     "slug": "Scholia_006",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: events",
     "context": null,
     "inidces": [],
@@ -253,7 +253,7 @@ export const Scholia = [
   {
     "name": "Scholia - 007",
     "slug": "Scholia_007",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: list of publications",
     "context": null,
     "inidces": [],
@@ -299,7 +299,7 @@ export const Scholia = [
   {
     "name": "Scholia - 008",
     "slug": "Scholia_008",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: list of retracted articles",
     "context": null,
     "inidces": [],
@@ -346,7 +346,7 @@ export const Scholia = [
   {
     "name": "Scholia - 009",
     "slug": "Scholia_009",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: most cited works",
     "context": null,
     "inidces": [],
@@ -385,7 +385,7 @@ export const Scholia = [
   {
     "name": "Scholia - 010",
     "slug": "Scholia_010",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: most citing authors",
     "context": null,
     "inidces": [],
@@ -433,7 +433,7 @@ export const Scholia = [
   {
     "name": "Scholia - 011",
     "slug": "Scholia_011",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: other locations",
     "context": null,
     "inidces": [],
@@ -470,7 +470,7 @@ export const Scholia = [
   {
     "name": "Scholia - 012",
     "slug": "Scholia_012",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: pages per year",
     "context": null,
     "inidces": [],
@@ -513,7 +513,7 @@ export const Scholia = [
   {
     "name": "Scholia - 013",
     "slug": "Scholia_013",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -560,7 +560,7 @@ export const Scholia = [
   {
     "name": "Scholia - 014",
     "slug": "Scholia_014",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: retracted articles per year",
     "context": null,
     "inidces": [],
@@ -607,7 +607,7 @@ export const Scholia = [
   {
     "name": "Scholia - 015",
     "slug": "Scholia_015",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: review statistics",
     "context": null,
     "inidces": [],
@@ -656,7 +656,7 @@ export const Scholia = [
   {
     "name": "Scholia - 016",
     "slug": "Scholia_016",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: timeline",
     "context": null,
     "inidces": [],
@@ -700,7 +700,7 @@ export const Scholia = [
   {
     "name": "Scholia - 017",
     "slug": "Scholia_017",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: topic scores",
     "context": null,
     "inidces": [],
@@ -740,7 +740,7 @@ export const Scholia = [
   {
     "name": "Scholia - 018",
     "slug": "Scholia_018",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: topics works matrix",
     "context": null,
     "inidces": [],
@@ -774,7 +774,7 @@ export const Scholia = [
   {
     "name": "Scholia - 019",
     "slug": "Scholia_019",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: topics",
     "context": null,
     "inidces": [],
@@ -812,7 +812,7 @@ export const Scholia = [
   {
     "name": "Scholia - 020",
     "slug": "Scholia_020",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: use",
     "context": null,
     "inidces": [],
@@ -852,7 +852,7 @@ export const Scholia = [
   {
     "name": "Scholia - 021",
     "slug": "Scholia_021",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: venue statistics chart",
     "context": null,
     "inidces": [],
@@ -893,7 +893,7 @@ export const Scholia = [
   {
     "name": "Scholia - 022",
     "slug": "Scholia_022",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Author aspect: venue statistics",
     "context": null,
     "inidces": [],
@@ -938,7 +938,7 @@ export const Scholia = [
   {
     "name": "Scholia - 023",
     "slug": "Scholia_023",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: coawards",
     "context": null,
     "inidces": [],
@@ -976,7 +976,7 @@ export const Scholia = [
   {
     "name": "Scholia - 024",
     "slug": "Scholia_024",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: gender distribution",
     "context": null,
     "inidces": [],
@@ -1013,7 +1013,7 @@ export const Scholia = [
   {
     "name": "Scholia - 025",
     "slug": "Scholia_025",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: images of recipients",
     "context": null,
     "inidces": [],
@@ -1054,7 +1054,7 @@ export const Scholia = [
   {
     "name": "Scholia - 026",
     "slug": "Scholia_026",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: list of recipients",
     "context": null,
     "inidces": [],
@@ -1097,7 +1097,7 @@ export const Scholia = [
   {
     "name": "Scholia - 027",
     "slug": "Scholia_027",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: locations of recipients",
     "context": null,
     "inidces": [],
@@ -1134,7 +1134,7 @@ export const Scholia = [
   {
     "name": "Scholia - 028",
     "slug": "Scholia_028",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: recent publications by recipients",
     "context": null,
     "inidces": [],
@@ -1173,7 +1173,7 @@ export const Scholia = [
   {
     "name": "Scholia - 029",
     "slug": "Scholia_029",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Award aspect: topics of works by recipients",
     "context": null,
     "inidces": [],
@@ -1211,7 +1211,7 @@ export const Scholia = [
   {
     "name": "Scholia - 030",
     "slug": "Scholia_030",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Catalogue aspect: images",
     "context": null,
     "inidces": [],
@@ -1244,7 +1244,7 @@ export const Scholia = [
   {
     "name": "Scholia - 031",
     "slug": "Scholia_031",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Catalogue aspect: items",
     "context": null,
     "inidces": [],
@@ -1282,7 +1282,7 @@ export const Scholia = [
   {
     "name": "Scholia - 032",
     "slug": "Scholia_032",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: class hierarchy",
     "context": null,
     "inidces": [],
@@ -1324,7 +1324,7 @@ export const Scholia = [
   {
     "name": "Scholia - 033",
     "slug": "Scholia_033",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: found in taxon",
     "context": null,
     "inidces": [],
@@ -1367,7 +1367,7 @@ export const Scholia = [
   {
     "name": "Scholia - 034",
     "slug": "Scholia_034",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: identifiers",
     "context": null,
     "inidces": [],
@@ -1405,7 +1405,7 @@ export const Scholia = [
   {
     "name": "Scholia - 035",
     "slug": "Scholia_035",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -1448,7 +1448,7 @@ export const Scholia = [
   {
     "name": "Scholia - 036",
     "slug": "Scholia_036",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: recent literature",
     "context": null,
     "inidces": [],
@@ -1494,7 +1494,7 @@ export const Scholia = [
   {
     "name": "Scholia - 037",
     "slug": "Scholia_037",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-class aspect: related chemicals",
     "context": null,
     "inidces": [],
@@ -1537,7 +1537,7 @@ export const Scholia = [
   {
     "name": "Scholia - 038",
     "slug": "Scholia_038",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-element aspect: allotropes",
     "context": null,
     "inidces": [],
@@ -1577,7 +1577,7 @@ export const Scholia = [
   {
     "name": "Scholia - 039",
     "slug": "Scholia_039",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-element aspect: data",
     "context": null,
     "inidces": [],
@@ -1622,7 +1622,7 @@ export const Scholia = [
   {
     "name": "Scholia - 040",
     "slug": "Scholia_040",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-element aspect: isotopes",
     "context": null,
     "inidces": [],
@@ -1657,7 +1657,7 @@ export const Scholia = [
   {
     "name": "Scholia - 041",
     "slug": "Scholia_041",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical-element aspect: recent literature",
     "context": null,
     "inidces": [],
@@ -1703,7 +1703,7 @@ export const Scholia = [
   {
     "name": "Scholia - 042",
     "slug": "Scholia_042",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: biological processes",
     "context": null,
     "inidces": [],
@@ -1741,7 +1741,7 @@ export const Scholia = [
   {
     "name": "Scholia - 043",
     "slug": "Scholia_043",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: found in matrix np",
     "context": null,
     "inidces": [],
@@ -1780,7 +1780,7 @@ export const Scholia = [
   {
     "name": "Scholia - 044",
     "slug": "Scholia_044",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: found in taxon",
     "context": null,
     "inidces": [],
@@ -1821,7 +1821,7 @@ export const Scholia = [
   {
     "name": "Scholia - 045",
     "slug": "Scholia_045",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: identifiers for this chemical",
     "context": null,
     "inidces": [],
@@ -1868,7 +1868,7 @@ export const Scholia = [
   {
     "name": "Scholia - 046",
     "slug": "Scholia_046",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: physicochemical properties of this chemical",
     "context": null,
     "inidces": [],
@@ -1915,7 +1915,7 @@ export const Scholia = [
   {
     "name": "Scholia - 047",
     "slug": "Scholia_047",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: publications per year for this chemical",
     "context": null,
     "inidces": [],
@@ -1958,7 +1958,7 @@ export const Scholia = [
   {
     "name": "Scholia - 048",
     "slug": "Scholia_048",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: recent literature about this chemical",
     "context": null,
     "inidces": [],
@@ -2005,7 +2005,7 @@ export const Scholia = [
   {
     "name": "Scholia - 049",
     "slug": "Scholia_049",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: related chemical structures",
     "context": null,
     "inidces": [],
@@ -2047,7 +2047,7 @@ export const Scholia = [
   {
     "name": "Scholia - 050",
     "slug": "Scholia_050",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: related chemical structures",
     "context": null,
     "inidces": [],
@@ -2085,7 +2085,7 @@ export const Scholia = [
   {
     "name": "Scholia - 051",
     "slug": "Scholia_051",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Chemical aspect: structural identifiers for this chemical structure",
     "context": null,
     "inidces": [],
@@ -2129,7 +2129,7 @@ export const Scholia = [
   {
     "name": "Scholia - 052",
     "slug": "Scholia_052",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Clinical-trial aspect: data",
     "context": null,
     "inidces": [],
@@ -2169,7 +2169,7 @@ export const Scholia = [
   {
     "name": "Scholia - 053",
     "slug": "Scholia_053",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Clinical-trial aspect: related trials",
     "context": null,
     "inidces": [],
@@ -2209,7 +2209,7 @@ export const Scholia = [
   {
     "name": "Scholia - 054",
     "slug": "Scholia_054",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Complex aspect: articles by year",
     "context": null,
     "inidces": [],
@@ -2254,7 +2254,7 @@ export const Scholia = [
   {
     "name": "Scholia - 055",
     "slug": "Scholia_055",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Complex aspect: articles recent",
     "context": null,
     "inidces": [],
@@ -2301,7 +2301,7 @@ export const Scholia = [
   {
     "name": "Scholia - 056",
     "slug": "Scholia_056",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Complex aspect: identifiers",
     "context": null,
     "inidces": [],
@@ -2349,7 +2349,7 @@ export const Scholia = [
   {
     "name": "Scholia - 057",
     "slug": "Scholia_057",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Complex aspect: participants",
     "context": null,
     "inidces": [],
@@ -2391,7 +2391,7 @@ export const Scholia = [
   {
     "name": "Scholia - 058",
     "slug": "Scholia_058",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Country aspect: authors",
     "context": null,
     "inidces": [],
@@ -2431,7 +2431,7 @@ export const Scholia = [
   {
     "name": "Scholia - 059",
     "slug": "Scholia_059",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Country aspect: Co-organizations for a specific country",
     "context": null,
     "inidces": [],
@@ -2472,7 +2472,7 @@ export const Scholia = [
   {
     "name": "Scholia - 060",
     "slug": "Scholia_060",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Country aspect: Locations as topics for a specific country",
     "context": null,
     "inidces": [],
@@ -2513,7 +2513,7 @@ export const Scholia = [
   {
     "name": "Scholia - 061",
     "slug": "Scholia_061",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Country aspect: Narrative locations for a specific country",
     "context": null,
     "inidces": [],
@@ -2554,7 +2554,7 @@ export const Scholia = [
   {
     "name": "Scholia - 062",
     "slug": "Scholia_062",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Country aspect: Organizations for a specific country",
     "context": null,
     "inidces": [],
@@ -2592,7 +2592,7 @@ export const Scholia = [
   {
     "name": "Scholia - 063",
     "slug": "Scholia_063",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Dataset aspect: citations",
     "context": null,
     "inidces": [],
@@ -2638,7 +2638,7 @@ export const Scholia = [
   {
     "name": "Scholia - 064",
     "slug": "Scholia_064",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Dataset aspect: identifiers",
     "context": null,
     "inidces": [],
@@ -2685,7 +2685,7 @@ export const Scholia = [
   {
     "name": "Scholia - 065",
     "slug": "Scholia_065",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Dataset aspect: list of authors",
     "context": null,
     "inidces": [],
@@ -2733,7 +2733,7 @@ export const Scholia = [
   {
     "name": "Scholia - 066",
     "slug": "Scholia_066",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Dataset aspect: topic scores",
     "context": null,
     "inidces": [],
@@ -2773,7 +2773,7 @@ export const Scholia = [
   {
     "name": "Scholia - 067",
     "slug": "Scholia_067",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Disease aspect: clinical trials",
     "context": null,
     "inidces": [],
@@ -2812,7 +2812,7 @@ export const Scholia = [
   {
     "name": "Scholia - 068",
     "slug": "Scholia_068",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Disease aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -2855,7 +2855,7 @@ export const Scholia = [
   {
     "name": "Scholia - 069",
     "slug": "Scholia_069",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Disease aspect: related diseases",
     "context": null,
     "inidces": [],
@@ -2896,7 +2896,7 @@ export const Scholia = [
   {
     "name": "Scholia - 070",
     "slug": "Scholia_070",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: acceptance rate",
     "context": null,
     "inidces": [],
@@ -2936,7 +2936,7 @@ export const Scholia = [
   {
     "name": "Scholia - 071",
     "slug": "Scholia_071",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: List of event and proceedings for a specific event series",
     "context": null,
     "inidces": [],
@@ -2980,7 +2980,7 @@ export const Scholia = [
   {
     "name": "Scholia - 072",
     "slug": "Scholia_072",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: map",
     "context": null,
     "inidces": [],
@@ -3014,7 +3014,7 @@ export const Scholia = [
   {
     "name": "Scholia - 073",
     "slug": "Scholia_073",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: number of participants",
     "context": null,
     "inidces": [],
@@ -3051,7 +3051,7 @@ export const Scholia = [
   {
     "name": "Scholia - 074",
     "slug": "Scholia_074",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: people",
     "context": null,
     "inidces": [],
@@ -3097,7 +3097,7 @@ export const Scholia = [
   {
     "name": "Scholia - 075",
     "slug": "Scholia_075",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: proceedings publications",
     "context": null,
     "inidces": [],
@@ -3142,7 +3142,7 @@ export const Scholia = [
   {
     "name": "Scholia - 076",
     "slug": "Scholia_076",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: recent publications",
     "context": null,
     "inidces": [],
@@ -3186,7 +3186,7 @@ export const Scholia = [
   {
     "name": "Scholia - 077",
     "slug": "Scholia_077",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: timeline",
     "context": null,
     "inidces": [],
@@ -3228,7 +3228,7 @@ export const Scholia = [
   {
     "name": "Scholia - 078",
     "slug": "Scholia_078",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: top topics through time",
     "context": null,
     "inidces": [],
@@ -3269,7 +3269,7 @@ export const Scholia = [
   {
     "name": "Scholia - 079",
     "slug": "Scholia_079",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event-series aspect: topics",
     "context": null,
     "inidces": [],
@@ -3312,7 +3312,7 @@ export const Scholia = [
   {
     "name": "Scholia - 080",
     "slug": "Scholia_080",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: co authors",
     "context": null,
     "inidces": [],
@@ -3355,7 +3355,7 @@ export const Scholia = [
   {
     "name": "Scholia - 081",
     "slug": "Scholia_081",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: data",
     "context": null,
     "inidces": [],
@@ -3401,7 +3401,7 @@ export const Scholia = [
   {
     "name": "Scholia - 082",
     "slug": "Scholia_082",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: future events",
     "context": null,
     "inidces": [],
@@ -3447,7 +3447,7 @@ export const Scholia = [
   {
     "name": "Scholia - 083",
     "slug": "Scholia_083",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: past events",
     "context": null,
     "inidces": [],
@@ -3494,7 +3494,7 @@ export const Scholia = [
   {
     "name": "Scholia - 084",
     "slug": "Scholia_084",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: people",
     "context": null,
     "inidces": [],
@@ -3540,7 +3540,7 @@ export const Scholia = [
   {
     "name": "Scholia - 085",
     "slug": "Scholia_085",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: presentations",
     "context": null,
     "inidces": [],
@@ -3581,7 +3581,7 @@ export const Scholia = [
   {
     "name": "Scholia - 086",
     "slug": "Scholia_086",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: proceedings",
     "context": null,
     "inidces": [],
@@ -3622,7 +3622,7 @@ export const Scholia = [
   {
     "name": "Scholia - 087",
     "slug": "Scholia_087",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: recent publications",
     "context": null,
     "inidces": [],
@@ -3666,7 +3666,7 @@ export const Scholia = [
   {
     "name": "Scholia - 088",
     "slug": "Scholia_088",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: related events people",
     "context": null,
     "inidces": [],
@@ -3705,7 +3705,7 @@ export const Scholia = [
   {
     "name": "Scholia - 089",
     "slug": "Scholia_089",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: related events timelocation",
     "context": null,
     "inidces": [],
@@ -3752,7 +3752,7 @@ export const Scholia = [
   {
     "name": "Scholia - 090",
     "slug": "Scholia_090",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: sponsors",
     "context": null,
     "inidces": [],
@@ -3788,7 +3788,7 @@ export const Scholia = [
   {
     "name": "Scholia - 091",
     "slug": "Scholia_091",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: timeline",
     "context": null,
     "inidces": [],
@@ -3825,7 +3825,7 @@ export const Scholia = [
   {
     "name": "Scholia - 092",
     "slug": "Scholia_092",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: topic scores",
     "context": null,
     "inidces": [],
@@ -3865,7 +3865,7 @@ export const Scholia = [
   {
     "name": "Scholia - 093",
     "slug": "Scholia_093",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: upcoming deadlines",
     "context": null,
     "inidces": [],
@@ -3912,7 +3912,7 @@ export const Scholia = [
   {
     "name": "Scholia - 094",
     "slug": "Scholia_094",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Event aspect: uses",
     "context": null,
     "inidces": [],
@@ -3955,7 +3955,7 @@ export const Scholia = [
   {
     "name": "Scholia - 095",
     "slug": "Scholia_095",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Gene aspect: identifiers for this gene",
     "context": null,
     "inidces": [],
@@ -3998,7 +3998,7 @@ export const Scholia = [
   {
     "name": "Scholia - 096",
     "slug": "Scholia_096",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Gene aspect: orthologs",
     "context": null,
     "inidces": [],
@@ -4031,7 +4031,7 @@ export const Scholia = [
   {
     "name": "Scholia - 097",
     "slug": "Scholia_097",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Gene aspect: proteins",
     "context": null,
     "inidces": [],
@@ -4064,7 +4064,7 @@ export const Scholia = [
   {
     "name": "Scholia - 098",
     "slug": "Scholia_098",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Gene aspect: transcripts",
     "context": null,
     "inidces": [],
@@ -4098,7 +4098,7 @@ export const Scholia = [
   {
     "name": "Scholia - 099",
     "slug": "Scholia_099",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Gene aspect: variants",
     "context": null,
     "inidces": [],
@@ -4136,7 +4136,7 @@ export const Scholia = [
   {
     "name": "Scholia - 100",
     "slug": "Scholia_100",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "License aspect: recently published works",
     "context": null,
     "inidces": [],
@@ -4174,7 +4174,7 @@ export const Scholia = [
   {
     "name": "Scholia - 101",
     "slug": "Scholia_101",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "License aspect: types of work",
     "context": null,
     "inidces": [],
@@ -4210,7 +4210,7 @@ export const Scholia = [
   {
     "name": "Scholia - 102",
     "slug": "Scholia_102",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Location aspect: nearby locations as topics in works",
     "context": null,
     "inidces": [],
@@ -4257,7 +4257,7 @@ export const Scholia = [
   {
     "name": "Scholia - 103",
     "slug": "Scholia_103",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Location aspect: Nearby academic institutions around a specified geographic entity.",
     "context": null,
     "inidces": [],
@@ -4302,7 +4302,7 @@ export const Scholia = [
   {
     "name": "Scholia - 104",
     "slug": "Scholia_104",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Ontology aspect: data",
     "context": null,
     "inidces": [],
@@ -4346,7 +4346,7 @@ export const Scholia = [
   {
     "name": "Scholia - 105",
     "slug": "Scholia_105",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Ontology aspect: recent works",
     "context": null,
     "inidces": [],
@@ -4382,7 +4382,7 @@ export const Scholia = [
   {
     "name": "Scholia - 106",
     "slug": "Scholia_106",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Ontology aspect: reuse graph",
     "context": null,
     "inidces": [],
@@ -4422,7 +4422,7 @@ export const Scholia = [
   {
     "name": "Scholia - 107",
     "slug": "Scholia_107",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Ontology aspect: used by ontologies",
     "context": null,
     "inidces": [],
@@ -4461,7 +4461,7 @@ export const Scholia = [
   {
     "name": "Scholia - 108",
     "slug": "Scholia_108",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Ontology aspect: used ontologies",
     "context": null,
     "inidces": [],
@@ -4500,7 +4500,7 @@ export const Scholia = [
   {
     "name": "Scholia - 109",
     "slug": "Scholia_109",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: advisor graph",
     "context": null,
     "inidces": [],
@@ -4541,7 +4541,7 @@ export const Scholia = [
   {
     "name": "Scholia - 110",
     "slug": "Scholia_110",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: awards",
     "context": null,
     "inidces": [],
@@ -4584,7 +4584,7 @@ export const Scholia = [
   {
     "name": "Scholia - 111",
     "slug": "Scholia_111",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: co author graph",
     "context": null,
     "inidces": [],
@@ -4626,7 +4626,7 @@ export const Scholia = [
   {
     "name": "Scholia - 112",
     "slug": "Scholia_112",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: co author normalized citations",
     "context": null,
     "inidces": [],
@@ -4668,7 +4668,7 @@ export const Scholia = [
   {
     "name": "Scholia - 113",
     "slug": "Scholia_113",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: Employees and affiliated with a specified organization",
     "context": null,
     "inidces": [],
@@ -4710,7 +4710,7 @@ export const Scholia = [
   {
     "name": "Scholia - 114",
     "slug": "Scholia_114",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: gender distribution",
     "context": null,
     "inidces": [],
@@ -4747,7 +4747,7 @@ export const Scholia = [
   {
     "name": "Scholia - 115",
     "slug": "Scholia_115",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: most cited papers",
     "context": null,
     "inidces": [],
@@ -4787,7 +4787,7 @@ export const Scholia = [
   {
     "name": "Scholia - 116",
     "slug": "Scholia_116",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: page production",
     "context": null,
     "inidces": [],
@@ -4830,7 +4830,7 @@ export const Scholia = [
   {
     "name": "Scholia - 117",
     "slug": "Scholia_117",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: recent citations",
     "context": null,
     "inidces": [],
@@ -4867,7 +4867,7 @@ export const Scholia = [
   {
     "name": "Scholia - 118",
     "slug": "Scholia_118",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: recent literature",
     "context": null,
     "inidces": [],
@@ -4913,7 +4913,7 @@ export const Scholia = [
   {
     "name": "Scholia - 119",
     "slug": "Scholia_119",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: topics",
     "context": null,
     "inidces": [],
@@ -4955,7 +4955,7 @@ export const Scholia = [
   {
     "name": "Scholia - 120",
     "slug": "Scholia_120",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Organization aspect: uses",
     "context": null,
     "inidces": [],
@@ -4997,7 +4997,7 @@ export const Scholia = [
   {
     "name": "Scholia - 121",
     "slug": "Scholia_121",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pathway aspect: citing articles",
     "context": null,
     "inidces": [],
@@ -5037,7 +5037,7 @@ export const Scholia = [
   {
     "name": "Scholia - 122",
     "slug": "Scholia_122",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pathway aspect: optional data values",
     "context": null,
     "inidces": [],
@@ -5071,7 +5071,7 @@ export const Scholia = [
   {
     "name": "Scholia - 123",
     "slug": "Scholia_123",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pathway aspect: participants",
     "context": null,
     "inidces": [],
@@ -5112,7 +5112,7 @@ export const Scholia = [
   {
     "name": "Scholia - 124",
     "slug": "Scholia_124",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pathway aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -5155,7 +5155,7 @@ export const Scholia = [
   {
     "name": "Scholia - 125",
     "slug": "Scholia_125",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Pathway aspect: recent articles",
     "context": null,
     "inidces": [],
@@ -5199,7 +5199,7 @@ export const Scholia = [
   {
     "name": "Scholia - 126",
     "slug": "Scholia_126",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-episode aspect: data",
     "context": null,
     "inidces": [],
@@ -5242,7 +5242,7 @@ export const Scholia = [
   {
     "name": "Scholia - 127",
     "slug": "Scholia_127",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-episode aspect: guests",
     "context": null,
     "inidces": [],
@@ -5279,7 +5279,7 @@ export const Scholia = [
   {
     "name": "Scholia - 128",
     "slug": "Scholia_128",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-episode aspect: listings for this podcast",
     "context": null,
     "inidces": [],
@@ -5326,7 +5326,7 @@ export const Scholia = [
   {
     "name": "Scholia - 129",
     "slug": "Scholia_129",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-language aspect: podcast list",
     "context": null,
     "inidces": [],
@@ -5369,7 +5369,7 @@ export const Scholia = [
   {
     "name": "Scholia - 130",
     "slug": "Scholia_130",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-language aspect: recent episodes",
     "context": null,
     "inidces": [],
@@ -5412,7 +5412,7 @@ export const Scholia = [
   {
     "name": "Scholia - 131",
     "slug": "Scholia_131",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-season aspect: data",
     "context": null,
     "inidces": [],
@@ -5454,7 +5454,7 @@ export const Scholia = [
   {
     "name": "Scholia - 132",
     "slug": "Scholia_132",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast-season aspect: episodes",
     "context": null,
     "inidces": [],
@@ -5490,7 +5490,7 @@ export const Scholia = [
   {
     "name": "Scholia - 133",
     "slug": "Scholia_133",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast aspect: data",
     "context": null,
     "inidces": [],
@@ -5534,7 +5534,7 @@ export const Scholia = [
   {
     "name": "Scholia - 134",
     "slug": "Scholia_134",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast aspect: listings for this podcast",
     "context": null,
     "inidces": [],
@@ -5581,7 +5581,7 @@ export const Scholia = [
   {
     "name": "Scholia - 135",
     "slug": "Scholia_135",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast aspect: recent episodes",
     "context": null,
     "inidces": [],
@@ -5624,7 +5624,7 @@ export const Scholia = [
   {
     "name": "Scholia - 136",
     "slug": "Scholia_136",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast aspect: seasons",
     "context": null,
     "inidces": [],
@@ -5664,7 +5664,7 @@ export const Scholia = [
   {
     "name": "Scholia - 137",
     "slug": "Scholia_137",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Podcast aspect: topics",
     "context": null,
     "inidces": [],
@@ -5704,7 +5704,7 @@ export const Scholia = [
   {
     "name": "Scholia - 138",
     "slug": "Scholia_138",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Printer aspect: works",
     "context": null,
     "inidces": [],
@@ -5746,7 +5746,7 @@ export const Scholia = [
   {
     "name": "Scholia - 139",
     "slug": "Scholia_139",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: citations per budget",
     "context": null,
     "inidces": [],
@@ -5783,7 +5783,7 @@ export const Scholia = [
   {
     "name": "Scholia - 140",
     "slug": "Scholia_140",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: partners",
     "context": null,
     "inidces": [],
@@ -5818,7 +5818,7 @@ export const Scholia = [
   {
     "name": "Scholia - 141",
     "slug": "Scholia_141",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: prolific authors",
     "context": null,
     "inidces": [],
@@ -5862,7 +5862,7 @@ export const Scholia = [
   {
     "name": "Scholia - 142",
     "slug": "Scholia_142",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -5905,7 +5905,7 @@ export const Scholia = [
   {
     "name": "Scholia - 143",
     "slug": "Scholia_143",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: recent articles",
     "context": null,
     "inidces": [],
@@ -5951,7 +5951,7 @@ export const Scholia = [
   {
     "name": "Scholia - 144",
     "slug": "Scholia_144",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: Statistics for projects identifiers",
     "context": null,
     "inidces": [],
@@ -5987,7 +5987,7 @@ export const Scholia = [
   {
     "name": "Scholia - 145",
     "slug": "Scholia_145",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: timeline",
     "context": null,
     "inidces": [],
@@ -6023,7 +6023,7 @@ export const Scholia = [
   {
     "name": "Scholia - 146",
     "slug": "Scholia_146",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Project aspect: topic scores",
     "context": null,
     "inidces": [],
@@ -6063,7 +6063,7 @@ export const Scholia = [
   {
     "name": "Scholia - 147",
     "slug": "Scholia_147",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Property aspect: item counts",
     "context": null,
     "inidces": [],
@@ -6101,7 +6101,7 @@ export const Scholia = [
   {
     "name": "Scholia - 148",
     "slug": "Scholia_148",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Property aspect: property value counts",
     "context": null,
     "inidces": [],
@@ -6139,7 +6139,7 @@ export const Scholia = [
   {
     "name": "Scholia - 149",
     "slug": "Scholia_149",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Property aspect: use",
     "context": null,
     "inidces": [],
@@ -6172,7 +6172,7 @@ export const Scholia = [
   {
     "name": "Scholia - 150",
     "slug": "Scholia_150",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Protein aspect: cofunctional proteins",
     "context": null,
     "inidces": [],
@@ -6214,7 +6214,7 @@ export const Scholia = [
   {
     "name": "Scholia - 151",
     "slug": "Scholia_151",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Protein aspect: cointeracting proteins",
     "context": null,
     "inidces": [],
@@ -6257,7 +6257,7 @@ export const Scholia = [
   {
     "name": "Scholia - 152",
     "slug": "Scholia_152",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Protein aspect: participates in",
     "context": null,
     "inidces": [],
@@ -6295,7 +6295,7 @@ export const Scholia = [
   {
     "name": "Scholia - 153",
     "slug": "Scholia_153",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Protein aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -6338,7 +6338,7 @@ export const Scholia = [
   {
     "name": "Scholia - 154",
     "slug": "Scholia_154",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Protein aspect: similar proteins",
     "context": null,
     "inidces": [],
@@ -6380,7 +6380,7 @@ export const Scholia = [
   {
     "name": "Scholia - 155",
     "slug": "Scholia_155",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: citations works",
     "context": null,
     "inidces": [],
@@ -6417,7 +6417,7 @@ export const Scholia = [
   {
     "name": "Scholia - 156",
     "slug": "Scholia_156",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: editor photos",
     "context": null,
     "inidces": [],
@@ -6458,7 +6458,7 @@ export const Scholia = [
   {
     "name": "Scholia - 157",
     "slug": "Scholia_157",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: editors",
     "context": null,
     "inidces": [],
@@ -6497,7 +6497,7 @@ export const Scholia = [
   {
     "name": "Scholia - 158",
     "slug": "Scholia_158",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: journals",
     "context": null,
     "inidces": [],
@@ -6540,7 +6540,7 @@ export const Scholia = [
   {
     "name": "Scholia - 159",
     "slug": "Scholia_159",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: most cited",
     "context": null,
     "inidces": [],
@@ -6579,7 +6579,7 @@ export const Scholia = [
   {
     "name": "Scholia - 160",
     "slug": "Scholia_160",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Publisher aspect: timeline",
     "context": null,
     "inidces": [],
@@ -6615,7 +6615,7 @@ export const Scholia = [
   {
     "name": "Scholia - 161",
     "slug": "Scholia_161",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: authors",
     "context": null,
     "inidces": [],
@@ -6653,7 +6653,7 @@ export const Scholia = [
   {
     "name": "Scholia - 162",
     "slug": "Scholia_162",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: coused",
     "context": null,
     "inidces": [],
@@ -6693,7 +6693,7 @@ export const Scholia = [
   {
     "name": "Scholia - 163",
     "slug": "Scholia_163",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: data",
     "context": null,
     "inidces": [],
@@ -6739,7 +6739,7 @@ export const Scholia = [
   {
     "name": "Scholia - 164",
     "slug": "Scholia_164",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: dependent software",
     "context": null,
     "inidces": [],
@@ -6780,7 +6780,7 @@ export const Scholia = [
   {
     "name": "Scholia - 165",
     "slug": "Scholia_165",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: recent works",
     "context": null,
     "inidces": [],
@@ -6816,7 +6816,7 @@ export const Scholia = [
   {
     "name": "Scholia - 166",
     "slug": "Scholia_166",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: software dependencies",
     "context": null,
     "inidces": [],
@@ -6856,7 +6856,7 @@ export const Scholia = [
   {
     "name": "Scholia - 167",
     "slug": "Scholia_167",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Software aspect: topics",
     "context": null,
     "inidces": [],
@@ -6894,7 +6894,7 @@ export const Scholia = [
   {
     "name": "Scholia - 168",
     "slug": "Scholia_168",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Sponsor aspect: Authors on works sponsored or funded from a specific entity.",
     "context": null,
     "inidces": [],
@@ -6936,7 +6936,7 @@ export const Scholia = [
   {
     "name": "Scholia - 169",
     "slug": "Scholia_169",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Sponsor aspect: Co-funders to a specific funder including an example funded work",
     "context": null,
     "inidces": [],
@@ -6978,7 +6978,7 @@ export const Scholia = [
   {
     "name": "Scholia - 170",
     "slug": "Scholia_170",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Sponsor aspect: Scatterplot of project budgets associated with a funder",
     "context": null,
     "inidces": [],
@@ -7012,7 +7012,7 @@ export const Scholia = [
   {
     "name": "Scholia - 171",
     "slug": "Scholia_171",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Sponsor aspect: recently published sponsored works",
     "context": null,
     "inidces": [],
@@ -7057,7 +7057,7 @@ export const Scholia = [
   {
     "name": "Scholia - 172",
     "slug": "Scholia_172",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Sponsor aspect: topics of sponsored works",
     "context": null,
     "inidces": [],
@@ -7095,7 +7095,7 @@ export const Scholia = [
   {
     "name": "Scholia - 173",
     "slug": "Scholia_173",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: co occurring taxa",
     "context": null,
     "inidces": [],
@@ -7139,7 +7139,7 @@ export const Scholia = [
   {
     "name": "Scholia - 174",
     "slug": "Scholia_174",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: genome",
     "context": null,
     "inidces": [],
@@ -7172,7 +7172,7 @@ export const Scholia = [
   {
     "name": "Scholia - 175",
     "slug": "Scholia_175",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: identifiers",
     "context": null,
     "inidces": [],
@@ -7219,7 +7219,7 @@ export const Scholia = [
   {
     "name": "Scholia - 176",
     "slug": "Scholia_176",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: metabolome",
     "context": null,
     "inidces": [],
@@ -7258,7 +7258,7 @@ export const Scholia = [
   {
     "name": "Scholia - 177",
     "slug": "Scholia_177",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: parent taxa",
     "context": null,
     "inidces": [],
@@ -7297,7 +7297,7 @@ export const Scholia = [
   {
     "name": "Scholia - 178",
     "slug": "Scholia_178",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: proteome",
     "context": null,
     "inidces": [],
@@ -7330,7 +7330,7 @@ export const Scholia = [
   {
     "name": "Scholia - 179",
     "slug": "Scholia_179",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Taxon aspect: tree",
     "context": null,
     "inidces": [],
@@ -7373,7 +7373,7 @@ export const Scholia = [
   {
     "name": "Scholia - 180",
     "slug": "Scholia_180",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: author awards",
     "context": null,
     "inidces": [],
@@ -7415,7 +7415,7 @@ export const Scholia = [
   {
     "name": "Scholia - 181",
     "slug": "Scholia_181",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: author scores graph",
     "context": null,
     "inidces": [],
@@ -7455,7 +7455,7 @@ export const Scholia = [
   {
     "name": "Scholia - 182",
     "slug": "Scholia_182",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: author scores",
     "context": null,
     "inidces": [],
@@ -7498,7 +7498,7 @@ export const Scholia = [
   {
     "name": "Scholia - 183",
     "slug": "Scholia_183",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: authors",
     "context": null,
     "inidces": [],
@@ -7542,7 +7542,7 @@ export const Scholia = [
   {
     "name": "Scholia - 184",
     "slug": "Scholia_184",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: co occurring map",
     "context": null,
     "inidces": [],
@@ -7580,7 +7580,7 @@ export const Scholia = [
   {
     "name": "Scholia - 185",
     "slug": "Scholia_185",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: co occurring",
     "context": null,
     "inidces": [],
@@ -7623,7 +7623,7 @@ export const Scholia = [
   {
     "name": "Scholia - 186",
     "slug": "Scholia_186",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: coauthor graph",
     "context": null,
     "inidces": [],
@@ -7667,7 +7667,7 @@ export const Scholia = [
   {
     "name": "Scholia - 187",
     "slug": "Scholia_187",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: context",
     "context": null,
     "inidces": [],
@@ -7710,7 +7710,7 @@ export const Scholia = [
   {
     "name": "Scholia - 188",
     "slug": "Scholia_188",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: country citation graph",
     "context": null,
     "inidces": [],
@@ -7753,7 +7753,7 @@ export const Scholia = [
   {
     "name": "Scholia - 189",
     "slug": "Scholia_189",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: earliest published works",
     "context": null,
     "inidces": [],
@@ -7799,7 +7799,7 @@ export const Scholia = [
   {
     "name": "Scholia - 190",
     "slug": "Scholia_190",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: most cited authors",
     "context": null,
     "inidces": [],
@@ -7841,7 +7841,7 @@ export const Scholia = [
   {
     "name": "Scholia - 191",
     "slug": "Scholia_191",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: organization map",
     "context": null,
     "inidces": [],
@@ -7886,7 +7886,7 @@ export const Scholia = [
   {
     "name": "Scholia - 192",
     "slug": "Scholia_192",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -7931,7 +7931,7 @@ export const Scholia = [
   {
     "name": "Scholia - 193",
     "slug": "Scholia_193",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: recently published works",
     "context": null,
     "inidces": [],
@@ -7977,7 +7977,7 @@ export const Scholia = [
   {
     "name": "Scholia - 194",
     "slug": "Scholia_194",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: top cited",
     "context": null,
     "inidces": [],
@@ -8019,7 +8019,7 @@ export const Scholia = [
   {
     "name": "Scholia - 195",
     "slug": "Scholia_195",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: topics",
     "context": null,
     "inidces": [],
@@ -8063,7 +8063,7 @@ export const Scholia = [
   {
     "name": "Scholia - 196",
     "slug": "Scholia_196",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: uses",
     "context": null,
     "inidces": [],
@@ -8103,7 +8103,7 @@ export const Scholia = [
   {
     "name": "Scholia - 197",
     "slug": "Scholia_197",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Topic aspect: venues",
     "context": null,
     "inidces": [],
@@ -8147,7 +8147,7 @@ export const Scholia = [
   {
     "name": "Scholia - 198",
     "slug": "Scholia_198",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use aspect: authors of works using the resource",
     "context": null,
     "inidces": [],
@@ -8185,7 +8185,7 @@ export const Scholia = [
   {
     "name": "Scholia - 199",
     "slug": "Scholia_199",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use aspect: co used",
     "context": null,
     "inidces": [],
@@ -8229,7 +8229,7 @@ export const Scholia = [
   {
     "name": "Scholia - 200",
     "slug": "Scholia_200",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use aspect: recent work using the used",
     "context": null,
     "inidces": [],
@@ -8268,7 +8268,7 @@ export const Scholia = [
   {
     "name": "Scholia - 201",
     "slug": "Scholia_201",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use aspect: topics of works using the resource",
     "context": null,
     "inidces": [],
@@ -8306,7 +8306,7 @@ export const Scholia = [
   {
     "name": "Scholia - 202",
     "slug": "Scholia_202",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Use aspect: usage over time",
     "context": null,
     "inidces": [],
@@ -8347,7 +8347,7 @@ export const Scholia = [
   {
     "name": "Scholia - 203",
     "slug": "Scholia_203",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: articles by intention",
     "context": null,
     "inidces": [],
@@ -8393,7 +8393,7 @@ export const Scholia = [
   {
     "name": "Scholia - 204",
     "slug": "Scholia_204",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Articles in a specific venue citing retracted articles",
     "context": null,
     "inidces": [],
@@ -8437,7 +8437,7 @@ export const Scholia = [
   {
     "name": "Scholia - 205",
     "slug": "Scholia_205",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Author awards for a specific venue",
     "context": null,
     "inidces": [],
@@ -8477,7 +8477,7 @@ export const Scholia = [
   {
     "name": "Scholia - 206",
     "slug": "Scholia_206",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Author gender distribution for a specific venue",
     "context": null,
     "inidces": [],
@@ -8516,7 +8516,7 @@ export const Scholia = [
   {
     "name": "Scholia - 207",
     "slug": "Scholia_207",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Author images for a specific venue",
     "context": null,
     "inidces": [],
@@ -8556,7 +8556,7 @@ export const Scholia = [
   {
     "name": "Scholia - 208",
     "slug": "Scholia_208",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Prolific authors for a specific journal",
     "context": null,
     "inidces": [],
@@ -8596,7 +8596,7 @@ export const Scholia = [
   {
     "name": "Scholia - 209",
     "slug": "Scholia_209",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Authorship gender distribution for a specific venue",
     "context": null,
     "inidces": [],
@@ -8634,7 +8634,7 @@ export const Scholia = [
   {
     "name": "Scholia - 210",
     "slug": "Scholia_210",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Citation distribution for a venue",
     "context": null,
     "inidces": [],
@@ -8670,7 +8670,7 @@ export const Scholia = [
   {
     "name": "Scholia - 211",
     "slug": "Scholia_211",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Cited venues from specific journal",
     "context": null,
     "inidces": [],
@@ -8713,7 +8713,7 @@ export const Scholia = [
   {
     "name": "Scholia - 212",
     "slug": "Scholia_212",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Venues citing articles from this specific journal",
     "context": null,
     "inidces": [],
@@ -8756,7 +8756,7 @@ export const Scholia = [
   {
     "name": "Scholia - 213",
     "slug": "Scholia_213",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Co-author graph for a specific venue",
     "context": null,
     "inidces": [],
@@ -8800,7 +8800,7 @@ export const Scholia = [
   {
     "name": "Scholia - 214",
     "slug": "Scholia_214",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: incoming bubble",
     "context": null,
     "inidces": [],
@@ -8838,7 +8838,7 @@ export const Scholia = [
   {
     "name": "Scholia - 215",
     "slug": "Scholia_215",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: incoming",
     "context": null,
     "inidces": [],
@@ -8879,7 +8879,7 @@ export const Scholia = [
   {
     "name": "Scholia - 216",
     "slug": "Scholia_216",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Most cited articles published in specific venue",
     "context": null,
     "inidces": [],
@@ -8919,7 +8919,7 @@ export const Scholia = [
   {
     "name": "Scholia - 217",
     "slug": "Scholia_217",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Most cited authors published in venue",
     "context": null,
     "inidces": [],
@@ -8958,7 +8958,7 @@ export const Scholia = [
   {
     "name": "Scholia - 218",
     "slug": "Scholia_218",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: most reused articles",
     "context": null,
     "inidces": [],
@@ -8999,7 +8999,7 @@ export const Scholia = [
   {
     "name": "Scholia - 219",
     "slug": "Scholia_219",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: outgoing bubble",
     "context": null,
     "inidces": [],
@@ -9037,7 +9037,7 @@ export const Scholia = [
   {
     "name": "Scholia - 220",
     "slug": "Scholia_220",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: outgoing",
     "context": null,
     "inidces": [],
@@ -9078,7 +9078,7 @@ export const Scholia = [
   {
     "name": "Scholia - 221",
     "slug": "Scholia_221",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: recently published works",
     "context": null,
     "inidces": [],
@@ -9123,7 +9123,7 @@ export const Scholia = [
   {
     "name": "Scholia - 222",
     "slug": "Scholia_222",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: retractions",
     "context": null,
     "inidces": [],
@@ -9162,7 +9162,7 @@ export const Scholia = [
   {
     "name": "Scholia - 223",
     "slug": "Scholia_223",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: top topics through time",
     "context": null,
     "inidces": [],
@@ -9203,7 +9203,7 @@ export const Scholia = [
   {
     "name": "Scholia - 224",
     "slug": "Scholia_224",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: Count of topics in published work in specified venue",
     "context": null,
     "inidces": [],
@@ -9241,7 +9241,7 @@ export const Scholia = [
   {
     "name": "Scholia - 225",
     "slug": "Scholia_225",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Venue aspect: uses",
     "context": null,
     "inidces": [],
@@ -9281,7 +9281,7 @@ export const Scholia = [
   {
     "name": "Scholia - 226",
     "slug": "Scholia_226",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: author awards",
     "context": null,
     "inidces": [],
@@ -9324,7 +9324,7 @@ export const Scholia = [
   {
     "name": "Scholia - 227",
     "slug": "Scholia_227",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: authors",
     "context": null,
     "inidces": [],
@@ -9368,7 +9368,7 @@ export const Scholia = [
   {
     "name": "Scholia - 228",
     "slug": "Scholia_228",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: co occurring wikiprojects",
     "context": null,
     "inidces": [],
@@ -9414,7 +9414,7 @@ export const Scholia = [
   {
     "name": "Scholia - 229",
     "slug": "Scholia_229",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: context",
     "context": null,
     "inidces": [],
@@ -9457,7 +9457,7 @@ export const Scholia = [
   {
     "name": "Scholia - 230",
     "slug": "Scholia_230",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: earliest published works",
     "context": null,
     "inidces": [],
@@ -9504,7 +9504,7 @@ export const Scholia = [
   {
     "name": "Scholia - 231",
     "slug": "Scholia_231",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: focus",
     "context": null,
     "inidces": [],
@@ -9541,7 +9541,7 @@ export const Scholia = [
   {
     "name": "Scholia - 232",
     "slug": "Scholia_232",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: maintained",
     "context": null,
     "inidces": [],
@@ -9578,7 +9578,7 @@ export const Scholia = [
   {
     "name": "Scholia - 233",
     "slug": "Scholia_233",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: organization map",
     "context": null,
     "inidces": [],
@@ -9624,7 +9624,7 @@ export const Scholia = [
   {
     "name": "Scholia - 234",
     "slug": "Scholia_234",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: publications per year",
     "context": null,
     "inidces": [],
@@ -9669,7 +9669,7 @@ export const Scholia = [
   {
     "name": "Scholia - 235",
     "slug": "Scholia_235",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: recently published works",
     "context": null,
     "inidces": [],
@@ -9716,7 +9716,7 @@ export const Scholia = [
   {
     "name": "Scholia - 236",
     "slug": "Scholia_236",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: topics",
     "context": null,
     "inidces": [],
@@ -9762,7 +9762,7 @@ export const Scholia = [
   {
     "name": "Scholia - 237",
     "slug": "Scholia_237",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Wikiproject aspect: venues",
     "context": null,
     "inidces": [],
@@ -9806,7 +9806,7 @@ export const Scholia = [
   {
     "name": "Scholia - 238",
     "slug": "Scholia_238",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: associated images",
     "context": null,
     "inidces": [],
@@ -9841,7 +9841,7 @@ export const Scholia = [
   {
     "name": "Scholia - 239",
     "slug": "Scholia_239",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: citation graph",
     "context": null,
     "inidces": [],
@@ -9890,7 +9890,7 @@ export const Scholia = [
   {
     "name": "Scholia - 240",
     "slug": "Scholia_240",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: citations per year",
     "context": null,
     "inidces": [],
@@ -9935,7 +9935,7 @@ export const Scholia = [
   {
     "name": "Scholia - 241",
     "slug": "Scholia_241",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: citations",
     "context": null,
     "inidces": [],
@@ -9981,7 +9981,7 @@ export const Scholia = [
   {
     "name": "Scholia - 242",
     "slug": "Scholia_242",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: cited work authors",
     "context": null,
     "inidces": [],
@@ -10025,7 +10025,7 @@ export const Scholia = [
   {
     "name": "Scholia - 243",
     "slug": "Scholia_243",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: cited works",
     "context": null,
     "inidces": [],
@@ -10067,7 +10067,7 @@ export const Scholia = [
   {
     "name": "Scholia - 244",
     "slug": "Scholia_244",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: cito incoming chart",
     "context": null,
     "inidces": [],
@@ -10106,7 +10106,7 @@ export const Scholia = [
   {
     "name": "Scholia - 245",
     "slug": "Scholia_245",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: cito incoming",
     "context": null,
     "inidces": [],
@@ -10149,7 +10149,7 @@ export const Scholia = [
   {
     "name": "Scholia - 246",
     "slug": "Scholia_246",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: data",
     "context": null,
     "inidces": [],
@@ -10201,7 +10201,7 @@ export const Scholia = [
   {
     "name": "Scholia - 247",
     "slug": "Scholia_247",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: list of authors",
     "context": null,
     "inidces": [],
@@ -10247,7 +10247,7 @@ export const Scholia = [
   {
     "name": "Scholia - 248",
     "slug": "Scholia_248",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: related works",
     "context": null,
     "inidces": [],
@@ -10286,7 +10286,7 @@ export const Scholia = [
   {
     "name": "Scholia - 249",
     "slug": "Scholia_249",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: statements",
     "context": null,
     "inidces": [],
@@ -10331,7 +10331,7 @@ export const Scholia = [
   {
     "name": "Scholia - 250",
     "slug": "Scholia_250",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: timeline",
     "context": null,
     "inidces": [],
@@ -10372,7 +10372,7 @@ export const Scholia = [
   {
     "name": "Scholia - 251",
     "slug": "Scholia_251",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: topic scores",
     "context": null,
     "inidces": [],
@@ -10412,7 +10412,7 @@ export const Scholia = [
   {
     "name": "Scholia - 252",
     "slug": "Scholia_252",
-    "date": "18-06-2025",
+    "date": new Date("2025-06-18"),
     "description": "Work aspect: wikipedia mentions",
     "context": null,
     "inidces": [],

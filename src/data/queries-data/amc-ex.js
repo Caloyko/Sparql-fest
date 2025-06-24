@@ -3,7 +3,7 @@ const amcBasicQueries = [
     {
       name: "Lyme Disease ORDO Mappings",
       slug: "ordo-lyme-mappings",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Obtain all external identifiers (via oboInOwl:hasDbXref) associated with Lyme disease in ORDO.",
       context: "This query seeks to retrieve all external databases linked to the ORDO entry for Lyme disease. This makes it possible to explore the connectivity of this entity to other repositories.",
       inidces: ["Charger ORDO","Utilisez ordo:Orphanet_91546 comme point d'entrée.","Recherchez les prédicats oboInOwl:hasDbXref.", ],
@@ -30,7 +30,7 @@ WHERE {
     {
       name: "Getting a concept label from ORPHAcode.",
       slug: "label-from-orphacode",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Retrieve the label (official name) associated with a rare disease identifier.",
       context: "We want to display the official name of a specific rare disease based on its identifier. This is useful for making data more understandable to users, such as when generating reports or displaying disease information in user interfaces.",
       inidces: ["Start by identifying the identifier of the concept you are interested in (e.g., Orphanet_558).",
@@ -57,7 +57,7 @@ WHERE {
     {
       name: " Getting the genetic material linked to more than 10 disorders.",
       slug: "genes-with-many-disorders",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Find the genetic elements that are each linked to more than 10 different disorders, and return their names along with the number of associated disorders.",
       context: "We want to identify elements of genetic material that are associated with a high number of distinct disorders. This kind of analysis can help prioritize genes for further research, diagnostics, or therapeutic development based on their widespread involvement in diseases.",
       inidces: ["Start by counting how many disorders are linked to each genetic element.",
@@ -100,7 +100,7 @@ ORDER BY DESC(?nbD)
       sparqlConcepts: [
         "PREFIX",
         "SELECT",
-        "COUNT()",
+        "COUNT",
         "FILTER",
         "GROUP BY",
         "BIND",
@@ -112,7 +112,7 @@ ORDER BY DESC(?nbD)
     {
       name: "Getting the label and mapping information about a concept.",
       slug: "concept-label-and-mappings",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Retrieve all information related to a specific disease concept, including its label and any mapping-related metadata that might connect it to other vocabularies or systems.",
       context: "We want to explore all the available information about a specific disease concept, including its name and how it is connected to related concepts in other systems. This helps build a clearer understanding of how this disease is described and reused in various biomedical knowledge sources.",
       inidces: ["Focus on one concept, using its identifier (e.g. Orphanet_558).",
@@ -163,7 +163,7 @@ ORDER BY ?o
     {
       name: "Counting the total number of Disorder-HPO associations in HOOM.",
       slug: "hoom-hpo-association-count",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Count how many formal associations exist between disorders and Human Phenotype Ontology (HPO) terms in the HOOM model.",
       context: "The goal is to quantify how many associations exist between diseases and phenotypic traits, which can be crucial for understanding how well a disease is phenotypically described. A higher number of associations can reflect a richer clinical characterization and support improved diagnosis or research.",
       inidces: ["Look for association classes defined in the ontology (rdfs:subClassOf).",
@@ -194,7 +194,7 @@ WHERE {
         "PREFIX",
         "SELECT",
         "rdf:rest*/rdf:first",
-        "COUNT()"
+        "COUNT"
       ],
       category: "level 2",
       rdfResultExample: ``,
@@ -202,7 +202,7 @@ WHERE {
     {
       name: "Counting database cross-references for rare diseases",
       slug: "rare-diseases-dbxref-count",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "List rare diseases with their labels and count how many database cross-references they have. Then, order this list from the diseases with the most references to those with fewer.",
       context: "We want to identify which rare diseases have the richest connections to external biomedical databases by counting how many database cross-references each disease has. This information helps prioritize diseases that are extensively linked and potentially better studied.",
       inidces: ["Select diseases that have database cross-reference properties.",
@@ -232,7 +232,7 @@ ORDER BY DESC(?mappings)
         "SELECT",
         "GROUP BY",
         "ORDER BY DESC",
-        "COUNT()"
+        "COUNT"
       ],
       category: "level 2",
       rdfResultExample: ``,
@@ -240,7 +240,7 @@ ORDER BY DESC(?mappings)
     {
       name: "Most frequently referenced external database identifiers in Orphanet diseases",
       slug: "frequent-dbxref-orphanet",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Count how many distinct diseases reference each external database identifier and rank these identifiers by their frequency of use.",
       context: "The goal is to determine which external database identifiers are most commonly linked to rare diseases in Orphanet. This helps identify key reference databases that are widely used across disease descriptions.",
       inidces: ["Focus on the property that links diseases to external database identifiers.",
@@ -273,7 +273,7 @@ ORDER BY DESC(?linkedDiseases)
     {
       name: "Getting ORDO mappings for Lyme disease",
       slug: "lyme-ordo-mappings",
-      date: "08/06/2025",
+      date: new Date("2025-06-08"),
       description: "Retrieve the external database mappings linked to Lyme disease.",
       context: "We want to find all external database identifiers that are mapped to Lyme disease within the ORDO dataset. This helps understand the external references and cross-links available for this specific disease.",
       inidces: ["Identify the disease by its ORDO identifier (here Lyme disease = Orphanet_91546).",
