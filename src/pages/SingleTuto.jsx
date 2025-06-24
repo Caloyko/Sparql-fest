@@ -5,13 +5,10 @@ import { allTutos } from '../data/all-tutos';
 const SingleTuto = () => {
     const headerImage = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80';
     const {slug} = useParams();
-    console.log(slug)
     const [detail, setDetail] = useState(null);
 
     useEffect(() => {
-        console.log("here")
       const findDetail = allTutos.filter(tuto => tuto.slug === slug);
-      console.log(findDetail)
       if (findDetail.length > 0){
         setDetail(findDetail[0]);
       }else{
@@ -22,6 +19,14 @@ const SingleTuto = () => {
     if (!detail) {
         return <div className="text-center py-10">Loading or not found...</div>;
       }
+
+
+      const handleScrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
     return (
       <>
         {/* Header Image */}
@@ -35,25 +40,53 @@ const SingleTuto = () => {
   
         {/* Main Content */}
         <div className="grid grid-cols-7 gap-4 p-4 min-h-screen">
-          <aside className="self-start sticky top-0 col-span-2 shadow-lg rounded-lg p-4">
+        <aside className="self-start sticky top-0 col-span-2 shadow-lg rounded-lg p-4">
             <h2 className="text-xl font-semibold mb-4">Sommaire</h2>
             <ul>
-            {detail.content.map((section, key) => (
-              <li><a href={`#${section.id}`} className="block p-2 rounded hover:bg-blue-100 transition">{section.section_title}</a></li>
-            ))}
+                {detail.content.map((section) => (
+                    <li key={section.id}>
+                        <a 
+                            onClick={() => handleScrollToSection(section.id)} 
+                            className="block p-2 rounded hover:bg-blue-100 transition cursor-pointer"
+                        >
+                            {section.section_title}
+                        </a>
+                        {section.sparql_concept && section.sparql_concept.length > 0 && (
+                            <ul className="ml-4 list-disc">
+                                {section.sparql_concept.map((concept, index) => (
+                                    <li key={index}>
+                                        <a 
+                                            onClick={() => handleScrollToSection(section.id)} 
+                                            className="block p-2 rounded hover:bg-blue-100 transition cursor-pointer"
+                                        >
+                                            {concept.name}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                ))}
             </ul>
-          </aside>
+        </aside>
+
           
           <main className=" overflow-y-auto  col-span-5  shadow-lg rounded-lg p-6">
             <div className="min-h-screen">
                 <h1> {detail.title}</h1>
                {detail.content.map((section, key) => (
-                    <section id={section.id} className="mb-8">
-                <h2 className="text-2xl font-bold mb-2">{section.section_title}</h2>
-                <p>
-                  {section.description}
-                </p>
-                </section>
+                     <section key={key} id={section.id} className="mb-8">
+                     <h2 className="text-2xl font-bold mb-2">{section.section_title}</h2>
+                     <p>{section.description}</p>
+
+                     {section.sparql_concept && section.sparql_concept.length > 0 && (
+                         <ul className="ml-4 list-disc">
+                             {section.sparql_concept.map((concept, index) => (
+                                 <li key={`conceptpt${index}`}>{concept.name}</li>
+                             ))}
+                         </ul>
+                     )}
+                 </section>
 
                 ))}
             </div>
