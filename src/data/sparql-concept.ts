@@ -1,4 +1,6 @@
 export enum SparqlConcepts {
+  TYPE = "TYPE",
+  INVERSE = "INVERSE",
   A = "A",
   VARIABLE = "VARIABLE",
   RDFTRIPLE = "RDFTRIPLE",
