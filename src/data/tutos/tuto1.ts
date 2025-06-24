@@ -41,8 +41,8 @@ WHERE describes what to match.`,
         },
         // TODO
         {
-            id: 3,
-            section_title: "1.1 – Structure of a SPARQL Query",
+            id: 2,
+            section_title: "2 – Structure of a SPARQL Query",
             description: "Understanding the structure of a SPARQL query is the foundation for writing meaningful queries over RDF data. SPARQL follows a pattern-matching approach where queries are made up of graph patterns that describe what kind of data to retrieve.",
             sparql_concept: [
                 {
@@ -73,8 +73,8 @@ WHERE describes what to match.`,
             query: "slug"
         },
         {
-            id: 1,
-            section_title: "Section 1.1 – Structure of a SPARQL Query",
+            id: 3,
+            section_title: "3 – Structure of a SPARQL Query",
             description: "Understanding the structure of a SPARQL query is the foundation for writing meaningful queries over RDF data. SPARQL follows a pattern-matching approach where queries are made up of graph patterns that describe what kind of data to retrieve.",
             sparql_concept: [
                 {
