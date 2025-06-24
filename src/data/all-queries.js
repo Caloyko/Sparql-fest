@@ -1,4 +1,3 @@
-import { log } from "console"
 import img0 from "../assets/images/network-bg-1.jpg"
 import img1 from "../assets/images/network-bg-2.avif"
 import img2 from "../assets/images/network-bg-3.jpg"
@@ -31,7 +30,6 @@ const imgLevel = [img0, img1, img2]
 
 function mergeAndFormatQueries(amcQueries, swissQueries, bigcatUmQueries, allTutoQueries) {
   const merged = [...amcQueries, ...swissQueries, ...bigcatUmQueries, ...allTutoQueries];
-  console/log(allTutoQueries)
 
   return merged.map((query, index) => {
     const levelNumber = query.level?.match(/\d+/)?.[0] || "0";
