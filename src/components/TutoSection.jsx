@@ -71,6 +71,13 @@ const TutoSection = ({ section }) => {
             )}
 
             <p>{query.name}</p>
+            {/**
+             * Write a query  to learn (open and close)
+             * Description
+             * Context
+             * Query
+             * direction to all querys with this concept
+             */}
         </section>
     );
 };

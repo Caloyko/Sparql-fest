@@ -33,6 +33,22 @@ const SingleTuto = () => {
             section.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     };
+
+    const getAllSparqlConcepts = () => {
+        const concepts = [];
+    
+        detail.content.forEach(section => {
+            if (section.sparql_concept) {
+                section.sparql_concept.forEach(concept => {
+                    concepts.push(concept);
+                });
+            }
+        });
+    
+        return concepts;
+    };
+    const allSparqlConcepts = getAllSparqlConcepts();
+    console.log(allSparqlConcepts)
     return (
       <>
         {/* Header Image */}
@@ -43,12 +59,24 @@ const SingleTuto = () => {
          >
 
         <div
-          className="relative w-full h-64 bg-cover bg-center"
-          style={{ backgroundImage: `url(${headerImage})` }}
+            className="relative w-full h-64 bg-cover bg-center"
+            style={{ backgroundImage: `url(${headerImage})` }}
         >
-          <div className="absolute inset-0 bg-black opacity-30"></div>
-          <h1 className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold">{detail.title}</h1>
+            <div className="absolute inset-0 bg-black opacity-60 flex justify-center items-center">
+                <div className="flex flex-wrap justify-center items-center mx-4">
+                    {allSparqlConcepts.map((concept, index) => (
+                        <span
+                            key={index}
+                            className="inline-block bg-gradient-to-r from-orange-400 to-orange-800 py-1 px-3 rounded-lg mr-2 mb-2 shadow-md"
+                        >
+                            {concept.name}
+                        </span>
+                    ))}
+                </div>
+            </div>
         </div>
+
+
   
         {/* Main Content */}
         <div className="grid grid-cols-7 gap-4 p-4 min-h-screen">
@@ -59,7 +87,7 @@ const SingleTuto = () => {
                         <a 
                             onClick={() => handleScrollToSection(section.id)} 
                             className={`block p-2 rounded transition cursor-pointer 
-                                ${activeSection === section.id ? 'text-orange-500' : 'hover:bg-stone-200 hover:text-orange-500'}`}
+                                ${activeSection === section.id ? 'text-orange-500' : 'hover:border-orange-500 hover:bg-stone-800 hover:border rounded-xl hover:text-orange-500'}`}
                         >
                             {section.section_title}
                         </a>
@@ -69,7 +97,7 @@ const SingleTuto = () => {
                                     <li key={index}>
                                         <a 
                                             onClick={() => handleScrollToSection(section.id)} 
-                                            className="block p-2 rounded hover:bg-blue-100 transition cursor-pointer"
+                                            className="block p-2 rounded hover:bg-stone-300 hover:text-orange-700 transition cursor-pointer"
                                         >
                                             {concept.name}
                                         </a>
