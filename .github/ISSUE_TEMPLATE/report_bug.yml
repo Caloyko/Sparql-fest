@@ -7,22 +7,21 @@ assignees: [username]
 body:
   - type: markdown
     attributes:
-      value: |
-        Describe the bug clearly and concisely.
+      description: Describe the bug clearly and concisely.
 
-  - type: input
+  - type: textarea
     id: steps_to_reproduce
     attributes:
       label: Steps to Reproduce
-      placeholder: "1. Step 1\n2. Step 2\n3. Step 3"
+      description: "1. Step 1\n2. Step 2\n3. Step 3"
 
-  - type: input
+  - type: textarea
     id: expected_behavior
     attributes:
       label: Expected Behavior
       placeholder: "Describe what you expected to happen."
 
-  - type: input
+  - type: textarea
     id: actual_behavior
     attributes:
       label: Actual Behavior
