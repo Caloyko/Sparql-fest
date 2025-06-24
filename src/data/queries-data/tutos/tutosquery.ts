@@ -30,7 +30,7 @@ export const tutoQueries = [
           "SELECT",
           "WHERE"
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       }  ,
       {
@@ -70,7 +70,7 @@ export const tutoQueries = [
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       },
       {
@@ -109,7 +109,7 @@ LIMIT 5
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       },
       {
@@ -164,7 +164,7 @@ LIMIT 5
           "SELECT",
           "PREFIX",
         ],
-        category: "level-0",
+        category: "level 0",
         rdfResultExample: ``
       }     
 ]

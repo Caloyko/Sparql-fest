@@ -100,7 +100,7 @@ ORDER BY DESC(?nbD)
       sparqlConcepts: [
         "PREFIX",
         "SELECT",
-        "COUNT()",
+        "COUNT",
         "FILTER",
         "GROUP BY",
         "BIND",
@@ -194,7 +194,7 @@ WHERE {
         "PREFIX",
         "SELECT",
         "rdf:rest*/rdf:first",
-        "COUNT()"
+        "COUNT"
       ],
       category: "level 2",
       rdfResultExample: ``,
@@ -232,7 +232,7 @@ ORDER BY DESC(?mappings)
         "SELECT",
         "GROUP BY",
         "ORDER BY DESC",
-        "COUNT()"
+        "COUNT"
       ],
       category: "level 2",
       rdfResultExample: ``,

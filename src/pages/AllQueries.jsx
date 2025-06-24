@@ -56,6 +56,7 @@ const AllQueries = () => {
 
   useEffect(() => {
     setTotal(filteredQueries.length);
+    setSortedDates(filteredQueries)
   }, [filteredQueries]);
 
   const handleSort = () => {
