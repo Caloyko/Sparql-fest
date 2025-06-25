@@ -1,0 +1,275 @@
+{
+  "head" : {
+    "vars" : [
+      "p",
+      "o"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2002/07/owl#Class"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_557493"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_377788"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C001"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "bnode",
+          "value" : "node60605"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "o" : {
+          "type" : "bnode",
+          "value" : "node60606"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Lyme disease"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.ebi.ac.uk/efo/alternative_term"
+        },
+        "o" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Lyme borreliosis"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.ebi.ac.uk/efo/definition"
+        },
+        "o" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Lyme disease (named after the towns in the USA where the disease was first identified) is a bacterial infection caused by <i>Borrelia burgdorferi</i>."
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.ebi.ac.uk/efo/definition_citation"
+        },
+        "o" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Orphanet"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "ICD-10:A69.2"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "ICD-11:1C1G"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "MeSH:D008193"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "MedDRA:10025169"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "UMLS:C0024198"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C016"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Not applicable"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C017"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "All ages"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Europe AND has_point_prevalence_range : Unknown"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Europe AND has_annual_incidence_average_value : 177.5 AND has_annual_incidence_range : >1 / 1000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "France AND has_annual_incidence_average_value : 16.6 AND has_annual_incidence_range : 1-5 / 10 000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Hungary AND has_annual_incidence_average_value : 12.37 AND has_annual_incidence_range : 1-5 / 10 000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Sweden AND has_annual_incidence_average_value : 36.0 AND has_annual_incidence_range : 1-5 / 10 000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "United States AND has_annual_incidence_average_value : 100.0 AND has_annual_incidence_range : >1 / 1000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C022"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "Worldwide AND has_annual_incidence_average_value : 21.9 AND has_annual_incidence_range : 1-5 / 10 000"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_C055"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "https://www.orpha.net/consor/cgi-bin/OC_Exp.php?Lng=en&Expert=91546"
+        }
+      },
+      {
+        "p" : {
+          "type" : "uri",
+          "value" : "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "o" : {
+          "type" : "literal",
+          "value" : "ORPHA:91546"
+        }
+      }
+    ]
+  }
+}

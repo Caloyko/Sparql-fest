@@ -1,0 +1,22 @@
+{
+  "head" : {
+    "vars" : [
+      "disease",
+      "label"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "disease" : {
+          "type" : "uri",
+          "value" : "http://www.orpha.net/ORDO/Orphanet_91546"
+        },
+        "label" : {
+          "type" : "literal",
+          "value" : "Lyme disease"
+        }
+      }
+    ]
+  }
+}

@@ -5,9 +5,10 @@ import { tuto1 } from "./tutos/tuto1"
 import { tuto2 } from "./tutos/tuto2"
 import { tuto3 } from "./tutos/tuto3"
 import { tuto4 } from "./tutos/tuto4"
+import { lymeMapping } from "./tutos/mapping_lyme"
 
 function mergeQueries(source) {
-  const merged =  [tuto1, tuto2, tuto3, tuto4]
+  const merged =  [tuto1, tuto2, tuto3, tuto4, lymeMapping]
 
   return merged.map((query, index) => {
     const tmp = {

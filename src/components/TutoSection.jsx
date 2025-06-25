@@ -3,23 +3,26 @@ import CodeBlock from './ui/CodeBlock';
 import { FaLink, FaComment } from 'react-icons/fa6';
 import w3cImg from "../assets/images/prefixes/w3c.jpg"
 import { FaArrowDown, FaArrowUp, FaInfo, FaPencilAlt } from 'react-icons/fa';
-import { tutoQueries } from "../data/queries-data/tutos/tutosquery"
 import { TbBulb } from 'react-icons/tb';
 import Markdown from 'react-markdown'
+import { allTutoQueries } from '../data/queries-data/tuto-ex';
+import TableResults from './reusable/TableResults';
 
 
 const TutoSection = ({ section }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [hintIsOpen, setHintIsOpen] = useState(false);
+    const [resIsOpen, setResIsOpen] = useState(false);
     const toggleDetails = () => {
         setIsOpen(!isOpen);
     };
 
-    console.log(tutoQueries)
-    const findquery = tutoQueries.filter(tuto => tuto.slug === section.query);
+    console.log(allTutoQueries)
+    const findquery = allTutoQueries.filter(tuto => tuto.slug === section.query);
     console.log(findquery[0])
     const query = findquery[0]
     console.log(query)
+    console.log(query?.rdfResultExample)
     return (
         <section id={section.id} className="mb-12 mt-5">
             <h2 className="text-2xl font-bold mb-2 text-orange-500">{section.section_title}</h2>
@@ -77,7 +80,7 @@ const TutoSection = ({ section }) => {
                             
                         </div>
                     ))}
-                    <Markdown>{section.conclusion}</Markdown>
+                    
                 </div>
             )}
 
@@ -106,7 +109,7 @@ const TutoSection = ({ section }) => {
                     Hints 
                     <button
                         aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
-                        className="ml-auto text-sm text-stone-200 hover:text-orange-è00"
+                        className="ml-auto text-sm text-stone-200 hover:text-orange-500"
                         onClick={(e) => {
                             e.stopPropagation();
                             setHintIsOpen(!hintIsOpen);
@@ -123,10 +126,35 @@ const TutoSection = ({ section }) => {
                     </ol>
                 )}
                     <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
+                    
                     <CodeBlock dataQuery={query.query}/>
+                    {
+                        query?.rdfResultExample && (
+                            <>
+                            <h2 class="flex items-center cursor-pointer select-none text-xl font-semibold mb-3">Results
+                            <button
+                            aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
+                            className="ml-auto text-sm text-stone-200 hover:text-orange-500"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setResIsOpen(!resIsOpen);
+                            }}
+                            >
+                            {resIsOpen ? "Hide" : "Show"}
+                    </button>
+
+                            </h2>
+                            {resIsOpen && 
+                                <TableResults data={query.rdfResultExample} />
+                            }
+                            </>
+                        )
+                    }
+
                 </div>
             )}
         </div>)}
+        <Markdown>{section.conclusion}</Markdown>
         </section>
     );
 };

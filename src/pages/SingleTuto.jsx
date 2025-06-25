@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 import { allTutos } from '../data/all-tutos';
 import Section from '../components/reusable/Section';
 import TutoSection from '../components/TutoSection';
+import Markdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm'
 
 const SingleTuto = () => {
     const {slug} = useParams();
@@ -114,6 +117,12 @@ const SingleTuto = () => {
           
           <div className=" overflow-y-auto  col-span-5  shadow-lg rounded-lg p-6">
             <div className="min-h-screen">
+                {detail.description && (
+                    <div>
+                        <h2 className="text-3xl font-bold mb-2 text-orange-500">General Context</h2>
+                        <Markdown>{detail.description}</Markdown>      
+                    </div>              
+                )}
                {detail.content.map((section, key) => (
                     <TutoSection key={key} section={section} />
                 ))}
