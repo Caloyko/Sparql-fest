@@ -1,5 +1,6 @@
 import lymeResult from "../../result-query/lyme-mapping-2-orphacode.json" assert { type: 'json' };
 import lymeResult2 from "../../result-query/lyme-mapping-1-label.json" assert { type: 'json' };
+import lymeResult3 from "../../result-query/lyme-mapping-3-xrefs.json" assert { type: 'json' };
 
 export const lymeMappingQueries = [
     {
@@ -68,4 +69,35 @@ SELECT * WHERE {
         category: "level 0",
         rdfResultExample: lymeResult
       }  ,
+      {
+        name: "Extracting external ontology links for Lyme disease",
+        slug: "lyme-mapping-3-xrefs",
+        date: new Date("2025-06-25"),
+        description: "Query to retrieve database cross-references (e.g., OMIM, MeSH) linked to Lyme disease in ORDO.",
+        context: "Tuto : Retrieving information about Lyme Disease from ORDO",
+        inidces: [
+          "Use PREFIX oboInOwl: to access OBO-style annotations, including cross-references.",
+          "Use PREFIX ORDO: to define the base URI for ORDO concepts.",
+          "Start from the URI for Lyme disease (Orphanet_91546) and query with oboInOwl:hasDbXref to get external ontology links."
+        ],
+        query: `PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+      PREFIX ORDO: <http://www.orpha.net/ORDO/>
+      
+      SELECT * WHERE { 
+        ORDO:Orphanet_91546 oboInOwl:hasDbXref ?dbXRef .
+      }`,
+        ontologies: [
+          "ORDO",
+          "OBO"
+        ],
+        sparqlConcepts: [
+          "PREFIX",
+          "SELECT",
+          "WHERE"
+        ],
+        category: "level 1",
+        rdfResultExample: lymeResult3
+      }
+      
+
 ]

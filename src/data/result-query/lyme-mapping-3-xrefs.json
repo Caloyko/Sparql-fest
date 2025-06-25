@@ -1,0 +1,41 @@
+{
+  "head" : {
+    "vars" : [
+      "dbXRef"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "dbXRef" : {
+          "type" : "literal",
+          "value" : "ICD-10:A69.2"
+        }
+      },
+      {
+        "dbXRef" : {
+          "type" : "literal",
+          "value" : "ICD-11:1C1G"
+        }
+      },
+      {
+        "dbXRef" : {
+          "type" : "literal",
+          "value" : "MeSH:D008193"
+        }
+      },
+      {
+        "dbXRef" : {
+          "type" : "literal",
+          "value" : "MedDRA:10025169"
+        }
+      },
+      {
+        "dbXRef" : {
+          "type" : "literal",
+          "value" : "UMLS:C0024198"
+        }
+      }
+    ]
+  }
+}

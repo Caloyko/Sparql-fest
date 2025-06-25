@@ -93,6 +93,22 @@ The objective of this tutorial is to retrieve and explore information about Lyme
             conclusion: `This query helped retrieve both the **label** and the **URI (with OrphaCode)** of Lyme disease from ORDO using a case-insensitive label search. It’s a useful approach when the *exact identifier is unknown.*`,  
             query: "lyme-mapping-1-label"
         },
+        {
+            id: 3,
+            section_title: "3 - Extracting cross-references to external ontologies",
+            description: `In part 1, we retrieved all the triples related to Lyme disease using its ORDO identifier. In this section, the goal is to understand and extract links to **external ontologies** (e.g., OMIM, MeSH, ICD) by analyzing the result of the first query.  
+            These cross-references provide **interoperability** and are essential for connecting ORDO to other biomedical datasets.`,
+            sparql_concept: [
+                {
+                    name: "oboInOwl:hasDbXref",
+                    description: "A property used to indicate a cross-reference (database reference) to an external source such as OMIM, MeSH, Mondo or ICD. It is commonly used in OBO ontologies to facilitate data integration.",
+                    w3c_link: "https://www.ebi.ac.uk/ols4/ontologies/ado/properties/http%253A%252F%252Fwww.geneontology.org%252Fformats%252FoboInOwl%2523hasDbXref"
+                }
+            ],
+            conclusion: "This query shows how ORDO links Lyme disease to external databases, we have **5 results.**",
+            query: "lyme-mapping-3-xrefs"
+        }
+        
         
     ]
 };
