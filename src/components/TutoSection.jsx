@@ -3,9 +3,10 @@ import CodeBlock from './ui/CodeBlock';
 import { FaLink, FaComment } from 'react-icons/fa6';
 import w3cImg from "../assets/images/prefixes/w3c.jpg"
 import { FaArrowDown, FaArrowUp, FaInfo, FaPencilAlt } from 'react-icons/fa';
-import { tutoQueries } from "../data/queries-data/tutos/tutosquery"
 import { TbBulb } from 'react-icons/tb';
 import Markdown from 'react-markdown'
+import { allTutoQueries } from '../data/queries-data/tuto-ex';
+import TableResults from './reusable/TableResults';
 
 
 const TutoSection = ({ section }) => {
@@ -15,8 +16,8 @@ const TutoSection = ({ section }) => {
         setIsOpen(!isOpen);
     };
 
-    console.log(tutoQueries)
-    const findquery = tutoQueries.filter(tuto => tuto.slug === section.query);
+    console.log(allTutoQueries)
+    const findquery = allTutoQueries.filter(tuto => tuto.slug === section.query);
     console.log(findquery[0])
     const query = findquery[0]
     console.log(query)
@@ -124,6 +125,9 @@ const TutoSection = ({ section }) => {
                 )}
                     <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
                     <CodeBlock dataQuery={query.query}/>
+                    <h2 class="text-xl font-bold mt-10 mb-4">Results</h2>
+                    <TableResults slug={query.slug}/>
+
                 </div>
             )}
         </div>)}

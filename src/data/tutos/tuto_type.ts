@@ -1,7 +1,8 @@
+import { ReactNode } from "react";
 import { SparqlConcepts } from "../sparql-concept";
 
 interface SparqlConcept {
-    name: SparqlConcepts;
+    name: SparqlConcepts | string;
     description: string;
     example?: string;
     example_comment?: string;
@@ -31,4 +32,5 @@ export interface Tuto {
     date: Date;
     slug: string;
     status: TaskStatus
+    description?: ReactNode;
 }
