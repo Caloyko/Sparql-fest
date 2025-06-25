@@ -1,4 +1,5 @@
 import lymeResult from "../../result-query/lyme-mapping-2-orphacode.json" assert { type: 'json' };
+import lymeResult2 from "../../result-query/lyme-mapping-1-label.json" assert { type: 'json' };
 
 export const lymeMappingQueries = [
     {
@@ -8,12 +9,21 @@ export const lymeMappingQueries = [
         description: "Basic query to retrieve Lyme Disease entity from ORDO with the label",
         context: "Tuto : Retrieving information about Lyme Disease from ORDO",
         inidces: [
-            "Use PREFIX rdfs: to retrieve readable labels like disease names.",
-            "Use PREFIX ordo: to access the ORDO ontology where rare diseases are defined.",
-            "SELECT ?disease to retrieve the resource representing Lyme disease.",
-            "In WHERE, match the label 'Lyme disease'@en to get its corresponding URI."
-        ],
-        query: ``,
+            "Use PREFIX rdfs: to work with readable labels of entities in the ontology.",
+            "Use PREFIX ordo: to access resources from the ORDO ontology.",
+            "In SELECT, retrieve both the disease URI (?disease) and its label (?label).",
+            "In WHERE, match each ?disease to its rdfs:label.",
+            "Use FILTER with CONTAINS and LCASE to search for labels containing the word 'lyme disease', regardless of case.",
+            "Wrap the label in STR before applying LCASE to ensure compatibility with the string functions."
+          ],
+        query: `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ordo: <http://www.orpha.net/ORDO/>
+
+SELECT ?disease ?label WHERE {
+  ?disease rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), "lyme disease"))
+}
+`,
         ontologies: [
           "ORDO",
           "RDFS"
@@ -21,10 +31,14 @@ export const lymeMappingQueries = [
         sparqlConcepts: [
           "PREFIX",
           "SELECT",
-          "WHERE"
+          "WHERE",
+          "FILTER",
+          "CONTAINS",
+          "LCASE",
+          "STR",
         ],
         category: "level 0",
-        rdfResultExample: ``
+        rdfResultExample: lymeResult2
       }  ,
       {
         name: "Getting Lyme data from ORDO with orphacode",

@@ -80,7 +80,7 @@ const TutoSection = ({ section }) => {
                             
                         </div>
                     ))}
-                    <Markdown>{section.conclusion}</Markdown>
+                    
                 </div>
             )}
 
@@ -154,6 +154,7 @@ const TutoSection = ({ section }) => {
                 </div>
             )}
         </div>)}
+        <Markdown>{section.conclusion}</Markdown>
         </section>
     );
 };
