@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 /*
 type SparqlResult = {
@@ -15,70 +15,58 @@ type SparqlResult = {
   };
 };
 
-interface TableResultsProps {
-  slug: string;
-}
 */
-const TableResults/*: React.FC<TableResultsProps>*/ = ({ slug }) => {
-  const [data, setData] = useState<SparqlResult | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (!slug) return;
-
-    setLoading(true);
-    setError(null);
-
-    import(`../data/result-query/${slug}`)
-      .then((module) => {
-        setData(module.default);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError("Failed to load file: " + err.message);
-        setLoading(false);
-      });
-  }, [slug]);
-
-  if (loading) return <p>Loading data...</p>;
-  if (error) return <p style={{ color: "red" }}>Error: {error}</p>;
-  if (!data) return <p>No data to display</p>;
-
+const TableResults = ({ data }) => {
   const { vars } = data.head;
   const { bindings } = data.results;
+  const total = bindings.length;
+
+  const [expanded, setExpanded] = useState(false);
+  const visibleRowCount = expanded ? bindings.length : 10;
+
+  const toggleExpanded = () => setExpanded((prev) => !prev);
 
   return (
-    <table style={{ borderCollapse: "collapse", width: "100%" }}>
-      <thead>
-        <tr>
-          {vars.map((v) => (
-            <th
-              key={v}
-              style={{
-                border: "1px solid #ccc",
-                padding: "8px",
-                backgroundColor: "#f0f0f0",
-                textAlign: "left",
-              }}
-            >
-              {v}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {bindings.map((row, i) => (
-          <tr key={i}>
+    <div className="w-full overflow-x-auto">
+      {bindings.length > 10 && (
+        <div className="mt-4 text-left mb-4">
+          <button
+            onClick={toggleExpanded}
+            className="text-sm bg-gray-700 py-3 px-4 mx-3 rounded-md hover:underline focus:outline-none"
+          >
+            {expanded ? `Hide lines : show only 10 / ${total}` : `Show all lines : ${total}`}
+          </button>
+        </div>
+      )}
+
+      <table className="min-w-full border-collapse">
+        <thead>
+          <tr>
             {vars.map((v) => (
-              <td key={v} style={{ border: "1px solid #ccc", padding: "8px" }}>
-                {row[v]?.value ?? ""}
-              </td>
+              <th
+                key={v}
+                className="border border-gray-300 bg-gray-500 px-4 py-2 text-left text-sm font-medium text-stone-800"
+              >
+                {v}
+              </th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {bindings.slice(0, visibleRowCount).map((row, i) => (
+            <tr key={i} className="even:bg-stone-800">
+              {vars.map((v) => (
+                <td key={v} className="border border-gray-300 px-4 py-2 text-sm">
+                  {row[v]?.value ?? ""}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      
+    </div>
   );
 };
 

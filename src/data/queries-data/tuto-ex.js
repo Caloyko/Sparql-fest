@@ -1,4 +1,4 @@
-import {lymeMappingQueries} from "./tutos/lymeMappingQueries";
+import { lymeMappingQueries } from "./tutos/lymeMappingQueries";
 import { tutoQueries } from "./tutos/tutosquery";
 
 

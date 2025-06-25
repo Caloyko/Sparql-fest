@@ -12,6 +12,7 @@ import TableResults from './reusable/TableResults';
 const TutoSection = ({ section }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [hintIsOpen, setHintIsOpen] = useState(false);
+    const [resIsOpen, setResIsOpen] = useState(false);
     const toggleDetails = () => {
         setIsOpen(!isOpen);
     };
@@ -21,6 +22,7 @@ const TutoSection = ({ section }) => {
     console.log(findquery[0])
     const query = findquery[0]
     console.log(query)
+    console.log(query?.rdfResultExample)
     return (
         <section id={section.id} className="mb-12 mt-5">
             <h2 className="text-2xl font-bold mb-2 text-orange-500">{section.section_title}</h2>
@@ -107,7 +109,7 @@ const TutoSection = ({ section }) => {
                     Hints 
                     <button
                         aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
-                        className="ml-auto text-sm text-stone-200 hover:text-orange-è00"
+                        className="ml-auto text-sm text-stone-200 hover:text-orange-500"
                         onClick={(e) => {
                             e.stopPropagation();
                             setHintIsOpen(!hintIsOpen);
@@ -124,9 +126,30 @@ const TutoSection = ({ section }) => {
                     </ol>
                 )}
                     <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
+                    
                     <CodeBlock dataQuery={query.query}/>
-                    <h2 class="text-xl font-bold mt-10 mb-4">Results</h2>
-                    <TableResults slug={query.slug}/>
+                    {
+                        query?.rdfResultExample && (
+                            <>
+                            <h2 class="flex items-center cursor-pointer select-none text-xl font-semibold mb-3">Results
+                            <button
+                            aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
+                            className="ml-auto text-sm text-stone-200 hover:text-orange-500"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setResIsOpen(!resIsOpen);
+                            }}
+                            >
+                            {resIsOpen ? "Hide" : "Show"}
+                    </button>
+
+                            </h2>
+                            {resIsOpen && 
+                                <TableResults data={query.rdfResultExample} />
+                            }
+                            </>
+                        )
+                    }
 
                 </div>
             )}

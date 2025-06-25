@@ -1,3 +1,5 @@
+import lymeResult from "../../result-query/lyme-mapping-2-orphacode.json" assert { type: 'json' };
+
 export const lymeMappingQueries = [
     {
         name: "Getting Lyme data from ORDO with label",
@@ -50,6 +52,6 @@ SELECT * WHERE {
           "WHERE"
         ],
         category: "level 0",
-        rdfResultExample: ``
+        rdfResultExample: lymeResult
       }  ,
 ]
