@@ -19,7 +19,7 @@ export default function Card({ data, withPrefix = false }: CardProps) {
   const link = withPrefix ? `/sparql-queries/${slug}` : slug;
 
   return (
-<div className="rounded-xl overflow-hidden shadow-md shadow-stone-950 ring-1 ring-white/10 flex flex-col hover:shadow-lg hover:shadow-orange-900/50 transition-shadow bg-neutral-800 ">
+<div className="rounded-xl overflow-hidden shadow-md shadow-stone-950 ring-1 ring-white/10 flex flex-col hover:shadow-lg hover:shadow-orange-900/50 transition-shadow dark:bg-neutral-800 bg-neutral-200">
     <div className="relative">
         <Link to={link}>
           <img className="w-full h-42 object-cover" src={image} alt={name} />
@@ -30,7 +30,7 @@ export default function Card({ data, withPrefix = false }: CardProps) {
         </div>
       </div>
 
-      <div className="px-6 py-4 mb-auto">
+      <div className="px-6 py-4 mb-auto ">
         <p className="text-gray-500 text-sm mb-2">{new Date(date).toLocaleDateString()}</p>
         <h3 className="font-medium text-lg inline-block hover:text-orange-600 transition duration-500 ease-in-out">
           {name}
@@ -41,7 +41,7 @@ export default function Card({ data, withPrefix = false }: CardProps) {
         {ontologies.map((tag, index) => (
           <span
             key={index}
-            className="inline-block bg-stone-500 rounded-full px-3 py-1 text-sm font-semibold text-neutral-900 mr-2 mb-2"
+            className="inline-block bg-stone-500 rounded-full px-3 py-1 text-sm font-semibold dark:text-neutral-900 text-white mr-2 mb-2"
           >
             {tag}
           </span>

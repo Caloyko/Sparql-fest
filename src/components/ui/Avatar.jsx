@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagram,  FaLinkedin, FaGithub  } from 'react-icons/fa';
+import { useTheme } from '../../ThemeContext';
 
 
 const OrcidIcon = (props) => (
@@ -31,6 +32,8 @@ const OrcidIcon = (props) => (
   
 
 const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
+    const { isDarkMode, setIsDarkMode } = useTheme();
+  
     const orcidUrl = socials.ORCID || null;
     
     const handleNamePhotoClick = () => {
@@ -39,7 +42,7 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
         }
       };
     return (
-        <div className="p-5 border rounded text-gray-500 bg-stone-900">
+        <div className="p-5 border rounded text-gray-500 dark:bg-stone-900 bg-white">
           <div className="flex items-center cursor-pointer" onClick={handleNamePhotoClick}>
             <img
               className="inline-flex object-cover border-2 border-orange-600 rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] shadow-orange-600/100 bg-indigo-50 text-orange-500 h-20 w-20 mr-3"
@@ -51,7 +54,7 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
               <a
                 href={orcidUrl || '#'}
                 onClick={(e) => e.preventDefault()}
-                className="font-medium leading-none text-white hover:text-orange-600 transition duration-500 ease-in-out mb-1"
+                className="font-medium leading-none text-stone-900 dark:text-white hover:text-orange-600 transition duration-500 ease-in-out mb-1"
               >
                 {name}
               </a>
@@ -66,7 +69,7 @@ const Avatar = ({ name, photo, role, description, mail, socials = {} }) => {
             </div>
           </div>
     
-          <p className="mx-2 mt-3 text-sm text-white">
+          <p className="mx-2 mt-3 text-sm dark:text-white text-stone-900">
             {description}
           </p>
 

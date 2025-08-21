@@ -3,11 +3,17 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Poppins", sans-serif;
-  color-scheme: dark;
+  --color-darkTheme: #11001F;
 }
 
+/* Dark mode appliqué via parent .dark */
+.dark {
+  --color-darkTheme: #11001F;
+  --color-text: white;
+}
+/* === Dark mode par sélecteur === */
+@variant dark (&:where(.dark, .dark *));
+
 body {
-  @apply bg-stone-900 text-white;
-  font-family: "Poppins", sans-serif;
+  @apply font-sans bg-white text-black dark:bg-stone-900 dark:text-white;
 }

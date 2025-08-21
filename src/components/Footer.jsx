@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-full py-16 bg-stone-900/50'>
+    <div className='w-full py-16 bg-white/70 dark:bg-stone-900/50'>
       <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
         <div className="container mx-auto text-center">
         <div className="flex justify-center">
@@ -27,14 +27,14 @@ const Footer = () => {
             <Link
               key={index}
               to={item.href}
-              className="hover:text-orange-500 text-sm sm:text-base my-1"
+              className="hover:text-orange-500 text-sm sm:text-base my-1 dark:text-white text-gray-900"
             >
               {item.name}
             </Link>
           ))}
         </nav>
         {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className="text-sm dark:text-gray-400 text-gray-800 mt-6">
           © 2025 SPARQL Fest. All rights reserved.
         </p>
       </div>

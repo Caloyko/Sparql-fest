@@ -7,8 +7,11 @@ import Section from '../components/reusable/Section';
 import { TbBulb } from 'react-icons/tb';
 import { allSources } from '../data/all-sources';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../ThemeContext';
 
 const QueryDetail = () => {
+      const { isDarkMode, setIsDarkMode } = useTheme();
+    
     const [hintIsOpen, setHintIsOpen] = useState(false);
 
     const {slug} = useParams();
@@ -51,7 +54,7 @@ const QueryDetail = () => {
                 id={detail.slug}
                 title={detail.name}
                 description={new Date(detail.date).toLocaleDateString()}
-                variant="dark"
+                variant={isDarkMode ? "dark" : "light"}
                 bg={false}
                 >
                     {(detail.source || detail.context) && (
@@ -59,9 +62,9 @@ const QueryDetail = () => {
                             <h2 className="text-xl font-bold mt-4 mb-2">Context</h2>
 
                             {detail.context ? (
-                            <p className="text-neutral-300 mb-6">{detail.context}</p>
+                            <p className="dark:text-neutral-300 mb-6">{detail.context}</p>
                             ) : sourceInfo ? (
-                            <div className="text-neutral-300 mb-6">
+                            <div className="dark:text-neutral-300 mb-6">
                                 This query was created by <strong>{sourceInfo.name}</strong>. 
                                 You can find more information at:{" "}
                                 <ul className="list-disc list-inside mt-2">
@@ -78,14 +81,14 @@ const QueryDetail = () => {
                                 </ul>
                             </div>
                             ) : (
-                            <div className="text-neutral-300 mb-6">No context available.</div>
+                            <div className="dark:text-neutral-300 mb-6">No context available.</div>
                             )}
                         </>
                         )}
 
 
                     <h2 class="text-xl font-bold mt-4 mb-2">Description</h2>
-                    <p class="text-neutral-300 mb-6">{detail.description}</p>
+                    <p class="dark:text-neutral-300 mb-6">{detail.description}</p>
                     <h2
                         className="flex items-center cursor-pointer select-none text-xl font-semibold mb-3"
                         onClick={() => setHintIsOpen(!hintIsOpen)}
@@ -94,7 +97,7 @@ const QueryDetail = () => {
                     Hints 
                     <button
                         aria-label={hintIsOpen ? "Hide hints" : "Show hints"}
-                        className="ml-auto text-sm text-stone-200 hover:text-orange-è00"
+                        className="ml-auto text-sm text-stone-500 dark:text-stone-200 hover:text-orange-è00"
                         onClick={(e) => {
                             e.stopPropagation();
                             setHintIsOpen(!hintIsOpen);
@@ -104,7 +107,7 @@ const QueryDetail = () => {
                 </button>
                 </h2>
                 {hintIsOpen && (
-                    <ol className="ml-6 list-disc list-inside space-y-2 text-neutral-300">
+                    <ol className="ml-6 list-disc list-inside space-y-2 dark:text-neutral-300">
                     {(detail.inidces || []).map((hint, i) => (
                         <li key={i}>{hint}</li>
                     ))}
@@ -113,7 +116,7 @@ const QueryDetail = () => {
                     <h2 class="text-xl font-bold mt-10 mb-4">Query</h2>
                     <CodeBlock dataQuery={detail.query}/>
                     <h2 class="text-xl font-bold mt-10 mb-2">Results</h2>
-                    {detail?.rdfResultExample == "" &&  <p class="text-neutral-300 mb-6 flex justify-center"> No result available for this query </p>}
+                    {detail?.rdfResultExample == "" &&  <p class="dark:text-neutral-300 mb-6 flex justify-center"> No result available for this query </p>}
             </Section>
                
             </div>

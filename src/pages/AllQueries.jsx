@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { sparqlQueries } from '../data/all-queries'
 import Section from '../components/reusable/Section'
 import Card from '../components/ui/Card'
@@ -6,8 +6,11 @@ import MultiSelectDropdown from '../components/reusable/MultiSelectDropDown'
 import { FiSearch } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'
+import { useTheme } from '../ThemeContext'
 
 const AllQueries = () => {
+  const { isDarkMode, setIsDarkMode } = useTheme();
+  
   const [visibleCount, setVisibleCount] = useState(20);
   const [order, setOrder] = useState('desc');
 
@@ -76,7 +79,7 @@ const AllQueries = () => {
             id="all-queries"
             title="ALL SPARQL QUERIES"
             description="Discover all our SPARQL queries."
-            variant="dark"
+            variant={isDarkMode ? "dark" : "light"}
             bg={true}
         >
           <div className="mb-6 space-y-4">
@@ -183,7 +186,7 @@ const AllQueries = () => {
                   setSelectedOntologies([]);
                   toast.success('Filters successfully reset');
                 }}
-                className="bg-gradient-to-r from-orange-500 to-orange-800 py-1 my-3 px-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-900/50"
+                className="bg-gradient-to-r from-orange-500 to-orange-800 py-1 my-3 px-3 rounded-xl font-bold hover:shadow-lg hover:shadow-orange-900/50 text-white"
               >
                 Reset Filters
               </button>
@@ -202,7 +205,7 @@ const AllQueries = () => {
        <div className="mt-6 text-center">
           <button
             onClick={() => setVisibleCount(prev => prev + 20)}
-            className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+            className="text-white bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
           >
             Load More
           </button>

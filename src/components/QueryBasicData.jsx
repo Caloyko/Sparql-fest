@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useTheme } from '../ThemeContext';
 
 const QueryBasicData = ({data}) => {
+    const { isDarkMode, setIsDarkMode } = useTheme();
+    
     const { category, date, ontologies, sparqlConcepts } = data;
 
   return (
@@ -11,7 +14,7 @@ const QueryBasicData = ({data}) => {
             
         
         <li>
-            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+            <p class="py-3.5 w-full flex items-center text-orange-800 dark:text-orange-100 border-b border-neutral-500 pb-2">
                 <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
                 SPARQL Prefixes used
             </p>
@@ -30,7 +33,7 @@ const QueryBasicData = ({data}) => {
 
         
         <li>
-            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+            <p class="py-3.5 w-full flex items-center text-orange-800 dark:text-orange-100 border-b border-neutral-500 pb-2">
                 <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
                 Category
             </p>
@@ -43,7 +46,7 @@ const QueryBasicData = ({data}) => {
             </div>
         </li>
         <li>
-            <p class="py-3.5 w-full flex items-center text-orange-100 border-b border-neutral-500 pb-2">
+            <p class="py-3.5 w-full flex items-center text-orange-800 dark:text-orange-100 border-b border-neutral-500 pb-2">
                 <span class="ml-5 mr-2.5 w-1 h-7 bg-orange-700 rounded-r-md"></span>
                 SPARQL Concepts
             </p>
