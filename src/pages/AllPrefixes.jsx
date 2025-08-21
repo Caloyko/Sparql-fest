@@ -3,15 +3,17 @@ import InProgress from '../components/reusable/InProgress'
 import TableList from '../components/reusable/TableList';
 import { sparqlPrefixes } from '../data/all-prefixes';
 import Section from '../components/reusable/Section';
+import { useTheme } from '../ThemeContext';
 
 const AllPrefixes = () => {
+  const { isDarkMode, setIsDarkMode } = useTheme();
   
   return (<>
       <Section
             id="sparql-prefixes"
             title="SPARQL PREFIXES WE USE"
             description="List of all prefixes that are used in our queries."
-            variant="dark"
+            variant={isDarkMode ? "dark" : "light"}
         >
       <div className="flex-center">
             <TableList data={sparqlPrefixes} />

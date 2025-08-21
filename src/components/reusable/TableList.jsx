@@ -28,7 +28,7 @@ const TableList = ({ data }) => {
     return (
         <div className="w-full p-10">
             <div className="flex items-center justify-between mb-4">
-                <h5 className="text-l font-bold leading-none text-gray-200 ">                                    
+                <h5 className="text-l font-bold leading-none dark:text-gray-200 ">                                    
                     {total} result{total !== 1 ? 's' : ''}
                 </h5>
                 <div className="relative">
@@ -51,10 +51,10 @@ const TableList = ({ data }) => {
                                     <img className="w-20 h-20 rounded-2xl p-1 border border-orange-500" src={data.logo} alt={`${data.name} image`} />
                                 </div>
                                 <div className="flex-1 min-w-0 ms-4">
-                                    <p className="text-md font-medium text-gray-100  ">
+                                    <p className="text-md font-medium dark:text-gray-100  ">
                                         {data.name}
                                     </p>
-                                    <p className="text-sm text-stone-400 ">
+                                    <p className="text-sm text-stone-600 dark:text-stone-400">
                                         {data.description}
                                     </p>
                                     <p className="text-xs text-orange-800 pt-2  ">

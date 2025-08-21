@@ -3,15 +3,18 @@ import Section from './reusable/Section'
 import Avatar from './ui/Avatar'
 import pauline from "../assets/images/avatar/pauline2.jpeg"
 import andra from "../assets/images/avatar/andra.jpeg"
+import { useTheme } from '../ThemeContext'
 
 const Contact = () => {
+  const { isDarkMode, setIsDarkMode } = useTheme();
+  
   return (
     <>
         <Section
             id="contact"
             title="CONTACT US"
             description="Get in touch with the SPARQL Fest team."
-            variant="dark"
+            variant={isDarkMode ? "dark" : "light"}
             bg={false}
         >
           {/** Add link to github and github issue  */}

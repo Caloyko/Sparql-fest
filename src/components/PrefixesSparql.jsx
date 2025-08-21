@@ -1,13 +1,16 @@
 import React from 'react'
 import imgPrefix from "../assets/images/PrefixeSparql.png"
 import { Link } from 'react-router-dom'
+import { useTheme } from '../ThemeContext';
 
 
 const PrefixesSparql = () => {
+    const { isDarkMode, setIsDarkMode } = useTheme();
+  
   return (
     <>
         
-    <div className="flex flex-col md:flex-row items-center bg-white shadow-lg px-12 gap-6 py-20">
+    <div className="flex flex-col md:flex-row items-center dark:bg-white bg-stone-900 shadow-lg px-12 gap-6 py-20">
     <div className="w-full md:w-1/2 px-10">
         <img
           src={imgPrefix}
@@ -20,7 +23,7 @@ const PrefixesSparql = () => {
           What are prefixes?
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-800">
+        <h2 className="text-2xl font-bold text-gray-200 dark:text-gray-800">
           Understand SPARQL Prefixes
         </h2>
 
